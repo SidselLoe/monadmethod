@@ -43,7 +43,7 @@ const Navigation = () => {
           </span>
           <Link
             to="/apply"
-            className="bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-wide px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
+            className="bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-wide px-6 py-2.5 rounded-md hover:bg-accent/90 transition-colors"
           >
             Apply Now
           </Link>
