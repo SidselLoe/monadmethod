@@ -61,7 +61,7 @@ const Navigation = () => {
 
       {/* Mobile dropdown */}
       {mobileOpen && (
-        <div className="md:hidden absolute top-full left-4 right-4 mt-2 bg-background rounded-2xl border border-border shadow-lg p-4 flex flex-col gap-1">
+        <div className="md:hidden absolute top-full left-4 right-4 mt-2 bg-background rounded-lg border border-border shadow-lg p-4 flex flex-col gap-1">
           {navLinks.map((link) => (
             <Link
               key={link.href}
