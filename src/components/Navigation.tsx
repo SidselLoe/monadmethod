@@ -75,7 +75,7 @@ const Navigation = () => {
           <Link
             to="/apply"
             onClick={() => setMobileOpen(false)}
-            className="mt-2 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-wide px-6 py-3 rounded-full hover:bg-accent/90 transition-colors text-center"
+            className="mt-2 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-wide px-6 py-3 rounded-md hover:bg-accent/90 transition-colors text-center"
           >
             Apply Now
           </Link>
