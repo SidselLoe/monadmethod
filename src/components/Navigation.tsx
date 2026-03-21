@@ -14,37 +14,40 @@ const Navigation = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 sm:px-6 pt-4">
-      <div className="w-full max-w-[1400px] bg-background/95 backdrop-blur-sm rounded-full border border-border shadow-[0_2px_12px_rgba(0,0,0,0.08)] px-4 sm:px-6 py-3 flex items-center justify-between">
+      <div className="w-full max-w-[1400px] bg-background/95 backdrop-blur-sm rounded-full border border-border shadow-[0_2px_12px_rgba(0,0,0,0.08)] px-4 sm:px-8 py-2.5 flex items-center justify-between">
         {/* Logo dot */}
         <Link to="/" className="group flex-shrink-0">
           <div className="relative w-[14px] h-[14px]">
-            {/* Default: solid circle (CEO OS) */}
             <div className="absolute inset-0 rounded-full bg-foreground transition-all duration-300 group-hover:scale-[0.45]" />
-            {/* Hover: ring appears (Monad Method) */}
             <div className="absolute inset-0 rounded-full border-[2px] border-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
         </Link>
 
         {/* Desktop nav links */}
-        <div className="hidden md:flex items-center gap-1 ml-auto mr-4">
+        <div className="hidden md:flex items-center gap-0.5 ml-8">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               to={link.href}
-              className="px-4 py-2 text-sm font-medium text-foreground/70 hover:text-foreground transition-colors rounded-full"
+              className="px-5 py-2 text-sm font-medium text-foreground/70 rounded-full transition-all duration-200 hover:bg-accent hover:text-accent-foreground"
             >
               {link.label}
             </Link>
           ))}
         </div>
 
-        {/* CTA */}
-        <Link
-          to="/apply"
-          className="hidden md:inline-flex bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-wide px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
-        >
-          Apply Now
-        </Link>
+        {/* Right side: tagline + CTA */}
+        <div className="hidden md:flex items-center gap-5 ml-auto">
+          <span className="text-xs text-muted-foreground max-w-[160px] text-right leading-tight">
+            Leadership programs for startup founders
+          </span>
+          <Link
+            to="/apply"
+            className="bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-wide px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
+          >
+            Apply Now
+          </Link>
+        </div>
 
         {/* Mobile hamburger */}
         <button
@@ -64,7 +67,7 @@ const Navigation = () => {
               key={link.href}
               to={link.href}
               onClick={() => setMobileOpen(false)}
-              className="px-4 py-3 text-sm font-medium text-foreground/70 hover:text-foreground hover:bg-secondary rounded-lg transition-colors"
+              className="px-4 py-3 text-sm font-medium text-foreground/70 hover:text-accent-foreground hover:bg-accent rounded-lg transition-colors"
             >
               {link.label}
             </Link>
