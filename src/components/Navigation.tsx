@@ -29,7 +29,7 @@ const Navigation = () => {
             <Link
               key={link.href}
               to={link.href}
-              className="px-5 py-2 text-sm font-medium text-foreground/70 rounded-full transition-all duration-200 hover:bg-accent hover:text-accent-foreground"
+              className="px-5 py-2 text-sm font-medium text-foreground rounded-md transition-all duration-200 hover:bg-accent hover:text-accent-foreground"
             >
               {link.label}
             </Link>
