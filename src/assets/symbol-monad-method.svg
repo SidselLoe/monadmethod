@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Monad Method™ — The Source — Circle with Dot -->
+  <!-- Optical: outline circle, slight upsize to r=50 to match visual weight -->
+  <circle cx="60" cy="60" r="50" fill="none" stroke="#161616" stroke-width="3.5"/>
+  <circle cx="60" cy="60" r="8" fill="#161616"/>
+</svg>
