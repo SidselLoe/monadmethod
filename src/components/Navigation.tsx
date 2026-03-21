@@ -14,7 +14,7 @@ const Navigation = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 sm:px-6 pt-4">
-      <div className="w-full max-w-[1400px] bg-background/95 backdrop-blur-sm rounded-lg border border-border shadow-[0_2px_12px_rgba(0,0,0,0.08)] px-4 sm:px-8 py-2.5 flex items-center justify-between">
+      <div className="w-full max-w-[1400px] bg-background/95 backdrop-blur-sm rounded-lg border border-border/40 shadow-[0_1px_8px_rgba(0,0,0,0.04)] px-4 sm:px-8 py-2.5 flex items-center justify-between">
         {/* Logo dot */}
         <Link to="/" className="group flex-shrink-0">
           <div className="relative w-[14px] h-[14px]">
