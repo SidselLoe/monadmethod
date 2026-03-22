@@ -1,5 +1,6 @@
 import EnergyActivationGraphic from "./EnergyActivationGraphic";
 import CoachingCallGraphic from "./CoachingCallGraphic";
+import VoiceMemosGraphic from "./VoiceMemosGraphic";
 
 const ProblemProgram = () => {
   return (
