@@ -1,3 +1,5 @@
+import EnergyActivationGraphic from "./EnergyActivationGraphic";
+
 const ProblemProgram = () => {
   return (
     <section className="bg-surface py-24 sm:py-28 px-6">
@@ -19,10 +21,8 @@ const ProblemProgram = () => {
           {/* Big card - left, spans full height */}
           <div className="md:row-span-2 bg-card border border-border rounded-xl overflow-hidden flex flex-col">
             {/* Graphic area */}
-            <div className="flex-1 min-h-[240px] bg-secondary flex items-center justify-center relative">
-              <div className="w-24 h-24 rounded-full bg-accent/10" />
-              <div className="absolute top-8 right-12 w-16 h-16 rounded-full bg-accent/5" />
-              <div className="absolute bottom-10 left-10 w-12 h-12 rounded-full bg-accent/5" />
+            <div className="p-0">
+              <EnergyActivationGraphic />
             </div>
             {/* Text area */}
             <div className="p-7 sm:p-8">
