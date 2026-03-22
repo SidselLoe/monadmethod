@@ -38,8 +38,8 @@ const Navigation = () => {
 
         {/* Right side: tagline + CTA */}
         <div className="hidden md:flex items-center gap-5 ml-auto">
-          <span className="text-xs text-muted-foreground max-w-[160px] text-right leading-tight">
-            Leadership programs for startup founders
+          <span className="text-xs text-foreground max-w-[160px] text-right leading-tight">
+            Ready to lead like a CEO?
           </span>
           <Link
             to="/apply"
