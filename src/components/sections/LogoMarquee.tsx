@@ -1,7 +1,20 @@
-const placeholderLogos = Array.from({ length: 8 }, (_, i) => ({
-  id: i,
-  width: 80 + (i % 4) * 20,
-}));
+import coastlineCreatives from "@/assets/logo-coastline-creatives.png";
+import coinvise from "@/assets/logo-coinvise.png";
+import cultureDrivers from "@/assets/logo-culture-drivers.png";
+import earnkit from "@/assets/logo-earnkit.png";
+import helixMarkets from "@/assets/logo-helix-markets.png";
+import infosys from "@/assets/logo-infosys.png";
+import pwrHouse from "@/assets/logo-pwr-house.png";
+
+const logos = [
+  { src: coastlineCreatives, alt: "Coastline Creatives", height: 48 },
+  { src: coinvise, alt: "Coinvise", height: 32 },
+  { src: cultureDrivers, alt: "CultureDrivers", height: 28 },
+  { src: earnkit, alt: "Earnkit", height: 40 },
+  { src: helixMarkets, alt: "Helix Markets", height: 40 },
+  { src: infosys, alt: "Infosys", height: 32 },
+  { src: pwrHouse, alt: "PWR House", height: 36 },
+];
 
 const LogoMarquee = () => {
   return (
@@ -13,15 +26,16 @@ const LogoMarquee = () => {
       </div>
 
       <div className="overflow-hidden">
-        <div className="flex items-center gap-12 sm:gap-16 animate-marquee">
-          {[...placeholderLogos, ...placeholderLogos].map((logo, i) => (
-            <div
+        <div className="flex items-center gap-16 sm:gap-20 animate-marquee">
+          {[...logos, ...logos].map((logo, i) => (
+            <img
               key={i}
-              className="flex-shrink-0 h-8 rounded bg-foreground/10 flex items-center justify-center px-4"
-              style={{ width: logo.width }}
-            >
-              <span className="text-xs text-muted-foreground">Logo</span>
-            </div>
+              src={logo.src}
+              alt={logo.alt}
+              className="flex-shrink-0 opacity-50 grayscale"
+              style={{ height: logo.height }}
+              loading="lazy"
+            />
           ))}
         </div>
       </div>
