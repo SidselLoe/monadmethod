@@ -1,4 +1,5 @@
 import EnergyActivationGraphic from "./EnergyActivationGraphic";
+import CoachingCallGraphic from "./CoachingCallGraphic";
 
 const ProblemProgram = () => {
   return (
