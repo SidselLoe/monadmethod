@@ -1,4 +1,5 @@
 import EnergyActivationGraphic from "./EnergyActivationGraphic";
+import CoachingCallGraphic from "./CoachingCallGraphic";
 
 const ProblemProgram = () => {
   return (
@@ -43,7 +44,9 @@ const ProblemProgram = () => {
                 Insights without aligned action are useless. Weekly private coaching turns what you uncover into real decisions, delegation, and follow-through. Not just another good idea.
               </p>
             </div>
-            <div className="w-16 h-16 rounded-lg bg-secondary border border-border flex-shrink-0" />
+            <div className="flex-shrink-0 py-2">
+              <CoachingCallGraphic />
+            </div>
           </div>
 
           {/* Bottom right card */}
