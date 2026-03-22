@@ -25,7 +25,7 @@ const CoachingCallGraphic = () => (
     </div>
 
     {/* Main video area */}
-    <div className="relative bg-[#1C1C1C] overflow-hidden" style={{ aspectRatio: "9/14" }}>
+    <div className="relative bg-[#1C1C1C] overflow-hidden flex-1">
       {/* Sparkle icon */}
       <div className="absolute top-2.5 left-3 w-7 h-7 rounded-full bg-white/10 flex items-center justify-center">
         <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" strokeWidth="1.5" className="w-3.5 h-3.5">
