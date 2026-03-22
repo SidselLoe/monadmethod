@@ -12,7 +12,7 @@ const HeySidsel = () => {
         {/* Full-width photo */}
         <div className="mt-10 w-full aspect-[16/10] rounded-xl overflow-hidden bg-secondary">
           <img
-            src="https://lh3.googleusercontent.com/d/1pxvP4w_wphdEFcmmWN0DJrQKQTtHe9yO"
+            src={sidselPhoto}
             alt="Sidsel Løschenkohl"
             className="w-full h-full object-cover"
             loading="lazy"
