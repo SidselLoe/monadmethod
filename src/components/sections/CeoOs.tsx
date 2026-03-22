@@ -3,52 +3,48 @@ import { Link } from "react-router-dom";
 const cards = [
   {
     heading: "10× Energy Activations",
-    body: "Shift your state. Restore coherence. Expand the capacity that pressure has been compressing.",
-    iconBg: "bg-gradient-to-br from-[hsl(0,100%,97%)] to-[hsl(0,100%,93%)]",
+    body: "A guided, music-driven process that gives you access to the state where your clearest decisions live. No technique. No performance. You show up, lie down, and let your system reset. The effect compounds over time. Most founders feel the shift after the first session.",
     icon: (
       <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M18 28C18 28 18 20 18 18" stroke="hsl(0, 100%, 59.6%)" strokeWidth="2" strokeLinecap="round" />
-        <path d="M18 18C18 18 12 14 10 10" stroke="hsl(0, 100%, 59.6%)" strokeWidth="2" strokeLinecap="round" opacity="0.6" />
-        <path d="M18 18C18 18 24 14 26 10" stroke="hsl(0, 100%, 59.6%)" strokeWidth="2" strokeLinecap="round" opacity="0.6" />
-        <path d="M14 6C16 10 18 14 18 18" stroke="hsl(0, 100%, 59.6%)" strokeWidth="2" strokeLinecap="round" opacity="0.3" />
-        <path d="M22 6C20 10 18 14 18 18" stroke="hsl(0, 100%, 59.6%)" strokeWidth="2" strokeLinecap="round" opacity="0.3" />
-        <circle cx="18" cy="18" r="3" stroke="hsl(0, 100%, 59.6%)" strokeWidth="2" fill="none" />
-        <path d="M18 10a8 8 0 0 1 8 8" stroke="hsl(0, 100%, 59.6%)" strokeWidth="2" strokeLinecap="round" fill="none" opacity="0.5" />
-        <path d="M18 10a8 8 0 0 0-8 8" stroke="hsl(0, 100%, 59.6%)" strokeWidth="2" strokeLinecap="round" fill="none" opacity="0.5" />
+        <circle cx="18" cy="18" r="3.5" fill="#161616" />
+        <ellipse cx="18" cy="18" rx="14" ry="6" stroke="#161616" strokeWidth="1.5" transform="rotate(0 18 18)" />
+        <ellipse cx="18" cy="18" rx="14" ry="6" stroke="#161616" strokeWidth="1.5" transform="rotate(60 18 18)" />
+        <ellipse cx="18" cy="18" rx="14" ry="6" stroke="#161616" strokeWidth="1.5" transform="rotate(120 18 18)" />
       </svg>
     ),
   },
   {
-    heading: "4× Workbooks & Reflection",
-    body: "Surface the beliefs running your decisions. Turn vague pressure into clear truth.",
-    iconBg: "bg-gradient-to-br from-[hsl(222,60%,97%)] to-[hsl(222,60%,92%)]",
+    heading: "4× Guided Voice-Note Reflection",
+    body: "Your leadership is being shaped by beliefs you have never examined. This is not journaling. It is a structured form of self-inquiry designed to surface what is actually driving your decisions. Your coach reads every reflection before your next session. What was invisible becomes specific.",
     icon: (
       <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M18 8v20" stroke="#4A6FA5" strokeWidth="2" strokeLinecap="round" />
-        <path d="M18 8c-2 0-8 1-10 2v18c2-1 8-2 10-2" stroke="#4A6FA5" strokeWidth="2" fill="none" strokeLinejoin="round" />
-        <path d="M18 8c2 0 8 1 10 2v18c-2-1-8-2-10-2" stroke="#4A6FA5" strokeWidth="2" fill="none" strokeLinejoin="round" />
+        <line x1="6" y1="22" x2="6" y2="14" stroke="#161616" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="12" y1="26" x2="12" y2="10" stroke="#161616" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="18" y1="24" x2="18" y2="12" stroke="#161616" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="24" y1="28" x2="24" y2="8" stroke="#161616" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="30" y1="22" x2="30" y2="14" stroke="#161616" strokeWidth="1.5" strokeLinecap="round" />
       </svg>
     ),
   },
   {
-    heading: "4× Private Coaching (44 min)",
-    body: "High-trust 1:1 sessions that turn insight into clean priorities, boundaries, and follow-through.",
-    iconBg: "bg-gradient-to-br from-[hsl(140,40%,97%)] to-[hsl(140,40%,92%)]",
+    heading: "4× Private 1:1 Sessions (44 min)",
+    body: "Your sessions are not starting from scratch each week. They are built on everything your reflections have already surfaced. That is why the progress compounds. Priorities, delegation, boundaries, communication. Your real situation, sharpened. Every session accelerates what is already in motion.",
     icon: (
       <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="6" y="8" width="16" height="12" rx="4" stroke="#3A8F5C" strokeWidth="2" fill="none" />
-        <rect x="14" y="16" width="16" height="12" rx="4" stroke="#3A8F5C" strokeWidth="2" fill="none" />
+        <circle cx="14" cy="18" r="10" stroke="#161616" strokeWidth="1.5" />
+        <circle cx="22" cy="18" r="10" stroke="#161616" strokeWidth="1.5" />
       </svg>
     ),
   },
   {
-    heading: "30 Days Accountability",
-    body: "Private WhatsApp support so nothing drifts between sessions. Check-ins, quick questions, real momentum.",
-    iconBg: "bg-gradient-to-br from-[hsl(35,80%,97%)] to-[hsl(35,80%,92%)]",
+    heading: "30 Days Private Support",
+    body: "The shift does not pause between sessions. Private voice-note support for when something comes up on a Wednesday morning and you need clarity now. Check-ins, real follow-through, and the kind of support that keeps momentum from drifting.",
     icon: (
       <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="18" cy="18" r="10" stroke="#C47A20" strokeWidth="2" fill="none" />
-        <path d="M13 18l3.5 3.5L23 14" stroke="#C47A20" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+        <path d="M6 17C6 10.373 11.373 5 18 5s12 5.373 12 12c0 6.627-5.373 12-12 12-1.5 0-2.95-.275-4.286-.778L7 31l2.2-5.5A11.94 11.94 0 0 1 6 17Z" stroke="#161616" strokeWidth="1.5" strokeLinejoin="round" fill="none" />
+        <line x1="14" y1="16" x2="14" y2="20" stroke="#161616" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="18" y1="14" x2="18" y2="22" stroke="#161616" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="22" y1="16" x2="22" y2="20" stroke="#161616" strokeWidth="1.5" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -62,7 +58,7 @@ const CeoOs = () => {
           CEO OS
         </h2>
         <p className="mt-5 text-lg text-muted-foreground max-w-[640px] mx-auto leading-[1.6]">
-          30 days. Three modalities. One recalibration. Everything you need to shift how you operate as a founder.
+          The Monad Method is built on three modalities that work together. The CEO OS is how you install it. In 30 days, with a few hours a week, founders consistently reach what would have taken years of coaching, therapy, or retreats to arrive at. If they ever did.
         </p>
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -71,6 +67,10 @@ const CeoOs = () => {
               key={c.heading}
               className="bg-secondary border border-border rounded-xl p-7 sm:p-8 flex flex-col sm:flex-row items-start gap-5 text-left"
             >
+              {/* Icon on top for mobile */}
+              <div className="flex-shrink-0 sm:hidden">
+                {c.icon}
+              </div>
               <div className="flex-1">
                 <h3 className="text-lg sm:text-xl font-medium text-foreground">
                   {c.heading}
@@ -79,9 +79,8 @@ const CeoOs = () => {
                   {c.body}
                 </p>
               </div>
-              <div
-                className={`flex-shrink-0 w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] rounded-[20px] ${c.iconBg} flex items-center justify-center`}
-              >
+              {/* Icon on right for desktop */}
+              <div className="flex-shrink-0 hidden sm:block">
                 {c.icon}
               </div>
             </div>
@@ -92,7 +91,7 @@ const CeoOs = () => {
           to="/apply"
           className="inline-flex mt-12 bg-accent text-accent-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded hover:bg-accent/90 transition-colors"
         >
-          Apply Now
+          Install the Upgrade
         </Link>
       </div>
     </section>
