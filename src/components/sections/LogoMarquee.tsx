@@ -7,33 +7,33 @@ import infosys from "@/assets/logo-infosys.png";
 import pwrHouse from "@/assets/logo-pwr-house.png";
 
 const logos = [
-  { src: coastlineCreatives, alt: "Coastline Creatives", height: 48 },
-  { src: coinvise, alt: "Coinvise", height: 32 },
-  { src: cultureDrivers, alt: "CultureDrivers", height: 28 },
-  { src: earnkit, alt: "Earnkit", height: 40 },
-  { src: helixMarkets, alt: "Helix Markets", height: 40 },
-  { src: infosys, alt: "Infosys", height: 32 },
-  { src: pwrHouse, alt: "PWR House", height: 36 },
+  { src: coastlineCreatives, alt: "Coastline Creatives" },
+  { src: coinvise, alt: "Coinvise" },
+  { src: cultureDrivers, alt: "CultureDrivers" },
+  { src: earnkit, alt: "Earnkit" },
+  { src: helixMarkets, alt: "Helix Markets" },
+  { src: infosys, alt: "Infosys" },
+  { src: pwrHouse, alt: "PWR House" },
 ];
 
 const LogoMarquee = () => {
   return (
     <section className="bg-secondary py-[100px] sm:py-[120px] px-6">
       <div className="max-w-[1200px] mx-auto">
-        <h2 className="text-4xl sm:text-5xl md:text-[64px] font-medium text-foreground text-center leading-[1.1] mb-16">
+        <h2 className="text-4xl sm:text-5xl md:text-[64px] font-medium text-foreground text-center leading-[1.1] mb-10">
           Join founder-CEOs who operate differently.
         </h2>
       </div>
 
       <div className="overflow-hidden">
-        <div className="flex items-center gap-16 sm:gap-20 animate-marquee">
+        <div className="flex items-center gap-16 animate-marquee">
           {[...logos, ...logos].map((logo, i) => (
             <img
               key={i}
               src={logo.src}
               alt={logo.alt}
-              className="flex-shrink-0 opacity-50 grayscale"
-              style={{ height: logo.height }}
+              className="flex-shrink-0 opacity-50"
+              style={{ height: 36 }}
               loading="lazy"
             />
           ))}
