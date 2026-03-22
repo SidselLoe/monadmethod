@@ -27,7 +27,7 @@ const DeltaSection = () => {
               </p>
               <Link
                 to="/monad-method"
-                className="inline-flex mt-6 border border-foreground text-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded hover:bg-foreground hover:text-background transition-colors"
+                className="inline-flex mt-6 bg-accent text-accent-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded hover:bg-accent/90 transition-colors"
               >
                 Learn More
               </Link>
