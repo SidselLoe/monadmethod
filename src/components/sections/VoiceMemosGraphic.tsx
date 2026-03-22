@@ -38,7 +38,7 @@ const VoiceMemosGraphic = () => (
     </div>
 
     {/* Waveform area */}
-    <div className="relative bg-[#F8F8FA] h-[120px] overflow-hidden">
+    <div className="relative bg-[#F8F8FA] h-[200px] overflow-hidden">
       <div className="absolute inset-x-0 top-0 bottom-[30px] flex items-center justify-center">
         <div className="flex items-center gap-[1.5px] h-full px-4 py-5">
           {bars.map((h, i) => (
