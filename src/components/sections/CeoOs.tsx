@@ -6,10 +6,7 @@ const cards = [
     body: "A guided, music-driven process that gives you access to the state where your clearest decisions live. No technique. No performance. You show up, lie down, and let your system reset. The effect compounds over time. Most founders feel the shift after the first session.",
     icon: (
       <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="18" cy="18" r="3.5" fill="#161616" />
-        <ellipse cx="18" cy="18" rx="14" ry="6" stroke="#161616" strokeWidth="1.5" transform="rotate(0 18 18)" />
-        <ellipse cx="18" cy="18" rx="14" ry="6" stroke="#161616" strokeWidth="1.5" transform="rotate(60 18 18)" />
-        <ellipse cx="18" cy="18" rx="14" ry="6" stroke="#161616" strokeWidth="1.5" transform="rotate(120 18 18)" />
+        <circle cx="18" cy="18" r="16" stroke="#161616" strokeWidth="1.5" fill="none" />
       </svg>
     ),
   },
@@ -31,8 +28,8 @@ const cards = [
     body: "Your sessions are not starting from scratch each week. They are built on everything your reflections have already surfaced. That is why the progress compounds. Priorities, delegation, boundaries, communication. Your real situation, sharpened. Every session accelerates what is already in motion.",
     icon: (
       <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="14" cy="18" r="10" stroke="#161616" strokeWidth="1.5" />
-        <circle cx="22" cy="18" r="10" stroke="#161616" strokeWidth="1.5" />
+        <circle cx="14" cy="18" r="10" stroke="#161616" strokeWidth="1.5" fill="none" />
+        <circle cx="22" cy="18" r="10" stroke="#161616" strokeWidth="1.5" fill="none" />
       </svg>
     ),
   },
@@ -41,10 +38,7 @@ const cards = [
     body: "The shift does not pause between sessions. Private voice-note support for when something comes up on a Wednesday morning and you need clarity now. Check-ins, real follow-through, and the kind of support that keeps momentum from drifting.",
     icon: (
       <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M6 17C6 10.373 11.373 5 18 5s12 5.373 12 12c0 6.627-5.373 12-12 12-1.5 0-2.95-.275-4.286-.778L7 31l2.2-5.5A11.94 11.94 0 0 1 6 17Z" stroke="#161616" strokeWidth="1.5" strokeLinejoin="round" fill="none" />
-        <line x1="14" y1="16" x2="14" y2="20" stroke="#161616" strokeWidth="1.5" strokeLinecap="round" />
-        <line x1="18" y1="14" x2="18" y2="22" stroke="#161616" strokeWidth="1.5" strokeLinecap="round" />
-        <line x1="22" y1="16" x2="22" y2="20" stroke="#161616" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M4 16C4 9.373 9.373 4 16 4h4c6.627 0 12 5.373 12 12v0c0 6.627-5.373 12-12 12h-4c-1.5 0-2.95-.275-4.286-.778L4 30l2.5-5.5A11.94 11.94 0 0 1 4 16Z" stroke="#161616" strokeWidth="1.5" strokeLinejoin="round" fill="none" />
       </svg>
     ),
   },
@@ -57,7 +51,7 @@ const CeoOs = () => {
         <h2 className="text-3xl sm:text-4xl md:text-[48px] font-medium text-foreground leading-[1.15]">
           CEO OS
         </h2>
-        <p className="mt-5 text-lg text-muted-foreground max-w-[640px] mx-auto leading-[1.6]">
+        <p className="mt-5 text-lg text-[#999999] max-w-[640px] mx-auto leading-[1.6]">
           The Monad Method is built on three modalities that work together. The CEO OS is how you install it. In 30 days, with a few hours a week, founders consistently reach what would have taken years of coaching, therapy, or retreats to arrive at. If they ever did.
         </p>
 
@@ -67,7 +61,6 @@ const CeoOs = () => {
               key={c.heading}
               className="bg-secondary border border-border rounded-xl p-7 sm:p-8 flex flex-col sm:flex-row items-start gap-5 text-left"
             >
-              {/* Icon on top for mobile */}
               <div className="flex-shrink-0 sm:hidden">
                 {c.icon}
               </div>
@@ -79,7 +72,6 @@ const CeoOs = () => {
                   {c.body}
                 </p>
               </div>
-              {/* Icon on right for desktop */}
               <div className="flex-shrink-0 hidden sm:block">
                 {c.icon}
               </div>
