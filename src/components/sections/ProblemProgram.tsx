@@ -21,8 +21,10 @@ const ProblemProgram = () => {
           {/* Big card - left, spans full height */}
           <div className="md:row-span-2 bg-card border border-border rounded-xl overflow-hidden flex flex-col">
             {/* Graphic area */}
-            <div className="p-0">
-              <EnergyActivationGraphic />
+            <div className="flex-1 min-h-[200px] flex items-center justify-center p-6 sm:p-8 bg-secondary">
+              <div className="w-[88%]">
+                <EnergyActivationGraphic />
+              </div>
             </div>
             {/* Text area */}
             <div className="p-7 sm:p-8">
