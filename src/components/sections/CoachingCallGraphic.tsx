@@ -1,6 +1,6 @@
 const CoachingCallGraphic = () => (
-  <div className="w-[180px] mx-auto rounded-[28px] overflow-hidden border-[3px] border-[#2A2A2A] bg-[#1C1C1C]"
-    style={{ boxShadow: "0 2px 8px rgba(0,0,0,0.1), 0 16px 48px rgba(0,0,0,0.15), inset 0 0 0 2px rgba(255,255,255,0.06)" }}>
+  <div className="w-[240px] mx-auto rounded-[28px] overflow-hidden border-[3px] border-[#2A2A2A] bg-[#1C1C1C] flex flex-col"
+    style={{ height: 500, boxShadow: "0 2px 8px rgba(0,0,0,0.1), 0 16px 48px rgba(0,0,0,0.15), inset 0 0 0 2px rgba(255,255,255,0.06)" }}>
     {/* Status bar */}
     <div className="flex items-center justify-between px-4 pt-2 pb-1 bg-[#1C1C1C] relative">
       <span className="text-[11px] font-semibold text-white/90 tracking-wide">9:41</span>
@@ -25,7 +25,7 @@ const CoachingCallGraphic = () => (
     </div>
 
     {/* Main video area */}
-    <div className="relative bg-[#1C1C1C] overflow-hidden" style={{ aspectRatio: "9/14" }}>
+    <div className="relative bg-[#1C1C1C] overflow-hidden flex-1">
       {/* Sparkle icon */}
       <div className="absolute top-2.5 left-3 w-7 h-7 rounded-full bg-white/10 flex items-center justify-center">
         <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" strokeWidth="1.5" className="w-3.5 h-3.5">

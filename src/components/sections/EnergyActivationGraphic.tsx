@@ -8,7 +8,7 @@ const tiles = [
 ];
 
 const EnergyActivationGraphic = () => (
-  <div className="w-full rounded-xl overflow-hidden border border-[#E8E8E8]" style={{ boxShadow: "0 2px 8px rgba(0,0,0,0.06), 0 12px 40px rgba(0,0,0,0.08)" }}>
+  <div className="w-full rounded-xl overflow-hidden border border-[#E8E8E8] flex flex-col" style={{ height: 500, boxShadow: "0 2px 8px rgba(0,0,0,0.06), 0 12px 40px rgba(0,0,0,0.08)" }}>
     {/* Browser bar */}
     <div className="flex items-center gap-3 bg-[#F6F6F6] px-4 py-3 border-b border-[#E8E8E8]">
       <div className="flex gap-1.5 shrink-0">
@@ -22,9 +22,9 @@ const EnergyActivationGraphic = () => (
     </div>
 
     {/* Video grid */}
-    <div className="grid grid-cols-3 grid-rows-2 gap-[3px] bg-[#161616] p-[3px]">
+    <div className="grid grid-cols-3 grid-rows-2 gap-[3px] bg-[#161616] p-[3px] flex-1">
       {tiles.map((t, i) => (
-        <div key={i} className="relative overflow-hidden rounded-[4px]" style={{ aspectRatio: "16/10", background: t.grad }}>
+        <div key={i} className="relative overflow-hidden rounded-[4px]" style={{ minHeight: 0, background: t.grad }}>
           {/* Ambient glow */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1/2 h-1/2 rounded-full opacity-15" style={{ background: t.glow, filter: "blur(30px)" }} />
           {/* Silhouette */}

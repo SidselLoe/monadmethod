@@ -9,8 +9,8 @@ const bars = generateBars();
 const playheadIndex = Math.floor(90 * 0.42);
 
 const VoiceMemosGraphic = () => (
-  <div className="w-[180px] mx-auto rounded-[28px] overflow-hidden border-[3px] border-[#D1D1D6] bg-[#F2F2F7]"
-    style={{ boxShadow: "0 2px 8px rgba(0,0,0,0.1), 0 16px 48px rgba(0,0,0,0.15), inset 0 0 0 2px rgba(255,255,255,0.5)" }}>
+  <div className="w-[240px] mx-auto rounded-[28px] overflow-hidden border-[3px] border-[#D1D1D6] bg-[#F2F2F7] flex flex-col"
+    style={{ height: 500, boxShadow: "0 2px 8px rgba(0,0,0,0.1), 0 16px 48px rgba(0,0,0,0.15), inset 0 0 0 2px rgba(255,255,255,0.5)" }}>
     {/* Status bar */}
     <div className="flex items-center justify-between px-4 pt-2 pb-1 bg-[#F2F2F7] relative">
       <span className="text-[11px] font-semibold text-[#1C1C1E] tracking-wide">9:41</span>
@@ -38,7 +38,7 @@ const VoiceMemosGraphic = () => (
     </div>
 
     {/* Waveform area */}
-    <div className="relative bg-[#F8F8FA] h-[200px] overflow-hidden">
+    <div className="relative bg-[#F8F8FA] flex-1 overflow-hidden">
       <div className="absolute inset-x-0 top-0 bottom-[30px] flex items-center justify-center">
         <div className="flex items-center gap-[1.5px] h-full px-4 py-5">
           {bars.map((h, i) => (
