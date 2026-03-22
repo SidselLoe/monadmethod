@@ -24,15 +24,15 @@ const HeySidsel = () => {
         </p>
 
         {/* Personal context */}
-        <p className="mt-4 text-base text-muted-foreground leading-relaxed max-w-[680px] mx-auto">
+        <p className="mt-4 text-base text-foreground leading-relaxed max-w-[680px] mx-auto">
           Monad Method™ is the method I developed after a health collapse in 2023 forced me to rebuild everything. It rests on one belief: your next level requires an identity shift. You are not your business. You are the creator of it.
         </p>
 
         <Link
           to="/about"
-          className="inline-flex mt-8 border border-border text-foreground text-sm font-semibold uppercase tracking-[0.5px] px-8 py-3.5 rounded hover:bg-secondary transition-colors"
+          className="inline-flex mt-8 bg-accent text-accent-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded hover:bg-accent/90 transition-colors"
         >
-          Read my story
+          About Me
         </Link>
       </div>
     </section>
