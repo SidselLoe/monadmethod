@@ -58,7 +58,9 @@ const ProblemProgram = () => {
                 Voice reflection regulates your thinking, organises what is underneath, and surfaces what most people take years to see. Your coach receives every reflection before your sessions. Together you go deeper, faster.
               </p>
             </div>
-            <div className="w-16 h-16 rounded-lg bg-secondary border border-border flex-shrink-0" />
+            <div className="flex-shrink-0 py-2">
+              <VoiceMemosGraphic />
+            </div>
           </div>
         </div>
       </div>
