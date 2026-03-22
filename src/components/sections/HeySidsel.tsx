@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import sidselPhoto from "@/assets/sidsel-photo.jpg";
 
 const HeySidsel = () => {
   return (
