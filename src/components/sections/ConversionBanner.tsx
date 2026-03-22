@@ -20,10 +20,10 @@ const ConversionBanner = () => {
           {/* Text */}
           <div className="flex-1 text-center md:text-left">
             <h3 className="text-xl sm:text-2xl font-medium text-accent-foreground">
-              150+ founders have experienced the activation work behind this method.
+              150+ founders have already done this work.
             </h3>
             <p className="mt-3 text-base text-white/85 leading-[1.5]">
-              When the internal cost of growth is too high, more effort does not fix it. Your state must stabilise first. The CEO OS is how founder-CEOs access the shift.
+              The way you have been operating has a ceiling. More strategy will not raise it. The CEO OS is how founder-CEOs shift what is underneath.
             </p>
           </div>
 
