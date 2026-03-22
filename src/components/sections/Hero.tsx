@@ -18,7 +18,7 @@ const Hero = () => {
           <span className="text-muted-foreground">Without it costing you everything.</span>
         </h1>
 
-        <p className="mt-6 text-lg text-muted-foreground max-w-[640px] mx-auto leading-relaxed">
+        <p className="mt-6 text-base sm:text-lg text-foreground font-normal max-w-[640px] mx-auto leading-[1.6]">
           Partner-level coaching for founder-CEOs who need more capacity, stronger leadership, and a way of operating that can match the scale of their ambition.
         </p>
 
@@ -30,7 +30,7 @@ const Hero = () => {
         </Link>
 
         {/* Avatar stack + social proof */}
-        <div className="mt-8 flex items-center justify-center gap-3">
+        <div className="mt-8 flex flex-col items-center gap-2">
           <div className="flex">
             {avatarUrls.map((url, i) => (
               <img
