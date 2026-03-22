@@ -13,9 +13,7 @@ const Hero = () => {
     <section className="bg-background py-28 sm:py-36 md:py-44 px-6">
       <div className="max-w-3xl mx-auto text-center">
         <h1 className="text-4xl sm:text-5xl md:text-[60px] font-medium text-foreground leading-[1.1] tracking-[-0.3px]">
-          Lead the company you are building.
-          <br />
-          <span className="text-muted-foreground">Without it costing you everything.</span>
+          Lead your company without it running you.
         </h1>
 
         <p className="mt-6 text-base sm:text-lg text-foreground font-normal max-w-[640px] mx-auto leading-[1.6]">
