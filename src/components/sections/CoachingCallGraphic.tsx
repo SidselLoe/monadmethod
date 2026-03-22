@@ -1,5 +1,5 @@
 const CoachingCallGraphic = () => (
-  <div className="w-[180px] mx-auto rounded-[28px] overflow-hidden border-[3px] border-[#2A2A2A] bg-[#1C1C1C] origin-center scale-50"
+  <div className="w-[100px] mx-auto rounded-[16px] overflow-hidden border-[2px] border-[#2A2A2A] bg-[#1C1C1C]"
     style={{ boxShadow: "0 2px 8px rgba(0,0,0,0.1), 0 16px 48px rgba(0,0,0,0.15), inset 0 0 0 2px rgba(255,255,255,0.06)" }}>
     {/* Status bar */}
     <div className="flex items-center justify-between px-4 pt-2 pb-1 bg-[#1C1C1C] relative">

@@ -9,7 +9,7 @@ const bars = generateBars();
 const playheadIndex = Math.floor(90 * 0.42);
 
 const VoiceMemosGraphic = () => (
-  <div className="w-[180px] mx-auto rounded-[28px] overflow-hidden border-[3px] border-[#D1D1D6] bg-[#F2F2F7] origin-center scale-50"
+  <div className="w-[100px] mx-auto rounded-[16px] overflow-hidden border-[2px] border-[#D1D1D6] bg-[#F2F2F7]"
     style={{ boxShadow: "0 2px 8px rgba(0,0,0,0.1), 0 16px 48px rgba(0,0,0,0.15), inset 0 0 0 2px rgba(255,255,255,0.5)" }}>
     {/* Status bar */}
     <div className="flex items-center justify-between px-4 pt-2 pb-1 bg-[#F2F2F7] relative">
