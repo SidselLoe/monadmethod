@@ -19,9 +19,9 @@ const Index = () => {
       <div className="h-16" />
       <Hero />
       <ProblemProgram />
+      <WhyThisWorks />
       <HeySidsel />
       <Testimonials />
-      <WhyThisWorks />
       <ConversionBanner />
       <CeoOs />
       <DeltaSection />
