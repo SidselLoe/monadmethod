@@ -41,7 +41,7 @@ const Hero = () => {
               />
             ))}
           </div>
-          <span className="text-sm text-muted-foreground">Trusted by 50+ founders.</span>
+          <span className="text-sm text-muted-foreground">150+ founders have experienced the work.</span>
         </div>
       </div>
     </section>
