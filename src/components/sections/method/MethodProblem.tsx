@@ -1,25 +1,25 @@
 const MethodProblem = () => {
   return (
     <section className="bg-secondary py-24 sm:py-28 px-6">
-      <div className="max-w-[640px] mx-auto text-center">
-        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-medium text-foreground leading-[1.15]">
-          Growth is not only a strategy problem.
+      <div className="max-w-[660px] mx-auto text-center">
+        <h2 className="text-3xl sm:text-4xl md:text-[36px] font-semibold text-foreground leading-[1.18]">
+          Beneath every ceiling is a belief.
         </h2>
 
-        <div className="mt-8 space-y-5 text-base text-foreground leading-[1.7]">
+        <div className="mt-7 space-y-5 text-base text-foreground/70 leading-[1.82]">
           <p>
-            Your business is working. Revenue is moving. But you have become the bottleneck. Carrying too much. Deciding everything. Unable to switch off. Still fused with the company at the level of identity.
+            Growth slows not because the strategy is wrong, but because the founder is operating from patterns they have never examined. Limiting beliefs. Shadows. A version of themselves that was formed long before the company.
           </p>
           <p>
-            The problem is not the plan. It is the way you are operating inside it.
+            The work is to see these things clearly. To understand what is actually true versus what has simply been running unchallenged. To work with the shadows rather than around them.
           </p>
           <p>
-            Over-responsibility. Self-worth tied to outcomes. Difficulty delegating. Invisible pressure beneath every decision. These are not personality flaws. They are patterns. And patterns can change.
+            And to integrate that clarity into aligned action.
           </p>
         </div>
 
-        <p className="mt-10 text-xl sm:text-2xl font-medium text-foreground">
-          That is what the Monad Method works on.
+        <p className="mt-11 text-xl font-semibold text-foreground leading-[1.4]">
+          The method moves fast because it works at depth.
         </p>
       </div>
     </section>
