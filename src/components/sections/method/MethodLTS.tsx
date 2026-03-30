@@ -10,64 +10,66 @@ const inclusions = [
 
 const MethodLTS = () => {
   return (
-    <section className="bg-secondary py-24 sm:py-28 px-6">
-      <div className="max-w-[800px] mx-auto">
-        {/* Eyebrow */}
-        <span className="block text-[11px] sm:text-xs font-semibold uppercase tracking-[3px] text-muted-foreground text-center">
-          For founders who want a different kind of partnership
-        </span>
+    <section className="bg-muted py-24 sm:py-28 px-6">
+      <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-[1.1fr_0.9fr] gap-12 md:gap-[72px] items-start">
+        {/* Left column */}
+        <div>
+          <h2 className="text-3xl sm:text-4xl md:text-[36px] font-semibold text-foreground leading-[1.18]">
+            Monad LTS
+          </h2>
 
-        <h2 className="mt-5 text-3xl sm:text-4xl md:text-[48px] font-medium text-foreground text-center leading-[1.15]">
-          Monad LTS
-        </h2>
-
-        <p className="mt-4 text-lg sm:text-xl font-medium text-foreground text-center">
-          Long-Term Support. Invitation only. No fixed end date.
-        </p>
-
-        <p className="mt-6 text-base text-foreground leading-[1.6] text-center max-w-[640px] mx-auto">
-          Monad OS is a 30-day container. Monad LTS is what comes after — for the founders who know they are not done. A high-trust, embedded partnership as the company evolves, the stakes rise, and the identity work deepens. Not a programme. A relationship.
-        </p>
-
-        {/* Inclusions */}
-        <ul className="mt-8 space-y-3 max-w-[440px] mx-auto">
-          {inclusions.map((item) => (
-            <li key={item} className="flex items-start gap-3 text-base text-foreground">
-              <span className="text-accent mt-0.5">—</span>
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-
-        {/* Who it is for */}
-        <p className="mt-8 text-sm text-muted-foreground text-center italic max-w-[540px] mx-auto leading-[1.6]">
-          For founders generating $500k+ who have outgrown willpower as a growth strategy and are ready to treat leadership as a design problem.
-        </p>
-
-        {/* Pull quote */}
-        <blockquote className="mt-12 border-l-4 border-accent pl-6 sm:pl-8 max-w-[600px] mx-auto">
-          <p className="text-xl sm:text-2xl font-editorial italic text-foreground leading-[1.4]">
-            "It is very rare to see someone who truly cares about the company and actually gives a shit. I feel grateful I get to work with you on this. It makes me feel excited to do this every day."
+          <p className="mt-4 text-xl font-light italic text-foreground/80 leading-[1.5]">
+            Long-Term Support. Invitation only. No fixed end date.
           </p>
-          <footer className="mt-4">
-            <span className="text-sm font-medium text-foreground">Regan Bradfield</span>
-            <span className="text-sm text-muted-foreground">, CEO, Coastline Creatives</span>
-            <br />
-            <span className="text-xs text-muted-foreground uppercase tracking-[1px]">Monad LTS client</span>
-          </footer>
-        </blockquote>
 
-        {/* CTA */}
-        <div className="mt-12 text-center">
-          <Link
-            to="/apply"
-            className="inline-flex bg-accent text-accent-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded hover:bg-accent/90 transition-colors"
-          >
-            Request a Conversation
-          </Link>
-          <p className="mt-3 text-xs text-muted-foreground">
-            Monad LTS is invitation only. It follows completion of Monad OS.
+          <p className="mt-6 text-base text-foreground/70 leading-[1.82]">
+            Monad OS is a 30-day container. Monad LTS is what comes after, for the founders who know they are not done. A high-trust, embedded partnership as the company evolves, the stakes rise, and the identity work deepens. Not a programme. A relationship.
           </p>
+
+          <p className="mt-4 text-sm italic text-foreground/60 leading-[1.72]">
+            For founders scaling from seven to eight figures, or eight to nine, who are ready to treat leadership as a design problem.
+          </p>
+
+          <ul className="mt-7 space-y-0">
+            {inclusions.map((item) => (
+              <li
+                key={item}
+                className="text-sm text-foreground/70 py-2 border-b border-border leading-[1.5]"
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-7">
+            <Link
+              to="/apply"
+              className="inline-flex bg-accent text-accent-foreground text-xs font-bold uppercase tracking-wider px-8 py-3.5 rounded hover:bg-accent/90 transition-colors"
+            >
+              Request a Conversation
+            </Link>
+            <p className="mt-2.5 text-[11px] italic text-muted-foreground">
+              Monad LTS is invitation only. It follows completion of Monad OS.
+            </p>
+          </div>
+        </div>
+
+        {/* Right column — Quote card */}
+        <div className="bg-background border border-border rounded-lg p-8 sm:p-9">
+          <div className="w-[72px] h-[72px] rounded-full bg-muted overflow-hidden mb-5">
+            <img
+              src="https://randomuser.me/api/portraits/women/44.jpg"
+              alt="Regan Bradfield"
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <span className="block text-[60px] text-border font-serif leading-[0.7] mb-3.5">"</span>
+          <p className="text-[15px] italic text-foreground/80 leading-[1.78] mb-5">
+            It is very rare to see someone who truly cares about the company and actually gives a shit. I feel grateful to be working with Sidsel on this. It makes me feel excited to do this every day.
+          </p>
+          <span className="block text-xs font-semibold text-muted-foreground">Regan Bradfield</span>
+          <span className="block text-xs text-muted-foreground/70 mt-0.5">CEO, Coastline Creatives · Monad LTS</span>
         </div>
       </div>
     </section>
