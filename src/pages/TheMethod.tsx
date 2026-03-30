@@ -2,6 +2,8 @@ import Navigation from "@/components/Navigation";
 import MethodHero from "@/components/sections/method/MethodHero";
 import MethodProblem from "@/components/sections/method/MethodProblem";
 import MethodModalities from "@/components/sections/method/MethodModalities";
+import MethodOrigin from "@/components/sections/method/MethodOrigin";
+import MethodMerkaba from "@/components/sections/method/MethodMerkaba";
 import MethodLTS from "@/components/sections/method/MethodLTS";
 import MethodTestimonials from "@/components/sections/method/MethodTestimonials";
 import MethodClosingCTA from "@/components/sections/method/MethodClosingCTA";
@@ -15,6 +17,8 @@ const TheMethod = () => {
       <MethodHero />
       <MethodProblem />
       <MethodModalities />
+      <MethodOrigin />
+      <MethodMerkaba />
       <MethodLTS />
       <MethodTestimonials />
       <MethodClosingCTA />
