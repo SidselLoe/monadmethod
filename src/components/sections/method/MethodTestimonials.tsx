@@ -3,6 +3,7 @@ import { Play } from "lucide-react";
 const testimonials = [
   {
     type: "text" as const,
+    initials: "JT",
     quote:
       "Sidsel was pivotal to EarnKit's launch, bringing clarity, precision, and systems we still use today. Her work felt co-founder level and truly invaluable.",
     name: "Jenil Thakker",
@@ -10,6 +11,7 @@ const testimonials = [
   },
   {
     type: "text" as const,
+    initials: "SM",
     quote:
       "This program connected my vision with my actions. I now feel empowered, not overwhelmed.",
     name: "Sarah Montgomery",
@@ -17,6 +19,7 @@ const testimonials = [
   },
   {
     type: "video" as const,
+    initials: "AF",
     quote: "",
     name: "Alexandra Feldman",
     role: "Founder and Creative Director, Of The Islands",
@@ -38,10 +41,23 @@ const MethodTestimonials = () => {
           {testimonials.map((t) => (
             <div
               key={t.name}
-              className="bg-background border border-border rounded-xl p-7 sm:p-8 flex flex-col min-h-[280px]"
+              className="bg-background border border-border rounded-xl p-7 sm:p-8 flex flex-col min-h-[320px]"
             >
+              {/* Avatar */}
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center shrink-0">
+                  <span className="text-sm font-semibold text-muted-foreground">
+                    {t.initials}
+                  </span>
+                </div>
+                <div>
+                  <p className="text-sm font-medium text-foreground">{t.name}</p>
+                  <p className="text-xs text-muted-foreground">{t.role}</p>
+                </div>
+              </div>
+
               {/* Monad LTS tag */}
-              <span className="self-start text-[10px] font-semibold uppercase tracking-[1.5px] text-muted-foreground bg-secondary px-2.5 py-1 rounded">
+              <span className="self-start mt-4 text-[10px] font-semibold uppercase tracking-[1.5px] text-muted-foreground bg-secondary px-2.5 py-1 rounded">
                 Monad LTS
               </span>
 
@@ -51,17 +67,12 @@ const MethodTestimonials = () => {
                 </p>
               ) : (
                 /* Video placeholder */
-                <div className="mt-5 flex-1 bg-secondary rounded-lg flex items-center justify-center">
+                <div className="mt-5 flex-1 bg-secondary rounded-lg flex items-center justify-center aspect-square md:aspect-auto">
                   <div className="w-14 h-14 rounded-full bg-foreground/10 flex items-center justify-center">
                     <Play size={24} className="text-foreground ml-1" />
                   </div>
                 </div>
               )}
-
-              <div className="mt-5 pt-4 border-t border-border">
-                <p className="text-sm font-medium text-foreground">{t.name}</p>
-                <p className="text-xs text-muted-foreground mt-0.5">{t.role}</p>
-              </div>
             </div>
           ))}
         </div>
