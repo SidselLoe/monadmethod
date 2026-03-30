@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { label: "CEO OS", href: "/ceo-os" },
+  { label: "CEO OS", href: "/" },
   { label: "Monad Method", href: "/the-method" },
   { label: "Reflections", href: "/reflections" },
   { label: "About", href: "/about" },
