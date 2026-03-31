@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import sidselPhoto from "@/assets/sidsel-photo.jpg";
+const sidselPhoto = "https://hciqvcspehfitlgclhud.supabase.co/storage/v1/object/public/sidsel/Headshot%201.jpg";
 
 const HeySidsel = () => {
   return (

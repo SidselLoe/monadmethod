@@ -4,10 +4,13 @@ const MethodOrigin = () => {
       <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-[72px] items-center">
         {/* Left — Photo placeholder */}
         <div className="flex flex-col items-center md:items-start">
-          <div className="w-full max-w-[400px] aspect-[3/4] bg-muted rounded-xl flex items-center justify-center">
-            <span className="text-sm text-muted-foreground uppercase tracking-wider">
-              Sidsel headshot
-            </span>
+          <div className="w-full max-w-[400px] aspect-[3/4] rounded-xl overflow-hidden">
+            <img
+              src="https://hciqvcspehfitlgclhud.supabase.co/storage/v1/object/public/sidsel/Headshot%202.jpeg"
+              alt="Sidsel Løschenkohl"
+              className="w-full h-full object-cover object-top"
+              loading="lazy"
+            />
           </div>
         </div>
 
