@@ -18,30 +18,30 @@ const modalities = [
 
 const MethodModalities = () => {
   return (
-    <section className="bg-background py-24 sm:py-28 px-6">
+    <section className="bg-background py-[100px] sm:py-[120px] px-6">
       <div className="max-w-[1200px] mx-auto">
         <div className="text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-[36px] font-semibold text-foreground leading-[1.18]">
+          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-medium text-foreground leading-[1.15]">
             Three modalities. One integrated method.
           </h2>
-          <p className="mt-3 text-sm text-muted-foreground max-w-[580px] mx-auto leading-[1.8]">
+          <p className="mt-3 text-lg text-muted-foreground max-w-[640px] mx-auto leading-[1.6]">
             These three are not interchangeable or optional. They are a triangulation. Designed to be used together. Designed to go deep and move fast.
           </p>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-5">
           {modalities.map((m) => (
             <div
               key={m.step}
-              className="bg-background border border-border rounded-lg p-7 sm:p-8 flex flex-col"
+              className="bg-background border border-border rounded-xl p-7 sm:p-8 flex flex-col"
             >
-              <span className="text-[10px] font-bold tracking-[2px] text-muted-foreground">
+              <span className="text-[13px] font-medium text-accent tracking-[1px]">
                 {m.step}
               </span>
-              <h3 className="mt-3.5 text-[17px] font-semibold text-foreground leading-[1.3]">
+              <h3 className="mt-3 text-lg sm:text-xl font-medium text-foreground leading-[1.3]">
                 {m.title}
               </h3>
-              <p className="mt-3 text-sm text-foreground/70 leading-[1.78]">
+              <p className="mt-2 text-base text-foreground leading-[1.5]">
                 {m.body}
               </p>
             </div>
