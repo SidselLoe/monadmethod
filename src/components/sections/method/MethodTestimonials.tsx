@@ -26,17 +26,17 @@ const testimonials = [
 
 const MethodTestimonials = () => {
   return (
-    <section className="bg-secondary py-24 sm:py-28 px-6">
+    <section className="bg-background py-[100px] sm:py-[120px] px-6">
       <div className="max-w-[1200px] mx-auto">
-        <h2 className="text-3xl sm:text-4xl md:text-[36px] font-semibold text-foreground text-center leading-[1.18] mb-12">
+        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-medium text-foreground text-center leading-[1.15] mb-14">
           What founders say.
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {testimonials.map((t) => (
             <div
               key={t.name}
-              className="bg-background border border-border rounded-xl overflow-hidden"
+              className="bg-card border border-border rounded-xl overflow-hidden"
             >
               {/* Photo or video placeholder */}
               {t.type === "photo" ? (
@@ -58,14 +58,14 @@ const MethodTestimonials = () => {
 
               {/* Info */}
               <div className="p-6 pb-7">
-                <p className="text-[15px] font-bold text-foreground mb-0.5">{t.name}</p>
-                <p className="text-xs text-muted-foreground mb-4 leading-[1.4]">{t.role}</p>
+                <p className="text-base font-medium text-foreground mb-0.5">{t.name}</p>
+                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{t.role}</p>
                 {t.quote ? (
-                  <p className="text-sm italic text-foreground/70 leading-[1.75]">
+                  <p className="text-base italic text-foreground leading-[1.5]">
                     "{t.quote}"
                   </p>
                 ) : (
-                  <p className="text-xs text-muted-foreground">
+                  <p className="text-sm text-muted-foreground">
                     Square video testimonial
                   </p>
                 )}
