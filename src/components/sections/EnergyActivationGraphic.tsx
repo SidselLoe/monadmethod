@@ -36,10 +36,10 @@ const EnergyActivationGraphic = () => (
     </div>
 
     {/* Caption bar */}
-    <div className="flex items-center justify-between bg-[#161616] px-5 py-3.5">
-      <span className="font-sans text-xs text-white/50">6 founders — Energy Activation in progress</span>
+    <div className="flex items-center justify-between bg-foreground px-5 py-3.5">
+      <span className="font-sans text-xs text-primary-foreground/50">6 founders — Energy Activation in progress</span>
       <div className="flex gap-2">
-        <div className="w-7 h-7 rounded-full bg-white/[0.08] flex items-center justify-center">
+        <div className="w-7 h-7 rounded-full bg-primary-foreground/[0.08] flex items-center justify-center">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <rect x="9" y="1" width="6" height="11" rx="3" />
             <path d="M5 10a7 7 0 0 0 14 0" />
@@ -47,7 +47,7 @@ const EnergyActivationGraphic = () => (
             <line x1="8" y1="21" x2="16" y2="21" />
           </svg>
         </div>
-        <div className="w-7 h-7 rounded-full bg-white/[0.08] flex items-center justify-center">
+        <div className="w-7 h-7 rounded-full bg-primary-foreground/[0.08] flex items-center justify-center">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <polygon points="23 7 16 12 23 17 23 7" />
             <rect x="1" y="5" width="15" height="14" rx="2" />
