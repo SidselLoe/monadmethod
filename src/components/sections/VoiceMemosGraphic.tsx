@@ -31,9 +31,9 @@ const VoiceMemosGraphic = () => (
           ))}
         </div>
         {/* Playhead */}
-        <div className="absolute bg-[#FF3B30]" style={{ left: "42%", top: "8%", bottom: "8%", width: 1.5 }}>
-          <div className="absolute -left-[2.75px] -top-[3px] w-[7px] h-[7px] rounded-full bg-[#FF3B30]" />
-          <div className="absolute -left-[2.75px] -bottom-[3px] w-[7px] h-[7px] rounded-full bg-[#FF3B30]" />
+        <div className="absolute bg-accent" style={{ left: "42%", top: "8%", bottom: "8%", width: 1.5 }}>
+          <div className="absolute -left-[2.75px] -top-[3px] w-[7px] h-[7px] rounded-full bg-accent" />
+          <div className="absolute -left-[2.75px] -bottom-[3px] w-[7px] h-[7px] rounded-full bg-accent" />
         </div>
       </div>
 
