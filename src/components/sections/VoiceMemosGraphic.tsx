@@ -25,7 +25,7 @@ const VoiceMemosGraphic = () => (
             <div key={i} className="flex-1 rounded-[1px]" style={{
               minWidth: 1.5,
               height: i < playheadIndex ? `${h * 3}%` : "1.5%",
-              background: i < playheadIndex ? "#FF3B30" : "#D1D1D6",
+              background: i < playheadIndex ? "hsl(0 100% 59.6%)" : "hsl(180 38% 64%)",
               opacity: i < playheadIndex ? 0.55 : 0.3,
             }} />
           ))}
