@@ -28,7 +28,7 @@ const MethodTestimonials = () => {
   return (
     <section className="bg-background py-[100px] sm:py-[120px] px-6">
       <div className="max-w-[1200px] mx-auto">
-        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-medium text-foreground text-center leading-[1.15] mb-14">
+        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground text-center leading-[1.15] mb-14">
           What founders say.
         </h2>
 

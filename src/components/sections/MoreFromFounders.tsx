@@ -70,10 +70,10 @@ const VideoCard = ({ name, company, vimeoId, cover }: { name: string; company: s
 };
 
 const QuoteCard = ({ name, company, quote }: { name: string; company: string; quote: string }) => (
-  <div className="rounded-xl p-7" style={{ background: "#F6F9FA" }}>
-    <div className="w-10 h-10 rounded-full mb-3" style={{ background: "#DBDBDB" }} />
+  <div className="rounded-xl p-7 bg-secondary">
+    <div className="w-10 h-10 rounded-full mb-3 bg-border" />
     <p className="text-sm font-medium text-foreground">{name}</p>
-    <p className="text-xs" style={{ color: "#999999" }}>{company}</p>
+    <p className="text-xs text-muted-foreground">{company}</p>
     <p className="mt-4 text-[17px] text-foreground leading-[1.55]">{quote}</p>
   </div>
 );
@@ -82,7 +82,7 @@ const MoreFromFounders = () => {
   return (
     <section className="bg-background py-[60px] sm:py-[100px] md:py-[120px] px-6">
       <div className="max-w-[1200px] mx-auto">
-        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-medium text-foreground text-center mb-10 leading-[1.15]">
+        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground text-center mb-10 leading-[1.15]">
           What founders are saying.
         </h2>
 

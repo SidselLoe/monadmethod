@@ -21,7 +21,7 @@ const MethodModalities = () => {
     <section className="bg-background py-[100px] sm:py-[120px] px-6">
       <div className="max-w-[1200px] mx-auto">
         <div className="text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-medium text-foreground leading-[1.15]">
+          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
             Three modalities. One integrated method.
           </h2>
           <p className="mt-3 text-lg text-muted-foreground max-w-[640px] mx-auto leading-[1.6]">

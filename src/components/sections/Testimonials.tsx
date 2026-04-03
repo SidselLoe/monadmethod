@@ -21,7 +21,7 @@ const Testimonials = () => {
   return (
     <section className="bg-background py-24 sm:py-28 px-6">
       <div className="max-w-[1000px] mx-auto">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-foreground text-center mb-14">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground text-center mb-14">
           What founders are saying
         </h2>
 

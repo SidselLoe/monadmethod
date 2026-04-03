@@ -5,7 +5,7 @@ const HeySidsel = () => {
   return (
     <section className="bg-background py-24 sm:py-28 px-6">
       <div className="max-w-[900px] mx-auto text-center">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-foreground">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground">
           Hey, I'm Sidsel.
         </h2>
 
