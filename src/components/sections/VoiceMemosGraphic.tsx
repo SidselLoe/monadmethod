@@ -11,11 +11,11 @@ const playheadIndex = Math.floor(80 * 0.42);
 const VoiceMemosGraphic = () => (
   <div className="w-[240px] flex flex-col gap-1">
     {/* Top tile — waveform + recording info */}
-    <div className="rounded-xl bg-[#F8F8FA] overflow-hidden flex flex-col" style={{ height: 190 }}>
+    <div className="rounded-xl bg-secondary overflow-hidden flex flex-col" style={{ height: 190 }}>
       {/* Header */}
       <div className="px-4 pt-4 pb-2">
-        <div className="text-[13px] font-semibold text-[#1C1C1E]">Voice Reflection — Day 12</div>
-        <div className="text-[9px] text-[#8E8E93] mt-0.5">04:32</div>
+        <div className="text-[13px] font-semibold text-foreground">Voice Reflection — Day 12</div>
+        <div className="text-[9px] text-muted-foreground mt-0.5">04:32</div>
       </div>
 
       {/* Waveform area */}
