@@ -19,10 +19,10 @@ const ConversionBanner = () => {
 
           {/* Text */}
           <div className="flex-1 text-center md:text-left">
-            <h3 className="text-xl sm:text-2xl font-medium text-accent-foreground">
+            <h3 className="text-xl sm:text-2xl font-bold text-accent-foreground">
               150+ founders have already done this work.
             </h3>
-            <p className="mt-3 text-base text-white/85 leading-[1.5]">
+            <p className="mt-3 text-base text-accent-foreground/85 leading-[1.5]">
               The way you have been operating has a ceiling. More strategy will not raise it. The CEO OS is how founder-CEOs shift what is underneath.
             </p>
           </div>
@@ -30,7 +30,7 @@ const ConversionBanner = () => {
           {/* CTA */}
           <Link
             to="/apply"
-            className="flex-shrink-0 inline-flex bg-white text-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded hover:bg-white/90 transition-colors"
+            className="flex-shrink-0 inline-flex bg-background text-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded hover:bg-background/90 transition-colors"
           >
             Start the CEO OS
           </Link>
