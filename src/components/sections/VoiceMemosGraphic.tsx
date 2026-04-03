@@ -44,25 +44,25 @@ const VoiceMemosGraphic = () => (
     </div>
 
     {/* Bottom tile — controls */}
-    <div className="rounded-xl bg-[#F8F8FA] flex items-center justify-center gap-6 flex-shrink-0" style={{ height: 80 }}>
+    <div className="rounded-xl bg-secondary flex items-center justify-center gap-6 flex-shrink-0" style={{ height: 80 }}>
       {/* Transcribe icon */}
       <div className="w-7 h-7 flex items-center justify-center">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#8E8E93" strokeWidth="1.8" strokeLinecap="round" className="w-[18px] h-[18px]">
+        <svg viewBox="0 0 24 24" fill="none" stroke="hsl(180 38% 64%)" strokeWidth="1.8" strokeLinecap="round" className="w-[18px] h-[18px]">
           <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
         </svg>
       </div>
 
       {/* Pause button */}
-      <div className="w-[52px] h-[36px] rounded-[10px] bg-white flex items-center justify-center" style={{ boxShadow: "0 1px 3px rgba(0,0,0,0.08)" }}>
+      <div className="w-[52px] h-[36px] rounded-[10px] bg-background flex items-center justify-center" style={{ boxShadow: "0 1px 3px rgba(0,0,0,0.08)" }}>
         <div className="flex gap-[3px]">
-          <div className="w-[3.5px] h-[14px] rounded-[1.5px] bg-[#FF3B30]" />
-          <div className="w-[3.5px] h-[14px] rounded-[1.5px] bg-[#FF3B30]" />
+          <div className="w-[3.5px] h-[14px] rounded-[1.5px] bg-accent" />
+          <div className="w-[3.5px] h-[14px] rounded-[1.5px] bg-accent" />
         </div>
       </div>
 
       {/* Sliders icon */}
       <div className="w-7 h-7 flex items-center justify-center">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#8E8E93" strokeWidth="1.8" strokeLinecap="round" className="w-[18px] h-[18px]">
+        <svg viewBox="0 0 24 24" fill="none" stroke="hsl(180 38% 64%)" strokeWidth="1.8" strokeLinecap="round" className="w-[18px] h-[18px]">
           <line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/>
           <line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/>
           <line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/>
