@@ -22,15 +22,15 @@ const EnergyActivationGraphic = () => (
     </div>
 
     {/* Video grid */}
-    <div className="grid grid-cols-3 grid-rows-2 gap-[3px] bg-[#161616] p-[3px] flex-1">
+    <div className="grid grid-cols-3 grid-rows-2 gap-[3px] bg-foreground p-[3px] flex-1">
       {tiles.map((t, i) => (
         <div key={i} className="relative overflow-hidden rounded-[4px]" style={{ minHeight: 0, background: t.grad }}>
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1/2 h-1/2 rounded-full opacity-15" style={{ background: t.glow, filter: "blur(30px)" }} />
           <div className="absolute left-1/2 -translate-x-1/2" style={{ bottom: "15%", width: "65%", height: "30%", background: "rgba(255,255,255,0.04)", borderRadius: "40% 40% 20% 20%", filter: "blur(6px)" }} />
           {t.live && (
-            <span className="absolute top-2 left-2.5 bg-accent text-white font-sans text-[8px] font-semibold uppercase tracking-wider px-1.5 py-0.5 rounded-[3px]">Live</span>
+            <span className="absolute top-2 left-2.5 bg-accent text-accent-foreground font-sans text-[8px] font-semibold uppercase tracking-wider px-1.5 py-0.5 rounded-[3px]">Live</span>
           )}
-          <span className="absolute bottom-2 left-2.5 font-sans text-[10px] font-medium text-white/70">{t.name}</span>
+          <span className="absolute bottom-2 left-2.5 font-sans text-[10px] font-medium text-primary-foreground/70">{t.name}</span>
         </div>
       ))}
     </div>
