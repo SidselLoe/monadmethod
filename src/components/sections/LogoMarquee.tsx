@@ -20,7 +20,7 @@ const LogoMarquee = () => {
   return (
     <section className="bg-secondary py-[100px] sm:py-[120px] px-6">
       <div className="max-w-[1200px] mx-auto">
-        <h2 className="text-4xl sm:text-5xl md:text-[64px] font-medium text-foreground text-center leading-[1.1] mb-10">
+        <h2 className="text-4xl sm:text-5xl md:text-[64px] font-bold text-foreground text-center leading-[1.1] mb-10">
           Join founder-CEOs who operate differently.
         </h2>
       </div>

@@ -16,7 +16,7 @@ const MethodOrigin = () => {
 
         {/* Right — Text */}
         <div>
-          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-medium text-foreground leading-[1.15]">
+          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
             Working with Sidsel.
           </h2>
 

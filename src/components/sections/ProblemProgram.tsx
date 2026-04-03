@@ -7,7 +7,7 @@ const ProblemProgram = () => {
     <section className="bg-surface py-24 sm:py-28 px-6">
       <div className="max-w-[1100px] mx-auto">
         {/* Problem statement */}
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-foreground text-center leading-tight">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground text-center leading-tight">
           Your company is growing.
           <br />
           Too much still depends on you.

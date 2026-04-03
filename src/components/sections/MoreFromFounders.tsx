@@ -82,7 +82,7 @@ const MoreFromFounders = () => {
   return (
     <section className="bg-background py-[60px] sm:py-[100px] md:py-[120px] px-6">
       <div className="max-w-[1200px] mx-auto">
-        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-medium text-foreground text-center mb-10 leading-[1.15]">
+        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground text-center mb-10 leading-[1.15]">
           What founders are saying.
         </h2>
 
