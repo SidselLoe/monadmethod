@@ -10,13 +10,13 @@ const tiles = [
 const EnergyActivationGraphic = () => (
   <div className="w-full rounded-xl overflow-hidden border border-border flex flex-col" style={{ height: 500, boxShadow: "0 2px 8px rgba(0,0,0,0.06), 0 12px 40px rgba(0,0,0,0.08)" }}>
     {/* Browser bar */}
-    <div className="flex items-center gap-3 bg-[#F6F6F6] px-4 py-3 border-b border-[#E8E8E8]">
+    <div className="flex items-center gap-3 bg-secondary px-4 py-3 border-b border-border">
       <div className="flex gap-1.5 shrink-0">
         <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F57]" />
         <span className="w-2.5 h-2.5 rounded-full bg-[#FEBC2E]" />
         <span className="w-2.5 h-2.5 rounded-full bg-[#28C840]" />
       </div>
-      <div className="flex-1 bg-white rounded-md px-3.5 py-1.5 text-xs text-[#999] border border-[#E0E0E0] font-sans tracking-wide">
+      <div className="flex-1 bg-background rounded-md px-3.5 py-1.5 text-xs text-muted-foreground border border-border font-sans tracking-wide">
         Energy Activation — Live Session
       </div>
     </div>
