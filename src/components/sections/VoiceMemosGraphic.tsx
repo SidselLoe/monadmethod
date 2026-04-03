@@ -39,7 +39,7 @@ const VoiceMemosGraphic = () => (
 
       {/* Timer */}
       <div className="text-center py-2 pb-3.5">
-        <span className="text-[22px] font-light text-[#1C1C1E] tracking-wide" style={{ fontVariantNumeric: "tabular-nums" }}>00:04.19</span>
+        <span className="text-[22px] font-light text-foreground tracking-wide" style={{ fontVariantNumeric: "tabular-nums" }}>00:04.19</span>
       </div>
     </div>
 
