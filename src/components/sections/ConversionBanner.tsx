@@ -32,7 +32,7 @@ const ConversionBanner = () => {
             to="/apply"
             className="flex-shrink-0 inline-flex bg-background text-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded hover:bg-background/90 transition-colors"
           >
-            Start the Monad OS
+            Book a Call
           </Link>
         </div>
       </div>
