@@ -31,9 +31,9 @@ const HeySidsel = () => {
 
         <Link
           to="/about"
-          className="inline-flex mt-8 bg-accent text-accent-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded hover:bg-accent/90 transition-colors"
+          className="inline-flex mt-8 bg-accent text-accent-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded-full hover:bg-accent/90 transition-colors"
         >
-          About Me →
+          About Me
         </Link>
       </div>
     </section>

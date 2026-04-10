@@ -40,7 +40,7 @@ const Navigation = () => {
         <div className="hidden md:flex items-center ml-auto">
           <Link
             to="/apply"
-            className="bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-wide px-6 py-2.5 rounded-md hover:bg-accent/90 transition-colors"
+            className="bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-wide px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
           >
             Book a Call
           </Link>
@@ -72,7 +72,7 @@ const Navigation = () => {
           <Link
             to="/apply"
             onClick={() => setMobileOpen(false)}
-            className="mt-2 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-wide px-6 py-3 rounded-md hover:bg-accent/90 transition-colors text-center"
+            className="mt-2 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-wide px-6 py-3 rounded-full hover:bg-accent/90 transition-colors text-center"
           >
             Book a Call
           </Link>
