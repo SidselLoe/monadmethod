@@ -15,7 +15,6 @@ const ProblemProgram = () => {
         <p className="mt-6 text-lg text-foreground text-center max-w-[640px] mx-auto">
           The results are real. The revenue, the recognition, the company that actually works. And the feeling you were climbing toward never arrived.
         </p>
-        </p>
 
         {/* Asymmetric bento grid */}
         <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-4">
