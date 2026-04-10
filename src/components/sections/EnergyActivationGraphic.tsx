@@ -1,52 +1,54 @@
 const tiles = [
-  { name: "Sidsel L.", live: true },
-  { name: "James R." },
-  { name: "Ana K." },
-  { name: "David M." },
-  { name: "Sarah T." },
-  { name: "Michael C." },
+  { name: "Sidsel L.", grad: "linear-gradient(135deg, #1a1520 0%, #2d2035 40%, #1e1828 100%)", glow: "#8B5CF6", live: true },
+  { name: "James R.", grad: "linear-gradient(135deg, #1c1a15 0%, #2a2520 40%, #1e1c17 100%)", glow: "#D4A574" },
+  { name: "Ana K.", grad: "linear-gradient(135deg, #151a1c 0%, #202a2d 40%, #171e20 100%)", glow: "#5B9BD5" },
+  { name: "David M.", grad: "linear-gradient(135deg, #1a1518 0%, #2d2028 40%, #1e1820 100%)", glow: "#C084A0" },
+  { name: "Sarah T.", grad: "linear-gradient(135deg, #1a1a15 0%, #2d2d20 40%, #1e1e18 100%)", glow: "#A0A060" },
+  { name: "Michael C.", grad: "linear-gradient(135deg, #141828 0%, #1e2440 40%, #161a2e 100%)", glow: "#6B7FD4" },
 ];
 
 const EnergyActivationGraphic = () => (
-  <div className="w-full rounded-xl overflow-hidden border border-border flex flex-col" style={{ height: 300, boxShadow: "0 1px 4px rgba(0,0,0,0.04)" }}>
+  <div className="w-full rounded-xl overflow-hidden border border-border flex flex-col" style={{ height: 500, boxShadow: "0 2px 8px rgba(0,0,0,0.06), 0 12px 40px rgba(0,0,0,0.08)" }}>
     {/* Browser bar */}
-    <div className="flex items-center gap-3 px-3 py-2 border-b border-border bg-background">
-      <div className="flex gap-1 shrink-0">
-        <span className="w-2 h-2 rounded-full bg-mint-border" />
-        <span className="w-2 h-2 rounded-full bg-mint" />
-        <span className="w-2 h-2 rounded-full bg-secondary" />
+    <div className="flex items-center gap-3 bg-secondary px-4 py-3 border-b border-border">
+      <div className="flex gap-1.5 shrink-0">
+        <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F57]" />
+        <span className="w-2.5 h-2.5 rounded-full bg-[#FEBC2E]" />
+        <span className="w-2.5 h-2.5 rounded-full bg-[#28C840]" />
       </div>
-      <div className="flex-1 bg-secondary rounded px-2.5 py-1 text-[9px] text-foreground/60 border border-border font-sans tracking-wide">
+      <div className="flex-1 bg-background rounded-md px-3.5 py-1.5 text-xs text-muted-foreground border border-border font-sans tracking-wide">
         Energy Activation — Live Session
       </div>
     </div>
 
     {/* Video grid */}
-    <div className="grid grid-cols-3 grid-rows-2 gap-[2px] bg-border p-[2px] flex-1">
+    <div className="grid grid-cols-3 grid-rows-2 gap-[3px] bg-foreground p-[3px] flex-1">
       {tiles.map((t, i) => (
-        <div key={i} className="relative overflow-hidden bg-secondary">
-          {/* Subtle avatar circle */}
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-mint/40" />
+        <div key={i} className="relative overflow-hidden rounded-[4px]" style={{ minHeight: 0, background: t.grad }}>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1/2 h-1/2 rounded-full opacity-15" style={{ background: t.glow, filter: "blur(30px)" }} />
+          <div className="absolute left-1/2 -translate-x-1/2" style={{ bottom: "15%", width: "65%", height: "30%", background: "rgba(255,255,255,0.04)", borderRadius: "40% 40% 20% 20%", filter: "blur(6px)" }} />
           {t.live && (
-            <span className="absolute top-1.5 left-1.5 bg-mint-border text-white font-sans text-[7px] font-semibold uppercase tracking-wider px-1 py-[1px] rounded-[2px]">Live</span>
+            <span className="absolute top-2 left-2.5 bg-accent text-accent-foreground font-sans text-[8px] font-semibold uppercase tracking-wider px-1.5 py-0.5 rounded-[3px]">Live</span>
           )}
-          <span className="absolute bottom-1.5 left-1.5 font-sans text-[8px] font-medium text-foreground/60">{t.name}</span>
+          <span className="absolute bottom-2 left-2.5 font-sans text-[10px] font-medium text-primary-foreground/70">{t.name}</span>
         </div>
       ))}
     </div>
 
     {/* Caption bar */}
-    <div className="flex items-center justify-between bg-background px-3 py-2 border-t border-border">
-      <span className="font-sans text-[9px] text-foreground/50">6 founders — Energy Activation in progress</span>
-      <div className="flex gap-1.5">
-        <div className="w-5 h-5 rounded-full bg-secondary flex items-center justify-center">
-          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="hsl(var(--mint-border))" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <div className="flex items-center justify-between bg-foreground px-5 py-3.5">
+      <span className="font-sans text-xs text-primary-foreground/50">6 founders — Energy Activation in progress</span>
+      <div className="flex gap-2">
+        <div className="w-7 h-7 rounded-full bg-primary-foreground/[0.08] flex items-center justify-center">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <rect x="9" y="1" width="6" height="11" rx="3" />
             <path d="M5 10a7 7 0 0 0 14 0" />
+            <line x1="12" y1="17" x2="12" y2="21" />
+            <line x1="8" y1="21" x2="16" y2="21" />
           </svg>
         </div>
-        <div className="w-5 h-5 rounded-full bg-secondary flex items-center justify-center">
-          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="hsl(var(--mint-border))" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <div className="w-7 h-7 rounded-full bg-primary-foreground/[0.08] flex items-center justify-center">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <polygon points="23 7 16 12 23 17 23 7" />
             <rect x="1" y="5" width="15" height="14" rx="2" />
           </svg>
