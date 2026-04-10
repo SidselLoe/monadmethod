@@ -10,7 +10,7 @@ const DeltaSection = () => {
         <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
           Monad LTS
         </h2>
-        <p className="mt-3 text-lg text-muted-foreground max-w-[640px] mx-auto leading-[1.6]">
+        <p className="mt-3 text-lg text-foreground max-w-[640px] mx-auto leading-[1.6]">
           Invitation only. You've installed the operating system. This is what comes next.
         </p>
 

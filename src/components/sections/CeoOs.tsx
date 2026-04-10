@@ -55,7 +55,7 @@ const CeoOs = () => {
         <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
           The Monad Method operates through three modalities that work together. Monad OS is how you install it.
         </h2>
-        <p className="mt-5 text-lg text-muted-foreground max-w-[640px] mx-auto leading-[1.6]">
+        <p className="mt-5 text-lg text-foreground max-w-[640px] mx-auto leading-[1.6]">
           Thirty days. Three modalities. A different internal operating system.
         </p>
 
