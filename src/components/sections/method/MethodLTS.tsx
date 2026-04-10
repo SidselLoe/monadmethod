@@ -44,7 +44,7 @@ const MethodLTS = () => {
           <div className="mt-7">
             <Link
               to="/apply"
-              className="inline-flex bg-accent text-accent-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded hover:bg-accent/90 transition-colors"
+              className="inline-flex bg-accent text-accent-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded-full hover:bg-accent/90 transition-colors"
             >
               Request a Conversation
             </Link>
