@@ -14,7 +14,7 @@ const CoachingCallGraphic = () => (
       {/* Name label */}
       <div className="absolute bottom-2 left-2.5">
         <span className="font-sans text-[11px] font-medium" style={{ color: "rgba(255,255,255,0.85)", textShadow: "0 1px 3px rgba(0,0,0,0.5)" }}>Sidsel L.</span>
-        <span className="block font-sans text-[8px] font-normal mt-px" style={{ color: "rgba(255,255,255,0.45)" }}>Coach</span>
+        <span className="block font-sans text-[8px] font-normal mt-px" style={{ color: "rgba(255,255,255,0.45)" }}>Strategist</span>
       </div>
     </div>
 

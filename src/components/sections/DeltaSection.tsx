@@ -19,7 +19,8 @@ const DeltaSection = () => {
             {/* Symbol on top for mobile */}
             <div className="flex-shrink-0 sm:hidden">
               <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <polygon points="18,2 34,34 2,34" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinejoin="round" />
+                <circle cx="18" cy="18" r="14" stroke="currentColor" strokeWidth="1.5" fill="none" />
+                <circle cx="18" cy="18" r="3" fill="currentColor" />
               </svg>
             </div>
 
@@ -39,7 +40,8 @@ const DeltaSection = () => {
             {/* Symbol on right for desktop */}
             <div className="flex-shrink-0 hidden sm:block">
               <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <polygon points="18,2 34,34 2,34" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinejoin="round" />
+                <circle cx="18" cy="18" r="14" stroke="currentColor" strokeWidth="1.5" fill="none" />
+                <circle cx="18" cy="18" r="3" fill="currentColor" />
               </svg>
             </div>
           </div>

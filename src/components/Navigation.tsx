@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { label: "Monad OS", href: "/" },
-  { label: "Monad Method", href: "/the-method" },
+  { label: "The Monad Method", href: "/the-method" },
   { label: "Reflections", href: "/reflections" },
   { label: "About", href: "/about" },
 ];

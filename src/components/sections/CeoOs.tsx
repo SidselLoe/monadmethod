@@ -6,7 +6,8 @@ const cards = [
     body: "A guided, music-driven process that takes you into the state where your clearest decisions live. No technique. No performance. You show up, lie down, and let the static clear. The effect compounds. Each session goes deeper than the last.",
     icon: (
       <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="18" cy="18" r="16" stroke="currentColor" strokeWidth="1.5" fill="none" />
+        <circle cx="18" cy="18" r="14" stroke="currentColor" strokeWidth="1.5" fill="none" />
+        <circle cx="18" cy="18" r="3" fill="currentColor" />
       </svg>
     ),
   },

@@ -13,7 +13,9 @@ const ProblemProgram = () => {
 
         {/* Solution bridge */}
         <p className="mt-6 text-lg text-muted-foreground text-center max-w-[640px] mx-auto">
-          The results are real. The revenue, the recognition, the company that actually works. And the feeling you were climbing toward never arrived. You built this from push. The drive that got you here is the same drive that is now the ceiling. Push has always had one. You found it.
+          The results are real. The revenue, the recognition, the company that actually works. And the feeling you were climbing toward never arrived.
+          <br /><br />
+          You built this from push. The drive that got you here is the same drive that is now the ceiling. Push has always had one. You found it.
         </p>
 
         {/* Asymmetric bento grid */}
