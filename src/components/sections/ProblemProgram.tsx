@@ -8,14 +8,13 @@ const ProblemProgram = () => {
       <div className="max-w-[1100px] mx-auto">
         {/* Problem statement */}
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground text-center leading-tight">
-          You were pushed here. By something you still haven't faced.
+          You found the ceiling.
         </h2>
 
         {/* Solution bridge */}
-        <p className="mt-6 text-lg text-muted-foreground text-center max-w-[640px] mx-auto">
+        <p className="mt-6 text-lg text-foreground text-center max-w-[640px] mx-auto">
           The results are real. The revenue, the recognition, the company that actually works. And the feeling you were climbing toward never arrived.
-          <br /><br />
-          You built this from push. The drive that got you here is the same drive that is now the ceiling. Push has always had one. You found it.
+        </p>
         </p>
 
         {/* Asymmetric bento grid */}
