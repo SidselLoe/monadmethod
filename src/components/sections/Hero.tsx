@@ -26,7 +26,7 @@ const Hero = () => {
 
         <Link
           to="/apply"
-          className="inline-flex mt-10 bg-accent text-accent-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded hover:bg-accent/90 transition-colors"
+          className="inline-flex mt-10 bg-accent text-accent-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded-full hover:bg-accent/90 transition-colors"
         >
           Book a Call
         </Link>
@@ -45,7 +45,7 @@ const Hero = () => {
               />
             ))}
           </div>
-          <span className="text-sm text-muted-foreground">150+ founders, leaders, and creators have experienced the work.</span>
+          <span className="text-sm text-foreground">150+ founders, leaders, and creators have experienced the work.</span>
         </div>
       </div>
     </section>
