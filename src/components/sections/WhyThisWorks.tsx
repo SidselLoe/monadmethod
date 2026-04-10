@@ -1,22 +1,22 @@
 const cards = [
   {
     step: "01",
-    heading: "State shifts first.",
-    body: "You have tried coaching. Retreats. Therapy. Maybe even plant medicine. They gave you language for the problem, but not relief from it. This starts somewhere else. Your nervous system has been running on pressure so long you have forgotten what clear thinking actually feels like. When that resets, you do not need more strategy. The clarity is already there.",
+    heading: "State shifts first",
+    body: "You have tried other approaches. They gave you language for the problem, but not relief from it. This starts somewhere else. Your nervous system has been running on pressure so long you have forgotten what clear thinking actually feels like. When that resets, you do not need more strategy. The clarity is already there.",
   },
   {
     step: "02",
-    heading: "Patterns become visible.",
-    body: "The belief that if you step back, things fall apart. The habit of saying yes when the honest answer is no. The quiet fusion between your worth and the company's performance. These are not character flaws. They are patterns that were installed long before the business existed. They have been running your decisions without your permission. Once you see them, they stop running you.",
+    heading: "Patterns become visible",
+    body: "The belief that if you step back, things fall apart. The habit of saying yes when the honest answer is no. The quiet fusion between your worth and the company's performance. These are not character flaws. They are patterns installed long before the business existed. They have been running your decisions without your permission. Once you see them, they stop running you.",
   },
   {
     step: "03",
-    heading: "Direction gets honest.",
+    heading: "Direction gets honest",
     body: "Most founders are building toward a version of success they have never questioned. When the noise quiets down, what surfaces is not always what you expected. What do you actually want from this company? What would it feel like to build from purpose instead of pressure? When those answers get honest, everything you do becomes more precise.",
   },
   {
     step: "04",
-    heading: "A new operating system takes hold.",
+    heading: "A new way of operating takes hold",
     body: "You stop leading from patterns that were never yours to begin with. How you delegate, decide, and hold pressure starts to match where you are going, not where you have been. The internal shift leads. The external results follow.",
   },
 ];
