@@ -56,7 +56,7 @@ const Testimonials = () => {
                 <h3 className="text-lg sm:text-xl font-medium text-foreground leading-snug">
                   {t.quoteHeading}
                 </h3>
-                <p className="mt-3 text-base text-muted-foreground leading-relaxed">
+                <p className="mt-3 text-base text-foreground leading-relaxed">
                   {t.quoteBody}
                 </p>
               </div>
