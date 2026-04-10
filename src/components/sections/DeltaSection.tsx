@@ -4,11 +4,14 @@ const DeltaSection = () => {
   return (
     <section className="bg-secondary py-[60px] sm:py-[100px] md:py-[120px] px-6">
       <div className="max-w-[1200px] mx-auto text-center">
+        <p className="text-sm font-semibold uppercase tracking-[2px] text-muted-foreground mb-4">
+          What Comes Next
+        </p>
         <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
-          It was always about access.
+          Monad LTS
         </h2>
         <p className="mt-3 text-lg text-muted-foreground max-w-[640px] mx-auto leading-[1.6]">
-          These methods have always existed. They have never been available to founders like this.
+          Invitation only. You've installed the operating system. This is what comes next.
         </p>
 
         <div className="mt-10 max-w-[720px] mx-auto bg-background border border-border rounded-xl p-8 sm:p-10">
@@ -21,9 +24,9 @@ const DeltaSection = () => {
             </div>
 
             <div className="flex-1">
-              <h3 className="text-2xl font-bold text-foreground">Delta™</h3>
+              <h3 className="text-2xl font-bold text-foreground">Monad LTS</h3>
               <p className="mt-2 text-base sm:text-lg text-foreground leading-[1.5]">
-                Invitation only. For founder-CEOs who have installed the operating system and know this is just the beginning. Continued access to the state, the insights, and the accountability that keeps the shift compounding. Not a programme. A private relationship for founders who refuse to operate the old way.
+                Continued access to activations, inquiry, and strategic partnership that keeps the shift compounding. Not a programme. A private, ongoing relationship for founders who refuse to go back.
               </p>
               <Link
                 to="/monad-method"

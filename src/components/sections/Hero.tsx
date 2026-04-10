@@ -12,19 +12,23 @@ const Hero = () => {
   return (
     <section className="bg-background py-28 sm:py-36 md:py-44 px-6">
       <div className="max-w-3xl mx-auto text-center">
+        <p className="text-sm font-semibold uppercase tracking-[2px] text-muted-foreground mb-6">
+          For founder-CEOs who are the business.
+        </p>
+
         <h1 className="text-4xl sm:text-5xl md:text-[60px] font-bold text-foreground leading-[1.1] tracking-[-0.3px]">
-          Run your company without it running you.
+          You are the business. That's not a compliment.
         </h1>
 
         <p className="mt-6 text-base sm:text-lg text-foreground font-normal max-w-[640px] mx-auto leading-[1.6]">
-          Partner-level coaching for founder-CEOs who need more capacity, stronger leadership, and a way of operating that can match the scale of their ambition.
+          What you need has always been in you. The work returns you to it. Three modalities. Thirty days.
         </p>
 
         <Link
           to="/apply"
           className="inline-flex mt-10 bg-accent text-accent-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded hover:bg-accent/90 transition-colors"
         >
-          Apply Now
+          Book a Call
         </Link>
 
         {/* Avatar stack + social proof */}
@@ -41,7 +45,7 @@ const Hero = () => {
               />
             ))}
           </div>
-          <span className="text-sm text-muted-foreground">150+ founders have experienced the work.</span>
+          <span className="text-sm text-muted-foreground">150+ founders, leaders, and creators have experienced the work.</span>
         </div>
       </div>
     </section>

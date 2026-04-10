@@ -1,15 +1,15 @@
 const testimonials = [
   {
     name: "Bianca Polizzi",
-    title: "Founder & CEO",
+    title: "Founder & CEO, Polizzi Media",
     photo: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=200&h=200&fit=crop&crop=face",
     quoteHeading: "I finally stopped carrying everything alone.",
     quoteBody:
-      "Working with Sidsel gave me the clarity and capacity I had been trying to force through willpower. The shift was not just strategic — it was foundational. I lead differently now.",
+      "Working with Sidsel gave me the clarity and capacity I had been trying to force through willpower. The shift was not just strategic. It was foundational. I lead differently now.",
   },
   {
     name: "Brandon Hadwin",
-    title: "Founder & CEO",
+    title: "Founder & CEO, HealingwithBrandon",
     photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face",
     quoteHeading: "The bottleneck was me. Now it is not.",
     quoteBody:

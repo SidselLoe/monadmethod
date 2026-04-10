@@ -21,19 +21,19 @@ const HeySidsel = () => {
 
         {/* Mission text */}
         <p className="mt-10 text-lg text-foreground leading-relaxed max-w-[680px] mx-auto">
-          I work as a strategic partner to founder-CEOs. My approach is direct and structured: I help you clarify what matters, remove what is creating friction, and make decisions easier to execute.
+          I work as a strategic partner to founders who are the business and who know there is more but cannot get to it without something changing in them first.
         </p>
 
         {/* Personal context */}
         <p className="mt-4 text-base text-foreground leading-relaxed max-w-[680px] mx-auto">
-          Monad Method™ is the method I developed after a health collapse in 2023 forced me to rebuild everything. It rests on one belief: your next level requires an identity shift. You are not your business. You are the creator of it.
+          My approach is direct and structured. The Monad Method is the methodology I developed after a health collapse in 2023 forced me to rebuild everything. It rests on one belief: your next level requires an identity shift. You are not your business. You are the creator of it.
         </p>
 
         <Link
           to="/about"
           className="inline-flex mt-8 bg-accent text-accent-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded hover:bg-accent/90 transition-colors"
         >
-          About Me
+          About Me →
         </Link>
       </div>
     </section>

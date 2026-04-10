@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { label: "CEO OS", href: "/" },
+  { label: "Monad OS", href: "/" },
   { label: "Monad Method", href: "/the-method" },
   { label: "Reflections", href: "/reflections" },
   { label: "About", href: "/about" },
@@ -36,16 +36,13 @@ const Navigation = () => {
           ))}
         </div>
 
-        {/* Right side: tagline + CTA */}
-        <div className="hidden md:flex items-center gap-5 ml-auto">
-          <span className="text-xs text-foreground max-w-[160px] text-right leading-tight">
-            Ready to lead like a CEO?
-          </span>
+        {/* Right side: CTA only */}
+        <div className="hidden md:flex items-center ml-auto">
           <Link
             to="/apply"
             className="bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-wide px-6 py-2.5 rounded-md hover:bg-accent/90 transition-colors"
           >
-            Apply Now
+            Book a Call
           </Link>
         </div>
 
@@ -77,7 +74,7 @@ const Navigation = () => {
             onClick={() => setMobileOpen(false)}
             className="mt-2 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-wide px-6 py-3 rounded-md hover:bg-accent/90 transition-colors text-center"
           >
-            Apply Now
+            Book a Call
           </Link>
         </div>
       )}

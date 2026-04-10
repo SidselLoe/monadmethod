@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const cards = [
   {
-    heading: "10× Energy Activations",
-    body: "A guided, music-driven process that gives you access to the state where your clearest decisions live. No technique. No performance. You show up, lie down, and let your system reset. The effect compounds over time. Most founders feel the shift after the first session.",
+    heading: "10× Monad Activations",
+    body: "A guided, music-driven process that takes you into the state where your clearest decisions live. No technique. No performance. You show up, lie down, and let the static clear. The effect compounds. Each session goes deeper than the last.",
     icon: (
       <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="18" cy="18" r="16" stroke="currentColor" strokeWidth="1.5" fill="none" />
@@ -11,8 +11,8 @@ const cards = [
     ),
   },
   {
-    heading: "4× Guided Voice-Note Reflection",
-    body: "Your leadership is being shaped by beliefs you have never examined. This is not journaling. It is a structured form of self-inquiry designed to surface what is actually driving your decisions. Your coach reads every reflection before your next session. What was invisible becomes specific.",
+    heading: "4× Guided Voice-Note Self-Inquiry",
+    body: "Your leadership is being shaped by patterns you have never examined. Structured self-inquiry surfaces them. Every reflection becomes the foundation for your next session. What was invisible becomes specific.",
     icon: (
       <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
         <line x1="6" y1="22" x2="6" y2="14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
@@ -25,7 +25,7 @@ const cards = [
   },
   {
     heading: "4× Private 1:1 Sessions (44 min)",
-    body: "Your sessions are not starting from scratch each week. They are built on everything your reflections have already surfaced. That is why the progress compounds. Priorities, delegation, boundaries, communication. Your real situation, sharpened. Every session accelerates what is already in motion.",
+    body: "The activations shift your state. The inquiry names what's been running underneath you. The sessions bring both into action. Priorities, delegation, decisions, communication. Built from the new state, not the old one.",
     icon: (
       <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="14" cy="18" r="10" stroke="currentColor" strokeWidth="1.5" fill="none" />
@@ -35,7 +35,7 @@ const cards = [
   },
   {
     heading: "30 Days Private Support",
-    body: "The shift does not pause between sessions. Private voice-note support for when something comes up on a Wednesday morning and you need clarity now. Check-ins, real follow-through, and the kind of support that keeps momentum from drifting.",
+    body: "The shift does not pause between sessions. Private voice-note access for when something comes up mid-week and you need clarity now. Real follow-through. Accountability that does not drift.",
     icon: (
       <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M4 16C4 9.373 9.373 4 16 4h4c6.627 0 12 5.373 12 12v0c0 6.627-5.373 12-12 12h-4c-1.5 0-2.95-.275-4.286-.778L4 30l2.5-5.5A11.94 11.94 0 0 1 4 16Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" fill="none" />
@@ -48,11 +48,14 @@ const CeoOs = () => {
   return (
     <section className="bg-background py-[100px] sm:py-[120px] px-6">
       <div className="max-w-[1200px] mx-auto text-center">
+        <p className="text-sm font-semibold uppercase tracking-[2px] text-muted-foreground mb-4">
+          How It Works
+        </p>
         <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
-          CEO OS
+          The Monad Method operates through three modalities that work together. Monad OS is how you install it.
         </h2>
         <p className="mt-5 text-lg text-muted-foreground max-w-[640px] mx-auto leading-[1.6]">
-          The Monad Method is built on three modalities that work together. The CEO OS is how you install it. In 30 days, with a few hours a week, founders consistently reach what would have taken years of coaching, therapy, or retreats to arrive at. If they ever did.
+          Thirty days. Three modalities. A different internal operating system.
         </p>
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -83,7 +86,7 @@ const CeoOs = () => {
           to="/apply"
           className="inline-flex mt-12 bg-accent text-accent-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded hover:bg-accent/90 transition-colors"
         >
-          Install the Upgrade
+          Book a Call
         </Link>
       </div>
     </section>
