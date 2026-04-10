@@ -30,7 +30,7 @@ const ConversionBanner = () => {
           {/* CTA */}
           <Link
             to="/apply"
-            className="flex-shrink-0 inline-flex bg-background text-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded hover:bg-background/90 transition-colors"
+            className="flex-shrink-0 inline-flex bg-background text-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded-full hover:bg-background/90 transition-colors"
           >
             Book a Call
           </Link>
