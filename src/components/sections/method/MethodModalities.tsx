@@ -3,18 +3,21 @@ import MethodName from "./MethodName";
 const modalities = [
   {
     step: "01",
-    title: "Merkaba Energy Activation",
-    body: "Precision interventions that shift state at the nervous system level. Expanding capacity, releasing stored tension, restoring coherence. The activation moves what strategy alone cannot.",
+    label: "Monad Activation",
+    title: "The state shift.",
+    body: "A guided, music-driven energy session that changes your internal state directly. It works through direct transmission and coherence, not through technique or effort. You lie down, you receive, your nervous system recalibrates. You leave with access to a state you cannot think your way into.",
   },
   {
     step: "02",
-    title: "Voice-Note Self-Inquiry",
-    body: "A structured reflective practice that surfaces the beliefs, identity structures, and shadows shaping how a founder leads. Speak into a pattern. The pattern reveals itself.",
+    label: "Guided Inquiry",
+    title: "The honesty.",
+    body: "Structured workbook questions, answered by voice note. Speaking bypasses the internal editor. The workbooks provide the frame, the voice notes provide the truth. Patterns become visible because they can finally be heard.",
   },
   {
     step: "03",
-    title: "Strategic Coaching",
-    body: "Every session moves from inner clarity to aligned action. Real decisions, real problems, translated into execution. The work is not complete until it changes something in the business.",
+    label: "Strategic Sessions",
+    title: "The translation.",
+    body: "Private 1:1 sessions that turn state and clarity into decisions, priorities, and execution. Partner-level sparring, not prescription. This is where the work meets the company.",
   },
 ];
 
@@ -29,7 +32,7 @@ const MethodModalities = () => {
             Three modalities. One integrated method.
           </h2>
           <p className="mt-3 text-[18px] text-body max-w-[700px] mx-auto leading-[1.7]">
-            These three are not interchangeable or optional. They are a triangulation. Designed to be used together. Designed to go deep and move fast.
+            A spiral, like the Monad. Each revolution deeper than the last.
           </p>
         </div>
 
@@ -40,7 +43,7 @@ const MethodModalities = () => {
               className="bg-background border border-border rounded-xl p-8 flex flex-col"
             >
               <span className="text-[13px] font-bold uppercase tracking-[0.12em] text-mint">
-                {m.step} · {m.title.toUpperCase().split(" ")[0]}
+                {m.step} · {m.label.toUpperCase()}
               </span>
               <h3 className="mt-3 text-[20px] font-semibold text-foreground leading-[1.3]">
                 {m.title}
