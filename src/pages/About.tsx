@@ -8,6 +8,12 @@ const socialProofQuotes = [
   { quote: "She doesn't coddle, but she's uniquely supportive in helping you carve an authentic path that actually fits you.", attribution: "— Jessica, Founder" },
 ];
 
+const values = [
+  { title: "Alignment over everything", description: "I do not optimize for short-term gains at the expense of long-term integrity." },
+  { title: "Clarity is power", description: "Clear vision, clear systems, and clear communication change what becomes possible." },
+  { title: "Sovereign leadership", description: "You are not here to follow someone else's blueprint. You are here to trust yourself, think clearly, and lead from your own signal." },
+  { title: "Structure as liberation", description: "Freedom comes from the right systems, frameworks, and simplicity. Structure should create spaciousness, not constraint." },
+];
 
 const blogPosts = [
   {
