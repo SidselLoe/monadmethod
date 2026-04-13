@@ -150,7 +150,7 @@ const About = () => {
       </section>
 
       {/* 5. BACKSTORY */}
-      <section className="bg-background py-20 sm:py-28 px-6">
+      <section className="bg-background pt-20 sm:pt-28 pb-10 sm:pb-14 px-6">
         <div className="max-w-[1100px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start">
             <div>
