@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/sections/Footer";
+import brandonCover from "@/assets/brandon-cover.jpg";
+import jessicaCover from "@/assets/jessica-cover.jpg";
 
 const socialProofQuotes = [
-  { quote: "Once you see it, you can't unsee it.", name: "Alexandra", role: "Founder & Creative Director, Of The Islands", avatar: "https://via.placeholder.com/48x48/7ec8c8/ffffff?text=A" },
-  { quote: "It's not about the actions we're taking, but where the action's coming from.", name: "Brandon", role: "Business Owner, Healing with Brandon", avatar: "https://via.placeholder.com/48x48/7ec8c8/ffffff?text=B" },
-  { quote: "She doesn't coddle, but she's uniquely supportive in helping you carve an authentic path that actually fits you.", name: "Jessica", role: "Founder and CEO, Wildflower Women", avatar: "https://via.placeholder.com/48x48/7ec8c8/ffffff?text=J" },
+  { quote: "Once you see it, you can't unsee it.", name: "Alexandra", role: "Founder & Creative Director, Of The Islands", avatar: "" },
+  { quote: "It's not about the actions we're taking, but where the action's coming from.", name: "Brandon", role: "Business Owner, Healing with Brandon", avatar: brandonCover },
+  { quote: "She doesn't coddle, but she's uniquely supportive in helping you carve an authentic path that actually fits you.", name: "Jessica", role: "Founder and CEO, Wildflower Women", avatar: jessicaCover },
 ];
 
 const values = [
