@@ -1,4 +1,3 @@
-import { Play } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const visionaries = [
@@ -43,31 +42,19 @@ const MethodMerkaba = () => {
           </p>
         </div>
 
-        {/* 5B: State + video */}
+        {/* 5B: State */}
         <div className="bg-card border border-border rounded-xl p-10 sm:p-14">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-center">
-            <div>
-              <h3 className="text-[28px] font-bold text-foreground leading-[1.3]">
-                There is a state your nervous system can enter where the noise stops.
-              </h3>
-              <div className="mt-5 space-y-5 text-[16px] text-body leading-[1.75]">
-                <p>
-                  Brain and heart come into coherence. The static clears. What remains is signal. Clarity without effort. Knowing without analysis.
-                </p>
-                <p>
-                  The activation is transmitted through the quantum field. Physical proximity is not required. The system receives wherever the founder is. Many find that being in their own space allows the work to land deeper.
-                </p>
-              </div>
-            </div>
-            <div>
-              <div className="aspect-video bg-surface rounded-xl flex flex-col items-center justify-center gap-3">
-                <div className="w-14 h-14 rounded-full border-2 border-mint flex items-center justify-center">
-                  <Play size={22} className="text-mint ml-1" />
-                </div>
-                <span className="text-[14px] text-body tracking-wide text-center">
-                  Merkaba Energy Activation<br />Watch Overview
-                </span>
-              </div>
+          <div className="max-w-[680px]">
+            <h3 className="text-[28px] font-bold text-foreground leading-[1.3]">
+              There is a state your nervous system can enter where the noise stops.
+            </h3>
+            <div className="mt-5 space-y-5 text-[16px] text-body leading-[1.75]">
+              <p>
+                Brain and heart come into coherence. The static clears. What remains is signal. Clarity without effort. Knowing without analysis.
+              </p>
+              <p>
+                The activation is transmitted through the quantum field. Physical proximity is not required. The system receives wherever the founder is. Many find that being in their own space allows the work to land deeper.
+              </p>
             </div>
           </div>
         </div>
