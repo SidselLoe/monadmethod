@@ -37,12 +37,12 @@ const About = () => {
       <div className="h-16" />
 
       {/* 1. HERO */}
-      <section className="bg-background px-6" style={{ paddingTop: '120px', paddingBottom: '120px' }}>
-        <div className="max-w-[900px] mx-auto text-center">
-          <h1 className="text-[40px] sm:text-[52px] md:text-[64px] font-bold text-[#1a1a1a] leading-[1.1]">
+      <section className="bg-background py-28 sm:py-36 md:py-44 px-6">
+        <div className="max-w-3xl mx-auto text-center">
+          <h1 className="text-4xl sm:text-5xl md:text-[60px] font-bold text-foreground leading-[1.1] tracking-[-0.3px]">
             Awakening people to their authentic power and purpose
           </h1>
-          <p className="mt-8 text-[20px] sm:text-[24px] md:text-[28px] font-normal text-[#1a1a1a] leading-[1.4] max-w-[800px] mx-auto">
+          <p className="mt-6 text-base sm:text-lg text-foreground font-normal max-w-[640px] mx-auto leading-[1.6]">
             I exist to help ambitious founders stop building from push and start building from pull.
           </p>
         </div>
