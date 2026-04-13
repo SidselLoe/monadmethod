@@ -1,3 +1,5 @@
+import MethodName from "./MethodName";
+
 const modalities = [
   {
     step: "01",
@@ -18,8 +20,10 @@ const modalities = [
 
 const MethodModalities = () => {
   return (
-    <section className="bg-background py-[100px] px-8">
+    <section className="bg-surface py-[100px] px-8">
       <div className="max-w-[1100px] mx-auto">
+        <MethodName />
+
         <div className="text-center">
           <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
             Three modalities. One integrated method.
