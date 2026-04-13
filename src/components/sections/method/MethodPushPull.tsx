@@ -31,7 +31,7 @@ const MethodPushPull = () => {
         </p>
 
         {/* Two-column grid */}
-        <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+        <div className="mt-14 grid grid-cols-1 gap-16">
           {/* Push column */}
           <div>
             <h3 className="text-[20px] font-semibold text-foreground mb-6">
@@ -64,7 +64,7 @@ const MethodPushPull = () => {
         </div>
 
         {/* Closing line */}
-        <p className="mt-16 text-center font-editorial italic text-[28px] text-foreground leading-[1.4] max-w-[700px] mx-auto">
+        <p className="mt-16 text-center text-[20px] font-semibold text-foreground leading-[1.4] max-w-[700px] mx-auto">
           The Monad Method is how you make the shift. Not in theory. In your nervous system.
         </p>
       </div>
