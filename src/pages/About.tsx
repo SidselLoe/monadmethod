@@ -198,6 +198,8 @@ const About = () => {
         </div>
       </section>
 
+      <LineageSection />
+
       {/* 6. SPEAKING & FACILITATION */}
       <section className="bg-surface py-[100px] px-8">
         <div className="max-w-[1100px] mx-auto">
