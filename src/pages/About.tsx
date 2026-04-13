@@ -156,10 +156,19 @@ const About = () => {
           </h2>
           <div className="mt-7 space-y-5 text-base sm:text-lg text-foreground leading-[1.6]">
             <p>
-              I am Danish. I grew up between cultures. I spent years building in fast-moving, high-stakes environments — Web3, crypto, advising — that reward being all-in and punish stepping back. I know what it costs. I also know what it costs not to stop.
+              This work came out of a period that broke my life open.
             </p>
             <p>
-              I live in London. The move from building to prove something, to building from genuine purpose — I have made that shift myself. That is why I know what it actually takes. Not as a concept. As a lived experience, with all the cost and clarity that entails.
+              I had been building the way many high performers do. Full intensity. Always onto the next thing. Always on. I was producing, performing, and succeeding by every external measure, while becoming increasingly disconnected from myself.
+            </p>
+            <p>
+              Then a serious head injury, a broken eye, and retinal detachment forced the stop I was not willing to choose. What followed was not a pause. It was a collapse. Physical, emotional, and existential. The life I had built was deeply out of alignment, and the injury forced me to see how far I had drifted from my authentic self.
+            </p>
+            <p>
+              What came after was not abstract growth. It was a rebuilding. When everything was stripped away, I was left with the question most driven people avoid: who am I? That question became the beginning of my life's work.
+            </p>
+            <p>
+              That experience changed how I work, what I value, and what I am willing to build. Everything I offer now is rooted in what I have lived first.
             </p>
           </div>
         </div>
