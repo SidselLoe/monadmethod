@@ -1,3 +1,4 @@
+import { Play } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const cells = [
@@ -32,7 +33,7 @@ const MethodActivations = () => {
     <section className="bg-background py-[100px] px-8">
       <div className="max-w-[1100px] mx-auto">
         <div className="text-center">
-          <p className="text-[13px] font-bold uppercase tracking-[0.12em] text-muted-foreground mb-4">
+          <p className="text-[13px] font-bold uppercase tracking-[0.12em] text-mint mb-4">
             Monad Activations
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
@@ -41,6 +42,16 @@ const MethodActivations = () => {
           <p className="mt-5 text-[18px] text-body max-w-[700px] mx-auto leading-[1.7]">
             Sixty-minute energy sessions, scored to music. They work through direct transmission — shifting your state, clearing what has been stored, recalibrating your nervous system. All you have to do is show up.
           </p>
+        </div>
+
+        {/* Video placeholder */}
+        <div className="mt-12 aspect-video bg-surface rounded-xl flex flex-col items-center justify-center gap-3">
+          <div className="w-14 h-14 rounded-full border-2 border-mint flex items-center justify-center">
+            <Play size={22} className="text-mint ml-1" />
+          </div>
+          <span className="text-[14px] text-body tracking-wide text-center">
+            Monad Activation<br />Watch Overview
+          </span>
         </div>
 
         <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-10 gap-y-10">
