@@ -175,7 +175,7 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div>
+            <div className="md:mt-[calc(48px*1.15+28px)]">
               <img
                 src={backstoryPhoto}
                 alt="Sidsel Løschenkohl"
