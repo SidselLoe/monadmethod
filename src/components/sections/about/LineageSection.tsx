@@ -34,9 +34,6 @@ const LineageSection = () => {
           ))}
         </div>
 
-        <p className="mt-14 text-[17px] leading-[1.65] text-body text-center max-w-[720px] mx-auto">
-          These two, plus voice-note self-inquiry, form the three modalities of the Monad Method.
-        </p>
       </div>
     </section>
   );
