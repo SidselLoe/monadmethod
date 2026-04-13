@@ -8,13 +8,10 @@ const MethodProblem = () => {
 
         <div className="mt-7 space-y-5 text-[16px] text-body leading-[1.75]">
           <p>
-            Growth slows not because the strategy is wrong, but because the founder is operating from patterns they have never examined. Limiting beliefs. Shadows. A version of themselves that was formed long before the company.
+            Most founders who hit a ceiling try to solve it with more strategy. More discipline. A new framework. It rarely works, because the ceiling isn't strategic. It is internal.
           </p>
           <p>
-            The work is to see these things clearly. To understand what is actually true versus what has simply been running unchallenged. To work with the shadows rather than around them.
-          </p>
-          <p>
-            And to integrate that clarity into aligned action.
+            The way you operate is upstream of everything the company does. Change the operating system and the outputs change on their own.
           </p>
         </div>
 

@@ -7,7 +7,7 @@ const MethodHero = () => {
         </h1>
 
         <p className="mt-6 text-[18px] text-body font-normal max-w-[700px] mx-auto leading-[1.7]">
-          Everything the business produces reflects how the founder operates inside it. The decisions. The delegation. The pace. The ceiling. The Monad Method works at the root. Not the strategy. The system underneath it.
+          The Monad Method is a proprietary way of working with founders at the level below strategy. Three modalities, one integrated method, built to shift how you operate from the inside out.
         </p>
       </div>
     </section>
