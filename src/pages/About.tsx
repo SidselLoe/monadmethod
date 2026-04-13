@@ -290,7 +290,7 @@ const About = () => {
       </section>
 
       {/* 7. THE BOOK */}
-      <section className="py-20 sm:py-28 px-6" style={{ background: '#faf9f7' }}>
+      <section className="bg-background py-20 sm:py-28 px-6">
         <div className="max-w-[900px] mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-14">
           <div
             className="flex-shrink-0 w-[160px] md:w-[200px] rounded-md flex flex-col items-center justify-center text-center px-5 py-10"
