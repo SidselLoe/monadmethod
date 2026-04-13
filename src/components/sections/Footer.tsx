@@ -21,11 +21,11 @@ const Footer = () => {
               Join founders who operate differently.
             </p>
 
-            <p className="mt-4 text-base text-primary-foreground/85 leading-[1.6]">
+            <p className="mt-4 text-base text-primary-foreground leading-[1.6]">
               The email series that breaks down why growth becomes an identity problem, and what to shift when it does.
             </p>
 
-            <p className="mt-3 text-sm text-primary-foreground/60">
+            <p className="mt-3 text-sm text-mint">
               150+ founders, leaders, and creators are already shifting how they operate.
             </p>
           </div>
@@ -69,15 +69,15 @@ const Footer = () => {
         </div>
 
         {/* Zone B — Bottom bar */}
-        <div className="mt-16 border-t border-primary-foreground/10 pt-6 text-center">
-          <p className="text-[13px] text-primary-foreground/60">
+        <div className="mt-16 border-t border-mint/30 pt-6 text-center">
+          <p className="text-[13px] text-mint">
             © Monad Studios Ltd 2026. All rights reserved.
           </p>
           <div className="mt-3 flex items-center justify-center gap-0 text-[13px]">
             <a href="#" className="text-accent hover:underline">Contact</a>
-            <span className="mx-2 text-primary-foreground/30">|</span>
+            <span className="mx-2 text-mint/50">|</span>
             <a href="#" className="text-accent hover:underline">Privacy Policy</a>
-            <span className="mx-2 text-primary-foreground/30">|</span>
+            <span className="mx-2 text-mint/50">|</span>
             <a href="#" className="text-accent hover:underline">Terms of Service</a>
           </div>
         </div>
