@@ -2,21 +2,15 @@ import MethodName from "./MethodName";
 
 const modalities = [
   {
-    step: "01",
-    label: "Monad Activations",
-    title: "The state shift.",
-    body: "Guided, music-driven energy sessions that change your internal state directly. It works through direct transmission and coherence, not through technique or effort. You lie down, you receive, your nervous system recalibrates. You leave with access to a state you cannot think your way into.",
+    title: "Monad Activations.",
+    body: "Guided, music-driven energy sessions that change your internal state directly. They work through direct transmission and coherence, not through technique or effort. You lie down, you receive, your nervous system recalibrates. You leave with access to a state you cannot think your way into.",
   },
   {
-    step: "02",
-    label: "Guided Inquiry",
-    title: "The honesty.",
+    title: "Guided Inquiry.",
     body: "Structured workbook questions, answered by voice note. Speaking bypasses the internal editor. The workbooks provide the frame, the voice notes provide the truth. Patterns become visible because they can finally be heard.",
   },
   {
-    step: "03",
-    label: "Strategic Sessions",
-    title: "The translation.",
+    title: "Strategic Sessions.",
     body: "Private 1:1 sessions that turn state and clarity into decisions, priorities, and execution. Partner-level sparring, not prescription. This is where the work meets the company.",
   },
 ];
@@ -39,13 +33,10 @@ const MethodModalities = () => {
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-7">
           {modalities.map((m) => (
             <div
-              key={m.step}
+              key={m.title}
               className="bg-background border border-border rounded-xl p-8 flex flex-col"
             >
-              <span className="text-[13px] font-bold uppercase tracking-[0.12em] text-mint">
-                {m.step} · {m.label.toUpperCase()}
-              </span>
-              <h3 className="mt-3 text-[20px] font-semibold text-foreground leading-[1.3]">
+              <h3 className="text-[20px] font-semibold text-foreground leading-[1.3]">
                 {m.title}
               </h3>
               <p className="mt-2 text-[15px] text-body leading-[1.7]">
