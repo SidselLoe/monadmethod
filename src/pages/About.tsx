@@ -155,7 +155,7 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start">
             <div>
               <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
-                The backstory.
+                The back story.
               </h2>
               <div className="mt-7 space-y-5 text-base sm:text-lg text-foreground leading-[1.6]">
                 <p>
@@ -183,6 +183,14 @@ const About = () => {
                 style={{ maxHeight: '600px' }}
               />
             </div>
+          </div>
+          <div className="mt-14 bg-secondary rounded-xl py-[52px] px-8 sm:px-14 text-center">
+            <p className="text-[22px] font-semibold text-foreground max-w-[720px] mx-auto leading-[1.5]">
+              "Founders are some of the most spiritual people alive. To build something from nothing — to embody spirit in structure — is a sacred act."
+            </p>
+            <span className="block mt-4 text-[14px] font-normal text-muted-foreground">
+              Sidsel Løschenkohl
+            </span>
           </div>
         </div>
       </section>
@@ -225,14 +233,6 @@ const About = () => {
             </div>
           </div>
 
-          <div className="mt-10 bg-secondary rounded-xl py-[52px] px-8 sm:px-14 text-center mb-20">
-            <p className="text-[22px] font-semibold text-foreground max-w-[720px] mx-auto leading-[1.5]">
-              "Founders are some of the most spiritual people alive. To build something from nothing — to embody spirit in structure — is a sacred act."
-            </p>
-            <span className="block mt-4 text-[14px] font-normal text-muted-foreground">
-              Sidsel Løschenkohl
-            </span>
-          </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15] mb-14">
             Topics I speak on.
