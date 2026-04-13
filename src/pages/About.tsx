@@ -4,6 +4,7 @@ import Footer from "@/components/sections/Footer";
 import brandonCover from "@/assets/brandon-cover.jpg";
 import jessicaCover from "@/assets/jessica-cover.jpg";
 import backstoryPhoto from "@/assets/backstory-sidsel.jpg";
+import LineageSection from "@/components/sections/about/LineageSection";
 
 const socialProofQuotes = [
   { quote: "Once you see it, you can't unsee it.", name: "Alexandra", role: "Founder & Creative Director, Of The Islands", avatar: "" },
