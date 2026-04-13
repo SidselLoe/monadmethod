@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import monadSymbol from "@/assets/monad-symbol.png";
 
 const navLinks = [
   { label: "Monad OS", href: "/" },
@@ -14,11 +15,17 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 sm:px-6 pt-4">
       <div className="w-full max-w-[1400px] bg-background/95 backdrop-blur-sm rounded-lg border border-border/40 shadow-[0_1px_8px_rgba(0,0,0,0.04)] px-4 sm:px-8 py-2.5 flex items-center justify-between">
-        {/* Logo dot */}
+        {/* Logo monad symbol */}
         <Link to="/" className="group flex-shrink-0">
-          <div className="relative w-[14px] h-[14px]">
-            <div className="absolute inset-0 rounded-full bg-foreground transition-all duration-300 group-hover:scale-[0.45]" />
-            <div className="absolute inset-0 rounded-full border-[2px] border-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          <div className="relative w-[22px] h-[22px]">
+            <img
+              src={monadSymbol}
+              alt="Monad"
+              className="absolute inset-0 w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-0"
+            />
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="w-[14px] h-[14px] rounded-full bg-accent" />
+            </div>
           </div>
         </Link>
 
