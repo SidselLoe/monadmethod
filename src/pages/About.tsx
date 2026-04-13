@@ -40,25 +40,25 @@ const About = () => {
       <div className="h-16" />
 
       {/* 1. HERO */}
-      <section className="bg-background py-28 sm:py-36 md:py-44 px-6">
-        <div className="max-w-3xl mx-auto text-center">
+      <section className="bg-background pt-[180px] pb-[100px] px-8">
+        <div className="max-w-[1100px] mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl md:text-[60px] font-bold text-foreground leading-[1.1] tracking-[-0.3px]">
             Awakening people to their authentic power and purpose
           </h1>
-          <p className="mt-6 text-base sm:text-lg text-foreground font-normal max-w-[640px] mx-auto leading-[1.6]">
+          <p className="mt-6 text-[18px] text-body font-normal max-w-[700px] mx-auto leading-[1.7]">
             I exist to help ambitious founders stop building from push and start building from pull.
           </p>
         </div>
       </section>
 
       {/* 2. QUOTES (stacked rows with dividers) */}
-      <section className="bg-background px-6">
-        <div className="max-w-[1200px] mx-auto">
+      <section className="bg-background px-8">
+        <div className="max-w-[1100px] mx-auto">
           {socialProofQuotes.map((item, index) => (
             <div key={item.name}>
               <div className="border-t-2 border-mint" />
               <div className="flex flex-col md:flex-row md:items-center py-12 md:py-16 gap-6 md:gap-16">
-                <p className="font-editorial italic font-bold text-[28px] text-foreground leading-[1.4] md:w-1/2">
+                <p className="font-editorial italic text-[22px] text-foreground leading-[1.55] md:w-1/2">
                   "{item.quote}"
                 </p>
                 <div className="flex items-center gap-4 md:w-1/2">
@@ -75,7 +75,7 @@ const About = () => {
                   )}
                   <div>
                     <p className="text-[16px] font-semibold text-foreground">{item.name}</p>
-                    <p className="text-[14px] font-normal text-muted-foreground">{item.role}</p>
+                    <p className="text-[14px] text-body">{item.role}</p>
                   </div>
                 </div>
               </div>
@@ -88,12 +88,12 @@ const About = () => {
       </section>
 
       {/* 3. MISSION */}
-      <section className="bg-background py-20 sm:py-28 px-6">
+      <section className="bg-background py-[100px] px-8">
         <div className="max-w-[1100px] mx-auto">
-          <h2 className="text-[32px] sm:text-[40px] md:text-[44px] font-bold text-[#1a1a1a] leading-[1.2] text-center">
+          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15] text-center">
             My mission: Help founders and creators return to the clearest expression of who they are.
           </h2>
-          <p className="mt-6 text-[18px] font-normal text-[#444] leading-[1.7] max-w-[700px] mx-auto text-center">
+          <p className="mt-6 text-[18px] text-body leading-[1.7] max-w-[700px] mx-auto text-center">
             I work with ambitious people whose business, brand, or body of work is deeply tied to who they are. They have built something real. But what got them here is no longer what will get them there.
           </p>
 
@@ -104,12 +104,12 @@ const About = () => {
                 alt="Sidsel Løschenkohl"
                 className="w-full rounded-lg object-cover"
               />
-              <p className="mt-3 text-[14px] font-medium text-[#1a1a1a]">
+              <p className="mt-3 text-[14px] font-medium text-foreground">
                 Sidsel Løschenkohl / Founder & Creator
               </p>
             </div>
             <div>
-              <div className="space-y-5 text-[16px] leading-[1.75] text-[#444]">
+              <div className="space-y-5 text-[16px] leading-[1.75] text-body">
                 <p>For many, the drive that built the business is the same drive that is now creating friction. They are operating from push. From pressure, perfectionism, proving, survival, or a pattern they have outgrown.</p>
                 <p>My work is about shifting that.</p>
                 <p>Because building from push has a ceiling. Building from pull changes everything.</p>
@@ -131,16 +131,16 @@ const About = () => {
       </section>
 
       {/* 4. VALUES */}
-      <section className="bg-secondary py-20 sm:py-28 px-6">
-        <div className="max-w-[1200px] mx-auto">
+      <section className="bg-surface py-[100px] px-8">
+        <div className="max-w-[1100px] mx-auto">
           <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15] text-center mb-14">
             My values.
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
             {values.map((value) => (
-              <div key={value.title} className="bg-white rounded-lg p-[30px]">
-                <h3 className="text-[20px] font-semibold text-[#1a1a1a] mb-3">{value.title}</h3>
-                <p className="text-[15px] leading-[1.6] text-[#444]">
+              <div key={value.title} className="bg-white border border-border rounded-xl p-8">
+                <h3 className="text-[20px] font-semibold text-foreground mb-3">{value.title}</h3>
+                <p className="text-[15px] leading-[1.7] text-body">
                   {value.description}
                 </p>
               </div>
@@ -150,14 +150,14 @@ const About = () => {
       </section>
 
       {/* 5. BACKSTORY */}
-      <section className="bg-background pt-20 sm:pt-28 pb-10 sm:pb-14 px-6">
+      <section className="bg-background py-[100px] px-8">
         <div className="max-w-[1100px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-[50px] items-start">
             <div>
               <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
                 The back story.
               </h2>
-              <div className="mt-7 space-y-5 text-base sm:text-lg text-foreground leading-[1.6]">
+              <div className="mt-7 space-y-5 text-[16px] text-body leading-[1.75]">
                 <p>
                   This work came out of a period that broke my life open.
                 </p>
@@ -184,11 +184,13 @@ const About = () => {
               />
             </div>
           </div>
-          <div className="mt-14 bg-secondary rounded-xl py-[52px] px-8 sm:px-14 text-center">
-            <p className="font-editorial italic font-bold text-[24px] sm:text-[28px] text-foreground max-w-[720px] mx-auto leading-[1.4]">
+
+          {/* Quote strip — Component E */}
+          <div className="mt-14 bg-mint rounded-xl py-[52px] px-8 sm:px-14 text-center">
+            <p className="font-editorial italic text-[22px] text-white max-w-[720px] mx-auto leading-[1.55]">
               "Building a business is a spiritual act. It asks you to become the person who can hold what you are here to create."
             </p>
-            <span className="block mt-5 text-[13px] font-bold tracking-[0.12em] uppercase text-muted-foreground">
+            <span className="block mt-5 text-[14px] font-normal text-white/80">
               Sidsel Løschenkohl
             </span>
           </div>
@@ -196,33 +198,33 @@ const About = () => {
       </section>
 
       {/* 6. SPEAKING & FACILITATION */}
-      <section className="bg-background py-20 sm:py-28 px-6">
-        <div className="max-w-[1200px] mx-auto">
+      <section className="bg-surface py-[100px] px-8">
+        <div className="max-w-[1100px] mx-auto">
           <div className="text-center mb-16">
-            <span className="text-[13px] font-bold tracking-[0.12em] uppercase text-muted-foreground">
+            <span className="text-[13px] font-bold tracking-[0.12em] uppercase text-mint">
               Speaking & Facilitation
             </span>
             <h2 className="mt-4 text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
               I speak on alignment, energy, and the future of leadership.
             </h2>
-            <p className="mt-5 text-[17px] font-normal leading-[1.7] text-[#444] max-w-[680px] mx-auto">
+            <p className="mt-5 text-[18px] leading-[1.7] text-body max-w-[700px] mx-auto">
               Inviting founders, creators, and communities to reconnect with intuition, truth, and embodied intelligence in an increasingly disembodied world.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-[50px] items-start mb-20">
             <div>
               <img
                 src="https://hciqvcspehfitlgclhud.supabase.co/storage/v1/object/public/sidsel/Headshot%202.jpg"
                 alt="Sidsel speaking"
-                className="w-full rounded-[10px] object-cover aspect-[4/3]"
+                className="w-full rounded-lg object-cover aspect-[4/3]"
               />
             </div>
             <div>
-              <h3 className="text-[28px] font-bold text-foreground">
+              <h3 className="text-[28px] font-bold text-foreground leading-[1.3]">
                 Living from the Heart in the Age of AI
               </h3>
-              <div className="mt-5 space-y-5 text-[16px] leading-[1.75] text-[#444]">
+              <div className="mt-5 space-y-5 text-[16px] leading-[1.75] text-body">
                 <p>
                   My talks sit at the intersection of identity, spirituality, and strategy. I explore embodied intelligence, the patterns that shape how people lead, and why AI amplifies the signal you bring. The clearer and more coherent the human behind the tool, the more powerful the result.
                 </p>
@@ -233,11 +235,10 @@ const About = () => {
             </div>
           </div>
 
-
           <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15] mb-14">
             Topics I speak on.
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {[
               {
                 title: "THE INTERNAL OPERATING SYSTEM",
@@ -258,30 +259,30 @@ const About = () => {
             ].map((topic) => (
               <div
                 key={topic.title}
-                className="bg-white/95 border border-mint/40 rounded-xl p-8"
+                className="bg-white border border-border rounded-xl p-8"
               >
-                <span className="text-[13px] font-bold tracking-[0.12em] uppercase text-muted-foreground">
+                <span className="text-[13px] font-bold tracking-[0.12em] uppercase text-mint">
                   {topic.title}
                 </span>
-                <p className="mt-3 text-[15px] leading-[1.7] text-[#444]">
+                <p className="mt-3 text-[15px] leading-[1.7] text-body">
                   {topic.body}
                 </p>
               </div>
             ))}
           </div>
 
-          <div className="mt-14 bg-accent rounded-xl sm:rounded-2xl p-10 sm:p-12 flex flex-col md:flex-row items-center gap-8">
+          <div className="mt-14 bg-accent rounded-xl p-10 sm:p-12 flex flex-col md:flex-row items-center gap-8">
             <div className="flex-1 text-center md:text-left">
               <h3 className="text-xl sm:text-2xl font-bold text-accent-foreground">
                 Interested in having me speak at your event or conference?
               </h3>
-              <p className="mt-3 text-base text-accent-foreground/85 leading-[1.5]">
+              <p className="mt-3 text-[16px] text-accent-foreground/85 leading-[1.75]">
                 I speak at conferences, retreats, and private events on alignment, identity, and the future of leadership.
               </p>
             </div>
             <Link
               to="/apply"
-              className="flex-shrink-0 inline-flex bg-background text-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded-full hover:bg-background/90 transition-colors"
+              className="flex-shrink-0 inline-flex bg-background text-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-background/90 transition-colors"
             >
               Get in Touch
             </Link>
@@ -290,8 +291,8 @@ const About = () => {
       </section>
 
       {/* 7. THE BOOK */}
-      <section className="bg-background py-20 sm:py-28 px-6">
-        <div className="max-w-[900px] mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-14">
+      <section className="bg-background py-[100px] px-8">
+        <div className="max-w-[1100px] mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-14">
           <div
             className="flex-shrink-0 w-[160px] md:w-[200px] rounded-md flex flex-col items-center justify-center text-center px-5 py-10"
             style={{
@@ -310,20 +311,20 @@ const About = () => {
           </div>
 
           <div className="text-center md:text-left">
-            <span className="text-[12px] font-bold tracking-[0.1em] uppercase text-muted-foreground">
+            <span className="text-[13px] font-bold tracking-[0.12em] uppercase text-mint">
               The Book
             </span>
             <h2 className="mt-3 text-[28px] sm:text-[32px] font-bold text-foreground leading-[1.2]">
               The Power of Unwavering Belief
             </h2>
-            <p className="mt-4 text-[16px] leading-[1.75] text-foreground">
+            <p className="mt-4 text-[16px] leading-[1.75] text-body">
               A book about how reality changes when belief stops being abstract and becomes lived. On identity, inner state, and the unseen laws behind what we create.
             </p>
             <a
               href="https://thepowerofunwaveringbelief.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-5 text-[13px] font-bold tracking-[0.12em] uppercase text-muted-foreground hover:text-foreground transition-colors"
+              className="inline-block mt-5 text-[14px] font-medium text-teal-link hover:underline transition-colors"
             >
               Explore the Book →
             </a>
@@ -331,29 +332,29 @@ const About = () => {
         </div>
       </section>
 
-      {/* 8. REFLECTIONS */}
-      <section className="bg-secondary py-20 sm:py-28 px-6">
-        <div className="max-w-[1200px] mx-auto">
+      {/* 8. BLOG */}
+      <section className="bg-surface py-[100px] px-8">
+        <div className="max-w-[1100px] mx-auto">
           <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
             Blog
           </h2>
-          <p className="mt-3 text-base text-foreground leading-[1.6] max-w-[640px]">
+          <p className="mt-3 text-[16px] text-body leading-[1.75] max-w-[700px]">
             Writing on founders, identity, state, and what it actually takes to build from alignment.
           </p>
           <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
             {blogPosts.map((post) => (
-              <div key={post.title} className="bg-background rounded-lg overflow-hidden border border-border">
-                <div className="aspect-[16/10] bg-mint flex items-center justify-center">
-                  <span className="text-muted-foreground text-sm">Image placeholder</span>
+              <div key={post.title} className="bg-white border border-border rounded-xl overflow-hidden">
+                <div className="aspect-[16/10] bg-mint/20 flex items-center justify-center">
+                  <span className="text-body text-[14px]">Image placeholder</span>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-lg font-bold text-foreground">{post.title}</h3>
-                  <p className="mt-2 text-sm text-foreground leading-[1.5] line-clamp-2">
+                  <h3 className="text-[20px] font-semibold text-foreground">{post.title}</h3>
+                  <p className="mt-2 text-[15px] text-body leading-[1.7] line-clamp-2">
                     {post.excerpt}
                   </p>
                   <Link
                     to="/reflections"
-                    className="inline-block mt-3 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                    className="inline-block mt-3 text-[14px] font-medium text-teal-link hover:underline transition-colors"
                   >
                     Read more →
                   </Link>
@@ -364,7 +365,7 @@ const About = () => {
           <div className="mt-8">
             <Link
               to="/reflections"
-              className="text-[13px] font-bold tracking-[0.12em] uppercase text-muted-foreground hover:text-foreground transition-colors"
+              className="text-[14px] font-medium text-teal-link hover:underline transition-colors"
             >
               View All Blogs →
             </Link>
@@ -373,17 +374,17 @@ const About = () => {
       </section>
 
       {/* 9. CTA */}
-      <section className="bg-background py-20 sm:py-28 px-6">
-        <div className="max-w-[560px] mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground leading-[1.15]">
+      <section className="bg-background py-[100px] px-8">
+        <div className="max-w-[500px] mx-auto text-center">
+          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
             Ready to talk?
           </h2>
-          <p className="mt-5 text-base text-foreground leading-[1.6]">
+          <p className="mt-5 text-[16px] text-body leading-[1.75]">
             If something here spoke to you, book a call. No pitch. Just a conversation about where you are and whether the work is right for you.
           </p>
           <Link
             to="/apply"
-            className="inline-flex mt-8 bg-accent text-accent-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded-full hover:bg-accent/90 transition-colors"
+            className="inline-flex mt-8 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
           >
             Book a Call
           </Link>

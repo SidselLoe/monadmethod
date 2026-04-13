@@ -10,9 +10,9 @@ const avatarUrls = [
 
 const Hero = () => {
   return (
-    <section className="bg-background py-28 sm:py-36 md:py-44 px-6">
-      <div className="max-w-3xl mx-auto text-center">
-        <p className="text-sm font-semibold uppercase tracking-[2px] text-muted-foreground mb-6">
+    <section className="bg-background pt-[180px] pb-[100px] px-8">
+      <div className="max-w-[1100px] mx-auto text-center">
+        <p className="text-[13px] font-bold uppercase tracking-[0.12em] text-mint mb-6">
           For founder-CEOs who are the business.
         </p>
 
@@ -20,13 +20,13 @@ const Hero = () => {
           You are the business. That's not a compliment.
         </h1>
 
-        <p className="mt-6 text-base sm:text-lg text-foreground font-normal max-w-[640px] mx-auto leading-[1.6]">
+        <p className="mt-6 text-[18px] text-body font-normal max-w-[700px] mx-auto leading-[1.7]">
           What you need has always been in you. The work returns you to it. Three modalities. Thirty days.
         </p>
 
         <Link
           to="/apply"
-          className="inline-flex mt-10 bg-accent text-accent-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded-full hover:bg-accent/90 transition-colors"
+          className="inline-flex mt-10 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
         >
           Book a Call
         </Link>
@@ -45,7 +45,7 @@ const Hero = () => {
               />
             ))}
           </div>
-          <span className="text-sm text-foreground">150+ founders, leaders, and creators have experienced the work.</span>
+          <span className="text-[14px] text-body">150+ founders, leaders, and creators have experienced the work.</span>
         </div>
       </div>
     </section>

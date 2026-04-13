@@ -23,25 +23,25 @@ const cards = [
 
 const WhyThisWorks = () => {
   return (
-    <section className="bg-background py-[100px] sm:py-[120px] px-6">
-      <div className="max-w-[1200px] mx-auto">
+    <section className="bg-background py-[100px] px-8">
+      <div className="max-w-[1100px] mx-auto">
         <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground text-center leading-[1.15]">
           Why this works.
         </h2>
 
-        <div className="mt-10 sm:mt-12 grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-5">
           {cards.map((c) => (
             <div
               key={c.step}
-              className="bg-background border border-border rounded-xl p-7 sm:p-8"
+              className="bg-background border border-border rounded-xl p-8"
             >
-              <span className="text-[13px] font-medium text-accent tracking-[1px]">
+              <span className="text-[13px] font-bold uppercase tracking-[0.12em] text-mint">
                 {c.step}
               </span>
-              <h3 className="mt-3 text-lg sm:text-xl font-medium text-foreground">
+              <h3 className="mt-3 text-[20px] font-semibold text-foreground">
                 {c.heading}
               </h3>
-              <p className="mt-2 text-base text-foreground leading-[1.5]">
+              <p className="mt-2 text-[15px] text-body leading-[1.7]">
                 {c.body}
               </p>
             </div>

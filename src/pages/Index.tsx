@@ -15,8 +15,6 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      {/* Spacer for fixed nav */}
-      <div className="h-16" />
       <Hero />
       <ProblemProgram />
       <WhyThisWorks />
