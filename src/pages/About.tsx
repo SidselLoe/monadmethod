@@ -232,19 +232,19 @@ const About = () => {
             {[
               {
                 title: "THE INTERNAL OPERATING SYSTEM",
-                body: "Why founders who are doing everything right still hit ceilings. The layer below strategy that determines what you can actually hold.",
+                body: "Why people who are doing everything right still hit ceilings. The layer beneath strategy that determines what you can actually hold.",
               },
               {
-                title: "STATE ENGINEERING FOR FOUNDERS",
-                body: "Energy work explained in founder language. The content gap nobody is filling for this audience. Why your state is the strategy.",
+                title: "STATE ENGINEERING",
+                body: "Why your state is not separate from your strategy. Energy, coherence, and how your internal state shapes everything you build.",
               },
               {
                 title: "PUSH VS. PULL: THE IDENTITY SHIFT",
-                body: "Most founders build from push. From pain, from proof, from survival. The shift to pull is an identity change. Here is what it actually takes.",
+                body: "Why so many people build from pressure, proof, or survival, and what it takes to shift into a more purposeful way of creating.",
               },
               {
-                title: "THE UNFAIR ADVANTAGE",
-                body: "Developing authentic human intelligence is the highest-leverage AI strategy. AI amplifies whatever signal you bring. Your heart is the signal.",
+                title: "AI, SIGNAL, AND THE HUMAN EDGE",
+                body: "AI does not create signal. It amplifies it. Why authentic human intelligence is becoming the real competitive advantage.",
               },
             ].map((topic) => (
               <div
