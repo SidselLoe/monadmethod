@@ -17,7 +17,7 @@ const LineageSection = () => {
           Lineage.
         </h2>
 
-        <p className="mt-6 text-[22px] font-medium text-foreground text-center">
+        <p className="mt-6 text-[18px] text-body font-normal max-w-[700px] mx-auto leading-[1.7] text-center">
           Trained on both sides.
         </p>
 
