@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between gap-10">
           {/* Left side */}
           <div className="max-w-[500px]">
-            <img src={logoWhite} alt="Sidsel Løschenkohl" className="h-12 sm:h-14" />
+            <img src={logoWhite} alt="Sidsel Løschenkohl" className="h-[60px] sm:h-[70px]" />
 
             <a
               href="#"
