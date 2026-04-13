@@ -1,5 +1,3 @@
-import reikiMaster from "@/assets/reiki-master.jpg";
-
 const columns = [
   {
     heading: "Strategic.",
@@ -19,10 +17,14 @@ const LineageSection = () => {
           Lineage.
         </h2>
 
+        <p className="mt-6 text-[22px] font-medium text-foreground text-center">
+          Trained on both sides.
+        </p>
+
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10">
           {columns.map((col) => (
             <div key={col.heading}>
-              <h3 className="text-[22px] font-bold text-foreground mb-4">
+              <h3 className="text-[24px] font-bold text-foreground mb-5">
                 {col.heading}
               </h3>
               <p className="text-[16px] leading-[1.75] text-body">
@@ -32,16 +34,9 @@ const LineageSection = () => {
           ))}
         </div>
 
-        <div className="mt-16 flex flex-col items-center">
-          <img
-            src={reikiMaster}
-            alt="Swamy S. Achidanand"
-            className="w-full max-w-[500px] rounded-lg object-cover"
-          />
-          <p className="mt-3 text-[14px] font-medium text-foreground">
-            Swamy S. Achidanand / Reiki Master & Teacher
-          </p>
-        </div>
+        <p className="mt-14 text-[17px] leading-[1.65] text-body text-center max-w-[720px] mx-auto">
+          These two, plus voice-note self-inquiry, form the three modalities of the Monad Method.
+        </p>
       </div>
     </section>
   );
