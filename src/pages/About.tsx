@@ -65,10 +65,10 @@ const About = () => {
                     <img
                       src={item.avatar}
                       alt={item.name}
-                      className="w-12 h-12 rounded-sm object-cover flex-shrink-0"
+                      className="w-12 h-12 rounded-full object-cover flex-shrink-0"
                     />
                   ) : (
-                    <div className="w-12 h-12 rounded-sm bg-mint flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 rounded-full bg-mint flex items-center justify-center flex-shrink-0">
                       <span className="text-white font-semibold text-lg">{item.name[0]}</span>
                     </div>
                   )}
