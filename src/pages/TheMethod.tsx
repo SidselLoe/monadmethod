@@ -17,6 +17,7 @@ const TheMethod = () => {
       <div className="h-16" />
       <MethodHero />
       <MethodProblem />
+      <MethodPushPull />
       <MethodModalities />
       <MethodOrigin />
       <MethodMerkaba />
