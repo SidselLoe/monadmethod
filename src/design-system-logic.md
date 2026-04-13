@@ -165,8 +165,10 @@ padding: 52px 56px
 text-align: center
 ```
 
-- Quote: 22px/400, Playfair Display italic, `#ffffff`, `line-height: 1.55`, `max-width: 720px`, centred
-- Attribution: 14px/400, Poppins, `rgba(255,255,255,0.8)`
+- Quote: 22px/400, Playfair Display italic, `#1a1a1a` (near-black), `line-height: 1.55`, `max-width: 720px`, centred
+- Attribution: 14px/400, Poppins, `rgba(26,26,26,0.7)`
+
+**Global rule:** On solid teal backgrounds, all text must be near-black (`#1a1a1a` / `text-foreground`), never white. White-on-teal lacks sufficient contrast.
 
 One of these per page, maximum. Two quote strips in a row becomes theatrical.
 

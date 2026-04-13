@@ -187,10 +187,10 @@ const About = () => {
 
           {/* Quote strip — Component E */}
           <div className="mt-14 bg-mint rounded-xl py-[52px] px-8 sm:px-14 text-center">
-            <p className="font-editorial italic text-[22px] text-white max-w-[720px] mx-auto leading-[1.55]">
+            <p className="font-editorial italic text-[22px] text-foreground max-w-[720px] mx-auto leading-[1.55]">
               "Building a business is a spiritual act. It asks you to become the person who can hold what you are here to create."
             </p>
-            <span className="block mt-5 text-[14px] font-normal text-white/80">
+            <span className="block mt-5 text-[14px] font-normal text-foreground/70">
               Sidsel Løschenkohl
             </span>
           </div>
