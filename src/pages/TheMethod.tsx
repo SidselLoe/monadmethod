@@ -4,6 +4,7 @@ import MethodProblem from "@/components/sections/method/MethodProblem";
 import MethodPushPull from "@/components/sections/method/MethodPushPull";
 import MethodModalities from "@/components/sections/method/MethodModalities";
 import MethodAI from "@/components/sections/method/MethodAI";
+import MethodActivations from "@/components/sections/method/MethodActivations";
 import MethodOrigin from "@/components/sections/method/MethodOrigin";
 import MethodMerkaba from "@/components/sections/method/MethodMerkaba";
 import MethodLTS from "@/components/sections/method/MethodLTS";
@@ -21,6 +22,7 @@ const TheMethod = () => {
       <MethodPushPull />
       <MethodModalities />
       <MethodAI />
+      <MethodActivations />
       <MethodOrigin />
       <MethodMerkaba />
       <MethodLTS />
