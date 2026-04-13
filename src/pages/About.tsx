@@ -185,7 +185,7 @@ const About = () => {
             </div>
           </div>
           <div className="mt-14 bg-secondary rounded-xl py-[52px] px-8 sm:px-14 text-center">
-            <p className="text-[22px] font-semibold text-foreground max-w-[720px] mx-auto leading-[1.5]">
+            <p className="font-editorial italic font-bold text-[24px] sm:text-[28px] text-foreground max-w-[720px] mx-auto leading-[1.4]">
               "Building a business is a spiritual act. It asks you to become the person who can hold what you are here to create."
             </p>
             <span className="block mt-5 text-[13px] font-bold tracking-[0.12em] uppercase text-muted-foreground">
