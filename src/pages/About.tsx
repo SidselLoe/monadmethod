@@ -225,6 +225,15 @@ const About = () => {
             </div>
           </div>
 
+          <div className="mt-10 bg-secondary rounded-xl py-[52px] px-8 sm:px-14 text-center mb-20">
+            <p className="text-[22px] font-semibold text-foreground max-w-[720px] mx-auto leading-[1.5]">
+              "Founders are some of the most spiritual people alive. To build something from nothing — to embody spirit in structure — is a sacred act."
+            </p>
+            <span className="block mt-4 text-[14px] font-normal text-muted-foreground">
+              Sidsel Løschenkohl
+            </span>
+          </div>
+
           <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15] mb-14">
             Topics I speak on.
           </h2>
@@ -259,15 +268,6 @@ const About = () => {
                 </p>
               </div>
             ))}
-          </div>
-
-          <div className="mt-10 bg-secondary rounded-xl py-[52px] px-8 sm:px-14 text-center">
-            <p className="text-[22px] font-semibold text-foreground max-w-[720px] mx-auto leading-[1.5]">
-              "Founders are some of the most spiritual people alive. To build something from nothing — to embody spirit in structure — is a sacred act."
-            </p>
-            <span className="block mt-4 text-[14px] font-normal text-muted-foreground">
-              Sidsel Løschenkohl
-            </span>
           </div>
 
           <div className="mt-14 bg-secondary rounded-2xl py-14 px-8 sm:px-14 text-center">
