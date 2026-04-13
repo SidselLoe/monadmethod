@@ -3,15 +3,15 @@ import MethodName from "./MethodName";
 const modalities = [
   {
     title: "Monad Activations.",
-    body: "Guided, music-driven energy sessions that change your internal state directly. They work through direct transmission and coherence, not through technique or effort. You lie down, you receive, your nervous system recalibrates. You leave with access to a state you cannot think your way into.",
+    body: "Guided, music-driven energy sessions that shift your internal state directly. You lie down, you receive, your nervous system recalibrates. You leave with access to a state you cannot think your way into.",
   },
   {
     title: "Guided Inquiry.",
-    body: "Structured workbook questions, answered by voice note. Speaking bypasses the internal editor. The workbooks provide the frame, the voice notes provide the truth. Patterns become visible because they can finally be heard.",
+    body: "Structured workbook questions, answered by voice note. The workbooks provide the frame, the voice notes provide the truth. Patterns become visible because they can finally be heard.",
   },
   {
     title: "Strategic Sessions.",
-    body: "Private 1:1 sessions that turn state and clarity into decisions, priorities, and execution. Partner-level sparring, not prescription. This is where the work meets the company.",
+    body: "Private 1:1 sessions that turn state and clarity into decisions, priorities, and execution. Partner-level sparring, not prescription. This is where the inner work meets the outer company and reshapes how you lead.",
   },
 ];
 
