@@ -13,6 +13,7 @@ const Footer = () => {
             <a
               href="#"
               className="inline-flex mt-10 bg-accent text-accent-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded-full hover:bg-accent/90 transition-colors"
+              style={{ marginLeft: 'calc((min(100%, 500px) - 100%) / 2)', transform: 'none' }}
             >
               Get the Series
             </a>
