@@ -316,16 +316,16 @@ const About = () => {
             <h2 className="mt-3 text-[28px] sm:text-[32px] font-bold text-foreground leading-[1.2]">
               The Power of Unwavering Belief
             </h2>
-            <p className="mt-4 text-[16px] leading-[1.75] text-[#444]">
-              The deeper layer underneath everything I do. A book about what happens when you stop seeking and start being. Written from lived experience, not theory.
+            <p className="mt-4 text-[16px] leading-[1.75] text-muted-foreground">
+              A book about how reality changes when belief stops being abstract and becomes lived. On identity, inner state, and the unseen laws behind what we create.
             </p>
             <a
               href="https://thepowerofunwaveringbelief.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-4 text-sm font-medium text-[#3f8d8d] hover:text-[#3f8d8d]/80 transition-colors"
+              className="inline-block mt-5 text-[13px] font-bold tracking-[0.12em] uppercase text-muted-foreground hover:text-foreground transition-colors"
             >
-              Read more →
+              Explore the Book →
             </a>
           </div>
         </div>
