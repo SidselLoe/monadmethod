@@ -1,4 +1,4 @@
-import logoWhite from "@/assets/logo-sidsel-loschenkohl-white.svg";
+import logoWhite from "@/assets/logo-sidsel-loschenkohl-white.png";
 
 const Footer = () => {
   return (
