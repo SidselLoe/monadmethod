@@ -166,7 +166,153 @@ const About = () => {
         </div>
       </section>
 
-      {/* 6. REFLECTIONS */}
+      {/* 6. SPEAKING & FACILITATION */}
+      <section className="bg-background py-20 sm:py-28 px-6">
+        <div className="max-w-[1200px] mx-auto">
+          {/* Part A — Speaking intro */}
+          <div className="text-center mb-16">
+            <span className="text-[13px] font-bold tracking-[0.12em] uppercase text-mint">
+              Speaking & Facilitation
+            </span>
+            <h2 className="mt-4 text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
+              I speak on alignment, energy, and the future of leadership.
+            </h2>
+            <p className="mt-5 text-[17px] font-normal leading-[1.7] text-[#444] max-w-[680px] mx-auto">
+              Inviting founders, creators, and communities to reconnect with intuition, truth, and embodied intelligence in an increasingly disembodied world.
+            </p>
+          </div>
+
+          {/* Two-column feature */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start mb-20">
+            <div>
+              <img
+                src="https://hciqvcspehfitlgclhud.supabase.co/storage/v1/object/public/sidsel/Headshot%202.jpg"
+                alt="Sidsel speaking"
+                className="w-full rounded-[10px] object-cover aspect-[4/3]"
+              />
+            </div>
+            <div>
+              <h3 className="text-[28px] font-bold text-foreground">
+                Living from the Heart in the Age of AI
+              </h3>
+              <div className="mt-5 space-y-5 text-[16px] leading-[1.75] text-[#444]">
+                <p>
+                  My 2025 keynote at Burning Man explored how founders can lead with compassion and embodied intelligence in an AI-driven world. Weaving together neuroscience, spiritual frameworks, and experiential practices.
+                </p>
+                <p>
+                  My talks blend science, spirituality, and strategy. I explore how consciousness shapes reality, how the body carries wisdom beyond the mind, and how authenticity becomes a force multiplier in leadership and innovation.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Part B — Topics I speak on */}
+          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15] mb-14">
+            Topics I speak on.
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
+            {[
+              {
+                title: "THE INTERNAL OPERATING SYSTEM",
+                body: "Why founders who are doing everything right still hit ceilings. The layer below strategy that determines what you can actually hold.",
+              },
+              {
+                title: "STATE ENGINEERING FOR FOUNDERS",
+                body: "Energy work explained in founder language. The content gap nobody is filling for this audience. Why your state is the strategy.",
+              },
+              {
+                title: "PUSH VS. PULL: THE IDENTITY SHIFT",
+                body: "Most founders build from push. From pain, from proof, from survival. The shift to pull is an identity change. Here is what it actually takes.",
+              },
+              {
+                title: "THE UNFAIR ADVANTAGE",
+                body: "Developing authentic human intelligence is the highest-leverage AI strategy. AI amplifies whatever signal you bring. Your heart is the signal.",
+              },
+            ].map((topic) => (
+              <div
+                key={topic.title}
+                className="bg-white/95 border border-mint/40 rounded-xl p-8"
+              >
+                <span className="text-[13px] font-bold tracking-[0.12em] uppercase text-mint">
+                  {topic.title}
+                </span>
+                <p className="mt-3 text-[15px] leading-[1.7] text-[#444]">
+                  {topic.body}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Quote strip */}
+          <div className="mt-10 bg-mint rounded-xl py-[52px] px-8 sm:px-14 text-center">
+            <p className="text-[22px] font-semibold text-white max-w-[720px] mx-auto leading-[1.5]">
+              "Founders are some of the most spiritual people alive. To build something from nothing — to embody spirit in structure — is a sacred act."
+            </p>
+            <span className="block mt-4 text-[14px] font-normal text-white/80">
+              Sidsel Løschenkohl
+            </span>
+          </div>
+
+          {/* CTA */}
+          <div className="mt-10 text-center">
+            <p className="text-[17px] text-[#444] mb-5">
+              Interested in having me speak at your event or conference?
+            </p>
+            <Link
+              to="/apply"
+              className="inline-flex bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
+            >
+              Get in Touch
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* 7. THE BOOK */}
+      <section className="py-20 sm:py-28 px-6" style={{ background: '#faf9f7' }}>
+        <div className="max-w-[900px] mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-14">
+          {/* Book cover */}
+          <div
+            className="flex-shrink-0 w-[160px] md:w-[200px] rounded-md flex flex-col items-center justify-center text-center px-5 py-10"
+            style={{
+              aspectRatio: '2/3',
+              background: '#1a1a1a',
+              boxShadow: '8px 8px 32px rgba(0,0,0,0.12)',
+            }}
+          >
+            <span className="text-mint text-2xl">⊙</span>
+            <span className="mt-3 text-[17px] font-extrabold text-white leading-tight">
+              The Power of Unwavering Belief
+            </span>
+            <span className="mt-2 text-[11px] font-normal text-mint">
+              Sidsel Løschenkohl
+            </span>
+          </div>
+
+          {/* Text block */}
+          <div className="text-center md:text-left">
+            <span className="text-[12px] font-bold tracking-[0.1em] uppercase text-mint">
+              The Book
+            </span>
+            <h2 className="mt-3 text-[28px] sm:text-[32px] font-bold text-foreground leading-[1.2]">
+              The Power of Unwavering Belief
+            </h2>
+            <p className="mt-4 text-[16px] leading-[1.75] text-[#444]">
+              The deeper layer underneath everything I do. A book about what happens when you stop seeking and start being. Written from lived experience, not theory.
+            </p>
+            <a
+              href="https://thepowerofunwaveringbelief.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-4 text-sm font-medium text-[#3f8d8d] hover:text-[#3f8d8d]/80 transition-colors"
+            >
+              Read more →
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* 8. REFLECTIONS */}
       <section className="bg-secondary py-20 sm:py-28 px-6">
         <div className="max-w-[1200px] mx-auto">
           <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
