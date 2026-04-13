@@ -270,13 +270,16 @@ const About = () => {
             </span>
           </div>
 
-          <div className="mt-10 text-center">
-            <p className="text-[17px] text-[#444] mb-5">
+          <div className="mt-14 bg-secondary rounded-2xl py-14 px-8 sm:px-14 text-center">
+            <h3 className="text-[24px] sm:text-[28px] font-bold text-foreground leading-[1.3]">
               Interested in having me speak at your event or conference?
+            </h3>
+            <p className="mt-4 text-[16px] text-muted-foreground max-w-[520px] mx-auto leading-[1.6]">
+              I speak at conferences, retreats, and private events on alignment, identity, and the future of leadership.
             </p>
             <Link
               to="/apply"
-              className="inline-flex bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
+              className="inline-flex mt-7 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-8 py-3 rounded-full hover:bg-accent/90 transition-colors"
             >
               Get in Touch
             </Link>
