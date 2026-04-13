@@ -19,11 +19,11 @@ const visionaries = [
 ];
 
 const expectations = [
-  "90 minutes total",
+  "90 minutes total per session",
+  "60 minutes lying down, eyes closed, guided by music",
+  "30-minute opening and integration circle",
+  "Small, intimate group with space for sharing",
   "No need to speak during the activation itself",
-  "30-minute opening and integration at beginning and end",
-  "Small, intimate group with space for sharing at the end",
-  "60 minutes experienced lying down, eyes closed, guided by music",
   "Full preparation details shared once booked",
 ];
 
@@ -32,7 +32,7 @@ const MethodMerkaba = () => {
     <section className="bg-secondary py-[100px] px-8">
       <div className="max-w-[1100px] mx-auto flex flex-col gap-5">
 
-        {/* 5A: Opening hook */}
+        {/* Opening hook */}
         <div className="bg-card border border-border rounded-xl p-10 sm:p-16 text-center">
           <p className="font-editorial italic text-[22px] sm:text-[28px] text-foreground leading-[1.4] max-w-[680px] mx-auto">
             "Your best ideas have never come from thinking harder."
@@ -42,24 +42,31 @@ const MethodMerkaba = () => {
           </p>
         </div>
 
-        {/* 5B: State */}
+        {/* State description */}
         <div className="bg-card border border-border rounded-xl p-10 sm:p-14">
-          <div className="max-w-[680px]">
-            <h3 className="text-[28px] font-bold text-foreground leading-[1.3]">
-              There is a state your nervous system can enter where the noise stops.
-            </h3>
-            <div className="mt-5 space-y-5 text-[16px] text-body leading-[1.75]">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-start">
+            <div>
+              <h3 className="text-[28px] font-bold text-foreground leading-[1.3]">
+                There is a state your nervous system can enter where the noise stops.
+              </h3>
+              <div className="mt-5 space-y-5 text-[16px] text-body leading-[1.75]">
+                <p>
+                  Brain and heart come into coherence. The static clears. What remains is signal. Clarity without effort. Knowing without analysis.
+                </p>
+              </div>
+            </div>
+            <div className="space-y-5 text-[16px] text-body leading-[1.75]">
               <p>
-                Brain and heart come into coherence. The static clears. What remains is signal. Clarity without effort. Knowing without analysis.
+                The group is small. The experience is intimate. Every session lands differently. Some shifts happen during the session itself. Much of the work continues in the hours, days, and months that follow.
               </p>
-              <p>
-                The activation is transmitted through the quantum field. Physical proximity is not required. The system receives wherever the founder is. Many find that being in their own space allows the work to land deeper.
+              <p className="font-medium text-foreground">
+                The experience requires nothing from you but presence. There is no right way to receive it.
               </p>
             </div>
           </div>
         </div>
 
-        {/* 5C: Visionaries */}
+        {/* Visionaries */}
         <div className="bg-card border border-border rounded-xl p-10 sm:p-12">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             {visionaries.map((v) => (
@@ -79,35 +86,7 @@ const MethodMerkaba = () => {
           </div>
         </div>
 
-        {/* 5D: What it is */}
-        <div className="bg-card border border-border rounded-xl p-10 sm:p-14">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-start">
-            <div>
-              <h3 className="text-[28px] font-bold text-foreground leading-[1.3]">
-                Merkaba Energy Activation
-              </h3>
-              <p className="mt-5 text-[16px] text-body leading-[1.75]">
-                A 90-minute session. Not a meditation. Not a sound bath. A guided, music-driven process that works directly with the nervous system. The music is not background. It is part of the work.
-              </p>
-              <p className="mt-6 text-[20px] font-semibold text-foreground leading-[1.4]">
-                Lie down. Close your eyes. Receive.
-              </p>
-            </div>
-            <div className="space-y-5 text-[16px] text-body leading-[1.75]">
-              <p>
-                The group is small. The experience is intimate. Every session lands differently.
-              </p>
-              <p>
-                Some shifts happen during the session itself. Much of the work continues in the hours, days, and months that follow.
-              </p>
-              <p className="font-medium text-foreground">
-                The experience requires nothing from you but presence. There is no right way to receive it.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* 5E: What to expect */}
+        {/* What to expect */}
         <div className="bg-card border border-border rounded-xl p-10 sm:p-12">
           <span className="block text-[13px] font-bold uppercase tracking-[0.12em] text-mint mb-6">
             What to expect
@@ -121,10 +100,10 @@ const MethodMerkaba = () => {
           </ul>
         </div>
 
-        {/* 5F: Access strip */}
+        {/* Access strip */}
         <div className="bg-accent rounded-xl p-10 sm:p-12 flex flex-col sm:flex-row items-center justify-between gap-6">
           <p className="text-[18px] font-medium text-accent-foreground leading-[1.5] text-center sm:text-left">
-            10 Merkaba Energy Activations every month, online.<br />
+            10 Monad Activations every month, online.<br />
             Included in Monad OS and every engagement that follows.
           </p>
           <Link
