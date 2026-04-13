@@ -261,11 +261,11 @@ const About = () => {
             ))}
           </div>
 
-          <div className="mt-10 bg-mint rounded-xl py-[52px] px-8 sm:px-14 text-center">
-            <p className="text-[22px] font-semibold text-white max-w-[720px] mx-auto leading-[1.5]">
+          <div className="mt-10 bg-secondary rounded-xl py-[52px] px-8 sm:px-14 text-center">
+            <p className="text-[22px] font-semibold text-foreground max-w-[720px] mx-auto leading-[1.5]">
               "Founders are some of the most spiritual people alive. To build something from nothing — to embody spirit in structure — is a sacred act."
             </p>
-            <span className="block mt-4 text-[14px] font-normal text-white/80">
+            <span className="block mt-4 text-[14px] font-normal text-muted-foreground">
               Sidsel Løschenkohl
             </span>
           </div>
