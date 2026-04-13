@@ -270,16 +270,18 @@ const About = () => {
             ))}
           </div>
 
-          <div className="mt-14 bg-secondary rounded-2xl py-14 px-8 sm:px-14 text-center">
-            <h3 className="text-[24px] sm:text-[28px] font-bold text-foreground leading-[1.3]">
-              Interested in having me speak at your event or conference?
-            </h3>
-            <p className="mt-4 text-[16px] text-muted-foreground max-w-[520px] mx-auto leading-[1.6]">
-              I speak at conferences, retreats, and private events on alignment, identity, and the future of leadership.
-            </p>
+          <div className="mt-14 bg-accent rounded-xl sm:rounded-2xl p-10 sm:p-12 flex flex-col md:flex-row items-center gap-8">
+            <div className="flex-1 text-center md:text-left">
+              <h3 className="text-xl sm:text-2xl font-bold text-accent-foreground">
+                Interested in having me speak at your event or conference?
+              </h3>
+              <p className="mt-3 text-base text-accent-foreground/85 leading-[1.5]">
+                I speak at conferences, retreats, and private events on alignment, identity, and the future of leadership.
+              </p>
+            </div>
             <Link
               to="/apply"
-              className="inline-flex mt-7 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-8 py-3 rounded-full hover:bg-accent/90 transition-colors"
+              className="flex-shrink-0 inline-flex bg-background text-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded-full hover:bg-background/90 transition-colors"
             >
               Get in Touch
             </Link>
