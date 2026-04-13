@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Compass, Shield, Sparkles, LayoutGrid } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/sections/Footer";
 
@@ -8,23 +9,30 @@ const socialProofQuotes = [
   { quote: "She doesn't coddle, but she's uniquely supportive in helping you carve an authentic path that actually fits you.", name: "Jessica", role: "Founder" },
 ];
 
-const beliefs = [
+const values = [
   {
-    title: "You are the upgrade.",
-    body: "Not the business. Not the systems. The lever is always you. When the internal operating system shifts, everything built on top of it shifts.",
+    title: "Alignment over everything",
+    description: "I do not optimize for short-term gains at the expense of long-term integrity.",
   },
   {
-    title: "Building a business is a spiritual act.",
-    body: "You are creating something that did not exist before you. Most people build from push. Very few build from pull.",
+    title: "Clarity is power",
+    description: "Clear vision, clear systems, and clear communication change what becomes possible.",
   },
   {
-    title: "You are not your business.",
-    body: "You are the creator of it. Untangling those two things is the source of most breakthroughs.",
+    title: "Sovereign leadership",
+    description: "You are not here to follow someone else's blueprint. You are here to trust yourself, think clearly, and lead from your own signal.",
   },
   {
-    title: "No one is coming to save you.",
-    body: "And that is the most liberating thing there is.",
+    title: "Structure as liberation",
+    description: "Freedom comes from the right systems, frameworks, and simplicity. Structure should create spaciousness, not constraint.",
   },
+];
+
+const deserveCards = [
+  { icon: Compass, title: "Build from alignment" },
+  { icon: Shield, title: "Lead from self-trust" },
+  { icon: Sparkles, title: "Create from authentic purpose" },
+  { icon: LayoutGrid, title: "Use structure to create freedom" },
 ];
 
 const blogPosts = [
@@ -48,14 +56,23 @@ const About = () => {
       <Navigation />
       <div className="h-16" />
 
-      {/* 1. HERO — Centered text only */}
+      {/* 1. HERO */}
       <section className="bg-background px-6" style={{ paddingTop: '120px', paddingBottom: '120px' }}>
         <div className="max-w-[800px] mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-[56px] font-extrabold text-foreground leading-[1.1] tracking-[-0.3px]">
-            Awakening founders to their authentic power and purpose.
-          </h1>
+          <span className="text-[13px] font-bold tracking-[0.12em] uppercase text-mint">
+            Awakening People to Their Authentic Power and Purpose
+          </span>
           <p className="mt-6 text-lg sm:text-xl text-foreground leading-[1.6] max-w-[640px] mx-auto">
-            I exist to help ambitious founders stop building from push and start building from pull.
+            I work with founders and creators who are the business, helping them shift from push to pull so they can create, lead, and grow from a place that is aligned.
+          </p>
+          <Link
+            to="/apply"
+            className="inline-flex mt-8 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
+          >
+            Book a Call
+          </Link>
+          <p className="mt-6 text-sm text-muted-foreground">
+            Sidsel Løschenkohl · Creator of the Monad Method™ · London
           </p>
         </div>
       </section>
@@ -76,72 +93,62 @@ const About = () => {
         </div>
       </section>
 
-      {/* 3. MY STORY — Two-column with photo */}
+      {/* 3. MISSION */}
       <section className="bg-background py-20 sm:py-28 px-6">
-        <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-12 md:gap-16 items-start">
-          {/* Left: Photo */}
-          <div>
-            <img
-              src="https://hciqvcspehfitlgclhud.supabase.co/storage/v1/object/public/sidsel/Headshot%202.jpg"
-              alt="Sidsel Løschenkohl"
-              className="w-full rounded-lg object-cover"
-            />
-            <p className="mt-3 text-sm text-muted-foreground">
-              Sidsel Løschenkohl / Founder & Creator
-            </p>
+        <div className="max-w-[900px] mx-auto">
+          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
+            My mission: Help founders and creators return to the clearest expression of who they are.
+          </h2>
+          <div className="mt-7 space-y-5 text-[16px] leading-[1.75] text-[#444]">
+            <p>I work with ambitious people whose business, brand, or body of work is deeply tied to who they are.</p>
+            <p>They have built something real. But what got them here is no longer what will get them there.</p>
+            <p>For many, the drive that built the business is the same drive that is now creating friction. They are operating from push. From pressure, perfectionism, proving, survival, or a pattern they have outgrown.</p>
+            <p>My work is about shifting that.</p>
+            <p>Because building from push has a ceiling. Building from pull changes everything.</p>
+            <p>This work starts internally. Through activations, inquiry, and deep recalibration, we clear the interference that keeps the old identity in place. As that changes, clarity increases. Purpose becomes easier to see. Aligned action becomes more natural. The way you build begins to change because the person building it has changed.</p>
+            <p>I work at the intersection of spiritual alignment, strategic clarity, and operational intelligence.</p>
+            <p>For the right person, this is not about being given a formula. It is about becoming more coherent, more self-trusting, and more fully expressed in what you create.</p>
           </div>
 
-          {/* Right: Story */}
-          <div>
-            <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
-              Why I built this.
-            </h2>
-            <div className="mt-7 space-y-5 text-base sm:text-lg text-foreground leading-[1.6]">
-              <p>
-                In 2023, my health collapsed. Not slowly. Quickly, and completely.
-              </p>
-              <p>
-                After years of building at full intensity — always at full speed, always the next thing — my body enforced the stop I was not willing to choose myself. What followed was not a reset. It was a rebuild. From the ground up. Identity, operating system, purpose, everything.
-              </p>
-              <p>
-                I had been building from push. Most high performers are, without fully knowing it. The same drive that produces results is the drive that eventually dismantles you. Push has a ceiling. You always find it. The moment when success arrives and fulfilment does not.
-              </p>
-              <p>
-                In the space of that stop, I found what I had been running past. The energy activations. The self-inquiry. The honest reckoning with what I was actually building and why, and who I was outside of it.
-              </p>
-              <p>
-                I used these tools on myself, thoroughly and for a long time, before I ever brought them to a client. By the time I formalised the Monad Method, it had already been tested on one very difficult subject. What I now offer is not a framework I studied. It is a methodology I lived.
-              </p>
-            </div>
+          <p className="mt-10 text-[16px] leading-[1.75] text-[#444]">
+            I believe founders and creators deserve to:
+          </p>
+
+          <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-5">
+            {deserveCards.map((card) => (
+              <div
+                key={card.title}
+                className="border border-mint/40 rounded-xl p-6 text-center"
+              >
+                <card.icon className="w-6 h-6 text-mint mx-auto mb-3" strokeWidth={1.5} />
+                <span className="text-[15px] font-semibold text-foreground">{card.title}</span>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-8 text-center">
             <Link
-              to="/the-method"
-              className="inline-block mt-6 text-sm font-medium text-accent hover:text-accent/80 transition-colors"
+              to="/apply"
+              className="inline-flex bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
             >
-              Learn about the Monad Method →
+              Book a Call
             </Link>
           </div>
         </div>
       </section>
 
-      {/* 4. BELIEFS — Card style */}
+      {/* 4. VALUES */}
       <section className="bg-secondary py-20 sm:py-28 px-6">
         <div className="max-w-[1200px] mx-auto">
           <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
-            What I stand for.
+            My values.
           </h2>
-          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-5">
-            {beliefs.map((belief) => (
-              <div
-                key={belief.title}
-                className="bg-background rounded-xl p-8"
-              >
-                {/* Teal Monad symbol */}
-                <div className="w-10 h-10 rounded-full border-[2.5px] border-mint flex items-center justify-center mb-5">
-                  <div className="w-3.5 h-3.5 rounded-full bg-mint" />
-                </div>
-                <h3 className="text-xl font-bold text-foreground">{belief.title}</h3>
-                <p className="mt-3 text-base text-foreground leading-[1.6]">
-                  {belief.body}
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-12">
+            {values.map((value) => (
+              <div key={value.title}>
+                <h3 className="text-[20px] font-bold text-foreground">{value.title}</h3>
+                <p className="mt-3 text-[15px] leading-[1.7] text-[#444]">
+                  {value.description}
                 </p>
               </div>
             ))}
@@ -169,7 +176,6 @@ const About = () => {
       {/* 6. SPEAKING & FACILITATION */}
       <section className="bg-background py-20 sm:py-28 px-6">
         <div className="max-w-[1200px] mx-auto">
-          {/* Part A — Speaking intro */}
           <div className="text-center mb-16">
             <span className="text-[13px] font-bold tracking-[0.12em] uppercase text-mint">
               Speaking & Facilitation
@@ -182,7 +188,6 @@ const About = () => {
             </p>
           </div>
 
-          {/* Two-column feature */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start mb-20">
             <div>
               <img
@@ -206,7 +211,6 @@ const About = () => {
             </div>
           </div>
 
-          {/* Part B — Topics I speak on */}
           <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15] mb-14">
             Topics I speak on.
           </h2>
@@ -243,7 +247,6 @@ const About = () => {
             ))}
           </div>
 
-          {/* Quote strip */}
           <div className="mt-10 bg-mint rounded-xl py-[52px] px-8 sm:px-14 text-center">
             <p className="text-[22px] font-semibold text-white max-w-[720px] mx-auto leading-[1.5]">
               "Founders are some of the most spiritual people alive. To build something from nothing — to embody spirit in structure — is a sacred act."
@@ -253,7 +256,6 @@ const About = () => {
             </span>
           </div>
 
-          {/* CTA */}
           <div className="mt-10 text-center">
             <p className="text-[17px] text-[#444] mb-5">
               Interested in having me speak at your event or conference?
@@ -271,7 +273,6 @@ const About = () => {
       {/* 7. THE BOOK */}
       <section className="py-20 sm:py-28 px-6" style={{ background: '#faf9f7' }}>
         <div className="max-w-[900px] mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-14">
-          {/* Book cover */}
           <div
             className="flex-shrink-0 w-[160px] md:w-[200px] rounded-md flex flex-col items-center justify-center text-center px-5 py-10"
             style={{
@@ -289,7 +290,6 @@ const About = () => {
             </span>
           </div>
 
-          {/* Text block */}
           <div className="text-center md:text-left">
             <span className="text-[12px] font-bold tracking-[0.1em] uppercase text-mint">
               The Book
@@ -353,7 +353,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* 7. CTA */}
+      {/* 9. CTA */}
       <section className="bg-background py-20 sm:py-28 px-6">
         <div className="max-w-[560px] mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground leading-[1.15]">
