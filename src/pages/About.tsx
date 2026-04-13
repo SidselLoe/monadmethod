@@ -316,7 +316,7 @@ const About = () => {
             <h2 className="mt-3 text-[28px] sm:text-[32px] font-bold text-foreground leading-[1.2]">
               The Power of Unwavering Belief
             </h2>
-            <p className="mt-4 text-[16px] leading-[1.75] text-muted-foreground">
+            <p className="mt-4 text-[16px] leading-[1.75] text-foreground">
               A book about how reality changes when belief stops being abstract and becomes lived. On identity, inner state, and the unseen laws behind what we create.
             </p>
             <a
