@@ -20,6 +20,7 @@ const TheMethod = () => {
       <MethodProblem />
       <MethodPushPull />
       <MethodModalities />
+      <MethodSpiral />
       <MethodOrigin />
       <MethodMerkaba />
       <MethodLTS />
