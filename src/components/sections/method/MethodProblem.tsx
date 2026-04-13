@@ -15,9 +15,6 @@ const MethodProblem = () => {
           </p>
         </div>
 
-        <p className="mt-11 text-[20px] font-semibold text-foreground leading-[1.4]">
-          The method moves fast because it works at depth.
-        </p>
       </div>
     </section>
   );

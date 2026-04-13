@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import MethodHero from "@/components/sections/method/MethodHero";
 import MethodProblem from "@/components/sections/method/MethodProblem";
+import MethodPushPull from "@/components/sections/method/MethodPushPull";
 import MethodModalities from "@/components/sections/method/MethodModalities";
 import MethodOrigin from "@/components/sections/method/MethodOrigin";
 import MethodMerkaba from "@/components/sections/method/MethodMerkaba";
@@ -16,6 +17,7 @@ const TheMethod = () => {
       <div className="h-16" />
       <MethodHero />
       <MethodProblem />
+      <MethodPushPull />
       <MethodModalities />
       <MethodOrigin />
       <MethodMerkaba />
