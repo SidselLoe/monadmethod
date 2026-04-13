@@ -61,11 +61,17 @@ const About = () => {
                   "{item.quote}"
                 </p>
                 <div className="flex items-center gap-4 md:w-1/2">
-                  <img
-                    src={item.avatar}
-                    alt={item.name}
-                    className="w-12 h-12 rounded-sm object-cover flex-shrink-0"
-                  />
+                  {item.avatar ? (
+                    <img
+                      src={item.avatar}
+                      alt={item.name}
+                      className="w-12 h-12 rounded-sm object-cover flex-shrink-0"
+                    />
+                  ) : (
+                    <div className="w-12 h-12 rounded-sm bg-mint flex items-center justify-center flex-shrink-0">
+                      <span className="text-white font-semibold text-lg">{item.name[0]}</span>
+                    </div>
+                  )}
                   <div>
                     <p className="text-[16px] font-semibold text-foreground">{item.name}</p>
                     <p className="text-[14px] font-normal text-muted-foreground">{item.role}</p>
