@@ -8,12 +8,11 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between gap-10">
           {/* Left side */}
           <div className="max-w-[500px]">
-            <div className="flex flex-col items-start">
+            <div className="inline-flex flex-col items-center">
               <img src={logoWhite} alt="Sidsel Løschenkohl" className="h-[60px] sm:h-[70px]" />
               <a
                 href="#"
-                className="mt-10 self-center bg-accent text-accent-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded-full hover:bg-accent/90 transition-colors"
-                style={{ marginLeft: '-50%', transform: 'translateX(50%)' }}
+                className="mt-10 bg-accent text-accent-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded-full hover:bg-accent/90 transition-colors"
               >
                 Get the Series
               </a>
