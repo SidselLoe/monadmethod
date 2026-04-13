@@ -3,7 +3,7 @@ import MethodName from "./MethodName";
 const modalities = [
   {
     step: "01",
-    label: "Monad Activation",
+    label: "Monad Activations",
     title: "The state shift.",
     body: "A guided, music-driven energy session that changes your internal state directly. It works through direct transmission and coherence, not through technique or effort. You lie down, you receive, your nervous system recalibrates. You leave with access to a state you cannot think your way into.",
   },
