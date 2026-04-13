@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/sections/Footer";
+import brandonCover from "@/assets/brandon-cover.jpg";
+import jessicaCover from "@/assets/jessica-cover.jpg";
 
 const socialProofQuotes = [
-  { quote: "Once you see it, you can't unsee it.", name: "Alexandra", role: "Founder & Creative Director, Of The Islands", avatar: "https://via.placeholder.com/48x48/7ec8c8/ffffff?text=A" },
-  { quote: "It's not about the actions we're taking, but where the action's coming from.", name: "Brandon", role: "Business Owner, Healing with Brandon", avatar: "https://via.placeholder.com/48x48/7ec8c8/ffffff?text=B" },
-  { quote: "She doesn't coddle, but she's uniquely supportive in helping you carve an authentic path that actually fits you.", name: "Jessica", role: "Founder and CEO, Wildflower Women", avatar: "https://via.placeholder.com/48x48/7ec8c8/ffffff?text=J" },
+  { quote: "Once you see it, you can't unsee it.", name: "Alexandra", role: "Founder & Creative Director, Of The Islands", avatar: "" },
+  { quote: "It's not about the actions we're taking, but where the action's coming from.", name: "Brandon", role: "Business Owner, Healing with Brandon", avatar: brandonCover },
+  { quote: "She doesn't coddle, but she's uniquely supportive in helping you carve an authentic path that actually fits you.", name: "Jessica", role: "Founder and CEO, Wildflower Women", avatar: jessicaCover },
 ];
 
 const values = [
@@ -59,11 +61,17 @@ const About = () => {
                   "{item.quote}"
                 </p>
                 <div className="flex items-center gap-4 md:w-1/2">
-                  <img
-                    src={item.avatar}
-                    alt={item.name}
-                    className="w-12 h-12 rounded-sm object-cover flex-shrink-0"
-                  />
+                  {item.avatar ? (
+                    <img
+                      src={item.avatar}
+                      alt={item.name}
+                      className="w-12 h-12 rounded-sm object-cover flex-shrink-0"
+                    />
+                  ) : (
+                    <div className="w-12 h-12 rounded-sm bg-mint flex items-center justify-center flex-shrink-0">
+                      <span className="text-white font-semibold text-lg">{item.name[0]}</span>
+                    </div>
+                  )}
                   <div>
                     <p className="text-[16px] font-semibold text-foreground">{item.name}</p>
                     <p className="text-[14px] font-normal text-muted-foreground">{item.role}</p>
