@@ -44,6 +44,7 @@ const MethodModalities = () => {
               </p>
             </div>
           ))}
+        </div>
       </div>
     </section>
   );
