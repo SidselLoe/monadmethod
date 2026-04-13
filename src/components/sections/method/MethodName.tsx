@@ -1,17 +1,17 @@
 const MethodName = () => {
   return (
-    <section className="bg-background py-[60px] px-8">
+    <section className="bg-background pt-[40px] pb-[60px] px-8">
       <div className="max-w-[1100px] mx-auto">
-        <div className="bg-mint rounded-xl p-10 sm:p-12 flex flex-col md:flex-row items-center gap-8">
+        <div className="bg-accent rounded-xl p-10 sm:p-12 flex flex-col md:flex-row items-center gap-8">
           {/* Text */}
           <div className="flex-1 text-center md:text-left">
-            <h3 className="text-xl sm:text-2xl font-bold text-background">
-              The name.
+            <h3 className="text-xl sm:text-2xl font-bold text-accent-foreground">
+              The Monad.
             </h3>
-            <p className="mt-3 text-[16px] text-background/85 leading-[1.75]">
-              Monad is a Pythagorean symbol for unity. The indivisible point from which everything unfolds. The essential self when the noise is removed.
+            <p className="mt-3 text-[16px] text-accent-foreground/85 leading-[1.75]">
+              A symbol of oneness. The unified self at the centre of every person. Not something to reach. Something to return to.
             </p>
-            <p className="mt-4 font-editorial italic text-[18px] text-background/90 leading-[1.4]">
+            <p className="mt-4 font-editorial italic text-[18px] text-accent-foreground/90 leading-[1.4]">
               You are both the question and the answer.
             </p>
           </div>
