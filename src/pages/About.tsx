@@ -3,6 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/sections/Footer";
 import brandonCover from "@/assets/brandon-cover.jpg";
 import jessicaCover from "@/assets/jessica-cover.jpg";
+import backstoryPhoto from "@/assets/backstory-sidsel.jpg";
 
 const socialProofQuotes = [
   { quote: "Once you see it, you can't unsee it.", name: "Alexandra", role: "Founder & Creative Director, Of The Islands", avatar: "" },
@@ -150,26 +151,38 @@ const About = () => {
 
       {/* 5. BACKSTORY */}
       <section className="bg-background py-20 sm:py-28 px-6">
-        <div className="max-w-[720px] mx-auto">
-          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
-            The backstory.
-          </h2>
-          <div className="mt-7 space-y-5 text-base sm:text-lg text-foreground leading-[1.6]">
-            <p>
-              This work came out of a period that broke my life open.
-            </p>
-            <p>
-              I had been building the way many high performers do. Full intensity. Always onto the next thing. Always on. I was producing, performing, and succeeding by every external measure, while becoming increasingly disconnected from myself.
-            </p>
-            <p>
-              Then a serious head injury, a broken eye, and retinal detachment forced the stop I was not willing to choose. What followed was not a pause. It was a collapse. Physical, emotional, and existential. The life I had built was deeply out of alignment, and the injury forced me to see how far I had drifted from my authentic self.
-            </p>
-            <p>
-              What came after was not abstract growth. It was a rebuilding. When everything was stripped away, I was left with the question most driven people avoid: who am I? That question became the beginning of my life's work.
-            </p>
-            <p>
-              That experience changed how I work, what I value, and what I am willing to build. Everything I offer now is rooted in what I have lived first.
-            </p>
+        <div className="max-w-[1100px] mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start">
+            <div>
+              <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
+                The backstory.
+              </h2>
+              <div className="mt-7 space-y-5 text-base sm:text-lg text-foreground leading-[1.6]">
+                <p>
+                  This work came out of a period that broke my life open.
+                </p>
+                <p>
+                  I had been building the way many high performers do. Full intensity. Always onto the next thing. Always on. I was producing, performing, and succeeding by every external measure, while becoming increasingly disconnected from myself.
+                </p>
+                <p>
+                  Then a serious head injury, a broken eye, and retinal detachment forced the stop I was not willing to choose. What followed was not a pause. It was a collapse. Physical, emotional, and existential. The life I had built was deeply out of alignment, and the injury forced me to see how far I had drifted from my authentic self.
+                </p>
+                <p>
+                  What came after was not abstract growth. It was a rebuilding. When everything was stripped away, I was left with the question most driven people avoid: who am I? That question became the beginning of my life's work.
+                </p>
+                <p>
+                  That experience changed how I work, what I value, and what I am willing to build. Everything I offer now is rooted in what I have lived first.
+                </p>
+              </div>
+            </div>
+            <div>
+              <img
+                src={backstoryPhoto}
+                alt="Sidsel Løschenkohl"
+                className="w-full rounded-lg object-cover object-top"
+                style={{ maxHeight: '600px' }}
+              />
+            </div>
           </div>
         </div>
       </section>
