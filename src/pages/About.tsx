@@ -335,7 +335,7 @@ const About = () => {
       <section className="bg-secondary py-20 sm:py-28 px-6">
         <div className="max-w-[1200px] mx-auto">
           <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
-            Reflections
+            Blog
           </h2>
           <p className="mt-3 text-base text-foreground leading-[1.6] max-w-[640px]">
             Writing on founders, identity, state, and what it actually takes to build from alignment.
@@ -364,9 +364,9 @@ const About = () => {
           <div className="mt-8">
             <Link
               to="/reflections"
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              className="text-[13px] font-bold tracking-[0.12em] uppercase text-muted-foreground hover:text-foreground transition-colors"
             >
-              View all reflections →
+              View All Blogs →
             </Link>
           </div>
         </div>
