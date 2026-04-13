@@ -191,7 +191,7 @@ const About = () => {
       <section className="bg-background py-20 sm:py-28 px-6">
         <div className="max-w-[1200px] mx-auto">
           <div className="text-center mb-16">
-            <span className="text-[13px] font-bold tracking-[0.12em] uppercase text-mint">
+            <span className="text-[13px] font-bold tracking-[0.12em] uppercase text-muted-foreground">
               Speaking & Facilitation
             </span>
             <h2 className="mt-4 text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
@@ -251,7 +251,7 @@ const About = () => {
                 key={topic.title}
                 className="bg-white/95 border border-mint/40 rounded-xl p-8"
               >
-                <span className="text-[13px] font-bold tracking-[0.12em] uppercase text-mint">
+                <span className="text-[13px] font-bold tracking-[0.12em] uppercase text-muted-foreground">
                   {topic.title}
                 </span>
                 <p className="mt-3 text-[15px] leading-[1.7] text-[#444]">
@@ -305,7 +305,7 @@ const About = () => {
           </div>
 
           <div className="text-center md:text-left">
-            <span className="text-[12px] font-bold tracking-[0.1em] uppercase text-mint">
+            <span className="text-[12px] font-bold tracking-[0.1em] uppercase text-muted-foreground">
               The Book
             </span>
             <h2 className="mt-3 text-[28px] sm:text-[32px] font-bold text-foreground leading-[1.2]">
