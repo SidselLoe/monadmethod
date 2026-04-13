@@ -16,6 +16,31 @@ const pullBullets = [
   "The business still runs on you. But now you are the signal, not the sacrifice.",
 ];
 
+const BulletGrid = ({
+  bullets,
+  dotColor,
+}: {
+  bullets: string[];
+  dotColor: string;
+}) => {
+  const left = bullets.slice(0, 3);
+  const right = bullets.slice(3, 6);
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+      {[left, right].map((col, colIdx) => (
+        <ul key={colIdx} className="space-y-6">
+          {col.map((bullet, i) => (
+            <li key={i} className="flex items-start gap-3">
+              <span className={`mt-[10px] w-2 h-2 rounded-full ${dotColor} flex-shrink-0`} />
+              <span className="text-[16px] leading-[1.75] text-body">{bullet}</span>
+            </li>
+          ))}
+        </ul>
+      ))}
+    </div>
+  );
+};
+
 const MethodPushPull = () => {
   return (
     <section className="bg-background py-[100px] px-8">
@@ -30,37 +55,20 @@ const MethodPushPull = () => {
           The shift from push to pull is an identity change, not a mindset tweak.
         </p>
 
-        {/* Two-column grid */}
-        <div className="mt-14 grid grid-cols-1 gap-16">
-          {/* Push column */}
-          <div>
-            <h3 className="text-[20px] font-semibold text-foreground mb-6">
-              You are building from push if...
-            </h3>
-            <ul className="space-y-5">
-              {pushBullets.map((bullet, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <span className="mt-[10px] w-2 h-2 rounded-full bg-accent flex-shrink-0" />
-                  <span className="text-[16px] leading-[1.75] text-body">{bullet}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+        {/* Push block */}
+        <div className="mt-16">
+          <h3 className="text-[22px] font-semibold text-foreground text-center mb-8">
+            You are building from push if...
+          </h3>
+          <BulletGrid bullets={pushBullets} dotColor="bg-accent" />
+        </div>
 
-          {/* Pull column */}
-          <div>
-            <h3 className="text-[20px] font-semibold text-foreground mb-6">
-              You are building from pull if...
-            </h3>
-            <ul className="space-y-5">
-              {pullBullets.map((bullet, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <span className="mt-[10px] w-2 h-2 rounded-full bg-mint flex-shrink-0" />
-                  <span className="text-[16px] leading-[1.75] text-body">{bullet}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+        {/* Pull block */}
+        <div className="mt-20">
+          <h3 className="text-[22px] font-semibold text-foreground text-center mb-8">
+            You are building from pull if...
+          </h3>
+          <BulletGrid bullets={pullBullets} dotColor="bg-mint" />
         </div>
 
         {/* Closing line */}
