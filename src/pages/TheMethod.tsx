@@ -19,8 +19,8 @@ const TheMethod = () => {
       <MethodHero />
       <MethodProblem />
       <MethodPushPull />
-      <MethodModalities />
       <MethodName />
+      <MethodModalities />
       <MethodOrigin />
       <MethodMerkaba />
       <MethodLTS />
