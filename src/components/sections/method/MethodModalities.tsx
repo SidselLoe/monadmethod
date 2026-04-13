@@ -26,7 +26,7 @@ const MethodModalities = () => {
             Three modalities. One integrated method.
           </h2>
           <p className="mt-3 text-[18px] text-body max-w-[700px] mx-auto leading-[1.7]">
-            A spiral, like the Monad. Each revolution deeper than the last.
+            Not a sequence. A spiral, like the Monad. Each revolution deeper than the last.
           </p>
         </div>
 
@@ -44,16 +44,6 @@ const MethodModalities = () => {
               </p>
             </div>
           ))}
-        </div>
-
-        <div className="mt-14 max-w-[600px] mx-auto text-center">
-          <h3 className="text-xl sm:text-2xl font-bold text-foreground leading-[1.2]">
-            Not a sequence. A spiral.
-          </h3>
-          <p className="mt-4 text-[16px] text-body leading-[1.75]">
-            State shifts first. Patterns become visible. Direction gets honest. A new way of operating takes hold. Then the spiral begins again, at a deeper level. Each revolution encompasses the same elements, but you meet them with more of yourself.
-          </p>
-        </div>
       </div>
     </section>
   );
