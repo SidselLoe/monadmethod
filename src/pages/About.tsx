@@ -1,38 +1,18 @@
 import { Link } from "react-router-dom";
-import { Compass, Shield, Sparkles, LayoutGrid } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/sections/Footer";
 
 const socialProofQuotes = [
-  { quote: "Once you see it, you can't unsee it.", name: "Alexandra", role: "Entrepreneur" },
-  { quote: "It's not about the actions we're taking, but where the action's coming from.", name: "Brandon", role: "Founder" },
-  { quote: "She doesn't coddle, but she's uniquely supportive in helping you carve an authentic path that actually fits you.", name: "Jessica", role: "Founder" },
+  { quote: "Once you see it, you can't unsee it.", attribution: "— Alexandra, Entrepreneur" },
+  { quote: "It's not about the actions we're taking, but where the action's coming from.", attribution: "— Brandon, Founder" },
+  { quote: "She doesn't coddle, but she's uniquely supportive in helping you carve an authentic path that actually fits you.", attribution: "— Jessica, Founder" },
 ];
 
 const values = [
-  {
-    title: "Alignment over everything",
-    description: "I do not optimize for short-term gains at the expense of long-term integrity.",
-  },
-  {
-    title: "Clarity is power",
-    description: "Clear vision, clear systems, and clear communication change what becomes possible.",
-  },
-  {
-    title: "Sovereign leadership",
-    description: "You are not here to follow someone else's blueprint. You are here to trust yourself, think clearly, and lead from your own signal.",
-  },
-  {
-    title: "Structure as liberation",
-    description: "Freedom comes from the right systems, frameworks, and simplicity. Structure should create spaciousness, not constraint.",
-  },
-];
-
-const deserveCards = [
-  { icon: Compass, title: "Build from alignment" },
-  { icon: Shield, title: "Lead from self-trust" },
-  { icon: Sparkles, title: "Create from authentic purpose" },
-  { icon: LayoutGrid, title: "Use structure to create freedom" },
+  { title: "Alignment over everything", description: "I do not optimize for short-term gains at the expense of long-term integrity." },
+  { title: "Clarity is power", description: "Clear vision, clear systems, and clear communication change what becomes possible." },
+  { title: "Sovereign leadership", description: "You are not here to follow someone else's blueprint. You are here to trust yourself, think clearly, and lead from your own signal." },
+  { title: "Structure as liberation", description: "Freedom comes from the right systems, frameworks, and simplicity. Structure should create spaciousness, not constraint." },
 ];
 
 const blogPosts = [
@@ -58,35 +38,26 @@ const About = () => {
 
       {/* 1. HERO */}
       <section className="bg-background px-6" style={{ paddingTop: '120px', paddingBottom: '120px' }}>
-        <div className="max-w-[800px] mx-auto text-center">
-          <span className="text-[13px] font-bold tracking-[0.12em] uppercase text-mint">
-            Awakening People to Their Authentic Power and Purpose
-          </span>
-          <p className="mt-6 text-lg sm:text-xl text-foreground leading-[1.6] max-w-[640px] mx-auto">
-            I work with founders and creators who are the business, helping them shift from push to pull so they can create, lead, and grow from a place that is aligned.
-          </p>
-          <Link
-            to="/apply"
-            className="inline-flex mt-8 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
-          >
-            Book a Call
-          </Link>
-          <p className="mt-6 text-sm text-muted-foreground">
-            Sidsel Løschenkohl · Creator of the Monad Method™ · London
+        <div className="max-w-[900px] mx-auto text-center">
+          <h1 className="text-[40px] sm:text-[52px] md:text-[64px] font-bold text-[#1a1a1a] leading-[1.1]">
+            Awakening people to their authentic power and purpose
+          </h1>
+          <p className="mt-8 text-[20px] sm:text-[24px] md:text-[28px] font-normal text-[#1a1a1a] leading-[1.4] max-w-[800px] mx-auto">
+            I exist to help ambitious founders stop building from push and start building from pull.
           </p>
         </div>
       </section>
 
-      {/* 2. SOCIAL PROOF STRIP */}
-      <section className="bg-mint py-14 sm:py-18 px-6">
-        <div className="max-w-[1200px] mx-auto grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-8 text-center">
+      {/* 2. QUOTES (vertically stacked) */}
+      <section className="bg-background py-20 sm:py-28 px-6">
+        <div className="max-w-[800px] mx-auto flex flex-col items-center gap-[60px]">
           {socialProofQuotes.map((item) => (
-            <div key={item.name} className="px-4">
-              <p className="text-lg sm:text-xl font-semibold text-foreground leading-[1.6]">
+            <div key={item.attribution} className="text-center">
+              <p className="text-[22px] sm:text-[28px] font-semibold text-[#1a1a1a] leading-[1.4]">
                 "{item.quote}"
               </p>
-              <span className="block mt-3 text-sm font-normal text-foreground">
-                — {item.name}, {item.role}
+              <span className="block mt-4 text-[16px] font-normal text-[#444]">
+                {item.attribution}
               </span>
             </div>
           ))}
@@ -95,59 +66,58 @@ const About = () => {
 
       {/* 3. MISSION */}
       <section className="bg-background py-20 sm:py-28 px-6">
-        <div className="max-w-[900px] mx-auto">
-          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
+        <div className="max-w-[1100px] mx-auto">
+          <h2 className="text-[32px] sm:text-[40px] md:text-[44px] font-bold text-[#1a1a1a] leading-[1.2] text-center">
             My mission: Help founders and creators return to the clearest expression of who they are.
           </h2>
-          <div className="mt-7 space-y-5 text-[16px] leading-[1.75] text-[#444]">
-            <p>I work with ambitious people whose business, brand, or body of work is deeply tied to who they are.</p>
-            <p>They have built something real. But what got them here is no longer what will get them there.</p>
-            <p>For many, the drive that built the business is the same drive that is now creating friction. They are operating from push. From pressure, perfectionism, proving, survival, or a pattern they have outgrown.</p>
-            <p>My work is about shifting that.</p>
-            <p>Because building from push has a ceiling. Building from pull changes everything.</p>
-            <p>This work starts internally. Through activations, inquiry, and deep recalibration, we clear the interference that keeps the old identity in place. As that changes, clarity increases. Purpose becomes easier to see. Aligned action becomes more natural. The way you build begins to change because the person building it has changed.</p>
-            <p>I work at the intersection of spiritual alignment, strategic clarity, and operational intelligence.</p>
-            <p>For the right person, this is not about being given a formula. It is about becoming more coherent, more self-trusting, and more fully expressed in what you create.</p>
-          </div>
-
-          <p className="mt-10 text-[16px] leading-[1.75] text-[#444]">
-            I believe founders and creators deserve to:
+          <p className="mt-6 text-[18px] font-normal text-[#444] leading-[1.7] max-w-[700px] mx-auto text-center">
+            I work with ambitious people whose business, brand, or body of work is deeply tied to who they are. They have built something real. But what got them here is no longer what will get them there.
           </p>
 
-          <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-5">
-            {deserveCards.map((card) => (
-              <div
-                key={card.title}
-                className="border border-mint/40 rounded-xl p-6 text-center"
-              >
-                <card.icon className="w-6 h-6 text-mint mx-auto mb-3" strokeWidth={1.5} />
-                <span className="text-[15px] font-semibold text-foreground">{card.title}</span>
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-[50px] items-start">
+            <div>
+              <img
+                src="https://hciqvcspehfitlgclhud.supabase.co/storage/v1/object/public/sidsel/Headshot%202.jpg"
+                alt="Sidsel Løschenkohl"
+                className="w-full rounded-lg object-cover"
+              />
+              <p className="mt-3 text-[14px] font-medium text-[#1a1a1a]">
+                Sidsel Løschenkohl / Founder & Creator
+              </p>
+            </div>
+            <div>
+              <div className="space-y-5 text-[16px] leading-[1.75] text-[#444]">
+                <p>For many, the drive that built the business is the same drive that is now creating friction. They are operating from push. From pressure, perfectionism, proving, survival, or a pattern they have outgrown.</p>
+                <p>My work is about shifting that.</p>
+                <p>Because building from push has a ceiling. Building from pull changes everything.</p>
+                <p>This work starts internally. Through activations, inquiry, and deep recalibration, we clear the interference that keeps the old identity in place. As that changes, clarity increases. Purpose becomes easier to see. Aligned action becomes more natural. The way you build begins to change because the person building it has changed.</p>
+                <p>I work at the intersection of spiritual alignment, strategic clarity, and operational intelligence.</p>
+                <p>For the right person, this is not about being given a formula. It is about becoming more coherent, more self-trusting, and more fully expressed in what you create.</p>
               </div>
-            ))}
-          </div>
-
-          <div className="mt-8 text-center">
-            <Link
-              to="/apply"
-              className="inline-flex bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
-            >
-              Book a Call
-            </Link>
+              <div className="mt-8">
+                <Link
+                  to="/apply"
+                  className="inline-flex bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
+                >
+                  Book a Call
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* 4. VALUES */}
-      <section className="bg-secondary py-20 sm:py-28 px-6">
+      <section className="bg-background py-20 sm:py-28 px-6">
         <div className="max-w-[1200px] mx-auto">
-          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
+          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-[#1a1a1a] leading-[1.15] text-center mb-14">
             My values.
           </h2>
-          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
             {values.map((value) => (
-              <div key={value.title}>
-                <h3 className="text-[20px] font-bold text-foreground">{value.title}</h3>
-                <p className="mt-3 text-[15px] leading-[1.7] text-[#444]">
+              <div key={value.title} className="bg-background rounded-lg p-[30px]">
+                <h3 className="text-[20px] font-semibold text-[#1a1a1a] mb-3">{value.title}</h3>
+                <p className="text-[15px] leading-[1.6] text-[#444]">
                   {value.description}
                 </p>
               </div>
