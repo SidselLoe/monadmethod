@@ -20,7 +20,7 @@ const modalities = [
 
 const MethodModalities = () => {
   return (
-    <section className="bg-surface py-[100px] px-8">
+    <section className="bg-surface pt-8 pb-[100px] px-8">
       <div className="max-w-[1100px] mx-auto">
         <MethodName />
 
