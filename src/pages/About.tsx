@@ -108,14 +108,14 @@ const About = () => {
       </section>
 
       {/* 4. VALUES */}
-      <section className="bg-background py-20 sm:py-28 px-6">
+      <section className="bg-secondary py-20 sm:py-28 px-6">
         <div className="max-w-[1200px] mx-auto">
-          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-[#1a1a1a] leading-[1.15] text-center mb-14">
+          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15] text-center mb-14">
             My values.
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
             {values.map((value) => (
-              <div key={value.title} className="bg-background rounded-lg p-[30px]">
+              <div key={value.title} className="bg-white rounded-lg p-[30px]">
                 <h3 className="text-[20px] font-semibold text-[#1a1a1a] mb-3">{value.title}</h3>
                 <p className="text-[15px] leading-[1.6] text-[#444]">
                   {value.description}
