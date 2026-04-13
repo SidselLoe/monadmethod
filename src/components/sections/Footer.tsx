@@ -8,15 +8,16 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between gap-10">
           {/* Left side */}
           <div className="max-w-[500px]">
-            <img src={logoWhite} alt="Sidsel Løschenkohl" className="h-[60px] sm:h-[70px]" />
-
-            <a
-              href="#"
-              className="inline-flex mt-10 bg-accent text-accent-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded-full hover:bg-accent/90 transition-colors"
-              style={{ marginLeft: 'calc((min(100%, 500px) - 100%) / 2)', transform: 'none' }}
-            >
-              Get the Series
-            </a>
+            <div className="flex flex-col items-start">
+              <img src={logoWhite} alt="Sidsel Løschenkohl" className="h-[60px] sm:h-[70px]" />
+              <a
+                href="#"
+                className="mt-10 self-center bg-accent text-accent-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded-full hover:bg-accent/90 transition-colors"
+                style={{ marginLeft: '-50%', transform: 'translateX(50%)' }}
+              >
+                Get the Series
+              </a>
+            </div>
 
             <p className="mt-8 text-2xl sm:text-[28px] font-bold text-primary-foreground leading-[1.3]">
               Join founders who operate differently.
