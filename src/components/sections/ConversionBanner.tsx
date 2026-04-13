@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 const ConversionBanner = () => {
   return (
-    <section className="bg-secondary py-[100px] sm:py-[120px] px-6">
-      <div className="max-w-[1200px] mx-auto">
-        <div className="bg-accent rounded-xl sm:rounded-2xl p-10 sm:p-12 flex flex-col md:flex-row items-center gap-8">
+    <section className="bg-surface py-[60px] px-8">
+      <div className="max-w-[1100px] mx-auto">
+        <div className="bg-accent rounded-xl p-10 sm:p-12 flex flex-col md:flex-row items-center gap-8">
           {/* Icon */}
           <div className="flex-shrink-0">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -22,7 +22,7 @@ const ConversionBanner = () => {
             <h3 className="text-xl sm:text-2xl font-bold text-accent-foreground">
               150+ founders have already done this work.
             </h3>
-            <p className="mt-3 text-base text-accent-foreground/85 leading-[1.5]">
+            <p className="mt-3 text-[16px] text-accent-foreground/85 leading-[1.75]">
               The way you have been operating has a ceiling. More strategy will not raise it. The Monad OS is how founder-CEOs shift what is underneath.
             </p>
           </div>
@@ -30,7 +30,7 @@ const ConversionBanner = () => {
           {/* CTA */}
           <Link
             to="/apply"
-            className="flex-shrink-0 inline-flex bg-background text-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded-full hover:bg-background/90 transition-colors"
+            className="flex-shrink-0 inline-flex bg-background text-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-background/90 transition-colors"
           >
             Book a Call
           </Link>

@@ -3,14 +3,10 @@ const sidselPhoto = "https://hciqvcspehfitlgclhud.supabase.co/storage/v1/object/
 
 const HeySidsel = () => {
   return (
-    <section className="bg-background py-24 sm:py-28 px-6">
-      <div className="max-w-[900px] mx-auto text-center">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground">
-          Hey, I'm Sidsel.
-        </h2>
-
-        {/* Full-width photo */}
-        <div className="mt-10 w-full aspect-[16/10] rounded-xl overflow-hidden bg-secondary">
+    <section className="bg-surface py-[100px] px-8">
+      <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-[50px] items-center">
+        {/* Photo */}
+        <div className="aspect-[4/3] rounded-lg overflow-hidden">
           <img
             src={sidselPhoto}
             alt="Sidsel Løschenkohl"
@@ -19,22 +15,27 @@ const HeySidsel = () => {
           />
         </div>
 
-        {/* Mission text */}
-        <p className="mt-10 text-lg text-foreground leading-relaxed max-w-[680px] mx-auto">
-          I work as a strategic partner to founders who are the business and who know there is more but cannot get to it without something changing in them first.
-        </p>
+        {/* Text */}
+        <div>
+          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
+            Hey, I'm Sidsel.
+          </h2>
 
-        {/* Personal context */}
-        <p className="mt-4 text-base text-foreground leading-relaxed max-w-[680px] mx-auto">
-          My approach is direct and structured. The Monad Method is the methodology I developed after a health collapse in 2023 forced me to rebuild everything. It rests on one belief: your next level requires an identity shift. You are not your business. You are the creator of it.
-        </p>
+          <p className="mt-6 text-[18px] text-body leading-[1.7] max-w-[700px]">
+            I work as a strategic partner to founders who are the business and who know there is more but cannot get to it without something changing in them first.
+          </p>
 
-        <Link
-          to="/about"
-          className="inline-flex mt-8 bg-accent text-accent-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded-full hover:bg-accent/90 transition-colors"
-        >
-          About Me
-        </Link>
+          <p className="mt-4 text-[16px] text-body leading-[1.75] max-w-[700px]">
+            My approach is direct and structured. The Monad Method is the methodology I developed after a health collapse in 2023 forced me to rebuild everything. It rests on one belief: your next level requires an identity shift. You are not your business. You are the creator of it.
+          </p>
+
+          <Link
+            to="/about"
+            className="inline-flex mt-8 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
+          >
+            About Me
+          </Link>
+        </div>
       </div>
     </section>
   );

@@ -47,15 +47,15 @@ const cards = [
 
 const CeoOs = () => {
   return (
-    <section className="bg-background py-[100px] sm:py-[120px] px-6">
-      <div className="max-w-[1200px] mx-auto text-center">
-        <p className="text-sm font-semibold uppercase tracking-[2px] text-muted-foreground mb-4">
+    <section className="bg-background py-[100px] px-8">
+      <div className="max-w-[1100px] mx-auto text-center">
+        <p className="text-[13px] font-bold uppercase tracking-[0.12em] text-mint mb-4">
           How It Works
         </p>
         <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
           The Monad Method operates through three modalities that work together. Monad OS is how you install it.
         </h2>
-        <p className="mt-5 text-lg text-muted-foreground max-w-[640px] mx-auto leading-[1.6]">
+        <p className="mt-5 text-[18px] text-body max-w-[700px] mx-auto leading-[1.7]">
           Thirty days. Three modalities. A different internal operating system.
         </p>
 
@@ -63,16 +63,16 @@ const CeoOs = () => {
           {cards.map((c) => (
             <div
               key={c.heading}
-              className="bg-secondary border border-border rounded-xl p-7 sm:p-8 flex flex-col sm:flex-row items-start gap-5 text-left"
+              className="bg-card border border-border rounded-xl p-8 flex flex-col sm:flex-row items-start gap-5 text-left"
             >
               <div className="flex-shrink-0 sm:hidden">
                 {c.icon}
               </div>
               <div className="flex-1">
-                <h3 className="text-lg sm:text-xl font-semibold text-foreground">
+                <h3 className="text-[20px] font-semibold text-foreground">
                   {c.heading}
                 </h3>
-                <p className="mt-3 text-base text-foreground leading-[1.5]">
+                <p className="mt-3 text-[15px] text-body leading-[1.7]">
                   {c.body}
                 </p>
               </div>
@@ -85,7 +85,7 @@ const CeoOs = () => {
 
         <Link
           to="/apply"
-          className="inline-flex mt-12 bg-accent text-accent-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded-full hover:bg-accent/90 transition-colors"
+          className="inline-flex mt-12 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
         >
           Book a Call
         </Link>

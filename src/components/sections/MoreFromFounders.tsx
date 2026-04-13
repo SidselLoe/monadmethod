@@ -37,7 +37,7 @@ const VideoCard = ({ name, company, vimeoId, cover }: { name: string; company: s
 
   return (
     <div
-      className="rounded-2xl overflow-hidden relative cursor-pointer"
+      className="rounded-xl overflow-hidden relative cursor-pointer"
       style={{ aspectRatio: "3/4" }}
       onClick={() => !playing && setPlaying(true)}
       data-vimeo={vimeoId}
@@ -53,11 +53,9 @@ const VideoCard = ({ name, company, vimeoId, cover }: { name: string; company: s
         <>
           <img src={cover} alt={name} className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
           <div className="absolute inset-0 z-[2] flex items-end justify-between p-5" style={{ background: "linear-gradient(transparent 0%, rgba(0,0,0,0.55) 100%)" }}>
-            {/* Play icon */}
             <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{ background: "rgba(255,255,255,0.15)" }}>
               <svg width="12" height="14" viewBox="0 0 12 14" fill="none"><polygon points="0,0 12,7 0,14" fill="white" /></svg>
             </div>
-            {/* Name & company */}
             <div className="text-right">
               <p className="text-lg font-semibold text-white leading-[1.2] whitespace-pre-line">{name}</p>
               <p className="text-xs text-white/70">{company}</p>
@@ -70,37 +68,34 @@ const VideoCard = ({ name, company, vimeoId, cover }: { name: string; company: s
 };
 
 const QuoteCard = ({ name, company, quote }: { name: string; company: string; quote: string }) => (
-  <div className="rounded-xl p-7 bg-secondary">
-    <div className="w-10 h-10 rounded-full mb-3 bg-border" />
-    <p className="text-sm font-medium text-foreground">{name}</p>
-    <p className="text-xs text-muted-foreground">{company}</p>
-    <p className="mt-4 text-[17px] text-foreground leading-[1.55]">{quote}</p>
+  <div className="rounded-xl p-7 bg-card border border-border">
+    <div className="w-10 h-10 rounded-full mb-3 bg-mint" />
+    <p className="text-[14px] font-medium text-foreground">{name}</p>
+    <p className="text-[14px] text-body">{company}</p>
+    <p className="mt-4 text-[16px] text-body leading-[1.75]">{quote}</p>
   </div>
 );
 
 const MoreFromFounders = () => {
   return (
-    <section className="bg-background py-[60px] sm:py-[100px] md:py-[120px] px-6">
-      <div className="max-w-[1200px] mx-auto">
+    <section className="bg-background py-[100px] px-8">
+      <div className="max-w-[1100px] mx-auto">
         <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground text-center mb-10 leading-[1.15]">
           Join founders who operate differently.
         </h2>
 
         {/* Desktop: 3-column masonry */}
         <div className="hidden md:block" style={{ columns: 3, columnGap: "18px" }}>
-          {/* Col 1: Bianca video, Max quote */}
           <div className="mb-[18px] break-inside-avoid"><VideoCard {...videoCards[0]} /></div>
           <div className="mb-[18px] break-inside-avoid"><QuoteCard {...quoteCards[1]} /></div>
-          {/* Col 2: Brandon video, Annie quote */}
           <div className="mb-[18px] break-inside-avoid"><VideoCard {...videoCards[1]} /></div>
           <div className="mb-[18px] break-inside-avoid"><QuoteCard {...quoteCards[2]} /></div>
-          {/* Col 3: Rudi quote, Jessica video, Ilya quote */}
           <div className="mb-[18px] break-inside-avoid"><QuoteCard {...quoteCards[0]} /></div>
           <div className="mb-[18px] break-inside-avoid"><VideoCard {...videoCards[2]} /></div>
           <div className="mb-[18px] break-inside-avoid"><QuoteCard {...quoteCards[3]} /></div>
         </div>
 
-        {/* Tablet: 2-column grid */}
+        {/* Tablet */}
         <div className="hidden sm:grid md:hidden grid-cols-2 gap-[18px]">
           <VideoCard {...videoCards[0]} />
           <QuoteCard {...quoteCards[0]} />
@@ -111,7 +106,7 @@ const MoreFromFounders = () => {
           <QuoteCard {...quoteCards[3]} />
         </div>
 
-        {/* Mobile: single column, alternating */}
+        {/* Mobile */}
         <div className="sm:hidden flex flex-col gap-[18px]">
           <VideoCard {...videoCards[0]} />
           <QuoteCard {...quoteCards[0]} />
