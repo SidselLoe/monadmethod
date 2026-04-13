@@ -26,7 +26,7 @@ const MethodProblem = () => {
             Not a mindset problem.
           </h3>
           <p className="mt-3 text-[15px] text-body leading-[1.7]">
-            The patterns running your decisions were installed before you built the company. They do not respond to affirmations or accountability. They respond to a shift in state.
+            The way you operate is upstream of everything the company does. Change the operating system and the outputs change on their own.
           </p>
         </div>
       </div>
