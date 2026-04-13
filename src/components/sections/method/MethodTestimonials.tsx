@@ -26,8 +26,8 @@ const testimonials = [
 
 const MethodTestimonials = () => {
   return (
-    <section className="bg-background py-[100px] sm:py-[120px] px-6">
-      <div className="max-w-[1200px] mx-auto">
+    <section className="bg-surface py-[100px] px-8">
+      <div className="max-w-[1100px] mx-auto">
         <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground text-center leading-[1.15] mb-14">
           What founders say.
         </h2>
@@ -38,7 +38,6 @@ const MethodTestimonials = () => {
               key={t.name}
               className="bg-card border border-border rounded-xl overflow-hidden"
             >
-              {/* Photo or video placeholder */}
               {t.type === "photo" ? (
                 <div className="w-full aspect-[4/5] overflow-hidden">
                   <img
@@ -49,23 +48,22 @@ const MethodTestimonials = () => {
                   />
                 </div>
               ) : (
-                <div className="w-full aspect-square bg-muted flex items-center justify-center">
-                  <div className="w-14 h-14 rounded-full border-2 border-muted-foreground/40 flex items-center justify-center">
-                    <Play size={22} className="text-muted-foreground/60 ml-1" />
+                <div className="w-full aspect-square bg-surface flex items-center justify-center">
+                  <div className="w-14 h-14 rounded-full border-2 border-mint flex items-center justify-center">
+                    <Play size={22} className="text-mint ml-1" />
                   </div>
                 </div>
               )}
 
-              {/* Info */}
               <div className="p-6 pb-7">
-                <p className="text-base font-medium text-foreground mb-0.5">{t.name}</p>
-                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{t.role}</p>
+                <p className="text-[16px] font-medium text-foreground mb-0.5">{t.name}</p>
+                <p className="text-[14px] text-body mb-4 leading-[1.7]">{t.role}</p>
                 {t.quote ? (
-                  <p className="text-base italic text-foreground leading-[1.5]">
+                  <p className="font-editorial italic text-[16px] text-foreground leading-[1.55]">
                     "{t.quote}"
                   </p>
                 ) : (
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-[14px] text-body">
                     Square video testimonial
                   </p>
                 )}

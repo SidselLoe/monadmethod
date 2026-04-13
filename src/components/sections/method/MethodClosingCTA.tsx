@@ -2,19 +2,19 @@ import { Link } from "react-router-dom";
 
 const MethodClosingCTA = () => {
   return (
-    <section className="bg-secondary py-[100px] sm:py-[120px] px-6">
+    <section className="bg-background py-[100px] px-8">
       <div className="max-w-[500px] mx-auto text-center">
         <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
           Ready to operate differently?
         </h2>
 
-        <p className="mt-5 text-base text-foreground leading-[1.5]">
+        <p className="mt-5 text-[16px] text-body leading-[1.75]">
           Every engagement starts with a discovery conversation. Thirty minutes to understand where you are, what is getting in the way, and whether this is the right fit.
         </p>
 
         <Link
           to="/apply"
-          className="inline-flex mt-9 bg-accent text-accent-foreground text-sm font-semibold uppercase tracking-[0.5px] px-10 py-4 rounded-full hover:bg-accent/90 transition-colors"
+          className="inline-flex mt-9 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
         >
           Book a Discovery Call
         </Link>
