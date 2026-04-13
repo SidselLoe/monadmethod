@@ -3,9 +3,9 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/sections/Footer";
 
 const socialProofQuotes = [
-  { quote: "Once you see it, you can't unsee it.", attribution: "— Alexandra, Entrepreneur" },
-  { quote: "It's not about the actions we're taking, but where the action's coming from.", attribution: "— Brandon, Founder" },
-  { quote: "She doesn't coddle, but she's uniquely supportive in helping you carve an authentic path that actually fits you.", attribution: "— Jessica, Founder" },
+  { quote: "Once you see it, you can't unsee it.", name: "Alexandra", role: "Founder & Creative Director, Of The Islands", avatar: "https://via.placeholder.com/48x48/7ec8c8/ffffff?text=A" },
+  { quote: "It's not about the actions we're taking, but where the action's coming from.", name: "Brandon", role: "Business Owner, Healing with Brandon", avatar: "https://via.placeholder.com/48x48/7ec8c8/ffffff?text=B" },
+  { quote: "She doesn't coddle, but she's uniquely supportive in helping you carve an authentic path that actually fits you.", name: "Jessica", role: "Founder and CEO, Wildflower Women", avatar: "https://via.placeholder.com/48x48/7ec8c8/ffffff?text=J" },
 ];
 
 const values = [
@@ -52,15 +52,23 @@ const About = () => {
       <section className="bg-background px-6">
         <div className="max-w-[1200px] mx-auto">
           {socialProofQuotes.map((item, index) => (
-            <div key={item.attribution}>
+            <div key={item.name}>
               <div className="border-t-2 border-mint" />
-              <div className="flex flex-col md:flex-row md:items-center py-12 md:py-16 gap-4 md:gap-16">
-                <p className="text-[28px] sm:text-[36px] md:text-[42px] font-bold text-foreground leading-[1.2] md:w-1/2">
+              <div className="flex flex-col md:flex-row md:items-center py-12 md:py-16 gap-6 md:gap-16">
+                <p className="font-editorial italic font-bold text-[28px] text-foreground leading-[1.4] md:w-1/2">
                   "{item.quote}"
                 </p>
-                <p className="text-[18px] sm:text-[20px] font-normal text-foreground leading-[1.5] md:w-1/2">
-                  {item.attribution}
-                </p>
+                <div className="flex items-center gap-4 md:w-1/2">
+                  <img
+                    src={item.avatar}
+                    alt={item.name}
+                    className="w-12 h-12 rounded-sm object-cover flex-shrink-0"
+                  />
+                  <div>
+                    <p className="text-[16px] font-semibold text-foreground">{item.name}</p>
+                    <p className="text-[14px] font-normal text-muted-foreground">{item.role}</p>
+                  </div>
+                </div>
               </div>
               {index === socialProofQuotes.length - 1 && (
                 <div className="border-t-2 border-mint" />
