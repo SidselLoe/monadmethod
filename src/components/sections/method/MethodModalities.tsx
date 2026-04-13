@@ -43,7 +43,7 @@ const MethodModalities = () => {
               className="bg-background border border-border rounded-xl p-8 flex flex-col"
             >
               <span className="text-[13px] font-bold uppercase tracking-[0.12em] text-mint">
-                {m.step} · {m.title.toUpperCase().split(" ")[0]}
+                {m.step} · {m.label.toUpperCase()}
               </span>
               <h3 className="mt-3 text-[20px] font-semibold text-foreground leading-[1.3]">
                 {m.title}
