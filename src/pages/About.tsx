@@ -48,17 +48,23 @@ const About = () => {
         </div>
       </section>
 
-      {/* 2. QUOTES (vertically stacked) */}
-      <section className="bg-background py-20 sm:py-28 px-6">
-        <div className="max-w-[800px] mx-auto flex flex-col items-center gap-[60px]">
-          {socialProofQuotes.map((item) => (
-            <div key={item.attribution} className="text-center">
-              <p className="text-[22px] sm:text-[28px] font-semibold text-[#1a1a1a] leading-[1.4]">
-                "{item.quote}"
-              </p>
-              <span className="block mt-4 text-[16px] font-normal text-[#444]">
-                {item.attribution}
-              </span>
+      {/* 2. QUOTES (stacked rows with dividers) */}
+      <section className="bg-background px-6">
+        <div className="max-w-[1200px] mx-auto">
+          {socialProofQuotes.map((item, index) => (
+            <div key={item.attribution}>
+              <div className="border-t-2 border-mint" />
+              <div className="flex flex-col md:flex-row md:items-center py-12 md:py-16 gap-4 md:gap-16">
+                <p className="text-[28px] sm:text-[36px] md:text-[42px] font-bold text-foreground leading-[1.2] md:w-1/2">
+                  "{item.quote}"
+                </p>
+                <p className="text-[18px] sm:text-[20px] font-normal text-foreground leading-[1.5] md:w-1/2">
+                  {item.attribution}
+                </p>
+              </div>
+              {index === socialProofQuotes.length - 1 && (
+                <div className="border-t-2 border-mint" />
+              )}
             </div>
           ))}
         </div>
