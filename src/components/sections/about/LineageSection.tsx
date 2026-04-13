@@ -1,11 +1,20 @@
 const columns = [
   {
     heading: "Strategic.",
-    body: "I've spent my whole career in the tech founder space. I've worked across companies of every size, but startups and the founder seat have always been the throughline. I know what it's like to run a business where the business is you.",
+    bullets: [
+      "I've spent my whole career in the tech founder space, as founder, operator, and strategist.",
+      "I've worked across every company size, but startups and the founder seat are the throughline.",
+      "I know what it's like to run a business where the business is you.",
+    ],
   },
   {
     heading: "Energetic.",
-    body: "The Monad Activations are my own, built on formal training in Integrated Kundalini Activation and a direct Usui lineage of Reiki that traces back to Dr. Mikao Usui in Japan. I carry these Eastern traditions into the Western founder context.",
+    bullets: [
+      "I carry a direct Usui lineage of Reiki that traces back to Dr. Mikao Usui in Japan.",
+      "I've trained in Integrated Kundalini Activation.",
+      "I work through Shaktipat, direct energy transmission.",
+      "The Monad Activations are my own, built on these foundations.",
+    ],
   },
 ];
 
@@ -24,12 +33,17 @@ const LineageSection = () => {
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10">
           {columns.map((col) => (
             <div key={col.heading}>
-              <h3 className="text-[24px] font-bold text-foreground mb-5">
+              <h3 className="text-[24px] font-bold text-foreground mb-6">
                 {col.heading}
               </h3>
-              <p className="text-[16px] leading-[1.75] text-body">
-                {col.body}
-              </p>
+              <ul className="space-y-4">
+                {col.bullets.map((bullet, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <span className="mt-[10px] w-2 h-2 rounded-full bg-mint flex-shrink-0" />
+                    <span className="text-[16px] leading-[1.75] text-body">{bullet}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
