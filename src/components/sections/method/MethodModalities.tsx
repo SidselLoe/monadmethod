@@ -45,6 +45,15 @@ const MethodModalities = () => {
             </div>
           ))}
         </div>
+
+        <div className="mt-14 max-w-[600px] mx-auto text-center">
+          <h3 className="text-xl sm:text-2xl font-bold text-foreground leading-[1.2]">
+            Not a sequence. A spiral.
+          </h3>
+          <p className="mt-4 text-[16px] text-body leading-[1.75]">
+            State shifts first. Patterns become visible. Direction gets honest. A new way of operating takes hold. Then the spiral begins again, at a deeper level. Each revolution encompasses the same elements, but you meet them with more of yourself.
+          </p>
+        </div>
       </div>
     </section>
   );
