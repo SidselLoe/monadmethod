@@ -26,6 +26,7 @@ const Index = () => {
       <DeltaSection />
       <MoreFromFounders />
       <LogoMarquee />
+      <FinalCTA />
       <Footer />
     </div>
   );
