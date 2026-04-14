@@ -221,8 +221,8 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-[50px] items-start mb-20">
             <div>
               <img
-                src="https://hciqvcspehfitlgclhud.supabase.co/storage/v1/object/public/sidsel/Headshot%202.jpg"
-                alt="Sidsel speaking"
+                src={speakerPhoto}
+                alt="Sidsel Løschenkohl speaking on living from the heart in the age of AI"
                 className="w-full rounded-lg object-cover aspect-[4/3]"
               />
             </div>
