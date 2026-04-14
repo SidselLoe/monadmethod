@@ -36,16 +36,11 @@ const ProblemProgram = () => {
           </div>
 
           {/* Bottom right card */}
-          <div className="bg-card border border-border rounded-xl p-7 sm:p-8 flex items-center gap-6">
-            <div className="flex-1">
+          <div className="bg-card border border-border rounded-xl p-7 sm:p-8">
               <h3 className="text-[20px] font-semibold text-foreground">Take aligned action</h3>
               <p className="mt-2 text-[15px] text-body leading-[1.7]">
-                The activations shift your state. The inquiry names what's been running underneath you. The sessions bring both into action. Priorities, delegation, decisions. They move differently now. Not because the strategy is better. Because you have changed.
+                The activations shift your state. The inquiry names what's been running underneath you. The sessions bring both into action. Priorities, delegation, decisions, communication. They move differently now. Not because the strategy is better. Because you have changed.
               </p>
-            </div>
-            <div className="flex-shrink-0 py-2">
-              <VoiceMemosGraphic />
-            </div>
           </div>
         </div>
       </div>

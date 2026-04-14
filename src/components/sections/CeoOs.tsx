@@ -4,44 +4,18 @@ const cards = [
   {
     heading: "10× Monad Activations",
     body: "A guided, music-driven process that takes you into the state where your clearest decisions live. No technique. No performance. You show up, lie down, and let the static clear. The effect compounds. Each session goes deeper than the last.",
-    icon: (
-      <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="18" cy="18" r="14" stroke="currentColor" strokeWidth="1.5" fill="none" />
-        <circle cx="18" cy="18" r="3" fill="currentColor" />
-      </svg>
-    ),
   },
   {
     heading: "4× Guided Voice-Note Self-Inquiry",
     body: "Your leadership is being shaped by patterns you have never examined. Structured self-inquiry surfaces them. Every reflection becomes the foundation for your next session. What was invisible becomes specific.",
-    icon: (
-      <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <line x1="6" y1="22" x2="6" y2="14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-        <line x1="12" y1="26" x2="12" y2="10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-        <line x1="18" y1="24" x2="18" y2="12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-        <line x1="24" y1="28" x2="24" y2="8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-        <line x1="30" y1="22" x2="30" y2="14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-      </svg>
-    ),
   },
   {
     heading: "4× Private 1:1 Sessions (44 min)",
     body: "The activations shift your state. The inquiry names what's been running underneath you. The sessions bring both into action. Priorities, delegation, decisions, communication. Built from the new state, not the old one.",
-    icon: (
-      <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="14" cy="18" r="10" stroke="currentColor" strokeWidth="1.5" fill="none" />
-        <circle cx="22" cy="18" r="10" stroke="currentColor" strokeWidth="1.5" fill="none" />
-      </svg>
-    ),
   },
   {
     heading: "30 Days Private Support",
     body: "The shift does not pause between sessions. Private voice-note access for when something comes up mid-week and you need clarity now. Real follow-through. Accountability that does not drift.",
-    icon: (
-      <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 16C4 9.373 9.373 4 16 4h4c6.627 0 12 5.373 12 12v0c0 6.627-5.373 12-12 12h-4c-1.5 0-2.95-.275-4.286-.778L4 30l2.5-5.5A11.94 11.94 0 0 1 4 16Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" fill="none" />
-      </svg>
-    ),
   },
 ];
 
@@ -63,22 +37,14 @@ const CeoOs = () => {
           {cards.map((c) => (
             <div
               key={c.heading}
-              className="bg-card border border-border rounded-xl p-8 flex flex-col sm:flex-row items-start gap-5 text-left"
+              className="bg-card border border-border rounded-xl p-8 text-left"
             >
-              <div className="flex-shrink-0 sm:hidden">
-                {c.icon}
-              </div>
-              <div className="flex-1">
-                <h3 className="text-[20px] font-semibold text-foreground">
-                  {c.heading}
-                </h3>
-                <p className="mt-3 text-[15px] text-body leading-[1.7]">
-                  {c.body}
-                </p>
-              </div>
-              <div className="flex-shrink-0 hidden sm:block">
-                {c.icon}
-              </div>
+              <h3 className="text-[20px] font-semibold text-foreground">
+                {c.heading}
+              </h3>
+              <p className="mt-3 text-[15px] text-body leading-[1.7]">
+                {c.body}
+              </p>
             </div>
           ))}
         </div>
