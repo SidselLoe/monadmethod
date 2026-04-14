@@ -9,6 +9,7 @@ import CeoOs from "@/components/sections/CeoOs";
 import DeltaSection from "@/components/sections/DeltaSection";
 import MoreFromFounders from "@/components/sections/MoreFromFounders";
 import LogoMarquee from "@/components/sections/LogoMarquee";
+import FinalCTA from "@/components/sections/FinalCTA";
 import Footer from "@/components/sections/Footer";
 
 const Index = () => {

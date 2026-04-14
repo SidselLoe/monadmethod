@@ -1,6 +1,6 @@
 const CALENDLY_URL = "https://calendly.com/sidselloschenkohl/monad-discovery";
 
-const ConversionBanner = () => {
+const FinalCTA = () => {
   return (
     <section className="bg-surface py-[60px] px-8">
       <div className="max-w-[1100px] mx-auto">
@@ -20,10 +20,10 @@ const ConversionBanner = () => {
           {/* Text */}
           <div className="flex-1 text-center md:text-left">
             <h3 className="text-xl sm:text-2xl font-bold text-accent-foreground">
-              150+ founders have already done this work.
+              Headline placeholder
             </h3>
             <p className="mt-3 text-[16px] text-accent-foreground/85 leading-[1.75]">
-              The way you have been operating has a ceiling. More strategy will not raise it. The Monad OS is how founders shift what is underneath.
+              Body text placeholder
             </p>
           </div>
 
@@ -42,4 +42,4 @@ const ConversionBanner = () => {
   );
 };
 
-export default ConversionBanner;
+export default FinalCTA;

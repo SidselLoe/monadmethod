@@ -13,7 +13,7 @@ const Hero = () => {
     <section className="bg-background pt-[180px] pb-[100px] px-8">
       <div className="max-w-[1100px] mx-auto text-center">
         <p className="text-[13px] font-bold uppercase tracking-[0.12em] text-mint mb-6">
-          For founder-CEOs who are the business.
+          For founders who are the business.
         </p>
 
         <h1 className="text-4xl sm:text-5xl md:text-[60px] font-bold text-foreground leading-[1.1] tracking-[-0.3px]">
