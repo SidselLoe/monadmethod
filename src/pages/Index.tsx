@@ -20,10 +20,10 @@ const Index = () => {
       <ProblemProgram />
       <WhyThisWorks />
       <HeySidsel />
-      <Testimonials />
-      <ConversionBanner />
       <CeoOs />
+      <Testimonials />
       <DeltaSection />
+      <ConversionBanner />
       <MoreFromFounders />
       <LogoMarquee />
       <FinalCTA />
