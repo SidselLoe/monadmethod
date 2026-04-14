@@ -1,6 +1,3 @@
-import EnergyActivationGraphic from "./EnergyActivationGraphic";
-import CoachingCallGraphic from "./CoachingCallGraphic";
-import VoiceMemosGraphic from "./VoiceMemosGraphic";
 
 const ProblemProgram = () => {
   return (
@@ -22,9 +19,6 @@ const ProblemProgram = () => {
         <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Big card - left, spans full height */}
           <div className="md:row-span-2 bg-card border border-border rounded-xl overflow-hidden flex flex-col">
-            <div className="p-6 sm:p-8">
-              <EnergyActivationGraphic />
-            </div>
             <div className="p-7 sm:p-8">
               <h3 className="text-[20px] font-semibold text-foreground">Get out of your head</h3>
               <p className="mt-3 text-[15px] text-body leading-[1.7]">
@@ -34,16 +28,11 @@ const ProblemProgram = () => {
           </div>
 
           {/* Top right card */}
-          <div className="bg-card border border-border rounded-xl p-7 sm:p-8 flex items-center gap-6">
-            <div className="flex-1">
+          <div className="bg-card border border-border rounded-xl p-7 sm:p-8">
               <h3 className="text-[20px] font-semibold text-foreground">Reveal what's been running you</h3>
               <p className="mt-2 text-[15px] text-body leading-[1.7]">
                 You can't see the patterns running your leadership from inside them. Structured self-inquiry surfaces them. Every reflection becomes the foundation for the next session. What has been making your decisions without your permission gets named.
               </p>
-            </div>
-            <div className="flex-shrink-0 py-2">
-              <CoachingCallGraphic />
-            </div>
           </div>
 
           {/* Bottom right card */}
