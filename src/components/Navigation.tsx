@@ -84,7 +84,7 @@ const Navigation = () => {
             className="mt-2 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-wide px-6 py-3 rounded-full hover:bg-accent/90 transition-colors text-center"
           >
             Book a Call
-          </Link>
+          </a>
         </div>
       )}
     </nav>
