@@ -119,12 +119,14 @@ const About = () => {
                 <p>For the right person, this is not about being given a formula. It is about becoming more coherent, more self-trusting, and more fully expressed in what you create.</p>
               </div>
               <div className="mt-8">
-                <Link
-                  to="/apply"
+                <a
+                  href="https://calendly.com/sidselloschenkohl/monad-discovery"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
                 >
                   Book a Call
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -283,12 +285,14 @@ const About = () => {
                 I speak at conferences, retreats, and private events on alignment, identity, and the future of leadership.
               </p>
             </div>
-            <Link
-              to="/apply"
+            <a
+              href="https://calendly.com/sidselloschenkohl/monad-discovery"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex-shrink-0 inline-flex bg-background text-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-background/90 transition-colors"
             >
               Get in Touch
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -385,12 +389,14 @@ const About = () => {
           <p className="mt-5 text-[16px] text-body leading-[1.75]">
             If something here spoke to you, book a call. No pitch. Just a conversation about where you are and whether the work is right for you.
           </p>
-          <Link
-            to="/apply"
+          <a
+            href="https://calendly.com/sidselloschenkohl/monad-discovery"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex mt-8 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
           >
             Book a Call
-          </Link>
+          </a>
         </div>
       </section>
 

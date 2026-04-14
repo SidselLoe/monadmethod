@@ -1,6 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/sections/Footer";
-import { Link } from "react-router-dom";
+const CALENDLY_URL = "https://calendly.com/sidselloschenkohl/monad-discovery";
 
 const expectations = [
   "90 minutes total per session",
@@ -24,12 +24,14 @@ const MonadOS = () => {
             10 Monad Activations every month, online.<br />
             Included in Monad OS and every engagement that follows.
           </p>
-          <Link
-            to="/apply"
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex-shrink-0 inline-flex bg-background text-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-background/90 transition-colors"
           >
             View Upcoming Sessions
-          </Link>
+          </a>
         </div>
       </section>
 
