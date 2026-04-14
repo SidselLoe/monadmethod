@@ -127,7 +127,7 @@ const MethodTheState = () => {
                       <p className="text-[16px] font-medium text-foreground">
                         {card.name}
                       </p>
-                      <p className="text-[14px] text-body mb-4">
+                      <p className="text-[14px] text-mint font-medium mb-4">
                         {card.descriptor}
                       </p>
                       <p className="font-editorial italic text-[18px] text-foreground leading-snug mb-3">
