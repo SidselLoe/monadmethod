@@ -14,36 +14,33 @@ const MonadSymbol = ({ color }: { color: string }) => (
 );
 
 const forYou = [
-  "Placeholder bullet point one for the left column.",
-  "Placeholder bullet point two for the left column.",
-  "Placeholder bullet point three for the left column.",
-  "Placeholder bullet point four for the left column.",
-  "Placeholder bullet point five for the left column.",
-  "Placeholder bullet point six for the left column.",
+  "You are the business. If you disappeared tomorrow, the company would not persist. You have traction. You are not in survival mode. But how you have been operating is no longer sustainable.",
+  "You know there is more. You cannot fully name it yet, but the pull is there. What got you here is not what will get you there, and you can feel it.",
+  "You have taken your destiny into your own hands. No one is coming to save you. Not a cofounder, not a hire, not the next framework. The responsibility for what happens next sits with you.",
+  "You want to be pointed inward, not told what to do. You do not trust people who hand you formulas. What draws you to this work is that it reveals rather than prescribes.",
+  "You are open to energy work as a real mechanism for change. You do not need to fully understand it. You are willing to experience it, and you hold, or are open to holding, the belief that we are more than this physical 3D reality.",
+  "You are ready to look at what is underneath. The patterns, the identity fusion, the drive that built the company and is now the ceiling. You are open to something that works at a different layer than strategy.",
 ];
 
 const notForYou = [
-  "Placeholder bullet point one for the right column.",
-  "Placeholder bullet point two for the right column.",
-  "Placeholder bullet point three for the right column.",
-  "Placeholder bullet point four for the right column.",
+  "You want someone to hand you a system or tell you what to do. This work does not prescribe. It reveals. If you are looking for a tactical roadmap or a revenue formula, you will be frustrated here.",
+  "You have not yet built anything. You are still in ideation, still in employment, or still in survival mode. This work assumes you have traction and the weight that comes with it.",
+  "You do not believe that internal state shapes external results. If that premise sounds like a metaphor to you rather than a mechanism, this is not the work you are looking for.",
+  "You are not willing to be honest with yourself. The work surfaces what has been running you. If you are here to perform self-awareness rather than actually do it, nothing will shift.",
 ];
 
 const Qualifier = () => {
   return (
     <section className="bg-background py-[100px] px-8">
       <div className="max-w-[1100px] mx-auto">
-        {/* Section headline */}
         <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground text-center mb-14 leading-[1.15]">
-          Placeholder section headline
+          Is Monad OS for you?
         </h2>
 
-        {/* Two-column grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8">
-          {/* Left column — for you */}
           <div>
             <h3 className="text-[20px] font-semibold text-foreground mb-6">
-              Placeholder left column heading
+              Monad OS is for you if...
             </h3>
             <ul className="space-y-5">
               {forYou.map((item, i) => (
@@ -55,10 +52,9 @@ const Qualifier = () => {
             </ul>
           </div>
 
-          {/* Right column — not for you */}
           <div>
             <h3 className="text-[20px] font-semibold text-foreground mb-6">
-              Placeholder right column heading
+              Monad OS is not for you if...
             </h3>
             <ul className="space-y-5">
               {notForYou.map((item, i) => (
@@ -71,7 +67,6 @@ const Qualifier = () => {
           </div>
         </div>
 
-        {/* CTA */}
         <div className="flex justify-center mt-14">
           <a
             href={CALENDLY_URL}
