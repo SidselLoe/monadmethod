@@ -110,7 +110,7 @@ const MethodTheState = () => {
                   className="min-w-0 shrink-0 grow-0 basis-full sm:basis-1/2 pl-5"
                 >
                   <div className="bg-card border border-border rounded-xl overflow-hidden h-full flex flex-col">
-                    <div className="h-[3px] bg-mint" />
+                    <div className="h-[3px] bg-accent" />
 
                     <div className="px-6 pt-6 sm:px-8 sm:pt-8">
                       <div className="w-full aspect-square overflow-hidden rounded-xl">
