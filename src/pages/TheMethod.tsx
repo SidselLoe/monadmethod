@@ -22,9 +22,9 @@ const TheMethod = () => {
       <MethodProblem />
       <MethodPushPull />
       <MethodModalities />
-      <MethodTheState />
       <MethodAI />
       <MethodActivations />
+      <MethodTheState />
       <MethodMerkaba />
       <MethodOfferings />
       <MethodTestimonials />
