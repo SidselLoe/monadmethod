@@ -41,7 +41,7 @@ const Qualifier = () => {
         {/* FOR YOU block */}
         <h3 className="text-[22px] sm:text-[26px] font-semibold text-foreground text-center mb-10">
           Monad OS{" "}
-          <span className="bg-[#d4f542] px-1.5 py-0.5 rounded-sm">is for you</span>{" "}
+          <span className="bg-mint/30 px-1.5 py-0.5 rounded-sm">is for you</span>{" "}
           if...
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5 mb-20">
