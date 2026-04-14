@@ -23,9 +23,8 @@ const TheMethod = () => {
       <MethodModalities />
       <MethodAI />
       <MethodActivations />
-      <MethodOrigin />
       <MethodMerkaba />
-      <MethodLTS />
+      <MethodOfferings />
       <MethodTestimonials />
       <MethodClosingCTA />
       <Footer />
