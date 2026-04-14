@@ -5,14 +5,12 @@ const ProblemProgram = () => {
       <div className="max-w-[1100px] mx-auto">
         {/* Problem statement */}
         <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground text-center leading-[1.15]">
-          You were pushed here. By something you still haven't faced.
+          You found the ceiling.
         </h2>
 
         {/* Solution bridge */}
         <p className="mt-6 text-[18px] text-body text-center max-w-[700px] mx-auto leading-[1.7]">
-          The results are real. The revenue, the recognition, the company that actually works. And the feeling you were climbing toward never arrived.
-          <br /><br />
-          You built this from push. The drive that got you here is the same drive that is now the ceiling. Push has always had one. You found it.
+          The revenue is real. The recognition. The company that actually works. And the feeling you were climbing toward never arrived. More strategy will not raise the ceiling. What needs to change is underneath it.
         </p>
 
         {/* Asymmetric bento grid */}
