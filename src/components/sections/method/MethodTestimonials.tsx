@@ -1,4 +1,7 @@
 import { Play } from "lucide-react";
+import jenilPhoto from "@/assets/testimonials/jenil-thakker-founder-coinvise-earnkit.png";
+import sarahPhoto from "@/assets/testimonials/sarah-montgomery-founder-infyos.png";
+import alexandraPhoto from "@/assets/testimonials/alexandra-feldman-founder-of-the-islands.png";
 
 const testimonials = [
   {
@@ -6,21 +9,21 @@ const testimonials = [
     name: "Jenil Thakker",
     role: "Founder and CEO, Coinvise and EarnKit",
     quote: "Sidsel was pivotal to EarnKit's launch, bringing clarity, precision, and systems we still use today. The work felt co-founder level and truly invaluable.",
-    img: "https://randomuser.me/api/portraits/men/32.jpg",
+    img: jenilPhoto,
   },
   {
     type: "photo" as const,
     name: "Sarah Montgomery",
     role: "Co-Founder and CEO, Infyos",
     quote: "This program connected my vision with my actions. I now feel empowered, not overwhelmed.",
-    img: "https://randomuser.me/api/portraits/women/68.jpg",
+    img: sarahPhoto,
   },
   {
-    type: "video" as const,
+    type: "photo" as const,
     name: "Alexandra Feldman",
     role: "Founder and Creative Director, Of The Islands",
     quote: "",
-    img: "",
+    img: alexandraPhoto,
   },
 ];
 
@@ -38,22 +41,14 @@ const MethodTestimonials = () => {
               key={t.name}
               className="bg-card border border-border rounded-xl overflow-hidden"
             >
-              {t.type === "photo" ? (
-                <div className="w-full aspect-[4/5] overflow-hidden">
-                  <img
-                    src={t.img}
-                    alt={t.name}
-                    className="w-full h-full object-cover object-top"
-                    loading="lazy"
-                  />
-                </div>
-              ) : (
-                <div className="w-full aspect-square bg-surface flex items-center justify-center">
-                  <div className="w-14 h-14 rounded-full border-2 border-mint flex items-center justify-center">
-                    <Play size={22} className="text-mint ml-1" />
-                  </div>
-                </div>
-              )}
+              <div className="w-full aspect-[4/5] overflow-hidden">
+                <img
+                  src={t.img}
+                  alt={t.name}
+                  className="w-full h-full object-cover object-top"
+                  loading="lazy"
+                />
+              </div>
 
               <div className="p-6 pb-7">
                 <p className="text-[16px] font-medium text-foreground mb-0.5">{t.name}</p>
