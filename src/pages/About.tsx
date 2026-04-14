@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/sections/Footer";
-import brandonCover from "@/assets/brandon-cover.jpg";
-import jessicaCover from "@/assets/jessica-cover.jpg";
+import brandonCover from "@/assets/testimonials/brandon-hadwin-founder-healingwithbrandon.png";
+import jessicaCover from "@/assets/testimonials/jessica-rainey-founder-wildflower-woman.png";
 import backstoryPhoto from "@/assets/backstory-sidsel.jpg";
 import LineageSection from "@/components/sections/about/LineageSection";
 
