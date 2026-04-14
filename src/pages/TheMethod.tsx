@@ -3,6 +3,7 @@ import MethodHero from "@/components/sections/method/MethodHero";
 import MethodProblem from "@/components/sections/method/MethodProblem";
 import MethodPushPull from "@/components/sections/method/MethodPushPull";
 import MethodModalities from "@/components/sections/method/MethodModalities";
+import MethodTheState from "@/components/sections/method/MethodTheState";
 import MethodAI from "@/components/sections/method/MethodAI";
 import MethodActivations from "@/components/sections/method/MethodActivations";
 import MethodOrigin from "@/components/sections/method/MethodOrigin";
@@ -21,6 +22,7 @@ const TheMethod = () => {
       <MethodProblem />
       <MethodPushPull />
       <MethodModalities />
+      <MethodTheState />
       <MethodAI />
       <MethodActivations />
       <MethodMerkaba />
