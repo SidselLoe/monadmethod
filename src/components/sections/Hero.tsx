@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+const CALENDLY_URL = "https://calendly.com/sidselloschenkohl/monad-discovery";
 
 const avatarUrls = [
   "https://lh3.googleusercontent.com/d/1zcYBcz7Jkey1LC-0KMgdCQ8VogZxT3YV",
@@ -24,12 +24,14 @@ const Hero = () => {
           What you need has always been in you. The work returns you to it. Three modalities. Thirty days.
         </p>
 
-        <Link
-          to="/apply"
+        <a
+          href={CALENDLY_URL}
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex mt-10 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
         >
           Book a Call
-        </Link>
+        </a>
 
         {/* Avatar stack + social proof */}
         <div className="mt-8 flex flex-col items-center gap-2">

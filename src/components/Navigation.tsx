@@ -43,12 +43,14 @@ const Navigation = () => {
 
         {/* Right side: CTA only */}
         <div className="hidden md:flex items-center ml-auto">
-          <Link
-            to="/apply"
+          <a
+            href="https://calendly.com/sidselloschenkohl/monad-discovery"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-wide px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
           >
             Book a Call
-          </Link>
+          </a>
         </div>
 
         {/* Mobile hamburger */}
@@ -74,8 +76,10 @@ const Navigation = () => {
               {link.label}
             </Link>
           ))}
-          <Link
-            to="/apply"
+          <a
+            href="https://calendly.com/sidselloschenkohl/monad-discovery"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setMobileOpen(false)}
             className="mt-2 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-wide px-6 py-3 rounded-full hover:bg-accent/90 transition-colors text-center"
           >
