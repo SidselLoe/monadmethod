@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+const CALENDLY_URL = "https://calendly.com/sidselloschenkohl/monad-discovery";
 
 const inclusions = [
   "Monthly 1:1 strategic coaching sessions",
@@ -42,12 +42,14 @@ const MethodLTS = () => {
           </ul>
 
           <div className="mt-7">
-            <Link
-              to="/apply"
+            <a
+              href={CALENDLY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
             >
               Request a Conversation
-            </Link>
+            </a>
             <p className="mt-2.5 text-[14px] font-editorial italic text-body">
               Monad LTS is invitation only. It follows completion of Monad OS.
             </p>

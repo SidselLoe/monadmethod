@@ -1,5 +1,5 @@
 import { Play } from "lucide-react";
-import { Link } from "react-router-dom";
+const CALENDLY_URL = "https://calendly.com/sidselloschenkohl/monad-discovery";
 
 const cells = [
   {
@@ -68,12 +68,14 @@ const MethodActivations = () => {
         </div>
 
         <div className="mt-14 text-center">
-          <Link
-            to="/apply"
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
           >
             Book a Monad Activation
-          </Link>
+          </a>
         </div>
       </div>
     </section>
