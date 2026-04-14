@@ -35,7 +35,7 @@ const Footer = () => {
             <div className="flex items-center gap-4">
               {/* LinkedIn */}
               <a
-                href="https://www.linkedin.com/in/sidselrytter/"
+                href="https://www.linkedin.com/in/sidsell/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary-foreground/90 hover:text-primary-foreground transition-opacity"
@@ -46,7 +46,7 @@ const Footer = () => {
               </a>
               {/* Instagram */}
               <a
-                href="https://www.instagram.com/sidselrytter/"
+                href="https://www.instagram.com/sidselloschenkohl/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary-foreground/90 hover:text-primary-foreground transition-opacity"
@@ -57,7 +57,7 @@ const Footer = () => {
               </a>
               {/* YouTube */}
               <a
-                href="#"
+                href="https://www.youtube.com/@Sidselloschenkohl"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary-foreground/90 hover:text-primary-foreground transition-opacity"
