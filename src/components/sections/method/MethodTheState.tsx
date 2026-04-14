@@ -1,7 +1,7 @@
 import * as React from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import nikolaTesla from "@/assets/the-state/nikola-tesla.jpeg";
+import nikolaTesla from "@/assets/the-state/nikola-tesla.jpg";
 import elizabethGilbert from "@/assets/the-state/elizabeth-gilbert.jpg";
 import albertEinstein from "@/assets/the-state/albert-einstein.jpg";
 import isabelAllende from "@/assets/the-state/isabel-allende.jpg";
@@ -112,13 +112,15 @@ const MethodTheState = () => {
                   <div className="bg-card border border-border rounded-xl overflow-hidden h-full flex flex-col">
                     <div className="h-[3px] bg-mint" />
 
-                    <div className="w-full aspect-[5/4] overflow-hidden bg-secondary/40 flex items-center justify-center p-4 sm:p-5">
-                      <img
-                        src={card.img}
-                        alt={card.name}
-                        className="w-full h-full object-contain object-center"
-                        loading="eager"
-                      />
+                    <div className="px-6 pt-6 sm:px-8 sm:pt-8">
+                      <div className="w-full aspect-square overflow-hidden rounded-xl">
+                        <img
+                          src={card.img}
+                          alt={card.name}
+                          className="w-full h-full object-cover"
+                          loading="eager"
+                        />
+                      </div>
                     </div>
 
                     <div className="p-6 sm:p-8 flex flex-col flex-1">
