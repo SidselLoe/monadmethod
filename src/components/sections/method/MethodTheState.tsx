@@ -111,7 +111,7 @@ const MethodTheState = () => {
                     <div className="h-[3px] bg-mint" />
 
                     {/* Portrait - reduced to ~70% of previous height (4/5 → 4/3 is actually taller, let's use 3/4 or smaller) */}
-                    <div className="w-full aspect-[4/3] overflow-hidden">
+                    <div className="w-full aspect-[5/4] overflow-hidden">
                       <img
                         src={card.img}
                         alt={card.name}
