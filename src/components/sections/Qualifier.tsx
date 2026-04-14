@@ -33,40 +33,42 @@ const Qualifier = () => {
   return (
     <section className="bg-background py-[100px] px-8">
       <div className="max-w-[1100px] mx-auto">
-        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground text-center mb-14 leading-[1.15]">
+        {/* Section headline */}
+        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground text-center mb-16 leading-[1.15]">
           Is Monad OS for you?
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8">
-          <div>
-            <h3 className="text-[20px] font-semibold text-foreground mb-6">
-              Monad OS is for you if...
-            </h3>
-            <ul className="space-y-5">
-              {forYou.map((item, i) => (
-                <li key={i} className="flex gap-3">
-                  <MonadSymbol color="#7ec8c8" />
-                  <p className="text-[15px] text-body leading-[1.75]">{item}</p>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-[20px] font-semibold text-foreground mb-6">
-              Monad OS is not for you if...
-            </h3>
-            <ul className="space-y-5">
-              {notForYou.map((item, i) => (
-                <li key={i} className="flex gap-3">
-                  <MonadSymbol color="#ff3131" />
-                  <p className="text-[15px] text-body leading-[1.75]">{item}</p>
-                </li>
-              ))}
-            </ul>
-          </div>
+        {/* FOR YOU block */}
+        <h3 className="text-[22px] sm:text-[26px] font-semibold text-foreground text-center mb-10">
+          Monad OS{" "}
+          <span className="bg-[#d4f542] px-1.5 py-0.5 rounded-sm">is for you</span>{" "}
+          if...
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5 mb-20">
+          {forYou.map((item, i) => (
+            <div key={i} className="flex gap-3">
+              <MonadSymbol color="#7ec8c8" />
+              <p className="text-[15px] text-body leading-[1.75]">{item}</p>
+            </div>
+          ))}
         </div>
 
+        {/* NOT FOR YOU block */}
+        <h3 className="text-[22px] sm:text-[26px] font-semibold text-foreground text-center mb-10">
+          Monad OS{" "}
+          <span className="bg-[#ff3131] text-white px-1.5 py-0.5 rounded-sm">is not for you</span>{" "}
+          if...
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5">
+          {notForYou.map((item, i) => (
+            <div key={i} className="flex gap-3">
+              <MonadSymbol color="#ff3131" />
+              <p className="text-[15px] text-body leading-[1.75]">{item}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* CTA */}
         <div className="flex justify-center mt-14">
           <a
             href={CALENDLY_URL}
