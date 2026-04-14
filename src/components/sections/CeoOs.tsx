@@ -6,7 +6,7 @@ const cards = [
     body: "A guided, music-driven process that takes you into the state where your clearest decisions live. No technique. No performance. You show up, lie down, and let the static clear. The effect compounds. Each session goes deeper than the last.",
   },
   {
-    heading: "4× Guided Voice-Note Self-Inquiry",
+    heading: "4× Guided Inquiry",
     body: "Your leadership is being shaped by patterns you have never examined. Structured self-inquiry surfaces them. Every reflection becomes the foundation for your next session. What was invisible becomes specific.",
   },
   {
