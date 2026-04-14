@@ -1,4 +1,5 @@
 import Navigation from "@/components/Navigation";
+import MethodTestimonials from "@/components/sections/method/MethodTestimonials";
 import Footer from "@/components/sections/Footer";
 
 const MonadLTS = () => {
@@ -16,6 +17,7 @@ const MonadLTS = () => {
           </p>
         </div>
       </section>
+      <MethodTestimonials />
       <Footer />
     </div>
   );
