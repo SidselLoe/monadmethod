@@ -1,7 +1,8 @@
 import { useState } from "react";
-import biancaCover from "@/assets/bianca-cover.jpg";
-import brandonCover from "@/assets/brandon-cover.jpg";
-import jessicaCover from "@/assets/jessica-cover.jpg";
+import biancaCover from "@/assets/testimonials/bianca-polizzi-founder-polizzi-media.png";
+import brandonCover from "@/assets/testimonials/brandon-hadwin-founder-healingwithbrandon.png";
+import jessicaCover from "@/assets/testimonials/jessica-rainey-founder-wildflower-woman.png";
+import rudiPhoto from "@/assets/testimonials/rudi-adigbli-founder-reethink.png";
 
 const videoCards = [
   { name: "Bianca\nPolizzi", company: "Polizzi Media", vimeoId: "148414050", cover: biancaCover },
@@ -13,21 +14,25 @@ const quoteCards = [
   {
     name: "Rudi Adigbli",
     company: "ReeThink",
+    photo: rudiPhoto,
     quote: "I came in thinking I needed a better strategy. Within two weeks I realised the strategy was never the problem. The way I was holding everything was. I make decisions faster now, and they actually stick.",
   },
   {
     name: "Max Lange",
     company: "SunnyClouds",
+    photo: null,
     quote: "I stopped firefighting every day and started actually leading. The business did not fall apart. It got better. I just needed someone to show me I was the thing in the way.",
   },
   {
     name: "Annie Reardon",
     company: "LUDO",
+    photo: null,
     quote: "For the first time I am building the company around the life I want, not the other way around. That distinction sounds small. It changed everything.",
   },
   {
     name: "Ilya Paveliev",
     company: "Hologram",
+    photo: null,
     quote: "I have done executive coaching before. This is not that. Something shifted in how I relate to pressure and it changed how I show up with my team. Quietly. Permanently.",
   },
 ];
@@ -67,9 +72,15 @@ const VideoCard = ({ name, company, vimeoId, cover }: { name: string; company: s
   );
 };
 
-const QuoteCard = ({ name, company, quote }: { name: string; company: string; quote: string }) => (
+const QuoteCard = ({ name, company, quote, photo }: { name: string; company: string; quote: string; photo: string | null }) => (
   <div className="rounded-xl p-7 bg-card border border-border">
-    <div className="w-10 h-10 rounded-full mb-3 bg-mint" />
+    {photo ? (
+      <div className="w-10 h-10 rounded-full mb-3 overflow-hidden">
+        <img src={photo} alt={name} className="w-full h-full object-cover" />
+      </div>
+    ) : (
+      <div className="w-10 h-10 rounded-full mb-3 bg-mint" />
+    )}
     <p className="text-[14px] font-medium text-foreground">{name}</p>
     <p className="text-[14px] text-body">{company}</p>
     <p className="mt-4 text-[16px] text-body leading-[1.75]">{quote}</p>

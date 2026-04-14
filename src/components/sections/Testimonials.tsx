@@ -1,8 +1,11 @@
+import biancaPhoto from "@/assets/testimonials/bianca-polizzi-founder-polizzi-media.png";
+import brandonPhoto from "@/assets/testimonials/brandon-hadwin-founder-healingwithbrandon.png";
+
 const testimonials = [
   {
     name: "Bianca Polizzi",
     title: "Founder & CEO, Polizzi Media",
-    photo: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=200&h=200&fit=crop&crop=face",
+    photo: biancaPhoto,
     quoteHeading: "I finally stopped carrying everything alone.",
     quoteBody:
       "Working with Sidsel gave me the clarity and capacity I had been trying to force through willpower. The shift was not just strategic. It was foundational. I lead differently now.",
@@ -10,7 +13,7 @@ const testimonials = [
   {
     name: "Brandon Hadwin",
     title: "Founder & CEO, HealingwithBrandon",
-    photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face",
+    photo: brandonPhoto,
     quoteHeading: "The bottleneck was me. Now it is not.",
     quoteBody:
       "I came in thinking I needed better systems. What I actually needed was to change how I was holding the company. Sidsel helped me see that and then do something about it.",
