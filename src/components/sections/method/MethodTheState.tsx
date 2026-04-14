@@ -130,7 +130,7 @@ const MethodTheState = () => {
                       <p className="text-[14px] text-body mb-4">
                         {card.descriptor}
                       </p>
-                      <p className="text-[18px] font-bold text-foreground leading-snug mb-3">
+                      <p className="font-editorial italic text-[18px] text-foreground leading-snug mb-3">
                         "{card.anchor}"
                       </p>
                       <p className="text-[15px] text-body leading-[1.7]">
