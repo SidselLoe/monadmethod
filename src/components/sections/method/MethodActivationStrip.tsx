@@ -10,8 +10,10 @@ const MethodActivationStrip = () => {
             <br />
             Included in Monad OS and every engagement that follows.
           </p>
-          <Link
-            to="/apply"
+          <a
+            href="https://luma.com/monadmethod"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex-shrink-0 inline-flex bg-background text-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-background/90 transition-colors"
           >
             View Upcoming Sessions
