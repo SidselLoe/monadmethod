@@ -9,7 +9,7 @@ import MethodActivations from "@/components/sections/method/MethodActivations";
 import MethodOrigin from "@/components/sections/method/MethodOrigin";
 import MethodMerkaba from "@/components/sections/method/MethodMerkaba";
 import MethodOfferings from "@/components/sections/method/MethodOfferings";
-import MethodTestimonials from "@/components/sections/method/MethodTestimonials";
+
 import MethodClosingCTA from "@/components/sections/method/MethodClosingCTA";
 import Footer from "@/components/sections/Footer";
 
@@ -27,7 +27,7 @@ const TheMethod = () => {
       <MethodTheState />
       <MethodMerkaba />
       <MethodOfferings />
-      <MethodTestimonials />
+      
       <MethodClosingCTA />
       <Footer />
     </div>
