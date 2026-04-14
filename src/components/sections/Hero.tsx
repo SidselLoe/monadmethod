@@ -21,7 +21,7 @@ const Hero = () => {
         </h1>
 
         <p className="mt-6 text-[18px] text-body font-normal max-w-[700px] mx-auto leading-[1.7]">
-          What you need has always been in you. The work returns you to it. Three modalities. Thirty days.
+          The ceiling is internal. The work is how you move it. Three modalities. Thirty days.
         </p>
 
         <a
