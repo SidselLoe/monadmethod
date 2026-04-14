@@ -4,8 +4,9 @@ import { Menu, X } from "lucide-react";
 import monadSymbol from "@/assets/monad-symbol.png";
 
 const navLinks = [
-  { label: "Monad OS", href: "/" },
   { label: "The Monad Method", href: "/the-method" },
+  { label: "Monad OS", href: "/monad-os" },
+  { label: "Monad LTS", href: "/monad-lts" },
   { label: "About", href: "/about" },
 ];
 

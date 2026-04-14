@@ -5,6 +5,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import TheMethod from "./pages/TheMethod.tsx";
+import MonadOS from "./pages/MonadOS.tsx";
+import MonadLTS from "./pages/MonadLTS.tsx";
 import About from "./pages/About.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
@@ -19,6 +21,8 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/the-method" element={<TheMethod />} />
+          <Route path="/monad-os" element={<MonadOS />} />
+          <Route path="/monad-lts" element={<MonadLTS />} />
           <Route path="/about" element={<About />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
