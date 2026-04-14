@@ -5,6 +5,7 @@ import brandonCover from "@/assets/testimonials/brandon-hadwin-founder-healingwi
 import jessicaCover from "@/assets/testimonials/jessica-rainey-founder-wildflower-woman.png";
 import backstoryPhoto from "@/assets/backstory-sidsel.jpg";
 import LineageSection from "@/components/sections/about/LineageSection";
+import speakerPhoto from "@/assets/sidsel-loschenkohl-living-from-the-heart-speaker.png";
 
 const socialProofQuotes = [
   { quote: "Once you see it, you can't unsee it.", name: "Alexandra", role: "Founder & Creative Director, Of The Islands", avatar: "" },
