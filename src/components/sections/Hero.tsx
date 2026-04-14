@@ -10,17 +10,17 @@ const avatarUrls = [
 
 const Hero = () => {
   return (
-    <section className="bg-background pt-[180px] pb-[100px] px-8">
+    <section className="bg-background pt-[200px] pb-[120px] px-8">
       <div className="max-w-[1100px] mx-auto text-center">
-        <p className="text-[13px] font-bold uppercase tracking-[0.12em] text-mint mb-6">
+        <p className="text-[13px] font-bold uppercase tracking-[0.12em] text-mint mb-8">
           For founders who are the business.
         </p>
 
-        <h1 className="text-4xl sm:text-5xl md:text-[60px] font-bold text-foreground leading-[1.1] tracking-[-0.3px]">
+        <h1 className="text-4xl sm:text-5xl md:text-[72px] font-bold text-foreground leading-[1.15] tracking-[-0.5px]">
           You are the business. That's not a compliment.
         </h1>
 
-        <p className="mt-6 text-[18px] text-body font-normal max-w-[700px] mx-auto leading-[1.7]">
+        <p className="mt-8 text-[20px] text-body font-normal max-w-[700px] mx-auto leading-[1.7]">
           The ceiling is internal. The work is how you move it. Three modalities. Thirty days.
         </p>
 
@@ -28,13 +28,13 @@ const Hero = () => {
           href={CALENDLY_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex mt-10 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
+          className="inline-flex mt-12 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
         >
           Book a Call
         </a>
 
         {/* Avatar stack + social proof */}
-        <div className="mt-8 flex flex-col items-center gap-2">
+        <div className="mt-10 flex flex-col items-center gap-3">
           <div className="flex">
             {avatarUrls.map((url, i) => (
               <img
