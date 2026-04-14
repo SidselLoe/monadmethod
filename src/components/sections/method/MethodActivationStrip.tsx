@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 
 const MethodActivationStrip = () => {
   return (
@@ -17,7 +17,7 @@ const MethodActivationStrip = () => {
             className="flex-shrink-0 inline-flex bg-background text-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-background/90 transition-colors"
           >
             View Upcoming Sessions
-          </Link>
+          </a>
         </div>
       </div>
     </section>
