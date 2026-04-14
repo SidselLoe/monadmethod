@@ -20,10 +20,10 @@ const FinalCTA = () => {
           {/* Text */}
           <div className="flex-1 text-center md:text-left">
             <h3 className="text-xl sm:text-2xl font-bold text-accent-foreground">
-              Headline placeholder
+              You are the business. You are also the upgrade.
             </h3>
             <p className="mt-3 text-[16px] text-accent-foreground/85 leading-[1.75]">
-              Body text placeholder
+              Monad OS is how you make the shift. Thirty days. Three modalities. A different internal operating system.
             </p>
           </div>
 
