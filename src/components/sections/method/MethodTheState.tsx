@@ -11,11 +11,25 @@ const cards = [
     img: "https://upload.wikimedia.org/wikipedia/commons/7/79/Tesla_circa_1890.jpeg",
   },
   {
+    name: "Elizabeth Gilbert",
+    descriptor: "Author",
+    anchor: "Inspiration is always trying to work with you.",
+    body: "She describes creativity as something that visits you, not something you produce. The artist's job is to stay available for it.",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Elizabeth_Gilbert_%281%29.jpg/640px-Elizabeth_Gilbert_%281%29.jpg",
+  },
+  {
     name: "Albert Einstein",
     descriptor: "Physicist",
     anchor: "Imagination is more important than knowledge.",
     body: "He credited intuition over analysis for his breakthroughs. Relativity began as a thought experiment, not a calculation.",
     img: "https://upload.wikimedia.org/wikipedia/commons/d/d3/Albert_Einstein_Head.jpg",
+  },
+  {
+    name: "Isabel Allende",
+    descriptor: "Author",
+    anchor: "I don't choose the subject. It chooses me.",
+    body: "She writes her first drafts in a trance-like state. She begins every book on January 8th, a ritual she has kept for decades.",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Isabel_Allende_-_20180913_-_FM_%281%29.jpg/640px-Isabel_Allende_-_20180913_-_FM_%281%29.jpg",
   },
   {
     name: "Paul McCartney",
@@ -25,10 +39,17 @@ const cards = [
     img: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Paul_McCartney_2021_%28cropped%29.jpg",
   },
   {
+    name: "J.K. Rowling",
+    descriptor: "Novelist",
+    anchor: "Harry just strolled into my head fully formed.",
+    body: "The idea arrived on a delayed train to London in 1990. She spent the rest of the journey building the world in her head, unable to write it down.",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/J._K._Rowling_2010.jpg/640px-J._K._Rowling_2010.jpg",
+  },
+  {
     name: "Rick Rubin",
     descriptor: "Producer",
     anchor: "We are antennae for creative thought.",
-    body: "He describes the artist's task as receiving. His job is to stay open enough to let what wants to come through arrive.",
+    body: "He describes the artist's task as receiving. The job is to stay open enough to let it through.",
     img: "https://upload.wikimedia.org/wikipedia/commons/3/3d/Rick_Rubin_in_1988_%28cropped%29.jpg",
   },
 ];
@@ -71,14 +92,9 @@ const MethodTheState = () => {
           Your best ideas have never come from thinking harder.
         </h2>
 
-        {/* Subhead */}
-        <p className="text-[18px] font-medium text-foreground text-center mb-4">
-          There is a state your nervous system can enter where the noise stops.
-        </p>
-
         {/* Short paragraph */}
         <p className="text-[16px] text-body text-center max-w-[640px] mx-auto leading-[1.75] mb-14">
-          Every great mind you admire has described it. The work did not come from effort. It came from access.
+          They arrived when you stopped. In the shower. On a walk. At 3 AM. Already complete. You know this state exists. You just cannot reach it on demand. Every great mind you admire has described the same thing. The work did not come from effort. It came from access.
         </p>
 
         {/* Carousel */}
@@ -94,8 +110,8 @@ const MethodTheState = () => {
                     {/* Teal accent line */}
                     <div className="h-[3px] bg-mint" />
 
-                    {/* Portrait */}
-                    <div className="w-full aspect-[4/5] overflow-hidden">
+                    {/* Portrait - reduced to ~70% of previous height (4/5 → 4/3 is actually taller, let's use 3/4 or smaller) */}
+                    <div className="w-full aspect-[4/3] overflow-hidden">
                       <img
                         src={card.img}
                         alt={card.name}
