@@ -6,7 +6,7 @@ import Testimonials from "@/components/sections/Testimonials";
 import WhyThisWorks from "@/components/sections/WhyThisWorks";
 import ConversionBanner from "@/components/sections/ConversionBanner";
 import CeoOs from "@/components/sections/CeoOs";
-import DeltaSection from "@/components/sections/DeltaSection";
+import Qualifier from "@/components/sections/Qualifier";
 import MoreFromFounders from "@/components/sections/MoreFromFounders";
 import LogoMarquee from "@/components/sections/LogoMarquee";
 import FinalCTA from "@/components/sections/FinalCTA";
@@ -20,9 +20,9 @@ const Index = () => {
       <ProblemProgram />
       <WhyThisWorks />
       <HeySidsel />
-      <CeoOs />
       <Testimonials />
-      <DeltaSection />
+      <Qualifier />
+      <CeoOs />
       <ConversionBanner />
       <MoreFromFounders />
       <LogoMarquee />
