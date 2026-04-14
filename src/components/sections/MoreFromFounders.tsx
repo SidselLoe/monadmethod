@@ -33,7 +33,7 @@ const quoteCards = [
   {
     name: "Ilya Paveliev",
     company: "Hologram",
-    photo: null,
+    photo: ilyaPhoto,
     quote: "I have done executive coaching before. This is not that. Something shifted in how I relate to pressure and it changed how I show up with my team. Quietly. Permanently.",
   },
 ];
