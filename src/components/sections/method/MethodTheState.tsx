@@ -163,9 +163,6 @@ const MethodTheState = () => {
           </div>
         </div>
 
-        <p className="text-[16px] text-foreground text-center mt-12 leading-[1.75]">
-          The state they knew is available to you.
-        </p>
       </div>
     </section>
   );
