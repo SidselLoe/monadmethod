@@ -5,6 +5,7 @@ import brandonCover from "@/assets/testimonials/brandon-hadwin-founder-healingwi
 import jessicaCover from "@/assets/testimonials/jessica-rainey-founder-wildflower-woman.png";
 import backstoryPhoto from "@/assets/backstory-sidsel.jpg";
 import LineageSection from "@/components/sections/about/LineageSection";
+import speakerPhoto from "@/assets/sidsel-loschenkohl-living-from-the-heart-speaker.png";
 
 const socialProofQuotes = [
   { quote: "Once you see it, you can't unsee it.", name: "Alexandra", role: "Founder & Creative Director, Of The Islands", avatar: "" },
@@ -220,8 +221,8 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-[50px] items-start mb-20">
             <div>
               <img
-                src="https://hciqvcspehfitlgclhud.supabase.co/storage/v1/object/public/sidsel/Headshot%202.jpg"
-                alt="Sidsel speaking"
+                src={speakerPhoto}
+                alt="Sidsel Løschenkohl speaking on living from the heart in the age of AI"
                 className="w-full rounded-lg object-cover aspect-[4/3]"
               />
             </div>
