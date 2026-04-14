@@ -3,6 +3,7 @@ import biancaCover from "@/assets/testimonials/bianca-polizzi-founder-polizzi-me
 import brandonCover from "@/assets/testimonials/brandon-hadwin-founder-healingwithbrandon.png";
 import jessicaCover from "@/assets/testimonials/jessica-rainey-founder-wildflower-woman.png";
 import rudiPhoto from "@/assets/testimonials/rudi-adigbli-founder-reethink.png";
+import ilyaPhoto from "@/assets/testimonials/ilya-paveliev-founder-hologram.png";
 
 const videoCards = [
   { name: "Bianca\nPolizzi", company: "Polizzi Media", vimeoId: "148414050", cover: biancaCover },
@@ -32,7 +33,7 @@ const quoteCards = [
   {
     name: "Ilya Paveliev",
     company: "Hologram",
-    photo: null,
+    photo: ilyaPhoto,
     quote: "I have done executive coaching before. This is not that. Something shifted in how I relate to pressure and it changed how I show up with my team. Quietly. Permanently.",
   },
 ];
