@@ -18,6 +18,13 @@ const cards = [
     img: nikolaTesla,
   },
   {
+    name: "Rick Rubin",
+    descriptor: "Producer",
+    anchor: "We are antennae for creative thought.",
+    body: "He describes the artist's task as receiving. The job is to stay open enough to let it through.",
+    img: rickRubin,
+  },
+  {
     name: "Elizabeth Gilbert",
     descriptor: "Author",
     anchor: "Inspiration is always trying to work with you.",
@@ -52,39 +59,16 @@ const cards = [
     body: "The idea arrived on a delayed train to London in 1990. She spent the rest of the journey building the world in her head, unable to write it down.",
     img: jkRowling,
   },
-  {
-    name: "Rick Rubin",
-    descriptor: "Producer",
-    anchor: "We are antennae for creative thought.",
-    body: "He describes the artist's task as receiving. The job is to stay open enough to let it through.",
-    img: rickRubin,
-  },
 ];
 
 const MethodTheState = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     align: "start",
     slidesToScroll: 1,
-    containScroll: "trimSnaps",
+    loop: true,
   });
-  const [canScrollPrev, setCanScrollPrev] = React.useState(false);
-  const [canScrollNext, setCanScrollNext] = React.useState(false);
 
-  const onSelect = React.useCallback(() => {
-    if (!emblaApi) return;
-    setCanScrollPrev(emblaApi.canScrollPrev());
-    setCanScrollNext(emblaApi.canScrollNext());
-  }, [emblaApi]);
 
-  React.useEffect(() => {
-    if (!emblaApi) return;
-    onSelect();
-    emblaApi.on("select", onSelect);
-    emblaApi.on("reInit", onSelect);
-    return () => {
-      emblaApi.off("select", onSelect);
-    };
-  }, [emblaApi, onSelect]);
 
   return (
     <section className="bg-surface py-[100px] px-8">
@@ -146,16 +130,14 @@ const MethodTheState = () => {
           <div className="flex justify-center gap-3 mt-8">
             <button
               onClick={() => emblaApi?.scrollPrev()}
-              disabled={!canScrollPrev}
-              className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-foreground disabled:opacity-30 transition-opacity hover:bg-surface"
+              className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-foreground transition-opacity hover:bg-surface"
               aria-label="Previous slide"
             >
               <ArrowLeft size={18} />
             </button>
             <button
               onClick={() => emblaApi?.scrollNext()}
-              disabled={!canScrollNext}
-              className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-foreground disabled:opacity-30 transition-opacity hover:bg-surface"
+              className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-foreground transition-opacity hover:bg-surface"
               aria-label="Next slide"
             >
               <ArrowRight size={18} />
