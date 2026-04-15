@@ -1,22 +1,31 @@
+import antonPhoto from "@/assets/testimonials/anton-rytter-founder.png";
 import biancaPhoto from "@/assets/testimonials/bianca-polizzi-founder-polizzi-media.png";
-import brandonPhoto from "@/assets/testimonials/brandon-hadwin-founder-healingwithbrandon.png";
+import ellaPhoto from "@/assets/testimonials/ella-cane-founder.png";
 
 const testimonials = [
   {
-    name: "Bianca Polizzi",
-    title: "Founder & CEO, Polizzi Media",
-    photo: biancaPhoto,
-    quoteHeading: "I finally stopped carrying everything alone.",
+    name: "Anton Rytter",
+    title: "Founder, Kintsugi Studio",
+    photo: antonPhoto,
+    quoteHeading: "",
     quoteBody:
-      "Working with Sidsel gave me the clarity and capacity I had been trying to force through willpower. The shift was not just strategic. It was foundational. I lead differently now.",
+      "She turns my messy potential into a clear direction. I'm pursuing four times as many leads now — and actually following them through.",
   },
   {
-    name: "Brandon Hadwin",
-    title: "Founder & CEO, HealingwithBrandon",
-    photo: brandonPhoto,
-    quoteHeading: "The bottleneck was me. Now it is not.",
+    name: "Bianca Polizzi",
+    title: "Founder, Polizzi Media",
+    photo: biancaPhoto,
+    quoteHeading: "",
     quoteBody:
-      "I came in thinking I needed better systems. What I actually needed was to change how I was holding the company. Sidsel helped me see that and then do something about it.",
+      "I reclaimed my sense of self-worth. I've shed so much and become such a different version of myself.",
+  },
+  {
+    name: "Ella Cane",
+    title: "Business Owner, Live Your Truth",
+    photo: ellaPhoto,
+    quoteHeading: "",
+    quoteBody:
+      "I needed someone who could help me structure everything — not just give me more ideas. Regular check-ins, accountability, strategic guidance. That's what I actually needed.",
   },
 ];
 
@@ -55,10 +64,12 @@ const Testimonials = () => {
                   </span>
                 </div>
 
-                <h3 className="text-[20px] font-semibold text-foreground leading-snug">
-                  {t.quoteHeading}
-                </h3>
-                <p className="mt-3 text-[16px] text-body leading-[1.75]">
+                {t.quoteHeading && (
+                  <h3 className="text-[20px] font-semibold text-foreground leading-snug">
+                    {t.quoteHeading}
+                  </h3>
+                )}
+                <p className={`${t.quoteHeading ? 'mt-3' : ''} text-[16px] text-body leading-[1.75]`}>
                   {t.quoteBody}
                 </p>
               </div>
