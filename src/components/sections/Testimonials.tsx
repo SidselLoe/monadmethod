@@ -64,10 +64,12 @@ const Testimonials = () => {
                   </span>
                 </div>
 
-                <h3 className="text-[20px] font-semibold text-foreground leading-snug">
-                  {t.quoteHeading}
-                </h3>
-                <p className="mt-3 text-[16px] text-body leading-[1.75]">
+                {t.quoteHeading && (
+                  <h3 className="text-[20px] font-semibold text-foreground leading-snug">
+                    {t.quoteHeading}
+                  </h3>
+                )}
+                <p className={`${t.quoteHeading ? 'mt-3' : ''} text-[16px] text-body leading-[1.75]`}>
                   {t.quoteBody}
                 </p>
               </div>
