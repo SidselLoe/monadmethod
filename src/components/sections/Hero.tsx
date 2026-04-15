@@ -42,11 +42,11 @@ const Hero = () => {
         {/* Avatar stack + social proof */}
         <div className="mt-10 flex flex-col items-center gap-3">
           <div className="flex">
-            {avatarUrls.map((url, i) => (
+            {avatars.map((avatar, i) => (
               <img
                 key={i}
-                src={url}
-                alt="Founder"
+                src={avatar.src}
+                alt={avatar.alt}
                 className="w-8 h-8 rounded-full object-cover border-2 border-background shadow-sm"
                 style={{ marginLeft: i > 0 ? "-10px" : "0" }}
                 loading="lazy"
