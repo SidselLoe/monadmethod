@@ -130,16 +130,14 @@ const MethodTheState = () => {
           <div className="flex justify-center gap-3 mt-8">
             <button
               onClick={() => emblaApi?.scrollPrev()}
-              disabled={!canScrollPrev}
-              className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-foreground disabled:opacity-30 transition-opacity hover:bg-surface"
+              className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-foreground transition-opacity hover:bg-surface"
               aria-label="Previous slide"
             >
               <ArrowLeft size={18} />
             </button>
             <button
               onClick={() => emblaApi?.scrollNext()}
-              disabled={!canScrollNext}
-              className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-foreground disabled:opacity-30 transition-opacity hover:bg-surface"
+              className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-foreground transition-opacity hover:bg-surface"
               aria-label="Next slide"
             >
               <ArrowRight size={18} />
