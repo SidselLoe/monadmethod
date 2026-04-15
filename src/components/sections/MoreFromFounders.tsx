@@ -33,8 +33,8 @@ const quoteCards = [
     quote: "I have done executive coaching before. This is not that. Something shifted in how I relate to pressure and it changed how I show up with my team. Quietly. Permanently.",
   },
   {
-    name: "Eva",
-    company: "",
+    name: "Ieva Urenceva",
+    company: "@catchagypsea",
     photo: null,
     quote: "Placeholder — quote coming soon.",
   },
