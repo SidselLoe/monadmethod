@@ -4,11 +4,13 @@ import brandonCover from "@/assets/testimonials/brandon-hadwin-founder-healingwi
 import jessicaCover from "@/assets/testimonials/jessica-rainey-founder-wildflower-woman.png";
 import rudiPhoto from "@/assets/testimonials/rudi-adigbli-founder-reethink.png";
 import ilyaPhoto from "@/assets/testimonials/ilya-paveliev-founder-hologram.png";
+import alexandraCover from "@/assets/testimonials/alexandra-feldman-founder-of-the-islands.png";
 
 const videoCards = [
   { name: "Bianca\nPolizzi", company: "Polizzi Media", vimeoId: "148414050", cover: biancaCover },
   { name: "Brandon\nHadwin", company: "HealingwithBrandon", vimeoId: "148414050", cover: brandonCover },
   { name: "Jessica\nRainey", company: "Wildflower Woman", vimeoId: "148414050", cover: jessicaCover },
+  { name: "Alexandra\nFeldman", company: "Of The Islands", vimeoId: "", cover: alexandraCover },
 ];
 
 const quoteCards = [
