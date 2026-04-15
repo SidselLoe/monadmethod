@@ -1,4 +1,4 @@
-import logoWhite from "@/assets/logo-sidsel-loschenkohl-white.png";
+import logoWhite from "@/assets/sidsel-loschenkohl-logo-white.svg";
 
 const Footer = () => {
   return (
@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between gap-10">
           {/* Left side — all left-aligned */}
           <div className="max-w-[500px]">
-            <img src={logoWhite} alt="Sidsel Løschenkohl" className="h-[60px] sm:h-[70px]" />
+            <img src={logoWhite} alt="Sidsel Løschenkohl — Executive Coach for Founders" className="h-[50px] sm:h-[60px] w-auto" />
 
             <a
               href="#"
@@ -21,7 +21,7 @@ const Footer = () => {
               Join founders who operate differently.
             </p>
 
-            <p className="mt-4 text-[16px] text-primary-foreground/80 leading-[1.75]">
+            <p className="mt-4 text-[16px] text-primary-foreground leading-[1.75]">
               The email series that breaks down why growth becomes an identity problem, and what to shift when it does.
             </p>
 
