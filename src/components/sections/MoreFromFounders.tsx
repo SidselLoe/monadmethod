@@ -4,11 +4,13 @@ import brandonCover from "@/assets/testimonials/brandon-hadwin-founder-healingwi
 import jessicaCover from "@/assets/testimonials/jessica-rainey-founder-wildflower-woman.png";
 import rudiPhoto from "@/assets/testimonials/rudi-adigbli-founder-reethink.png";
 import ilyaPhoto from "@/assets/testimonials/ilya-paveliev-founder-hologram.png";
+import alexandraCover from "@/assets/testimonials/alexandra-feldman-founder-of-the-islands.png";
 
 const videoCards = [
   { name: "Bianca\nPolizzi", company: "Polizzi Media", vimeoId: "148414050", cover: biancaCover },
   { name: "Brandon\nHadwin", company: "HealingwithBrandon", vimeoId: "148414050", cover: brandonCover },
   { name: "Jessica\nRainey", company: "Wildflower Woman", vimeoId: "148414050", cover: jessicaCover },
+  { name: "Alexandra\nFeldman", company: "Of The Islands", vimeoId: "", cover: alexandraCover },
 ];
 
 const quoteCards = [
@@ -45,8 +47,8 @@ const VideoCard = ({ name, company, vimeoId, cover }: { name: string; company: s
     <div
       className="rounded-xl overflow-hidden relative cursor-pointer"
       style={{ aspectRatio: "3/4" }}
-      onClick={() => !playing && setPlaying(true)}
-      data-vimeo={vimeoId}
+      onClick={() => !playing && vimeoId && setPlaying(true)}
+      data-vimeo={vimeoId || undefined}
     >
       {playing ? (
         <iframe
@@ -105,6 +107,7 @@ const MoreFromFounders = () => {
           <div className="mb-[18px] break-inside-avoid"><QuoteCard {...quoteCards[0]} /></div>
           <div className="mb-[18px] break-inside-avoid"><VideoCard {...videoCards[2]} /></div>
           <div className="mb-[18px] break-inside-avoid"><QuoteCard {...quoteCards[3]} /></div>
+          <div className="mb-[18px] break-inside-avoid"><VideoCard {...videoCards[3]} /></div>
         </div>
 
         {/* Tablet */}
@@ -116,6 +119,7 @@ const MoreFromFounders = () => {
           <VideoCard {...videoCards[2]} />
           <QuoteCard {...quoteCards[2]} />
           <QuoteCard {...quoteCards[3]} />
+          <VideoCard {...videoCards[3]} />
         </div>
 
         {/* Mobile */}
@@ -127,6 +131,7 @@ const MoreFromFounders = () => {
           <VideoCard {...videoCards[2]} />
           <QuoteCard {...quoteCards[2]} />
           <QuoteCard {...quoteCards[3]} />
+          <VideoCard {...videoCards[3]} />
         </div>
       </div>
     </section>
