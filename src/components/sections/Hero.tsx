@@ -1,11 +1,17 @@
+import rudiAvatar from "@/assets/testimonials/rudi-adigbli-founder-reethink.png";
+import jessicaAvatar from "@/assets/testimonials/jessica-rainey-founder-wildflower-woman.png";
+import ilyaAvatar from "@/assets/testimonials/ilya-paveliev-founder-hologram.png";
+import ellaAvatar from "@/assets/testimonials/ella-cane-founder.png";
+import alexandraAvatar from "@/assets/testimonials/alexandra-feldman-founder-of-the-islands.png";
+
 const CALENDLY_URL = "https://calendly.com/sidselloschenkohl/monad-discovery";
 
-const avatarUrls = [
-  "https://lh3.googleusercontent.com/d/1zcYBcz7Jkey1LC-0KMgdCQ8VogZxT3YV",
-  "https://lh3.googleusercontent.com/d/1P-h1KerdaH8Ld3FP8lHOXHZouMgy5pz9",
-  "https://lh3.googleusercontent.com/d/1fVQAZtaPxIAYYhPCcAaog6qSH1z_mh0G",
-  "https://lh3.googleusercontent.com/d/1gCv17YwzgfNHn4BFt_3CwCAa40SV2LNm",
-  "https://lh3.googleusercontent.com/d/1Yr_ihfjJ1ERh-Ebi4kKQiTWxq5eRO__9",
+const avatars = [
+  { src: rudiAvatar, alt: "Rudi Adigbli" },
+  { src: jessicaAvatar, alt: "Jessica Rainey" },
+  { src: ilyaAvatar, alt: "Ilya Paveliev" },
+  { src: ellaAvatar, alt: "Ella Cane" },
+  { src: alexandraAvatar, alt: "Alexandra Feldman" },
 ];
 
 const Hero = () => {
