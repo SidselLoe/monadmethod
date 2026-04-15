@@ -111,7 +111,6 @@ const MoreFromFounders = () => {
           <QuoteCard {...quoteCards[1]} />
           <VideoCard {...videoCards[2]} />
           <QuoteCard {...quoteCards[2]} />
-          <QuoteCard {...quoteCards[3]} />
           <VideoCard {...videoCards[3]} />
         </div>
 
@@ -123,7 +122,6 @@ const MoreFromFounders = () => {
           <QuoteCard {...quoteCards[1]} />
           <VideoCard {...videoCards[2]} />
           <QuoteCard {...quoteCards[2]} />
-          <QuoteCard {...quoteCards[3]} />
           <VideoCard {...videoCards[3]} />
         </div>
       </div>
