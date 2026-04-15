@@ -18,6 +18,13 @@ const cards = [
     img: nikolaTesla,
   },
   {
+    name: "Rick Rubin",
+    descriptor: "Producer",
+    anchor: "We are antennae for creative thought.",
+    body: "He describes the artist's task as receiving. The job is to stay open enough to let it through.",
+    img: rickRubin,
+  },
+  {
     name: "Elizabeth Gilbert",
     descriptor: "Author",
     anchor: "Inspiration is always trying to work with you.",
@@ -51,13 +58,6 @@ const cards = [
     anchor: "Harry just strolled into my head fully formed.",
     body: "The idea arrived on a delayed train to London in 1990. She spent the rest of the journey building the world in her head, unable to write it down.",
     img: jkRowling,
-  },
-  {
-    name: "Rick Rubin",
-    descriptor: "Producer",
-    anchor: "We are antennae for creative thought.",
-    body: "He describes the artist's task as receiving. The job is to stay open enough to let it through.",
-    img: rickRubin,
   },
 ];
 
