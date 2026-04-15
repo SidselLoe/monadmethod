@@ -6,9 +6,10 @@ import jessicaCover from "@/assets/testimonials/jessica-rainey-founder-wildflowe
 import backstoryPhoto from "@/assets/backstory-sidsel.jpg";
 import LineageSection from "@/components/sections/about/LineageSection";
 import speakerPhoto from "@/assets/sidsel-loschenkohl-living-from-the-heart-speaker.png";
+import alexandraCover from "@/assets/testimonials/alexandra-feldman-founder-of-the-islands.png";
 
 const socialProofQuotes = [
-  { quote: "Once you see it, you can't unsee it.", name: "Alexandra", role: "Founder & Creative Director, Of The Islands", avatar: "" },
+  { quote: "Once you see it, you can't unsee it.", name: "Alexandra", role: "Founder & Creative Director, Of The Islands", avatar: alexandraCover },
   { quote: "It's not about the actions we're taking, but where the action's coming from.", name: "Brandon", role: "Business Owner, Healing with Brandon", avatar: brandonCover },
   { quote: "She doesn't coddle, but she's uniquely supportive in helping you carve an authentic path that actually fits you.", name: "Jessica", role: "Founder and CEO, Wildflower Women", avatar: jessicaCover },
 ];
