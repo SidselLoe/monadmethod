@@ -288,9 +288,7 @@ const About = () => {
               </p>
             </div>
             <a
-              href="https://calendly.com/sidselloschenkohl/monad-discovery"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:sidsel@loschenkohl.com"
               className="flex-shrink-0 inline-flex bg-background text-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-background/90 transition-colors"
             >
               Get in Touch
