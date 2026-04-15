@@ -32,6 +32,12 @@ const quoteCards = [
     photo: ilyaPhoto,
     quote: "I have done executive coaching before. This is not that. Something shifted in how I relate to pressure and it changed how I show up with my team. Quietly. Permanently.",
   },
+  {
+    name: "Eva",
+    company: "",
+    photo: null,
+    quote: "Placeholder — quote coming soon.",
+  },
 ];
 
 const VideoCard = ({ name, company, vimeoId, cover }: { name: string; company: string; vimeoId: string; cover: string }) => {
@@ -101,6 +107,7 @@ const MoreFromFounders = () => {
           <div className="mb-[18px] break-inside-avoid"><VideoCard {...videoCards[2]} /></div>
           <div className="mb-[18px] break-inside-avoid"><QuoteCard {...quoteCards[2]} /></div>
           <div className="mb-[18px] break-inside-avoid"><VideoCard {...videoCards[3]} /></div>
+          <div className="mb-[18px] break-inside-avoid"><QuoteCard {...quoteCards[3]} /></div>
         </div>
 
         {/* Tablet */}
@@ -112,6 +119,7 @@ const MoreFromFounders = () => {
           <VideoCard {...videoCards[2]} />
           <QuoteCard {...quoteCards[2]} />
           <VideoCard {...videoCards[3]} />
+          <QuoteCard {...quoteCards[3]} />
         </div>
 
         {/* Mobile */}
@@ -123,6 +131,7 @@ const MoreFromFounders = () => {
           <VideoCard {...videoCards[2]} />
           <QuoteCard {...quoteCards[2]} />
           <VideoCard {...videoCards[3]} />
+          <QuoteCard {...quoteCards[3]} />
         </div>
       </div>
     </section>
