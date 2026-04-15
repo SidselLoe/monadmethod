@@ -65,7 +65,7 @@ const MethodTheState = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     align: "start",
     slidesToScroll: 1,
-    containScroll: "trimSnaps",
+    loop: true,
   });
   const [canScrollPrev, setCanScrollPrev] = React.useState(false);
   const [canScrollNext, setCanScrollNext] = React.useState(false);
