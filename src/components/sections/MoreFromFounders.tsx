@@ -47,8 +47,8 @@ const VideoCard = ({ name, company, vimeoId, cover }: { name: string; company: s
     <div
       className="rounded-xl overflow-hidden relative cursor-pointer"
       style={{ aspectRatio: "3/4" }}
-      onClick={() => !playing && setPlaying(true)}
-      data-vimeo={vimeoId}
+      onClick={() => !playing && vimeoId && setPlaying(true)}
+      data-vimeo={vimeoId || undefined}
     >
       {playing ? (
         <iframe
