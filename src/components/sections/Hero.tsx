@@ -17,7 +17,7 @@ const Hero = () => {
         </p>
 
         <h1 className="text-4xl sm:text-5xl md:text-[72px] font-bold text-foreground leading-[1.15] tracking-[-0.5px]">
-          You are the business. That's not a compliment.
+          You are the business.<br />That's not a compliment.
         </h1>
 
         <p className="mt-8 text-[20px] text-body font-normal max-w-[700px] mx-auto leading-[1.7]">
