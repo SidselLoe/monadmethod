@@ -21,12 +21,6 @@ const quoteCards = [
     quote: "I came in thinking I needed a better strategy. Within two weeks I realised the strategy was never the problem. The way I was holding everything was. I make decisions faster now, and they actually stick.",
   },
   {
-    name: "Max Lange",
-    company: "SunnyClouds",
-    photo: null,
-    quote: "I stopped firefighting every day and started actually leading. The business did not fall apart. It got better. I just needed someone to show me I was the thing in the way.",
-  },
-  {
     name: "Annie Reardon",
     company: "LUDO",
     photo: null,
@@ -103,10 +97,9 @@ const MoreFromFounders = () => {
           <div className="mb-[18px] break-inside-avoid"><VideoCard {...videoCards[0]} /></div>
           <div className="mb-[18px] break-inside-avoid"><QuoteCard {...quoteCards[1]} /></div>
           <div className="mb-[18px] break-inside-avoid"><VideoCard {...videoCards[1]} /></div>
-          <div className="mb-[18px] break-inside-avoid"><QuoteCard {...quoteCards[2]} /></div>
           <div className="mb-[18px] break-inside-avoid"><QuoteCard {...quoteCards[0]} /></div>
           <div className="mb-[18px] break-inside-avoid"><VideoCard {...videoCards[2]} /></div>
-          <div className="mb-[18px] break-inside-avoid"><QuoteCard {...quoteCards[3]} /></div>
+          <div className="mb-[18px] break-inside-avoid"><QuoteCard {...quoteCards[2]} /></div>
           <div className="mb-[18px] break-inside-avoid"><VideoCard {...videoCards[3]} /></div>
         </div>
 
@@ -118,7 +111,6 @@ const MoreFromFounders = () => {
           <QuoteCard {...quoteCards[1]} />
           <VideoCard {...videoCards[2]} />
           <QuoteCard {...quoteCards[2]} />
-          <QuoteCard {...quoteCards[3]} />
           <VideoCard {...videoCards[3]} />
         </div>
 
@@ -130,7 +122,6 @@ const MoreFromFounders = () => {
           <QuoteCard {...quoteCards[1]} />
           <VideoCard {...videoCards[2]} />
           <QuoteCard {...quoteCards[2]} />
-          <QuoteCard {...quoteCards[3]} />
           <VideoCard {...videoCards[3]} />
         </div>
       </div>
