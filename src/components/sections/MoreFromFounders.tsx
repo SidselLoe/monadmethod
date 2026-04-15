@@ -32,6 +32,12 @@ const quoteCards = [
     photo: ilyaPhoto,
     quote: "I have done executive coaching before. This is not that. Something shifted in how I relate to pressure and it changed how I show up with my team. Quietly. Permanently.",
   },
+  {
+    name: "Eva",
+    company: "",
+    photo: null,
+    quote: "Placeholder — quote coming soon.",
+  },
 ];
 
 const VideoCard = ({ name, company, vimeoId, cover }: { name: string; company: string; vimeoId: string; cover: string }) => {
