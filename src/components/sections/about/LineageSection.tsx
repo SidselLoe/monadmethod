@@ -1,6 +1,14 @@
+const MonadIcon = ({ color }: { color: string }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="16" height="16" className="flex-shrink-0 mt-[6px]">
+    <circle cx="60" cy="60" r="50" fill="none" stroke={color} strokeWidth="3.5"/>
+    <circle cx="60" cy="60" r="8" fill={color}/>
+  </svg>
+);
+
 const columns = [
   {
     heading: "Strategic.",
+    color: "hsl(var(--accent))",
     bullets: [
       "I've spent my whole career in the tech founder space, as founder, operator, and strategist.",
       "I've worked across every company size, but startups and the founder seat are the throughline.",
@@ -9,6 +17,7 @@ const columns = [
   },
   {
     heading: "Energetic.",
+    color: "hsl(var(--mint))",
     bullets: [
       "I carry a direct Usui lineage of Reiki that traces back to Dr. Mikao Usui in Japan.",
       "I've trained in Integrated Kundalini Activation.",
@@ -39,7 +48,7 @@ const LineageSection = () => {
               <ul className="space-y-4">
                 {col.bullets.map((bullet, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <span className="mt-[10px] w-2 h-2 rounded-full bg-mint flex-shrink-0" />
+                    <MonadIcon color={col.color} />
                     <span className="text-[16px] leading-[1.75] text-body">{bullet}</span>
                   </li>
                 ))}
