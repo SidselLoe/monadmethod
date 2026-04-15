@@ -7,7 +7,7 @@ const MethodOfferings = () => {
       <div className="max-w-[1100px] mx-auto">
         <div className="text-center">
           <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
-            Start with Monad OS. Continue with Monad LTS.
+            Start with Monad OS.<br />Continue with Monad LTS.
           </h2>
           <p className="mt-4 text-[18px] text-body leading-[1.7]">
             Monad OS is how you enter. Monad LTS is how the work compounds, for graduates only.
