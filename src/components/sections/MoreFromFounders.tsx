@@ -97,10 +97,9 @@ const MoreFromFounders = () => {
           <div className="mb-[18px] break-inside-avoid"><VideoCard {...videoCards[0]} /></div>
           <div className="mb-[18px] break-inside-avoid"><QuoteCard {...quoteCards[1]} /></div>
           <div className="mb-[18px] break-inside-avoid"><VideoCard {...videoCards[1]} /></div>
-          <div className="mb-[18px] break-inside-avoid"><QuoteCard {...quoteCards[2]} /></div>
           <div className="mb-[18px] break-inside-avoid"><QuoteCard {...quoteCards[0]} /></div>
           <div className="mb-[18px] break-inside-avoid"><VideoCard {...videoCards[2]} /></div>
-          <div className="mb-[18px] break-inside-avoid"><QuoteCard {...quoteCards[3]} /></div>
+          <div className="mb-[18px] break-inside-avoid"><QuoteCard {...quoteCards[2]} /></div>
           <div className="mb-[18px] break-inside-avoid"><VideoCard {...videoCards[3]} /></div>
         </div>
 
