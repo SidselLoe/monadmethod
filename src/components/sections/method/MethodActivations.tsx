@@ -1,3 +1,4 @@
+import { useState, useRef } from "react";
 import { Play } from "lucide-react";
 const CALENDLY_URL = "https://calendly.com/sidselloschenkohl/monad-discovery";
 
@@ -29,6 +30,15 @@ const cells = [
 ];
 
 const MethodActivations = () => {
+  const [playing, setPlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const handlePlay = () => {
+    if (playing) return;
+    setPlaying(true);
+    setTimeout(() => videoRef.current?.play(), 0);
+  };
+
   return (
     <section className="bg-background py-[100px] px-8">
       <div className="max-w-[1100px] mx-auto">
@@ -44,14 +54,39 @@ const MethodActivations = () => {
           </p>
         </div>
 
-        {/* Video placeholder */}
-        <div className="mt-12 aspect-video bg-surface rounded-xl flex flex-col items-center justify-center gap-3">
-          <div className="w-14 h-14 rounded-full border-2 border-mint flex items-center justify-center">
-            <Play size={22} className="text-mint ml-1" />
-          </div>
-          <span className="text-[14px] text-body tracking-wide text-center">
-            Monad Activation<br />Watch Overview
-          </span>
+        {/* Activation video */}
+        <div
+          className="mt-12 aspect-video rounded-xl overflow-hidden relative cursor-pointer"
+          onClick={handlePlay}
+        >
+          {playing ? (
+            <video
+              ref={videoRef}
+              src="/videos/monad-activation-overview.mp4"
+              poster="/videos/monad-activation-poster.jpg"
+              controls
+              autoPlay
+              playsInline
+              preload="none"
+              className="absolute inset-0 w-full h-full object-cover"
+              title="Monad Activation — energy session overview"
+            />
+          ) : (
+            <div className="absolute inset-0 bg-surface flex flex-col items-center justify-center gap-3">
+              <img
+                src="/videos/monad-activation-poster.jpg"
+                alt="Monad Activation — energy session for founders"
+                className="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+              />
+              <div className="relative z-10 w-14 h-14 rounded-full border-2 border-white/80 flex items-center justify-center bg-black/20 backdrop-blur-sm">
+                <Play size={22} className="text-white ml-1" />
+              </div>
+              <span className="relative z-10 text-[14px] text-white tracking-wide text-center drop-shadow-md">
+                Monad Activation<br />Watch Overview
+              </span>
+            </div>
+          )}
         </div>
 
         <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-10 gap-y-10">
