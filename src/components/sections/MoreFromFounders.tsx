@@ -54,7 +54,7 @@ const VideoCard = ({ name, company, vimeoId, localVideo, poster, cover }: { name
 
   return (
     <div
-      className="rounded-xl overflow-hidden relative cursor-pointer bg-foreground"
+      className="rounded-xl overflow-hidden relative cursor-pointer"
       style={{ aspectRatio: "3/4" }}
       onClick={handlePlay}
     >
@@ -67,7 +67,7 @@ const VideoCard = ({ name, company, vimeoId, localVideo, poster, cover }: { name
           autoPlay
           playsInline
           preload="none"
-          className="absolute inset-0 w-full h-full object-contain"
+          className="absolute inset-0 w-full h-full object-cover"
           title={`${name.replace('\n', ' ')} testimonial`}
         />
       ) : playing && vimeoId ? (
