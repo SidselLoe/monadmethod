@@ -36,7 +36,7 @@ const quoteCards = [
     name: "Ieva Urenceva",
     company: "@catchagypsea",
     photo: null,
-    quote: "Placeholder — quote coming soon.",
+    quote: "Sidsel appeared in my life at exactly the right time. The sessions helped me reconnect with myself after years of running on stress — I started setting real boundaries, dreaming vividly again, and feeling a kind of self-love I hadn't accessed before. Every session left me clearer and more centred than the last.",
   },
 ];
 
