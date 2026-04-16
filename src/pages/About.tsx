@@ -7,6 +7,7 @@ import jessicaCover from "@/assets/testimonials/jessica-rainey-founder-wildflowe
 import backstoryPhoto from "@/assets/backstory-sidsel.jpg";
 import LineageSection from "@/components/sections/about/LineageSection";
 import speakerPhoto from "@/assets/sidsel-loschenkohl-living-from-the-heart-speaker.png";
+import bookCover from "@/assets/book-cover-hardcover.svg";
 import alexandraCover from "@/assets/testimonials/alexandra-feldman-founder-of-the-islands.png";
 
 const socialProofQuotes = [
@@ -305,22 +306,12 @@ const About = () => {
       {/* 7. THE BOOK */}
       <section className="bg-background py-[100px] px-8">
         <div className="max-w-[1100px] mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-14">
-          <div
-            className="flex-shrink-0 w-[160px] md:w-[200px] rounded-md flex flex-col items-center justify-center text-center px-5 py-10"
-            style={{
-              aspectRatio: '2/3',
-              background: '#1a1a1a',
-              boxShadow: '8px 8px 32px rgba(0,0,0,0.12)',
-            }}
-          >
-            <span className="text-mint text-2xl">⊙</span>
-            <span className="mt-3 text-[17px] font-extrabold text-white leading-tight">
-              The Power of Unwavering Belief
-            </span>
-            <span className="mt-2 text-[11px] font-normal text-mint">
-              Sidsel Løschenkohl
-            </span>
-          </div>
+          <img
+            src={bookCover}
+            alt="The Power of Unwavering Belief — Book by Sidsel Løschenkohl"
+            className="flex-shrink-0 w-[160px] md:w-[200px] rounded-md"
+            style={{ boxShadow: '8px 8px 32px rgba(0,0,0,0.12)' }}
+          />
 
           <div className="text-center md:text-left">
             <span className="text-[13px] font-bold tracking-[0.12em] uppercase text-mint">
