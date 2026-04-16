@@ -18,7 +18,7 @@ const quoteCards = [
     name: "Rudi Adigbli",
     company: "ReeThink",
     photo: rudiPhoto,
-    quote: "I came in thinking I needed a better strategy. Within two weeks I realised the strategy was never the problem. The way I was holding everything was. I make decisions faster now, and they actually stick.",
+    quote: "Working with Sidsel was the first truly holistic experience I've had. A lot of work focuses on strategy. Some goes deeper, into beliefs and how to change them. Very few work with your energy the way Sidsel does, and that's what makes it so effective.",
   },
   {
     name: "Annie Reardon",
