@@ -13,8 +13,13 @@ import MethodTestimonials from "@/components/sections/method/MethodTestimonials"
 import MethodOfferings from "@/components/sections/method/MethodOfferings";
 import MethodClosingCTA from "@/components/sections/method/MethodClosingCTA";
 import Footer from "@/components/sections/Footer";
+import usePageMeta from "@/hooks/usePageMeta";
 
 const TheMethod = () => {
+  usePageMeta(
+    "The Monad Method — Three Modalities for Founder Transformation",
+    "Energy activations, guided inquiry, and strategic sessions. The Monad Method is a spiral methodology that shifts how founders operate from the inside out."
+  );
   return (
     <div className="min-h-screen">
       <Navigation />
