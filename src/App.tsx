@@ -8,6 +8,8 @@ import TheMethod from "./pages/TheMethod.tsx";
 import MonadOS from "./pages/MonadOS.tsx";
 import MonadLTS from "./pages/MonadLTS.tsx";
 import About from "./pages/About.tsx";
+import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
+import TermsOfService from "./pages/TermsOfService.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -24,6 +26,8 @@ const App = () => (
           <Route path="/monad-os" element={<MonadOS />} />
           <Route path="/monad-lts" element={<MonadLTS />} />
           <Route path="/about" element={<About />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

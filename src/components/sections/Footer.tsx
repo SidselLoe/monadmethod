@@ -58,11 +58,11 @@ const Footer = () => {
             © Monad Studios Ltd 2026. All rights reserved.
           </p>
           <div className="mt-3 flex items-center justify-center gap-0 text-[13px]">
-            <a href="#" className="text-accent hover:underline">Contact</a>
+            <a href="mailto:sidsel@loschenkohl.com" className="text-accent hover:underline">Contact</a>
             <span className="mx-2 text-mint/50">|</span>
-            <a href="#" className="text-accent hover:underline">Privacy Policy</a>
+            <a href="/privacy-policy" className="text-accent hover:underline">Privacy Policy</a>
             <span className="mx-2 text-mint/50">|</span>
-            <a href="#" className="text-accent hover:underline">Terms of Service</a>
+            <a href="/terms-of-service" className="text-accent hover:underline">Terms of Service</a>
           </div>
         </div>
       </div>
