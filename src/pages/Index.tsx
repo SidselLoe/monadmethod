@@ -11,8 +11,13 @@ import MoreFromFounders from "@/components/sections/MoreFromFounders";
 import LogoMarquee from "@/components/sections/LogoMarquee";
 import FinalCTA from "@/components/sections/FinalCTA";
 import Footer from "@/components/sections/Footer";
+import usePageMeta from "@/hooks/usePageMeta";
 
 const Index = () => {
+  usePageMeta(
+    "The Monad Method — Strategic Coaching for Founders | Sidsel Løschenkohl",
+    "Three modalities. Thirty days. Energy activations, guided inquiry, and strategic sessions for founders who are the business."
+  );
   return (
     <div className="min-h-screen">
       <Navigation />

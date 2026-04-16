@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/sections/Footer";
+import usePageMeta from "@/hooks/usePageMeta";
 const CALENDLY_URL = "https://calendly.com/sidselloschenkohl/monad-discovery";
 
 const expectations = [
@@ -12,6 +13,10 @@ const expectations = [
 ];
 
 const MonadOS = () => {
+  usePageMeta(
+    "Monad OS — 30-Day Founder Coaching Programme",
+    "The 30-day entry point. Weekly energy activations, 1:1 strategic sessions, guided inquiry, and WhatsApp accountability for founders."
+  );
   return (
     <div className="min-h-screen">
       <Navigation />
