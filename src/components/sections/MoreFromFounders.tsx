@@ -7,7 +7,7 @@ import ilyaPhoto from "@/assets/testimonials/ilya-paveliev-founder-hologram.png"
 import alexandraCover from "@/assets/testimonials/alexandra-feldman-founder-of-the-islands.png";
 
 const videoCards = [
-  { name: "Bianca\nPolizzi", company: "Polizzi Media", vimeoId: "148414050", cover: biancaCover },
+  { name: "Bianca\nPolizzi", company: "Polizzi Media", localVideo: "/videos/bianca-testimonial.mp4", poster: "/videos/bianca-testimonial-poster.jpg", cover: biancaCover },
   { name: "Brandon\nHadwin", company: "HealingwithBrandon", localVideo: "/videos/brandon-testimonial.mp4", poster: "/videos/brandon-testimonial-poster.jpg", cover: brandonCover },
   { name: "Jessica\nRainey", company: "Wildflower Woman", vimeoId: "148414050", cover: jessicaCover },
   { name: "Alexandra\nFeldman", company: "Of The Islands", vimeoId: "", cover: alexandraCover },
