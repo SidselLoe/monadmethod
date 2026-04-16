@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import usePageMeta from "@/hooks/usePageMeta";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/sections/Footer";
 import brandonCover from "@/assets/testimonials/brandon-hadwin-founder-healingwithbrandon.png";
@@ -37,6 +38,10 @@ const blogPosts = [
 ];
 
 const About = () => {
+  usePageMeta(
+    "About Sidsel Løschenkohl — The Monad Method",
+    "Sidsel Løschenkohl is a strategic partner to founders. Learn about the lineage, backstory, and philosophy behind The Monad Method."
+  );
   return (
     <div className="min-h-screen">
       <Navigation />
