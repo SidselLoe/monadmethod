@@ -107,9 +107,6 @@ const PrivacyPolicy = () => {
             <h2>Security</h2>
             <p>We take reasonable technical and organisational steps to protect your data. No system is perfectly secure, but we work with trusted providers and keep access limited.</p>
 
-            <h2>Children</h2>
-            <p>Monad Studios offers are for adults. If we learn we have collected data from anyone under 18, we delete it.</p>
-
             <h2>External links</h2>
             <p>The site may link to other platforms (Instagram, LinkedIn, Substack, and others). Those platforms have their own privacy policies. We are not responsible for what happens on their side.</p>
 
