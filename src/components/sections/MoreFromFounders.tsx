@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import biancaCover from "@/assets/testimonials/bianca-polizzi-founder-polizzi-media.png";
 import brandonCover from "@/assets/testimonials/brandon-hadwin-founder-healingwithbrandon.png";
 import jessicaCover from "@/assets/testimonials/jessica-rainey-founder-wildflower-woman.png";
@@ -8,7 +8,7 @@ import alexandraCover from "@/assets/testimonials/alexandra-feldman-founder-of-t
 
 const videoCards = [
   { name: "Bianca\nPolizzi", company: "Polizzi Media", vimeoId: "148414050", cover: biancaCover },
-  { name: "Brandon\nHadwin", company: "HealingwithBrandon", vimeoId: "148414050", cover: brandonCover },
+  { name: "Brandon\nHadwin", company: "HealingwithBrandon", localVideo: "/videos/brandon-testimonial.mp4", poster: "/videos/brandon-testimonial-poster.jpg", cover: brandonCover },
   { name: "Jessica\nRainey", company: "Wildflower Woman", vimeoId: "148414050", cover: jessicaCover },
   { name: "Alexandra\nFeldman", company: "Of The Islands", vimeoId: "", cover: alexandraCover },
 ];
@@ -40,26 +40,46 @@ const quoteCards = [
   },
 ];
 
-const VideoCard = ({ name, company, vimeoId, cover }: { name: string; company: string; vimeoId: string; cover: string }) => {
+const VideoCard = ({ name, company, vimeoId, localVideo, poster, cover }: { name: string; company: string; vimeoId?: string; localVideo?: string; poster?: string; cover: string }) => {
   const [playing, setPlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const handlePlay = () => {
+    if (playing) return;
+    setPlaying(true);
+    if (localVideo && videoRef.current) {
+      videoRef.current.play();
+    }
+  };
 
   return (
     <div
       className="rounded-xl overflow-hidden relative cursor-pointer"
       style={{ aspectRatio: "3/4" }}
-      onClick={() => !playing && vimeoId && setPlaying(true)}
-      data-vimeo={vimeoId || undefined}
+      onClick={handlePlay}
     >
-      {playing ? (
+      {playing && localVideo ? (
+        <video
+          ref={videoRef}
+          src={localVideo}
+          poster={poster}
+          controls
+          autoPlay
+          playsInline
+          preload="none"
+          className="absolute inset-0 w-full h-full object-cover"
+          title={`${name.replace('\n', ' ')} testimonial`}
+        />
+      ) : playing && vimeoId ? (
         <iframe
           src={`https://player.vimeo.com/video/${vimeoId}?autoplay=1`}
           className="absolute inset-0 w-full h-full border-0"
           allow="autoplay; fullscreen"
-          title={`${name} testimonial`}
+          title={`${name.replace('\n', ' ')} testimonial`}
         />
       ) : (
         <>
-          <img src={cover} alt={name} className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+          <img src={cover} alt={`${name.replace('\n', ' ')} — ${company} — Monad Method testimonial`} className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
           <div className="absolute inset-0 z-[2] flex items-end justify-between p-5" style={{ background: "linear-gradient(transparent 0%, rgba(0,0,0,0.55) 100%)" }}>
             <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{ background: "rgba(255,255,255,0.15)" }}>
               <svg width="12" height="14" viewBox="0 0 12 14" fill="none"><polygon points="0,0 12,7 0,14" fill="white" /></svg>
