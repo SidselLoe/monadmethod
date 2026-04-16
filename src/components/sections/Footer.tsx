@@ -10,24 +10,6 @@ const Footer = () => {
           <div className="max-w-[500px]">
             <img src={logoWhite} alt="Sidsel Løschenkohl — Executive Coach for Founders" className="h-[50px] sm:h-[60px] w-auto" />
 
-            <a
-              href="#"
-              className="inline-flex mt-10 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
-            >
-              Get the Series
-            </a>
-
-            <p className="mt-8 text-[20px] sm:text-[22px] font-bold text-primary-foreground leading-[1.3]">
-              Join founders who operate differently.
-            </p>
-
-            <p className="mt-4 text-[16px] text-primary-foreground leading-[1.75]">
-              The email series that breaks down why growth becomes an identity problem, and what to shift when it does.
-            </p>
-
-            <p className="mt-3 text-[14px] text-mint">
-              150+ founders, leaders, and creators are already shifting how they operate.
-            </p>
           </div>
 
           {/* Right side — Social icons + links */}
