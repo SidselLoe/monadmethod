@@ -2,7 +2,7 @@ const MethodHero = () => {
   return (
     <section className="bg-background pt-[200px] pb-[120px] px-8">
       <div className="max-w-[1100px] mx-auto text-center">
-        <h1 className="text-4xl sm:text-5xl md:text-[72px] font-bold text-foreground leading-[1.15] tracking-[-0.5px]">
+        <h1 className="text-4xl sm:text-5xl md:text-[72px] font-bold text-foreground  tracking-[-0.5px]">
           You are the operating system your company runs on.
         </h1>
 

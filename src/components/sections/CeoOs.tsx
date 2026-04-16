@@ -26,7 +26,7 @@ const CeoOs = () => {
         <p className="text-[13px] font-bold uppercase tracking-[0.12em] text-mint mb-4">
           How It Works
         </p>
-        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
+        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground ">
           The Monad Method operates through three modalities that work together. Monad OS is how you install it.
         </h2>
         <p className="mt-5 text-[18px] text-body max-w-[700px] mx-auto leading-[1.7]">

@@ -2,7 +2,7 @@ const MethodProblem = () => {
   return (
     <section className="bg-secondary py-[100px] px-8">
       <div className="max-w-[700px] mx-auto text-center">
-        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
+        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground ">
           Beneath every ceiling is a belief.
         </h2>
 

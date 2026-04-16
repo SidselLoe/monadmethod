@@ -6,7 +6,7 @@ const MethodOfferings = () => {
     <section className="bg-background py-[100px] px-8">
       <div className="max-w-[1100px] mx-auto">
         <div className="text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
+          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground ">
             Start with Monad OS.<br />Continue with Monad LTS.
           </h2>
           <p className="mt-4 text-[18px] text-body leading-[1.7]">

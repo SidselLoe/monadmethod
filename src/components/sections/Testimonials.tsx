@@ -33,7 +33,7 @@ const Testimonials = () => {
   return (
     <section className="bg-background py-[100px] px-8">
       <div className="max-w-[1100px] mx-auto">
-        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground text-center mb-14 leading-[1.15]">
+        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground text-center mb-14 ">
           What founders are saying
         </h2>
 

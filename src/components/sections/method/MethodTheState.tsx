@@ -77,7 +77,7 @@ const MethodTheState = () => {
           The state.
         </p>
 
-        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground text-center leading-[1.15] mb-5">
+        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground text-center  mb-5">
           Your best ideas have never come from thinking harder.
         </h2>
 

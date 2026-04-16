@@ -22,7 +22,7 @@ const Hero = () => {
           For founders who are the business.
         </p>
 
-        <h1 className="text-4xl sm:text-5xl md:text-[72px] font-bold text-foreground leading-[1.15] tracking-[-0.5px]">
+        <h1 className="text-4xl sm:text-5xl md:text-[72px] font-bold text-foreground  tracking-[-0.5px]">
           You are the business.<br />That's not a compliment.
         </h1>
 

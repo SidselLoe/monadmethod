@@ -34,7 +34,7 @@ const Qualifier = () => {
     <section className="bg-background py-[100px] px-8">
       <div className="max-w-[1100px] mx-auto">
         {/* Section headline */}
-        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground text-center mb-16 leading-[1.15]">
+        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground text-center mb-16 ">
           Is Monad OS for you?
         </h2>
 
