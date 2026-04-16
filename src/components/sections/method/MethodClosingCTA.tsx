@@ -4,7 +4,7 @@ const MethodClosingCTA = () => {
   return (
     <section className="bg-background py-[100px] px-8">
       <div className="max-w-[500px] mx-auto text-center">
-        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
+        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground ">
           Ready to operate differently?
         </h2>
 

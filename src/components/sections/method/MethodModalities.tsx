@@ -22,7 +22,7 @@ const MethodModalities = () => {
         <MethodName />
 
         <div className="text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
+          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground ">
             Three modalities. One integrated method.
           </h2>
           <p className="mt-3 text-[18px] text-body max-w-[700px] mx-auto leading-[1.7]">
