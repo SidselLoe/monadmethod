@@ -10,7 +10,7 @@ const videoCards = [
   { name: "Bianca\nPolizzi", company: "Polizzi Media", localVideo: "/videos/bianca-testimonial.mp4", poster: "/videos/bianca-testimonial-poster.jpg", cover: biancaCover },
   { name: "Brandon\nHadwin", company: "HealingwithBrandon", localVideo: "/videos/brandon-testimonial.mp4", poster: "/videos/brandon-testimonial-poster.jpg", cover: brandonCover },
   { name: "Jessica\nRainey", company: "Wildflower Woman", vimeoId: "148414050", cover: jessicaCover },
-  { name: "Alexandra\nFeldman", company: "Of The Islands", vimeoId: "", cover: alexandraCover },
+  { name: "Alexandra\nFeldman", company: "Of The Islands", localVideo: "/videos/alexandra-testimonial.mp4", poster: "/videos/alexandra-testimonial-poster.jpg", cover: alexandraCover },
 ];
 
 const quoteCards = [
