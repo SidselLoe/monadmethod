@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import useScrollToHash from "@/hooks/useScrollToHash";
 import Index from "./pages/Index.tsx";
 import TheMethod from "./pages/TheMethod.tsx";
 import MonadOS from "./pages/MonadOS.tsx";
@@ -14,12 +15,18 @@ import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
 
+const ScrollHandler = () => {
+  useScrollToHash();
+  return null;
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollHandler />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/the-method" element={<TheMethod />} />

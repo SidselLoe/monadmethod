@@ -21,7 +21,7 @@ const cards = [
 
 const CeoOs = () => {
   return (
-    <section className="bg-background py-[100px] px-8">
+    <section id="monad-os" className="bg-background py-[100px] px-8">
       <div className="max-w-[1100px] mx-auto text-center">
         <p className="text-[13px] font-bold uppercase tracking-[0.12em] text-mint mb-4">
           How It Works

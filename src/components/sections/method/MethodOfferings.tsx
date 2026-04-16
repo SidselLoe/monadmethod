@@ -29,7 +29,7 @@ const MethodOfferings = () => {
                 Installs the Monad Method into your daily operating rhythm. Weekly Monad Activations, weekly 1:1 Strategic Sessions, Guided Inquiry, WhatsApp accountability, and strategic frameworks. Weekly rolling starts. This is where everyone begins.
               </p>
               <Link
-                to="/monad-os"
+                to="/#monad-os"
                 className="inline-flex self-start mt-6 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
               >
                 Explore Monad OS
