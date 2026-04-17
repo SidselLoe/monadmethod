@@ -32,7 +32,7 @@ const blogPosts = [
   {
     title: "Push vs. pull: why your drive is the problem",
     excerpt: "The same force that built everything is the force that is now in the way.",
-    href: "/reflections",
+    href: "/blog/push-vs-pull",
   },
   {
     title: "What I mean when I say internal operating system",
