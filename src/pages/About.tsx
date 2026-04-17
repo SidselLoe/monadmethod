@@ -7,7 +7,7 @@ import jessicaCover from "@/assets/testimonials/jessica-rainey-founder-wildflowe
 import backstoryPhoto from "@/assets/backstory-sidsel.jpg";
 import LineageSection from "@/components/sections/about/LineageSection";
 import speakerPhoto from "@/assets/sidsel-loschenkohl-living-from-the-heart-speaker.png";
-import bookCover from "@/assets/book-cover-hardcover.svg";
+import bookCover from "@/assets/the-power-of-unwavering-belief-book-cover-sidsel-loschenkohl.png";
 import alexandraCover from "@/assets/testimonials/alexandra-feldman-founder-of-the-islands.png";
 
 const socialProofQuotes = [
