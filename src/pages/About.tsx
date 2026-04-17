@@ -27,14 +27,17 @@ const blogPosts = [
   {
     title: "The meaning ceiling",
     excerpt: "You hit every target you set. So why does it feel like something is still missing?",
+    href: "/blog/the-meaning-ceiling",
   },
   {
     title: "Push vs. pull: why your drive is the problem",
     excerpt: "The same force that built everything is the force that is now in the way.",
+    href: "/reflections",
   },
   {
     title: "What I mean when I say internal operating system",
     excerpt: "It is not strategy. It is not mindset. It is the layer underneath both.",
+    href: "/reflections",
   },
 ];
 
@@ -356,7 +359,7 @@ const About = () => {
                     {post.excerpt}
                   </p>
                   <Link
-                    to="/reflections"
+                    to={post.href}
                     className="inline-block mt-3 text-[14px] font-medium text-teal-link hover:underline transition-colors"
                   >
                     Read more →
