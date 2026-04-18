@@ -66,6 +66,39 @@
   font-family: 'Playfair Display', Georgia, serif;
 }
 
+/* Global scroll reveal — applied automatically to <section> elements
+   (except the first/hero) and any element with .reveal-on-scroll. */
+.reveal-init {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 600ms ease-out, transform 600ms ease-out;
+  will-change: opacity, transform;
+}
+.reveal-init.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal-init,
+  .reveal-init.reveal-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Subtle CTA lift — give pill buttons (anchor & button) a gentle on-hover
+   rise so navigating the site feels more alive without changing your style. */
+a.bg-accent,
+button.bg-accent {
+  transition: background-color 200ms ease, transform 200ms ease, box-shadow 200ms ease;
+}
+a.bg-accent:hover,
+button.bg-accent:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px -8px hsl(var(--accent) / 0.45);
+}
+
 .prose-monad h2 {
   font-size: 28px;
   font-weight: 700;

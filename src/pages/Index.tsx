@@ -12,7 +12,6 @@ import LogoMarquee from "@/components/sections/LogoMarquee";
 import FinalCTA from "@/components/sections/FinalCTA";
 import Footer from "@/components/sections/Footer";
 import usePageMeta from "@/hooks/usePageMeta";
-import Reveal from "@/components/Reveal";
 
 const Index = () => {
   usePageMeta(
@@ -23,16 +22,16 @@ const Index = () => {
     <div className="min-h-screen">
       <Navigation />
       <Hero />
-      <Reveal><ProblemProgram /></Reveal>
-      <Reveal><WhyThisWorks /></Reveal>
-      <Reveal><HeySidsel /></Reveal>
-      <Reveal><Testimonials /></Reveal>
-      <Reveal><Qualifier /></Reveal>
-      <Reveal><CeoOs /></Reveal>
-      <Reveal><ConversionBanner /></Reveal>
-      <Reveal><MoreFromFounders /></Reveal>
-      <Reveal><LogoMarquee /></Reveal>
-      <Reveal><FinalCTA /></Reveal>
+      <ProblemProgram />
+      <WhyThisWorks />
+      <HeySidsel />
+      <Testimonials />
+      <Qualifier />
+      <CeoOs />
+      <ConversionBanner />
+      <MoreFromFounders />
+      <LogoMarquee />
+      <FinalCTA />
       <Footer />
     </div>
   );
