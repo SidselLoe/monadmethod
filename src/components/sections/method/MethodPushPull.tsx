@@ -58,7 +58,9 @@ const MethodPushPull = () => {
         {/* Push block */}
         <div className="mt-16">
           <h3 className="text-[22px] font-semibold text-foreground text-center mb-8">
-            You are building from push if...
+            You are building from{" "}
+            <span className="bg-accent text-white px-1.5 py-0.5 rounded-sm">push</span>{" "}
+            if...
           </h3>
           <BulletGrid bullets={pushBullets} dotColor="bg-accent" />
         </div>
@@ -66,7 +68,9 @@ const MethodPushPull = () => {
         {/* Pull block */}
         <div className="mt-20">
           <h3 className="text-[22px] font-semibold text-foreground text-center mb-8">
-            You are building from pull if...
+            You are building from{" "}
+            <span className="bg-mint px-1.5 py-0.5 rounded-sm text-foreground">pull</span>{" "}
+            if...
           </h3>
           <BulletGrid bullets={pullBullets} dotColor="bg-mint" />
         </div>
