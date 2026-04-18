@@ -4,6 +4,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import useScrollToHash from "@/hooks/useScrollToHash";
+import useGlobalScrollReveal from "@/hooks/useGlobalScrollReveal";
 import Index from "./pages/Index.tsx";
 import TheMethod from "./pages/TheMethod.tsx";
 import MonadOS from "./pages/MonadOS.tsx";
@@ -20,6 +21,7 @@ const queryClient = new QueryClient();
 
 const ScrollHandler = () => {
   useScrollToHash();
+  useGlobalScrollReveal();
   return null;
 };
 
