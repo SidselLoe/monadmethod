@@ -37,7 +37,7 @@ const blogPosts = [
   {
     title: "What I mean when I say internal operating system",
     excerpt: "It is not strategy. It is not mindset. It is the layer underneath both.",
-    href: "/reflections",
+    href: "/blog/internal-operating-system",
   },
 ];
 
