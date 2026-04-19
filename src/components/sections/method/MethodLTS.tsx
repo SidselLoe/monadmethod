@@ -1,7 +1,7 @@
 const CALENDLY_URL = "https://calendly.com/sidselloschenkohl/monad-discovery";
 
 const inclusions = [
-  "Monthly 1:1 strategic coaching sessions",
+  "Monthly 1:1 strategic sessions",
   "Ongoing WhatsApp access between sessions",
   "Merkaba Energy Activations included",
   "Quarterly operating system reviews",

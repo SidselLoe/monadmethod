@@ -14,7 +14,7 @@ const expectations = [
 
 const MonadOS = () => {
   usePageMeta(
-    "Monad OS — 30-Day Founder Coaching Programme",
+    "Monad OS — 30-Day Founder Programme",
     "The 30-day entry point. Weekly energy activations, 1:1 strategic sessions, guided inquiry, and WhatsApp accountability for founders."
   );
   return (

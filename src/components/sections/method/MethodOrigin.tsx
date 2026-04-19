@@ -28,7 +28,7 @@ const MethodOrigin = () => {
               These are not credentials. They are the architecture of what happens in a session.
             </p>
             <p className="font-medium text-foreground">
-              Working with Sidsel is precise, direct, and deeply human. Not a coaching formula. A calibrated response to what is actually happening for the founder in front of her.
+              Working with Sidsel is precise, direct, and deeply human. Not a formula. A calibrated response to what is actually happening for the founder in front of her.
             </p>
           </div>
         </div>

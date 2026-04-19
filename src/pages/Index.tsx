@@ -15,7 +15,7 @@ import usePageMeta from "@/hooks/usePageMeta";
 
 const Index = () => {
   usePageMeta(
-    "The Monad Method — Strategic Coaching for Founders | Sidsel Løschenkohl",
+    "The Monad Method — For Founders Who Are the Business | Sidsel Løschenkohl",
     "Three modalities. Thirty days. Energy activations, guided inquiry, and strategic sessions for founders who are the business."
   );
   return (
