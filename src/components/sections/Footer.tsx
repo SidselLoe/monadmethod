@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between gap-10">
           {/* Left side — all left-aligned */}
           <div className="max-w-[500px]">
-            <img src={logoWhite} alt="Sidsel Løschenkohl — Executive Coach for Founders" className="h-[50px] sm:h-[60px] w-auto" />
+            <img src={logoWhite} alt="Sidsel Løschenkohl — The Monad Method for Founders" className="h-[50px] sm:h-[60px] w-auto" />
 
           </div>
 
