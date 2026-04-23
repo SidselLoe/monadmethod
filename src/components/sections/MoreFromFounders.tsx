@@ -80,19 +80,19 @@ const VideoCard = ({ name, company, vimeoId, localVideo, poster, cover }: { name
       ) : (
         <>
           <img src={cover} alt={`${name.replace('\n', ' ')} — ${company} — Monad Method testimonial`} className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
-          {/* Large centered Monad-style play button */}
-          <div className="absolute inset-0 z-[2] flex items-center justify-center pointer-events-none">
-            <div className="relative w-20 h-20 md:w-24 md:h-24 transition-transform duration-300 group-hover:scale-110">
-              <svg viewBox="0 0 120 120" className="w-full h-full" fill="none" aria-hidden="true">
-                <circle cx="60" cy="60" r="50" fill="rgba(255,255,255,0.25)" stroke="white" strokeWidth="3.5" />
-                <polygon points="50,42 82,60 50,78" fill="white" />
-              </svg>
-            </div>
-          </div>
-          <div className="absolute inset-0 z-[3] flex items-end justify-end p-5" style={{ background: "linear-gradient(transparent 0%, rgba(0,0,0,0.55) 100%)" }}>
+          <div className="absolute inset-0 z-[2] flex items-end justify-end p-5" style={{ background: "linear-gradient(transparent 0%, rgba(0,0,0,0.55) 100%)" }}>
             <div className="text-right">
               <p className="text-lg font-semibold text-white leading-[1.2] whitespace-pre-line">{name}</p>
               <p className="text-xs text-white/70">{company}</p>
+            </div>
+          </div>
+          {/* Large centered Monad-style play button */}
+          <div className="absolute inset-0 z-[3] flex items-center justify-center pointer-events-none">
+            <div className="relative w-20 h-20 md:w-24 md:h-24 transition-transform duration-300 group-hover:scale-110">
+              <svg viewBox="0 0 120 120" className="w-full h-full" aria-hidden="true">
+                <circle cx="60" cy="60" r="50" fill="none" stroke="white" strokeWidth="3.5" />
+                <polygon points="50,42 82,60 50,78" fill="white" />
+              </svg>
             </div>
           </div>
         </>
