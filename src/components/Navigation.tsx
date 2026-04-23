@@ -34,7 +34,7 @@ const Navigation = () => {
             <Link
               key={link.href}
               to={link.href}
-              className="px-5 py-2 text-sm font-medium text-foreground rounded-full transition-all duration-200 hover:bg-mint hover:text-foreground"
+              className="px-4 py-1.5 text-sm font-medium text-foreground rounded-full transition-all duration-200 hover:bg-mint hover:text-foreground"
             >
               {link.label}
             </Link>
