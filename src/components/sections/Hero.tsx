@@ -26,7 +26,7 @@ const Hero = () => {
           You are the business.<br />That's not a compliment.
         </h1>
 
-        <p className="mt-8 text-[20px] text-body font-normal max-w-[700px] mx-auto leading-[1.7]">
+        <p className="mt-8 text-[20px] text-foreground font-normal max-w-[700px] mx-auto leading-[1.7]">
           The ceiling is internal. The work is how you move it. Three modalities. Thirty days.
         </p>
 
