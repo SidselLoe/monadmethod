@@ -5,7 +5,7 @@ const cards = [
   },
   {
     heading: "Patterns become visible",
-    body: "The belief that if you step back, things fall apart. The habit of saying yes when the honest answer is no. The fusion between your worth and the company's performance. Not character flaws. Patterns installed long before the business existed, making your decisions without your permission. Once you see them, they stop running you.",
+    body: "The belief that if you step back, things fall apart. The habit of saying yes when the honest answer is no. The fusion between your worth and the company's performance. Not character flaws. Patterns making your decisions without your permission. Once you see them, they stop running you.",
   },
   {
     heading: "Direction gets honest",
