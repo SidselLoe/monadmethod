@@ -287,7 +287,7 @@ const About = () => {
             ))}
           </div>
 
-          <div className="mt-14 bg-accent rounded-xl p-10 sm:p-12 flex flex-col md:flex-row items-center gap-8">
+          <div className="mt-14 bg-accent rounded-xl px-10 py-6 sm:px-12 sm:py-8 flex flex-col md:flex-row items-center gap-8">
             <div className="flex-1 text-center md:text-left">
               <h3 className="text-xl sm:text-2xl font-bold text-accent-foreground">
                 Interested in having me speak at your event or conference?

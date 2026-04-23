@@ -4,7 +4,7 @@ const FinalCTA = () => {
   return (
     <section className="bg-surface py-[60px] px-8">
       <div className="max-w-[1100px] mx-auto">
-        <div className="bg-accent rounded-xl p-10 sm:p-12 flex flex-col md:flex-row items-center gap-8">
+        <div className="bg-accent rounded-xl px-10 py-6 sm:px-12 sm:py-8 flex flex-col md:flex-row items-center gap-8">
           {/* Icon */}
           <div className="flex-shrink-0">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">

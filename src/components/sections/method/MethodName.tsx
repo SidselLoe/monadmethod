@@ -1,7 +1,7 @@
 const MethodName = () => {
   return (
     <div className="max-w-[1100px] mx-auto mb-16">
-      <div className="bg-accent rounded-xl p-10 sm:p-12 flex flex-col md:flex-row items-center gap-8">
+      <div className="bg-accent rounded-xl px-10 py-6 sm:px-12 sm:py-8 flex flex-col md:flex-row items-center gap-8">
         {/* Text */}
         <div className="flex-1 text-center md:text-left">
           <h3 className="text-xl sm:text-2xl font-bold text-accent-foreground">
