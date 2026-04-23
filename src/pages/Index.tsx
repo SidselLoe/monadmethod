@@ -23,13 +23,13 @@ const Index = () => {
       <Navigation />
       <Hero />
       <HeySidsel />
-      <ProblemProgram />
-      <WhyThisWorks />
-      <Testimonials />
-      <Qualifier />
-      <CeoOs />
-      <ConversionBanner />
       <MoreFromFounders />
+      <ProblemProgram />
+      <CeoOs />
+      <Testimonials />
+      <WhyThisWorks />
+      <Qualifier />
+      <ConversionBanner />
       <LogoMarquee />
       <FinalCTA />
       <Footer />
