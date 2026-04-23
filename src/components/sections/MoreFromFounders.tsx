@@ -54,7 +54,7 @@ const VideoCard = ({ name, company, vimeoId, localVideo, poster, cover }: { name
 
   return (
     <div
-      className="rounded-xl overflow-hidden relative cursor-pointer"
+      className="group rounded-xl overflow-hidden relative cursor-pointer"
       style={{ aspectRatio: "3/4" }}
       onClick={handlePlay}
     >
