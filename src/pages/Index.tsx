@@ -24,12 +24,12 @@ const Index = () => {
       <Hero />
       <HeySidsel />
       <MoreFromFounders />
+      <ConversionBanner />
       <ProblemProgram />
       <CeoOs />
       <Testimonials />
       <WhyThisWorks />
       <Qualifier />
-      <ConversionBanner />
       <LogoMarquee />
       <FinalCTA />
       <Footer />
