@@ -27,8 +27,7 @@ const Hero = () => {
         </h1>
 
         <p className="mt-8 text-[20px] text-foreground font-normal max-w-[700px] mx-auto leading-[1.7]">
-          The ceiling is internal.<br />
-          The work is how you move it.<br />
+          The ceiling is internal. The work is how you move it.<br />
           Three modalities. Thirty days.
         </p>
 
