@@ -30,15 +30,6 @@ const Hero = () => {
           The ceiling is internal. The work is how you move it. Three modalities. Thirty days.
         </p>
 
-        <a
-          href={CALENDLY_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex mt-12 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
-        >
-          Book a Call
-        </a>
-
         {/* Avatar stack + social proof */}
         <div className="mt-10 flex flex-col items-center gap-3">
           <div className="flex">
@@ -53,8 +44,17 @@ const Hero = () => {
               />
             ))}
           </div>
-          <span className="text-[14px] text-body">150+ founders, leaders, and creators have experienced the work.</span>
+          <span className="text-[14px] text-foreground">150+ founders, leaders, and creators have experienced the work.</span>
         </div>
+
+        <a
+          href={CALENDLY_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex mt-10 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
+        >
+          Book a Call
+        </a>
       </div>
     </section>
   );
