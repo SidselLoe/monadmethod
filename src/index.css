@@ -88,28 +88,44 @@
 }
 
 /* Global CTA zoom — pill buttons (anchor & button) gently scale up on hover
-   so navigating the site feels alive, matching the founderos.com interaction. */
-a.bg-accent,
-button.bg-accent {
+   so navigating the site feels alive, matching the founderos.com interaction.
+   Covers both red (bg-accent) and white (bg-background) pill CTAs. */
+a.bg-accent.rounded-full,
+button.bg-accent.rounded-full,
+a.bg-background.rounded-full,
+button.bg-background.rounded-full {
   transition: background-color 200ms ease, transform 250ms ease, box-shadow 250ms ease;
   will-change: transform;
 }
-a.bg-accent:hover,
-button.bg-accent:hover {
+a.bg-accent.rounded-full:hover,
+button.bg-accent.rounded-full:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 22px -8px hsl(var(--accent) / 0.5);
 }
-a.bg-accent:active,
-button.bg-accent:active {
+a.bg-background.rounded-full:hover,
+button.bg-background.rounded-full:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 22px -8px rgba(0, 0, 0, 0.25);
+}
+a.bg-accent.rounded-full:active,
+button.bg-accent.rounded-full:active,
+a.bg-background.rounded-full:active,
+button.bg-background.rounded-full:active {
   transform: scale(0.98);
 }
 @media (prefers-reduced-motion: reduce) {
-  a.bg-accent,
-  button.bg-accent,
-  a.bg-accent:hover,
-  button.bg-accent:hover,
-  a.bg-accent:active,
-  button.bg-accent:active {
+  a.bg-accent.rounded-full,
+  button.bg-accent.rounded-full,
+  a.bg-background.rounded-full,
+  button.bg-background.rounded-full,
+  a.bg-accent.rounded-full:hover,
+  button.bg-accent.rounded-full:hover,
+  a.bg-background.rounded-full:hover,
+  button.bg-background.rounded-full:hover,
+  a.bg-accent.rounded-full:active,
+  button.bg-accent.rounded-full:active,
+  a.bg-background.rounded-full:active,
+  button.bg-background.rounded-full:active {
     transform: none;
     transition: background-color 200ms ease;
   }
