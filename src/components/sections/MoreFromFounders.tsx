@@ -90,7 +90,7 @@ const VideoCard = ({ name, company, vimeoId, localVideo, poster, cover }: { name
           <div className="absolute inset-0 z-[3] flex items-center justify-center pointer-events-none">
             <div className="relative w-20 h-20 md:w-24 md:h-24 transition-transform duration-300 group-hover:scale-110">
               <svg viewBox="0 0 120 120" className="w-full h-full" aria-hidden="true">
-                <circle cx="60" cy="60" r="50" fill="none" stroke="white" strokeWidth="3.5" />
+                <circle cx="60" cy="60" r="50" fill="rgba(255,255,255,0.35)" stroke="white" strokeWidth="3.5" />
                 <polygon points="50,42 82,60 50,78" fill="white" />
               </svg>
             </div>
