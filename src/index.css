@@ -87,16 +87,32 @@
   }
 }
 
-/* Subtle CTA lift — give pill buttons (anchor & button) a gentle on-hover
-   rise so navigating the site feels more alive without changing your style. */
+/* Global CTA zoom — pill buttons (anchor & button) gently scale up on hover
+   so navigating the site feels alive, matching the founderos.com interaction. */
 a.bg-accent,
 button.bg-accent {
-  transition: background-color 200ms ease, transform 200ms ease, box-shadow 200ms ease;
+  transition: background-color 200ms ease, transform 250ms ease, box-shadow 250ms ease;
+  will-change: transform;
 }
 a.bg-accent:hover,
 button.bg-accent:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 6px 18px -8px hsl(var(--accent) / 0.45);
+  transform: scale(1.05);
+  box-shadow: 0 8px 22px -8px hsl(var(--accent) / 0.5);
+}
+a.bg-accent:active,
+button.bg-accent:active {
+  transform: scale(0.98);
+}
+@media (prefers-reduced-motion: reduce) {
+  a.bg-accent,
+  button.bg-accent,
+  a.bg-accent:hover,
+  button.bg-accent:hover,
+  a.bg-accent:active,
+  button.bg-accent:active {
+    transform: none;
+    transition: background-color 200ms ease;
+  }
 }
 
 .prose-monad h2 {
