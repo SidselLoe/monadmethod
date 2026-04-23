@@ -4,7 +4,7 @@ const MethodActivationStrip = () => {
   return (
     <section className="bg-surface py-[60px] px-8">
       <div className="max-w-[1100px] mx-auto">
-        <div className="bg-accent rounded-xl p-10 sm:p-12 flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div className="bg-accent rounded-xl px-10 py-6 sm:px-12 sm:py-8 flex flex-col sm:flex-row items-center justify-between gap-6">
           <p className="text-[18px] font-medium text-accent-foreground leading-[1.5] text-center sm:text-left">
             10 Monad Activations every month, online.
             <br />
