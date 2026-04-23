@@ -71,7 +71,7 @@ const Navigation = () => {
               key={link.href}
               to={link.href}
               onClick={() => setMobileOpen(false)}
-              className="px-4 py-3 text-sm font-medium text-foreground hover:text-accent-foreground hover:bg-accent rounded-md transition-colors"
+              className="px-4 py-3 text-sm font-medium text-foreground hover:bg-mint rounded-full transition-colors"
             >
               {link.label}
             </Link>
