@@ -80,10 +80,16 @@ const VideoCard = ({ name, company, vimeoId, localVideo, poster, cover }: { name
       ) : (
         <>
           <img src={cover} alt={`${name.replace('\n', ' ')} — ${company} — Monad Method testimonial`} className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
-          <div className="absolute inset-0 z-[2] flex items-end justify-between p-5" style={{ background: "linear-gradient(transparent 0%, rgba(0,0,0,0.55) 100%)" }}>
-            <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{ background: "rgba(255,255,255,0.15)" }}>
-              <svg width="12" height="14" viewBox="0 0 12 14" fill="none"><polygon points="0,0 12,7 0,14" fill="white" /></svg>
+          {/* Large centered play button */}
+          <div className="absolute inset-0 z-[2] flex items-center justify-center pointer-events-none">
+            <div
+              className="w-20 h-20 md:w-24 md:h-24 rounded-full flex items-center justify-center backdrop-blur-sm transition-transform duration-300 group-hover:scale-110"
+              style={{ background: "rgba(255,255,255,0.25)", boxShadow: "0 4px 24px rgba(0,0,0,0.25)" }}
+            >
+              <svg width="32" height="36" viewBox="0 0 12 14" fill="none" className="ml-1"><polygon points="0,0 12,7 0,14" fill="white" /></svg>
             </div>
+          </div>
+          <div className="absolute inset-0 z-[3] flex items-end justify-end p-5" style={{ background: "linear-gradient(transparent 0%, rgba(0,0,0,0.55) 100%)" }}>
             <div className="text-right">
               <p className="text-lg font-semibold text-white leading-[1.2] whitespace-pre-line">{name}</p>
               <p className="text-xs text-white/70">{company}</p>
