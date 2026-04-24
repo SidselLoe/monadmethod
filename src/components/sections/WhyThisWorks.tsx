@@ -12,7 +12,7 @@ const cards = [
     body: "Most founders build toward a version of success they have never questioned. When the noise quiets, what surfaces is not what you expected. What do you actually want from this company? What would it feel like to build from purpose instead of pressure? When the answers get honest, everything sharpens.",
   },
   {
-    heading: "A new way of operating takes hold",
+    heading: "A new way of operating",
     body: "You stop leading from patterns that were never yours. How you delegate, decide, and hold pressure starts to match where you are going, not where you have been. The internal shift leads. The external results follow.",
   },
 ];
