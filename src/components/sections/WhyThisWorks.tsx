@@ -42,7 +42,9 @@ const WhyThisWorks = () => {
               key={c.heading}
               className="bg-background border border-border rounded-xl p-8"
             >
-              <MonadSymbol />
+              <div className="flex justify-end">
+                <MonadSymbol />
+              </div>
               <h3 className="mt-3 text-[20px] font-semibold text-foreground">
                 {c.heading}
               </h3>
