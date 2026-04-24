@@ -41,13 +41,15 @@ const Qualifier = () => {
         {/* FOR YOU block */}
         <h3 className="text-[22px] sm:text-[26px] font-semibold text-foreground text-center mb-10">
           Monad OS{" "}
-          <span className="bg-mint px-1.5 py-0.5 rounded-sm text-foreground">is for you</span>{" "}
-          if...
+          <span className="bg-mint px-1.5 py-0.5 rounded-sm text-foreground">is</span>{" "}
+          for you if...
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5 mb-20">
           {forYou.map((item, i) => (
-            <div key={i} className="flex gap-3">
-              <MonadSymbol color="#7ec8c8" />
+            <div key={i} className="relative bg-card border border-border rounded-xl p-6 pr-14">
+              <div className="absolute top-4 right-4">
+                <MonadSymbol color="#7ec8c8" />
+              </div>
               <p className="text-[15px] text-body leading-[1.75]">{item}</p>
             </div>
           ))}
@@ -56,13 +58,15 @@ const Qualifier = () => {
         {/* NOT FOR YOU block */}
         <h3 className="text-[22px] sm:text-[26px] font-semibold text-foreground text-center mb-10">
           Monad OS{" "}
-          <span className="bg-[#ff3131] text-white px-1.5 py-0.5 rounded-sm">is not for you</span>{" "}
-          if...
+          <span className="bg-[#ff3131] text-white px-1.5 py-0.5 rounded-sm">is not</span>{" "}
+          for you if...
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5">
           {notForYou.map((item, i) => (
-            <div key={i} className="flex gap-3">
-              <MonadSymbol color="#ff3131" />
+            <div key={i} className="relative bg-card border border-border rounded-xl p-6 pr-14">
+              <div className="absolute top-4 right-4">
+                <MonadSymbol color="#ff3131" />
+              </div>
               <p className="text-[15px] text-body leading-[1.75]">{item}</p>
             </div>
           ))}
