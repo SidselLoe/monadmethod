@@ -40,12 +40,12 @@ const WhyThisWorks = () => {
           {cards.map((c) => (
             <div
               key={c.heading}
-              className="bg-background border border-border rounded-xl p-8"
+              className="relative bg-background border border-border rounded-xl p-8"
             >
-              <div className="flex justify-end">
+              <div className="absolute top-8 right-8">
                 <MonadSymbol />
               </div>
-              <h3 className="mt-3 text-[20px] font-semibold text-foreground">
+              <h3 className="text-[20px] font-semibold text-foreground pr-8">
                 {c.heading}
               </h3>
               <p className="mt-2 text-[15px] text-body leading-[1.7]">
