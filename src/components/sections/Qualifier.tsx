@@ -74,7 +74,7 @@ const Qualifier = () => {
             href={CALENDLY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-3 bg-[#ff3131] text-white font-semibold rounded-full hover:bg-[#ff3131]/90 transition-colors text-[15px] uppercase tracking-wide"
+            className="inline-flex items-center justify-center bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-wide px-8 py-3 rounded-full hover:bg-accent/90 transition-colors"
           >
             Book a Call
           </a>
