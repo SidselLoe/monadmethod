@@ -1,4 +1,4 @@
-const CALENDLY_URL = "https://calendly.com/sidsel-loschenkohl/";
+const CALENDLY_URL = "https://calendly.com/sidselloschenkohl/monad-discovery";
 
 const MonadSymbol = ({ color }: { color: string }) => (
   <svg
