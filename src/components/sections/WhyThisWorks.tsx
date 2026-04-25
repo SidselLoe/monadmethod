@@ -9,7 +9,7 @@ const cards = [
   },
   {
     heading: "Direction gets honest",
-    body: "Most founders build toward a version of success they have never questioned. When the noise quiets, what surfaces is not what you expected. What do you actually want from this company? What would it feel like to build from purpose instead of pressure? When the answers get honest, everything sharpens.",
+    body: "Most founders build toward a version of success they have never questioned. When the noise quiets, what surfaces is not what you expected. What do you actually want from this company? What would it feel like to build from purpose instead of pressure?",
   },
   {
     heading: "A new way of operating",
