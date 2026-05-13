@@ -8,8 +8,8 @@ const MonadSymbol = ({ color }: { color: string }) => (
     height="20"
     className="flex-shrink-0 mt-[3px]"
   >
-    <circle cx="60" cy="60" r="50" fill="none" stroke={color} strokeWidth="8" />
-    <circle cx="60" cy="60" r="12" fill={color} />
+    <circle cx="60" cy="60" r="46" fill="none" stroke={color} strokeWidth="13" />
+    <circle cx="60" cy="60" r="11" fill={color} />
   </svg>
 );
 

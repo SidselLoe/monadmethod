@@ -19,8 +19,8 @@ const cards = [
 
 const MonadSymbol = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="20" height="20" className="text-mint">
-    <circle cx="60" cy="60" r="48" fill="none" stroke="currentColor" strokeWidth="8"/>
-    <circle cx="60" cy="60" r="14" fill="currentColor"/>
+    <circle cx="60" cy="60" r="46" fill="none" stroke="currentColor" strokeWidth="13"/>
+    <circle cx="60" cy="60" r="11" fill="currentColor"/>
   </svg>
 );
 
