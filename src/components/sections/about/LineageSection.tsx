@@ -1,7 +1,7 @@
 const MonadIcon = ({ color }: { color: string }) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="20" height="20" className="flex-shrink-0 mt-[3px]">
-    <circle cx="60" cy="60" r="50" fill="none" stroke={color} strokeWidth="8"/>
-    <circle cx="60" cy="60" r="12" fill={color}/>
+    <circle cx="60" cy="60" r="46" fill="none" stroke={color} strokeWidth="13"/>
+    <circle cx="60" cy="60" r="11" fill={color}/>
   </svg>
 );
 
