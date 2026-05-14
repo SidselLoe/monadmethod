@@ -32,6 +32,11 @@ const values = [
 
 const blogPosts = [
   {
+    title: "What are you getting from staying this way?",
+    excerpt: "The deeper question is: what are you still getting from staying this way?",
+    href: "/blog/what-are-you-getting-from-staying-this-way",
+  },
+  {
     title: "Letting go of the version that got you here",
     excerpt: "There is a point in growth where adding more stops working. The real question is what can no longer come with you.",
     href: "/blog/letting-go",
