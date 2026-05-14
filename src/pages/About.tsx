@@ -25,6 +25,11 @@ const values = [
 
 const blogPosts = [
   {
+    title: "Letting go of the version that got you here",
+    excerpt: "There is a point in growth where adding more stops working. The real question is what can no longer come with you.",
+    href: "/blog/letting-go",
+  },
+  {
     title: "The meaning ceiling",
     excerpt: "You hit every target you set. So why does it feel like something is still missing?",
     href: "/blog/the-meaning-ceiling",
