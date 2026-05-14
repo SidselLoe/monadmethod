@@ -16,7 +16,6 @@ import MeaningCeiling from "./pages/blog/MeaningCeiling.tsx";
 import PushVsPull from "./pages/blog/PushVsPull.tsx";
 import InternalOperatingSystem from "./pages/blog/InternalOperatingSystem.tsx";
 import LettingGo from "./pages/blog/LettingGo.tsx";
-import StayingThisWay from "./pages/blog/StayingThisWay.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -46,7 +45,6 @@ const App = () => (
           <Route path="/blog/push-vs-pull" element={<PushVsPull />} />
           <Route path="/blog/internal-operating-system" element={<InternalOperatingSystem />} />
           <Route path="/blog/letting-go" element={<LettingGo />} />
-          <Route path="/blog/staying-this-way" element={<StayingThisWay />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
