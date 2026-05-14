@@ -37,6 +37,11 @@ const blogPosts = [
     href: "/blog/letting-go",
   },
   {
+    title: "What are you getting from staying this way?",
+    excerpt: "The business is working, but the way of operating is not. The deeper question is what the pattern is still giving you.",
+    href: "/blog/staying-this-way",
+  },
+  {
     title: "The meaning ceiling",
     excerpt: "You hit every target you set. So why does it feel like something is still missing?",
     href: "/blog/the-meaning-ceiling",
