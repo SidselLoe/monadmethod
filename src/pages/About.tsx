@@ -2,13 +2,6 @@ import { Link } from "react-router-dom";
 import usePageMeta from "@/hooks/usePageMeta";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/sections/Footer";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 import brandonCover from "@/assets/testimonials/brandon-hadwin-founder-healingwithbrandon.png";
 import jessicaCover from "@/assets/testimonials/jessica-rainey-founder-wildflower-woman.png";
 import backstoryPhoto from "@/assets/backstory-sidsel.jpg";
@@ -35,6 +28,11 @@ const blogPosts = [
     title: "Letting go of the version that got you here",
     excerpt: "There is a point in growth where adding more stops working. The real question is what can no longer come with you.",
     href: "/blog/letting-go",
+  },
+  {
+    title: "What are you getting from staying this way?",
+    excerpt: "The business is working, but the way of operating is not. The deeper question is what the pattern is still giving you.",
+    href: "/blog/staying-this-way",
   },
   {
     title: "The meaning ceiling",
@@ -359,46 +357,36 @@ const About = () => {
           <p className="mt-3 text-[16px] text-body leading-[1.75] max-w-[700px]">
             Writing on founders, identity, state, and what it actually takes to build from alignment.
           </p>
-          <Carousel
-            opts={{ align: "start", loop: false }}
-            className="mt-12"
-          >
-            <CarouselContent className="-ml-6">
-              {blogPosts.map((post) => (
-                <CarouselItem
-                  key={post.title}
-                  className="pl-6 basis-full sm:basis-1/2 md:basis-1/3"
+          <div className="mt-14 max-w-[900px]">
+            {blogPosts.map((post, i) => (
+              <div key={post.title}>
+                <div className="border-t-2 border-mint" />
+                <Link
+                  to={post.href}
+                  className="group block py-10 transition-colors"
                 >
-                  <Link
-                    to={post.href}
-                    className="group flex flex-col h-full bg-white border border-border rounded-xl p-8 transition-all duration-300 hover:border-mint hover:shadow-[0_8px_30px_rgba(126,200,200,0.15)]"
-                  >
-                    <h3 className="text-[22px] font-semibold text-foreground leading-[1.3]">
-                      {post.title}
-                    </h3>
-                    <p className="mt-3 text-[15px] text-body leading-[1.7] flex-1">
-                      {post.excerpt}
-                    </p>
-                    <span className="mt-6 inline-block text-[14px] font-medium text-teal-link group-hover:underline">
-                      Read more →
-                    </span>
-                  </Link>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <div className="mt-10 flex items-center justify-between">
-              <Link
-                to="/reflections"
-                className="text-[14px] font-medium text-teal-link hover:underline transition-colors"
-              >
-                View all blog posts →
-              </Link>
-              <div className="flex items-center gap-3">
-                <CarouselPrevious className="static translate-y-0 h-11 w-11 border-mint text-foreground hover:bg-mint hover:text-foreground" />
-                <CarouselNext className="static translate-y-0 h-11 w-11 border-mint text-foreground hover:bg-mint hover:text-foreground" />
+                  <h3 className="text-[20px] sm:text-[22px] font-semibold text-foreground leading-[1.3] group-hover:text-teal-link">
+                    {post.title}
+                  </h3>
+                  <p className="mt-2 text-[15px] text-body leading-[1.7]">
+                    {post.excerpt}
+                  </p>
+                  <span className="mt-4 inline-block text-[14px] font-medium text-teal-link group-hover:underline">
+                    Read more →
+                  </span>
+                </Link>
               </div>
-            </div>
-          </Carousel>
+            ))}
+            <div className="border-t-2 border-mint" />
+          </div>
+          <div className="mt-10">
+            <Link
+              to="/reflections"
+              className="text-[14px] font-medium text-teal-link hover:underline transition-colors"
+            >
+              View all blog posts →
+            </Link>
+          </div>
         </div>
       </section>
 
