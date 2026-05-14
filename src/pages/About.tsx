@@ -359,35 +359,49 @@ const About = () => {
           <p className="mt-3 text-[16px] text-body leading-[1.75] max-w-[700px]">
             Writing on founders, identity, state, and what it actually takes to build from alignment.
           </p>
-          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-            {blogPosts.map((post) => (
-              <div key={post.title} className="bg-white border border-border rounded-xl overflow-hidden">
-                <div className="aspect-[16/10] bg-mint/20 flex items-center justify-center">
-                  <span className="text-body text-[14px]">Image placeholder</span>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-[20px] font-semibold text-foreground">{post.title}</h3>
-                  <p className="mt-2 text-[15px] text-body leading-[1.7] line-clamp-2">
-                    {post.excerpt}
-                  </p>
+          <Carousel
+            opts={{ align: "start", loop: false }}
+            className="mt-12"
+          >
+            <CarouselContent className="-ml-6">
+              {blogPosts.map((post) => (
+                <CarouselItem
+                  key={post.title}
+                  className="pl-6 basis-full sm:basis-1/2 md:basis-1/3"
+                >
                   <Link
                     to={post.href}
-                    className="inline-block mt-3 text-[14px] font-medium text-teal-link hover:underline transition-colors"
+                    className="group flex flex-col h-full bg-white border border-border rounded-xl p-8 transition-all duration-300 hover:border-mint hover:shadow-[0_8px_30px_rgba(126,200,200,0.15)]"
                   >
-                    Read more →
+                    <span className="font-editorial italic text-mint text-[15px]">
+                      Essay
+                    </span>
+                    <h3 className="mt-4 text-[22px] font-semibold text-foreground leading-[1.3]">
+                      {post.title}
+                    </h3>
+                    <p className="mt-3 text-[15px] text-body leading-[1.7] flex-1">
+                      {post.excerpt}
+                    </p>
+                    <span className="mt-6 inline-block text-[13px] font-semibold tracking-[0.12em] uppercase text-teal-link group-hover:underline">
+                      Read essay →
+                    </span>
                   </Link>
-                </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <div className="mt-10 flex items-center justify-between">
+              <Link
+                to="/reflections"
+                className="text-[14px] font-medium text-teal-link hover:underline transition-colors"
+              >
+                View all essays →
+              </Link>
+              <div className="flex items-center gap-3">
+                <CarouselPrevious className="static translate-y-0 h-11 w-11 border-mint text-foreground hover:bg-mint hover:text-foreground" />
+                <CarouselNext className="static translate-y-0 h-11 w-11 border-mint text-foreground hover:bg-mint hover:text-foreground" />
               </div>
-            ))}
-          </div>
-          <div className="mt-8">
-            <Link
-              to="/reflections"
-              className="text-[14px] font-medium text-teal-link hover:underline transition-colors"
-            >
-              View All Blogs →
-            </Link>
-          </div>
+            </div>
+          </Carousel>
         </div>
       </section>
 
