@@ -391,7 +391,7 @@ const About = () => {
                 to="/reflections"
                 className="text-[14px] font-medium text-teal-link hover:underline transition-colors"
               >
-                View all essays →
+                View all blog posts →
               </Link>
               <div className="flex items-center gap-3">
                 <CarouselPrevious className="static translate-y-0 h-11 w-11 border-mint text-foreground hover:bg-mint hover:text-foreground" />
