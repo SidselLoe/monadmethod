@@ -579,6 +579,8 @@ const Apply = () => {
         </div>
       </section>
 
+      <MoreFromFounders />
+
       <Footer />
     </div>
   );
