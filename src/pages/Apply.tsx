@@ -457,7 +457,7 @@ const Apply = () => {
       >
         <div className="max-w-[820px] mx-auto">
           <div className="text-center">
-            <Caption>Apply now</Caption>
+            <Caption>Book your call</Caption>
             <h2 className="mt-5 text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15] tracking-[-0.5px]">
               A few <Underlined>quick questions</Underlined>.
             </h2>
