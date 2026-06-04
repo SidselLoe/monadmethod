@@ -459,10 +459,10 @@ const Apply = () => {
           <div className="text-center">
             <Caption>Apply now</Caption>
             <h2 className="mt-5 text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15] tracking-[-0.5px]">
-              See if you're the <Underlined>right fit</Underlined>.
+              A few <Underlined>quick questions</Underlined>.
             </h2>
             <p className="mt-6 text-[16px] text-body leading-[1.7] max-w-[560px] mx-auto">
-              A short application. Sidsel reads every one personally. If it's a fit, you'll be invited to book a 30-minute call.
+              Answer a few questions so Sidsel has context before your call. You'll be able to book your 30-minute call at the end.
             </p>
           </div>
 
