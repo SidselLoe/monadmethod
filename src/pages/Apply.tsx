@@ -234,10 +234,10 @@ const Apply = () => {
         <div className="max-w-[1000px] mx-auto text-center">
           <Eyebrow>Apply to work with Sidsel</Eyebrow>
           <h1 className="mt-6 text-4xl sm:text-5xl md:text-[64px] font-extrabold text-foreground leading-[1.05] tracking-[-0.5px] max-w-[860px] mx-auto">
-            Watch the video. Then, if it lands, apply.
+            Watch the video. Then, if it lands, book your call.
           </h1>
           <p className="mt-6 text-[18px] text-body leading-[1.6] max-w-[640px] mx-auto">
-            Eight minutes on what Monad OS is, who it is for, and how the work moves the ceiling that strategy cannot.
+            What Monad OS is, who it is for, and how the work moves the ceiling that strategy cannot.
           </p>
 
           {/* VSL */}
@@ -256,8 +256,10 @@ const Apply = () => {
                 />
               ) : (
                 <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
-                  <img src={monadSymbol} alt="Monad" className="w-16 h-16 opacity-90 invert" />
-                  <p className="text-background/60 text-[13px] uppercase tracking-[0.2em]">
+                  <div className="w-16 h-16 rounded-full border-2 border-mint flex items-center justify-center">
+                    <div className="w-4 h-4 rounded-full bg-mint" />
+                  </div>
+                  <p className="text-mint text-[12px] uppercase tracking-[0.22em] font-semibold">
                     Video coming soon
                   </p>
                 </div>
@@ -266,7 +268,7 @@ const Apply = () => {
           </div>
 
           <div className="mt-10">
-            <ScrollToApply label="Start your application" />
+            <ScrollToApply label="Book your call" />
             <p className="mt-4 text-[14px] text-body">
               Takes 2 minutes · Reviewed personally by Sidsel
             </p>
