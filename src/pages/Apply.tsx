@@ -1,7 +1,9 @@
 import { useMemo, useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/sections/Footer";
+import MoreFromFounders from "@/components/sections/MoreFromFounders";
 import usePageMeta from "@/hooks/usePageMeta";
+import monadSymbol from "@/assets/monad-symbol.png";
 import {
   Accordion,
   AccordionContent,
@@ -16,8 +18,9 @@ const CALENDLY_URL = "https://calendly.com/sidselloschenkohl/monad-discovery";
 
 const BOOK_HREF = "#apply";
 
-const Eyebrow = ({ children }: { children: React.ReactNode }) => (
-  <p className="font-editorial italic text-mint text-[15px] tracking-[0.02em]">
+// Small mint caption — matches brand caption usage across the site.
+const Caption = ({ children }: { children: React.ReactNode }) => (
+  <p className="text-[12px] font-bold uppercase tracking-[0.18em] text-mint">
     {children}
   </p>
 );
@@ -34,13 +37,13 @@ const PillCta = ({
   <a
     href={href}
     {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-    className="inline-flex bg-accent text-accent-foreground text-[13px] font-semibold uppercase tracking-[0.16em] px-8 py-4 rounded-full hover:bg-accent/90 transition-colors"
+    className="inline-flex bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-8 py-3 rounded-full hover:bg-accent/90 transition-colors"
   >
     {label}
   </a>
 );
 
-// Underline an accent phrase inside a headline (mint thick underline like founderos.com).
+// Underline an accent phrase inside a headline (mint thick underline).
 const Underlined = ({ children }: { children: React.ReactNode }) => (
   <span className="relative inline-block">
     <span className="relative z-10">{children}</span>
@@ -268,9 +271,7 @@ const Apply = () => {
       {/* HERO */}
       <section className="pt-[80px] pb-[60px] px-6 sm:px-8">
         <div className="max-w-[1080px] mx-auto text-center">
-          <Eyebrow>Apply to work with Sidsel</Eyebrow>
-
-          <h1 className="mt-6 text-4xl sm:text-5xl md:text-[72px] font-extrabold text-foreground leading-[1.05] tracking-[-0.5px]">
+          <h1 className="text-4xl sm:text-5xl md:text-[72px] font-extrabold text-foreground leading-[1.05] tracking-[-0.5px]">
             Watch the video. <br className="hidden sm:block" />
             Then, if it lands, <Underlined>book your call</Underlined>.
           </h1>
@@ -294,13 +295,13 @@ const Apply = () => {
                   allowFullScreen
                 />
               ) : (
-                <div className="absolute inset-0 flex flex-col items-center justify-center gap-5">
-                  <div className="w-20 h-20 rounded-full border-2 border-mint flex items-center justify-center">
-                    <div className="w-5 h-5 rounded-full bg-mint" />
-                  </div>
-                  <p className="text-mint text-[12px] uppercase tracking-[0.22em] font-semibold">
-                    Video coming soon
-                  </p>
+                <div className="absolute inset-0 flex flex-col items-center justify-center gap-6">
+                  <img
+                    src={monadSymbol}
+                    alt="Monad"
+                    className="w-16 h-16 object-contain"
+                  />
+                  <Caption>Video coming soon</Caption>
                 </div>
               )}
             </div>
@@ -308,13 +309,11 @@ const Apply = () => {
 
           <div className="mt-12 flex flex-col items-center gap-4">
             <PillCta />
-            <p className="text-[13px] text-body uppercase tracking-[0.14em]">
-              Free · Takes 2 minutes
-            </p>
+            <Caption>Free · Takes 2 minutes</Caption>
           </div>
 
-          <p className="mt-12 text-[14px] font-semibold text-foreground">
-            150+ founders, leaders, and creators have experienced the work.
+          <p className="mt-12 text-[15px] font-semibold text-foreground">
+            150+ founders, leaders and creators have experienced the work.
           </p>
         </div>
       </section>
@@ -323,7 +322,7 @@ const Apply = () => {
       <section className="bg-surface py-[120px] px-6 sm:px-8 mt-20">
         <div className="max-w-[1080px] mx-auto">
           <div className="text-center">
-            <Eyebrow>Your journey</Eyebrow>
+            <Caption>Your journey</Caption>
             <h2 className="mt-5 text-3xl sm:text-4xl md:text-[56px] font-extrabold text-foreground leading-[1.1] tracking-[-0.5px]">
               What you <Underlined>actually get</Underlined>.
             </h2>
@@ -335,8 +334,8 @@ const Apply = () => {
                 key={item.title}
                 className="bg-card border border-border rounded-xl p-8 flex gap-6"
               >
-                <div className="font-editorial italic text-mint text-[44px] leading-none flex-shrink-0 w-10">
-                  {i + 1}
+                <div className="text-mint text-[40px] font-extrabold leading-none flex-shrink-0 w-10 tracking-[-0.02em]">
+                  {String(i + 1).padStart(2, "0")}
                 </div>
                 <div>
                   <p className="text-[12px] font-semibold uppercase tracking-[0.18em] text-mint">
@@ -355,9 +354,7 @@ const Apply = () => {
 
           <div className="mt-16 text-center flex flex-col items-center gap-4">
             <PillCta />
-            <p className="text-[13px] text-body uppercase tracking-[0.14em]">
-              By application only · Reviewed personally by Sidsel
-            </p>
+            <Caption>By application only · Reviewed personally by Sidsel</Caption>
           </div>
         </div>
       </section>
@@ -366,7 +363,7 @@ const Apply = () => {
       <section className="py-[120px] px-6 sm:px-8">
         <div className="max-w-[1080px] mx-auto">
           <div className="text-center">
-            <Eyebrow>Results</Eyebrow>
+            <Caption>Results</Caption>
             <h2 className="mt-5 text-3xl sm:text-4xl md:text-[56px] font-extrabold text-foreground leading-[1.1] tracking-[-0.5px]">
               What <Underlined>founders</Underlined> are saying.
             </h2>
@@ -378,7 +375,7 @@ const Apply = () => {
                 key={t.name}
                 className="bg-card border border-border rounded-xl p-8 flex flex-col"
               >
-                <p className="font-editorial italic text-[20px] text-foreground leading-[1.45] flex-1">
+                <p className="text-[17px] text-foreground leading-[1.7] flex-1">
                   "{t.quote}"
                 </p>
                 <div className="mt-8 pt-6 border-t border-mint/40">
@@ -399,7 +396,7 @@ const Apply = () => {
       <section className="bg-surface py-[120px] px-6 sm:px-8">
         <div className="max-w-[1080px] mx-auto">
           <div className="text-center">
-            <Eyebrow>What this is</Eyebrow>
+            <Caption>What this is</Caption>
             <h2 className="mt-5 text-3xl sm:text-4xl md:text-[56px] font-extrabold text-foreground leading-[1.1] tracking-[-0.5px]">
               Not a course. Not coaching. <br className="hidden md:block" />
               Not a <Underlined>mastermind</Underlined>.
@@ -428,7 +425,7 @@ const Apply = () => {
       <section className="py-[120px] px-6 sm:px-8">
         <div className="max-w-[860px] mx-auto">
           <div className="text-center">
-            <Eyebrow>Questions answered</Eyebrow>
+            <Caption>Questions answered</Caption>
             <h2 className="mt-5 text-3xl sm:text-4xl md:text-[56px] font-extrabold text-foreground leading-[1.1] tracking-[-0.5px]">
               Everything you <Underlined>need to know</Underlined>.
             </h2>
@@ -460,7 +457,7 @@ const Apply = () => {
       >
         <div className="max-w-[820px] mx-auto">
           <div className="text-center">
-            <Eyebrow>Apply now</Eyebrow>
+            <Caption>Apply now</Caption>
             <h2 className="mt-5 text-3xl sm:text-4xl md:text-[56px] font-extrabold text-foreground leading-[1.1] tracking-[-0.5px]">
               See if you're the <Underlined>right fit</Underlined>.
             </h2>
@@ -581,6 +578,8 @@ const Apply = () => {
           </div>
         </div>
       </section>
+
+      <MoreFromFounders />
 
       <Footer />
     </div>
