@@ -448,7 +448,7 @@ const Apply = () => {
                     onClick={handleNext}
                     className="inline-flex bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-7 py-3 rounded-full hover:bg-accent/90 transition-colors"
                   >
-                    {step === total - 1 ? "Submit application" : "Next"}
+                    {step === total - 1 ? "Book my call" : "Next"}
                   </button>
                 </div>
               </div>
