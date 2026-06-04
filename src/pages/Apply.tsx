@@ -20,7 +20,7 @@ const BOOK_HREF = "#apply";
 
 // Small mint caption — matches brand caption usage across the site.
 const Caption = ({ children }: { children: React.ReactNode }) => (
-  <p className="text-[12px] font-bold uppercase tracking-[0.18em] text-mint">
+  <p className="text-[13px] font-bold uppercase tracking-[0.12em] text-mint">
     {children}
   </p>
 );
@@ -271,7 +271,7 @@ const Apply = () => {
       {/* HERO */}
       <section className="pt-[80px] pb-[60px] px-6 sm:px-8">
         <div className="max-w-[1080px] mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-[72px] font-extrabold text-foreground leading-[1.05] tracking-[-0.5px]">
+          <h1 className="text-4xl sm:text-5xl md:text-[72px] font-bold text-foreground leading-[1.15] tracking-[-0.5px]">
             Watch the video. <br className="hidden sm:block" />
             Then, if it lands, <Underlined>book your call</Underlined>.
           </h1>
@@ -323,7 +323,7 @@ const Apply = () => {
         <div className="max-w-[1080px] mx-auto">
           <div className="text-center">
             <Caption>Your journey</Caption>
-            <h2 className="mt-5 text-3xl sm:text-4xl md:text-[56px] font-extrabold text-foreground leading-[1.1] tracking-[-0.5px]">
+            <h2 className="mt-5 text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15] tracking-[-0.5px]">
               What you <Underlined>actually get</Underlined>.
             </h2>
           </div>
@@ -334,7 +334,7 @@ const Apply = () => {
                 key={item.title}
                 className="bg-card border border-border rounded-xl p-8 flex gap-6"
               >
-                <div className="text-mint text-[40px] font-extrabold leading-none flex-shrink-0 w-10 tracking-[-0.02em]">
+                <div className="text-mint text-[36px] font-bold leading-none flex-shrink-0 w-12 tracking-[-0.02em]">
                   {String(i + 1).padStart(2, "0")}
                 </div>
                 <div>
@@ -364,7 +364,7 @@ const Apply = () => {
         <div className="max-w-[1080px] mx-auto">
           <div className="text-center">
             <Caption>Results</Caption>
-            <h2 className="mt-5 text-3xl sm:text-4xl md:text-[56px] font-extrabold text-foreground leading-[1.1] tracking-[-0.5px]">
+            <h2 className="mt-5 text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15] tracking-[-0.5px]">
               What <Underlined>founders</Underlined> are saying.
             </h2>
           </div>
@@ -397,7 +397,7 @@ const Apply = () => {
         <div className="max-w-[1080px] mx-auto">
           <div className="text-center">
             <Caption>What this is</Caption>
-            <h2 className="mt-5 text-3xl sm:text-4xl md:text-[56px] font-extrabold text-foreground leading-[1.1] tracking-[-0.5px]">
+            <h2 className="mt-5 text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15] tracking-[-0.5px]">
               Not a course. Not coaching. <br className="hidden md:block" />
               Not a <Underlined>mastermind</Underlined>.
             </h2>
@@ -426,7 +426,7 @@ const Apply = () => {
         <div className="max-w-[860px] mx-auto">
           <div className="text-center">
             <Caption>Questions answered</Caption>
-            <h2 className="mt-5 text-3xl sm:text-4xl md:text-[56px] font-extrabold text-foreground leading-[1.1] tracking-[-0.5px]">
+            <h2 className="mt-5 text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15] tracking-[-0.5px]">
               Everything you <Underlined>need to know</Underlined>.
             </h2>
           </div>
@@ -458,7 +458,7 @@ const Apply = () => {
         <div className="max-w-[820px] mx-auto">
           <div className="text-center">
             <Caption>Apply now</Caption>
-            <h2 className="mt-5 text-3xl sm:text-4xl md:text-[56px] font-extrabold text-foreground leading-[1.1] tracking-[-0.5px]">
+            <h2 className="mt-5 text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15] tracking-[-0.5px]">
               See if you're the <Underlined>right fit</Underlined>.
             </h2>
             <p className="mt-6 text-[16px] text-body leading-[1.7] max-w-[560px] mx-auto">
@@ -560,7 +560,7 @@ const Apply = () => {
               </div>
             ) : (
               <div className="mt-12 text-center">
-                <h3 className="text-[28px] sm:text-[36px] font-extrabold text-foreground leading-[1.2]">
+                <h3 className="text-[28px] sm:text-[36px] font-bold text-foreground leading-[1.2]">
                   Thank you
                   {answers.name ? `, ${answers.name.split(" ")[0]}` : ""}.
                 </h3>
