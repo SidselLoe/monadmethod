@@ -354,7 +354,7 @@ const Apply = () => {
 
           <div className="mt-16 text-center flex flex-col items-center gap-4">
             <PillCta />
-            <Caption>By application only · Reviewed personally by Sidsel</Caption>
+            <Caption>30 minutes · One-to-one with Sidsel</Caption>
           </div>
         </div>
       </section>
