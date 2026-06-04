@@ -8,7 +8,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import monadSymbol from "@/assets/monad-symbol.png";
 
 // ⚠️ Placeholder — replace when the VSL is ready.
 const VSL_VIDEO_URL = ""; // e.g. "https://www.youtube.com/embed/VIDEO_ID"
@@ -18,46 +17,63 @@ const CALENDLY_URL = "https://calendly.com/sidselloschenkohl/monad-discovery";
 const BOOK_HREF = "#apply";
 
 const Eyebrow = ({ children }: { children: React.ReactNode }) => (
-  <p className="text-[12px] font-bold uppercase tracking-[0.18em] text-mint">
+  <p className="font-editorial italic text-mint text-[15px] tracking-[0.02em]">
     {children}
   </p>
 );
 
-const ScrollToApply = ({
-  label = "Book a Call",
-  className = "",
+const PillCta = ({
+  label = "Book your call",
+  href = BOOK_HREF,
+  external = false,
 }: {
   label?: string;
-  className?: string;
+  href?: string;
+  external?: boolean;
 }) => (
   <a
-    href={BOOK_HREF}
-    className={`inline-flex bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-7 py-3 rounded-full hover:bg-accent/90 transition-colors ${className}`}
+    href={href}
+    {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+    className="inline-flex bg-accent text-accent-foreground text-[13px] font-semibold uppercase tracking-[0.16em] px-8 py-4 rounded-full hover:bg-accent/90 transition-colors"
   >
     {label}
   </a>
 );
 
-const MintDivider = () => (
-  <div className="px-8">
-    <div className="max-w-[1100px] mx-auto">
-      <div className="border-t border-mint/60" />
-    </div>
-  </div>
+// Underline an accent phrase inside a headline (mint thick underline like founderos.com).
+const Underlined = ({ children }: { children: React.ReactNode }) => (
+  <span className="relative inline-block">
+    <span className="relative z-10">{children}</span>
+    <span
+      aria-hidden
+      className="absolute left-0 right-0 bottom-[0.08em] h-[10px] bg-mint/70 z-0"
+    />
+  </span>
 );
 
-const whatThisIs = [
+// -----------------------------
+// Content
+// -----------------------------
+const journey = [
   {
-    title: "Not a course",
-    body: "There is no module to complete. No framework that magically rearranges your business. The work happens in your nervous system, your identity, and your real-time decisions — not in a content library.",
+    label: "The foundation",
+    title: "10× Monad Activations",
+    body: "A guided, music-driven process that takes you into the state where your clearest decisions live. You show up, lie down, and let the static clear. Each session goes deeper than the last.",
   },
   {
-    title: "Not coaching",
-    body: "Sidsel is not here to motivate you, hold you accountable to someone else's plan, or teach you what to think. Monad OS reveals what has been running you, so the next decision comes from a different place.",
+    label: "The depth",
+    title: "4× Private 1:1 Sessions",
+    body: "Forty-four minutes, one-to-one with Sidsel. Priorities, delegation, decisions, communication — built from the new state, not the old one.",
   },
   {
-    title: "Not a mastermind",
-    body: "You do not need another room of founders to compare yourself to. This is private, one-to-one, and built around what is actually in the way for you.",
+    label: "The clarity",
+    title: "4× Guided Inquiry",
+    body: "Structured self-inquiry between sessions surfaces the patterns shaping your leadership. What was invisible becomes specific.",
+  },
+  {
+    label: "The follow-through",
+    title: "30 Days Private Support",
+    body: "Private voice-note access for when something comes up mid-week and you need clarity now. Real follow-through. Accountability that does not drift.",
   },
 ];
 
@@ -78,7 +94,22 @@ const testimonials = [
     name: "Rudi Adigbli",
     role: "ReeThink",
     quote:
-      "Very few work with your energy the way Sidsel does, and that's what makes it so effective.",
+      "Very few work with your energy the way Sidsel does, and that is what makes it so effective.",
+  },
+];
+
+const whatThisIs = [
+  {
+    heading: "Not a course",
+    body: "There is no module to complete. No framework that magically rearranges your business. The work happens in your nervous system, your identity, and your real-time decisions — not in a content library.",
+  },
+  {
+    heading: "Not coaching",
+    body: "Sidsel is not here to motivate you, hold you accountable to someone else's plan, or teach you what to think. Monad OS reveals what has been running you, so the next decision comes from a different place.",
+  },
+  {
+    heading: "Not a mastermind",
+    body: "You do not need another room of founders to compare yourself to. This is private, one-to-one, and built around what is actually in the way for you.",
   },
 ];
 
@@ -96,13 +127,17 @@ const faqs = [
     a: "Capacity is kept intentionally small — a maximum of ten active clients at any one time. Starts are rolling, on Mondays.",
   },
   {
+    q: "I have done executive advisory work or therapy before. How is this different?",
+    a: "This works on your state and identity directly, through the nervous system, not only through insight or talking. People who have done other work consistently say this reaches a layer those did not.",
+  },
+  {
     q: "Is there a guarantee?",
     a: "No. This is for founders who back themselves. What is guaranteed is the depth of the work and the attention. What happens with it is yours.",
   },
 ];
 
 // -----------------------------
-// Application questionnaire
+// Questionnaire
 // -----------------------------
 type QuestionType = "single" | "text" | "email";
 interface Question {
@@ -188,7 +223,8 @@ const Apply = () => {
   );
 
   const validate = (q: Question, value: string | undefined) => {
-    if (!value || !value.trim()) return "Please complete this question to continue.";
+    if (!value || !value.trim())
+      return "Please complete this question to continue.";
     if (q.type === "email") {
       const ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim());
       if (!ok) return "Please enter a valid email address.";
@@ -229,19 +265,22 @@ const Apply = () => {
       <Navigation />
       <div className="h-16" />
 
-      {/* HERO — VSL + single CTA */}
-      <section className="pt-[80px] pb-[80px] px-8">
-        <div className="max-w-[1000px] mx-auto text-center">
+      {/* HERO */}
+      <section className="pt-[80px] pb-[60px] px-6 sm:px-8">
+        <div className="max-w-[1080px] mx-auto text-center">
           <Eyebrow>Apply to work with Sidsel</Eyebrow>
-          <h1 className="mt-6 text-4xl sm:text-5xl md:text-[64px] font-extrabold text-foreground leading-[1.05] tracking-[-0.5px] max-w-[860px] mx-auto">
-            Watch the video. Then, if it lands, book your call.
+
+          <h1 className="mt-6 text-4xl sm:text-5xl md:text-[72px] font-extrabold text-foreground leading-[1.05] tracking-[-0.5px]">
+            Watch the video. <br className="hidden sm:block" />
+            Then, if it lands, <Underlined>book your call</Underlined>.
           </h1>
-          <p className="mt-6 text-[18px] text-body leading-[1.6] max-w-[640px] mx-auto">
+
+          <p className="mt-8 text-[18px] sm:text-[20px] text-body leading-[1.6] max-w-[680px] mx-auto">
             What Monad OS is, who it is for, and how the work moves the ceiling that strategy cannot.
           </p>
 
           {/* VSL */}
-          <div className="mt-12 max-w-[920px] mx-auto">
+          <div className="mt-14 max-w-[960px] mx-auto">
             <div
               className="relative w-full rounded-xl overflow-hidden bg-foreground"
               style={{ aspectRatio: "16 / 9" }}
@@ -255,9 +294,9 @@ const Apply = () => {
                   allowFullScreen
                 />
               ) : (
-                <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
-                  <div className="w-16 h-16 rounded-full border-2 border-mint flex items-center justify-center">
-                    <div className="w-4 h-4 rounded-full bg-mint" />
+                <div className="absolute inset-0 flex flex-col items-center justify-center gap-5">
+                  <div className="w-20 h-20 rounded-full border-2 border-mint flex items-center justify-center">
+                    <div className="w-5 h-5 rounded-full bg-mint" />
                   </div>
                   <p className="text-mint text-[12px] uppercase tracking-[0.22em] font-semibold">
                     Video coming soon
@@ -267,61 +306,88 @@ const Apply = () => {
             </div>
           </div>
 
-          <div className="mt-10">
-            <ScrollToApply label="Book your call" />
-            <p className="mt-4 text-[14px] text-body">
-              Takes 2 minutes · Reviewed personally by Sidsel
+          <div className="mt-12 flex flex-col items-center gap-4">
+            <PillCta />
+            <p className="text-[13px] text-body uppercase tracking-[0.14em]">
+              Free · Takes 2 minutes
             </p>
           </div>
 
-          <p className="mt-10 text-[13px] text-body/70">
+          <p className="mt-12 text-[14px] font-semibold text-foreground">
             150+ founders, leaders, and creators have experienced the work.
           </p>
         </div>
       </section>
 
-      <MintDivider />
-
-      {/* WHAT THIS IS NOT */}
-      <section className="py-[100px] px-8">
-        <div className="max-w-[1100px] mx-auto">
+      {/* YOUR JOURNEY — what you actually get */}
+      <section className="bg-surface py-[120px] px-6 sm:px-8 mt-20">
+        <div className="max-w-[1080px] mx-auto">
           <div className="text-center">
-            <Eyebrow>What this is</Eyebrow>
-            <h2 className="mt-5 text-3xl sm:text-4xl md:text-[44px] font-bold text-foreground leading-[1.2] max-w-[760px] mx-auto">
-              Not a course. Not coaching. Not a mastermind.
+            <Eyebrow>Your journey</Eyebrow>
+            <h2 className="mt-5 text-3xl sm:text-4xl md:text-[56px] font-extrabold text-foreground leading-[1.1] tracking-[-0.5px]">
+              What you <Underlined>actually get</Underlined>.
             </h2>
           </div>
 
-          <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-6">
-            {whatThisIs.map((c) => (
-              <div key={c.title} className="bg-card border border-border rounded-xl p-8">
-                <h3 className="text-[20px] font-semibold text-foreground">{c.title}</h3>
-                <p className="mt-3 text-[15px] text-body leading-[1.75]">{c.body}</p>
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-5">
+            {journey.map((item, i) => (
+              <div
+                key={item.title}
+                className="bg-card border border-border rounded-xl p-8 flex gap-6"
+              >
+                <div className="font-editorial italic text-mint text-[44px] leading-none flex-shrink-0 w-10">
+                  {i + 1}
+                </div>
+                <div>
+                  <p className="text-[12px] font-semibold uppercase tracking-[0.18em] text-mint">
+                    {item.label}
+                  </p>
+                  <h3 className="mt-2 text-[22px] font-bold text-foreground leading-[1.25]">
+                    {item.title}
+                  </h3>
+                  <p className="mt-3 text-[15px] text-body leading-[1.7]">
+                    {item.body}
+                  </p>
+                </div>
               </div>
             ))}
+          </div>
+
+          <div className="mt-16 text-center flex flex-col items-center gap-4">
+            <PillCta />
+            <p className="text-[13px] text-body uppercase tracking-[0.14em]">
+              By application only · Reviewed personally by Sidsel
+            </p>
           </div>
         </div>
       </section>
 
-      <MintDivider />
+      {/* RESULTS — testimonials */}
+      <section className="py-[120px] px-6 sm:px-8">
+        <div className="max-w-[1080px] mx-auto">
+          <div className="text-center">
+            <Eyebrow>Results</Eyebrow>
+            <h2 className="mt-5 text-3xl sm:text-4xl md:text-[56px] font-extrabold text-foreground leading-[1.1] tracking-[-0.5px]">
+              What <Underlined>founders</Underlined> are saying.
+            </h2>
+          </div>
 
-      {/* TESTIMONIALS — short */}
-      <section className="bg-surface py-[100px] px-8">
-        <div className="max-w-[1100px] mx-auto">
-          <h2 className="text-center text-3xl sm:text-4xl md:text-[44px] font-bold text-foreground leading-[1.2]">
-            What founders say after the work
-          </h2>
-
-          <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-5">
             {testimonials.map((t) => (
               <div
                 key={t.name}
                 className="bg-card border border-border rounded-xl p-8 flex flex-col"
               >
-                <p className="text-[15px] text-body leading-[1.75] flex-1">"{t.quote}"</p>
-                <div className="mt-6">
-                  <p className="text-[15px] font-semibold text-foreground">{t.name}</p>
-                  <p className="text-[13px] text-body/70 mt-0.5">{t.role}</p>
+                <p className="font-editorial italic text-[20px] text-foreground leading-[1.45] flex-1">
+                  "{t.quote}"
+                </p>
+                <div className="mt-8 pt-6 border-t border-mint/40">
+                  <p className="text-[15px] font-semibold text-foreground">
+                    {t.name}
+                  </p>
+                  <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-mint mt-1">
+                    {t.role}
+                  </p>
                 </div>
               </div>
             ))}
@@ -329,20 +395,56 @@ const Apply = () => {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="py-[100px] px-8">
-        <div className="max-w-[820px] mx-auto">
-          <h2 className="text-center text-3xl sm:text-4xl md:text-[44px] font-bold text-foreground leading-[1.2]">
-            Before you apply
-          </h2>
+      {/* WHAT THIS IS */}
+      <section className="bg-surface py-[120px] px-6 sm:px-8">
+        <div className="max-w-[1080px] mx-auto">
+          <div className="text-center">
+            <Eyebrow>What this is</Eyebrow>
+            <h2 className="mt-5 text-3xl sm:text-4xl md:text-[56px] font-extrabold text-foreground leading-[1.1] tracking-[-0.5px]">
+              Not a course. Not coaching. <br className="hidden md:block" />
+              Not a <Underlined>mastermind</Underlined>.
+            </h2>
+          </div>
 
-          <Accordion type="single" collapsible className="mt-12">
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-5">
+            {whatThisIs.map((c) => (
+              <div
+                key={c.heading}
+                className="bg-card border border-border rounded-xl p-8"
+              >
+                <h3 className="text-[22px] font-bold text-foreground">
+                  {c.heading}
+                </h3>
+                <p className="mt-4 text-[15px] text-body leading-[1.75]">
+                  {c.body}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-[120px] px-6 sm:px-8">
+        <div className="max-w-[860px] mx-auto">
+          <div className="text-center">
+            <Eyebrow>Questions answered</Eyebrow>
+            <h2 className="mt-5 text-3xl sm:text-4xl md:text-[56px] font-extrabold text-foreground leading-[1.1] tracking-[-0.5px]">
+              Everything you <Underlined>need to know</Underlined>.
+            </h2>
+          </div>
+
+          <Accordion type="single" collapsible className="mt-16">
             {faqs.map((f, i) => (
-              <AccordionItem key={f.q} value={`item-${i}`} className="border-mint/40">
-                <AccordionTrigger className="text-left text-[17px] font-semibold text-foreground py-5">
+              <AccordionItem
+                key={f.q}
+                value={`item-${i}`}
+                className="border-mint/40"
+              >
+                <AccordionTrigger className="text-left text-[18px] font-semibold text-foreground py-6">
                   {f.q}
                 </AccordionTrigger>
-                <AccordionContent className="text-[15px] text-body leading-[1.75] pb-5">
+                <AccordionContent className="text-[15px] text-body leading-[1.75] pb-6 pr-8">
                   {f.a}
                 </AccordionContent>
               </AccordionItem>
@@ -351,26 +453,33 @@ const Apply = () => {
         </div>
       </section>
 
-      <MintDivider />
-
-      {/* APPLICATION QUESTIONNAIRE */}
-      <section id="apply" className="py-[120px] px-8 scroll-mt-24 bg-surface">
-        <div className="max-w-[760px] mx-auto">
+      {/* APPLY NOW — questionnaire */}
+      <section
+        id="apply"
+        className="bg-surface py-[120px] px-6 sm:px-8 scroll-mt-24"
+      >
+        <div className="max-w-[820px] mx-auto">
           <div className="text-center">
             <Eyebrow>Apply now</Eyebrow>
-            <h2 className="mt-5 text-3xl sm:text-4xl md:text-[44px] font-bold text-foreground leading-[1.2]">
-              See if you're the right fit.
+            <h2 className="mt-5 text-3xl sm:text-4xl md:text-[56px] font-extrabold text-foreground leading-[1.1] tracking-[-0.5px]">
+              See if you're the <Underlined>right fit</Underlined>.
             </h2>
-            <p className="mt-5 text-[16px] text-body leading-[1.7] max-w-[560px] mx-auto">
+            <p className="mt-6 text-[16px] text-body leading-[1.7] max-w-[560px] mx-auto">
               A short application. Sidsel reads every one personally. If it's a fit, you'll be invited to book a 30-minute call.
             </p>
           </div>
 
-          <div className="mt-12 bg-card border border-border rounded-xl p-8 sm:p-12">
-            {/* Progress */}
-            <div className="flex items-center justify-between text-[12px] font-semibold uppercase tracking-[0.16em] text-mint">
-              <span>{submitted ? "Complete" : `Step ${step + 1} / ${total}`}</span>
-              <span>{progress}%</span>
+          <div className="mt-14 bg-card border border-border rounded-xl p-8 sm:p-12">
+            {/* Progress header */}
+            <div className="flex items-center justify-between text-[12px] font-semibold uppercase tracking-[0.18em] text-foreground">
+              <span>
+                {submitted ? "Complete" : (
+                  <>
+                    Step <span className="text-mint">{step + 1}</span> / {total}
+                  </>
+                )}
+              </span>
+              <span className="text-mint">{progress}%</span>
             </div>
             <div className="mt-3 h-[3px] bg-mint/20 rounded-full overflow-hidden">
               <div
@@ -379,11 +488,10 @@ const Apply = () => {
               />
             </div>
 
-            {/* Body */}
             {!submitted ? (
-              <div className="mt-10">
-                <h3 className="text-[22px] sm:text-[24px] font-semibold text-foreground leading-[1.35]">
-                  {current.prompt}
+              <div className="mt-12">
+                <h3 className="text-[24px] sm:text-[28px] font-bold text-foreground leading-[1.3]">
+                  {step + 1}. {current.prompt}
                 </h3>
 
                 <div className="mt-8 space-y-3">
@@ -395,7 +503,7 @@ const Apply = () => {
                           key={opt}
                           type="button"
                           onClick={() => setAnswer(current.id, opt)}
-                          className={`w-full text-left rounded-xl border px-5 py-4 text-[15px] leading-[1.5] transition-colors ${
+                          className={`w-full text-left rounded-xl border px-6 py-5 text-[15px] leading-[1.5] transition-colors ${
                             selected
                               ? "bg-mint/30 border-mint text-foreground"
                               : "bg-background border-border text-foreground hover:bg-mint/10"
@@ -413,7 +521,7 @@ const Apply = () => {
                       placeholder={current.placeholder}
                       rows={5}
                       maxLength={1000}
-                      className="w-full rounded-xl border border-border bg-background px-5 py-4 text-[15px] text-foreground placeholder:text-body/50 focus:outline-none focus:border-mint resize-none"
+                      className="w-full rounded-xl border border-border bg-background px-6 py-5 text-[15px] text-foreground placeholder:text-foreground/40 focus:outline-none focus:border-mint resize-none"
                     />
                   )}
 
@@ -424,53 +532,49 @@ const Apply = () => {
                       onChange={(e) => setAnswer(current.id, e.target.value)}
                       placeholder={current.placeholder}
                       maxLength={255}
-                      className="w-full rounded-xl border border-border bg-background px-5 py-4 text-[15px] text-foreground placeholder:text-body/50 focus:outline-none focus:border-mint"
+                      className="w-full rounded-xl border border-border bg-background px-6 py-5 text-[15px] text-foreground placeholder:text-foreground/40 focus:outline-none focus:border-mint"
                     />
                   )}
                 </div>
 
                 {error && (
-                  <p className="mt-4 text-[13px] text-accent font-medium">{error}</p>
+                  <p className="mt-5 text-[13px] text-accent font-semibold">
+                    {error}
+                  </p>
                 )}
 
-                {/* Controls */}
                 <div className="mt-10 flex items-center justify-between gap-4">
                   <button
                     type="button"
                     onClick={handleBack}
                     disabled={step === 0}
-                    className="text-[13px] font-semibold uppercase tracking-[0.16em] text-body/70 hover:text-foreground disabled:opacity-30 disabled:hover:text-body/70 transition-colors"
+                    className="text-[12px] font-semibold uppercase tracking-[0.18em] text-foreground hover:text-mint disabled:opacity-30 disabled:hover:text-foreground transition-colors"
                   >
                     ← Back
                   </button>
                   <button
                     type="button"
                     onClick={handleNext}
-                    className="inline-flex bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-7 py-3 rounded-full hover:bg-accent/90 transition-colors"
+                    className="inline-flex bg-accent text-accent-foreground text-[13px] font-semibold uppercase tracking-[0.16em] px-8 py-4 rounded-full hover:bg-accent/90 transition-colors"
                   >
                     {step === total - 1 ? "Book my call" : "Next"}
                   </button>
                 </div>
               </div>
             ) : (
-              // Completion state — reveal Calendly link
-              <div className="mt-10 text-center">
-                <h3 className="text-[26px] sm:text-[30px] font-bold text-foreground leading-[1.25]">
-                  Thank you{answers.name ? `, ${answers.name.split(" ")[0]}` : ""}.
+              <div className="mt-12 text-center">
+                <h3 className="text-[28px] sm:text-[36px] font-extrabold text-foreground leading-[1.2]">
+                  Thank you
+                  {answers.name ? `, ${answers.name.split(" ")[0]}` : ""}.
                 </h3>
-                <p className="mt-5 text-[16px] text-body leading-[1.75] max-w-[480px] mx-auto">
+                <p className="mt-6 text-[16px] text-body leading-[1.75] max-w-[480px] mx-auto">
                   Your application has been received. Choose a time below for a 30-minute call with Sidsel. No pitch.
                 </p>
-                <a
-                  href={CALENDLY_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex mt-8 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-8 py-3 rounded-full hover:bg-accent/90 transition-colors"
-                >
-                  Book your call
-                </a>
-                <p className="mt-5 text-[13px] text-body/70">
-                  Applications are reviewed personally.
+                <div className="mt-10">
+                  <PillCta label="Book your call" href={CALENDLY_URL} external />
+                </div>
+                <p className="mt-6 text-[13px] text-body uppercase tracking-[0.14em]">
+                  Applications are reviewed personally
                 </p>
               </div>
             )}
