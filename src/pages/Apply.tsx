@@ -375,14 +375,14 @@ const Apply = () => {
                 key={t.name}
                 className="bg-card border border-border rounded-xl p-8 flex flex-col"
               >
-                <p className="text-[17px] text-foreground leading-[1.7] flex-1">
+                <p className="font-editorial italic text-[22px] text-foreground leading-[1.55] flex-1">
                   "{t.quote}"
                 </p>
                 <div className="mt-8 pt-6 border-t border-mint/40">
-                  <p className="text-[15px] font-semibold text-foreground">
+                  <p className="text-[16px] font-semibold text-foreground">
                     {t.name}
                   </p>
-                  <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-mint mt-1">
+                  <p className="text-[14px] text-body mt-0.5">
                     {t.role}
                   </p>
                 </div>
