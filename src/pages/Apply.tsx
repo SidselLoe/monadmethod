@@ -210,7 +210,7 @@ const questions: Question[] = [
 const Apply = () => {
   usePageMeta(
     "Monad OS — Apply",
-    "Watch the video. Answer a few questions. If it's a fit, book a 30-minute call with Sidsel."
+    "Watch the video. Answer a few questions. Book a 30-minute call with Sidsel."
   );
 
   const [step, setStep] = useState(0);
@@ -354,7 +354,7 @@ const Apply = () => {
 
           <div className="mt-16 text-center flex flex-col items-center gap-4">
             <PillCta />
-            <Caption>By application only · Reviewed personally by Sidsel</Caption>
+            <Caption>30 minutes · One-to-one with Sidsel</Caption>
           </div>
         </div>
       </section>
@@ -457,12 +457,12 @@ const Apply = () => {
       >
         <div className="max-w-[820px] mx-auto">
           <div className="text-center">
-            <Caption>Apply now</Caption>
+            <Caption>Book your call</Caption>
             <h2 className="mt-5 text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15] tracking-[-0.5px]">
-              See if you're the <Underlined>right fit</Underlined>.
+              A few <Underlined>quick questions</Underlined>.
             </h2>
             <p className="mt-6 text-[16px] text-body leading-[1.7] max-w-[560px] mx-auto">
-              A short application. Sidsel reads every one personally. If it's a fit, you'll be invited to book a 30-minute call.
+              Answer a few questions so Sidsel has context before your call. You'll be able to book your 30-minute call at the end.
             </p>
           </div>
 
@@ -565,14 +565,11 @@ const Apply = () => {
                   {answers.name ? `, ${answers.name.split(" ")[0]}` : ""}.
                 </h3>
                 <p className="mt-6 text-[16px] text-body leading-[1.75] max-w-[480px] mx-auto">
-                  Your application has been received. Choose a time below for a 30-minute call with Sidsel. No pitch.
+                  Choose a time below for your 30-minute call with Sidsel. No pitch.
                 </p>
                 <div className="mt-10">
                   <PillCta label="Book your call" href={CALENDLY_URL} external />
                 </div>
-                <p className="mt-6 text-[13px] text-body uppercase tracking-[0.14em]">
-                  Applications are reviewed personally
-                </p>
               </div>
             )}
           </div>
