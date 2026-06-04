@@ -271,9 +271,7 @@ const Apply = () => {
       {/* HERO */}
       <section className="pt-[80px] pb-[60px] px-6 sm:px-8">
         <div className="max-w-[1080px] mx-auto text-center">
-          <Eyebrow>Apply to work with Sidsel</Eyebrow>
-
-          <h1 className="mt-6 text-4xl sm:text-5xl md:text-[72px] font-extrabold text-foreground leading-[1.05] tracking-[-0.5px]">
+          <h1 className="text-4xl sm:text-5xl md:text-[72px] font-extrabold text-foreground leading-[1.05] tracking-[-0.5px]">
             Watch the video. <br className="hidden sm:block" />
             Then, if it lands, <Underlined>book your call</Underlined>.
           </h1>
@@ -297,13 +295,13 @@ const Apply = () => {
                   allowFullScreen
                 />
               ) : (
-                <div className="absolute inset-0 flex flex-col items-center justify-center gap-5">
-                  <div className="w-20 h-20 rounded-full border-2 border-mint flex items-center justify-center">
-                    <div className="w-5 h-5 rounded-full bg-mint" />
-                  </div>
-                  <p className="text-mint text-[12px] uppercase tracking-[0.22em] font-semibold">
-                    Video coming soon
-                  </p>
+                <div className="absolute inset-0 flex flex-col items-center justify-center gap-6">
+                  <img
+                    src={monadSymbol}
+                    alt="Monad"
+                    className="w-16 h-16 object-contain"
+                  />
+                  <Caption>Video coming soon</Caption>
                 </div>
               )}
             </div>
@@ -311,13 +309,11 @@ const Apply = () => {
 
           <div className="mt-12 flex flex-col items-center gap-4">
             <PillCta />
-            <p className="text-[13px] text-body uppercase tracking-[0.14em]">
-              Free · Takes 2 minutes
-            </p>
+            <Caption>Free · Takes 2 minutes</Caption>
           </div>
 
-          <p className="mt-12 text-[14px] font-semibold text-foreground">
-            150+ founders, leaders, and creators have experienced the work.
+          <p className="mt-12 text-[15px] font-semibold text-foreground">
+            150+ founders, leaders and creators have experienced the work.
           </p>
         </div>
       </section>
