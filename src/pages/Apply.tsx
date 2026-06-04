@@ -1,7 +1,9 @@
 import { useMemo, useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/sections/Footer";
+import MoreFromFounders from "@/components/sections/MoreFromFounders";
 import usePageMeta from "@/hooks/usePageMeta";
+import monadSymbol from "@/assets/monad-symbol.png";
 import {
   Accordion,
   AccordionContent,
@@ -16,8 +18,9 @@ const CALENDLY_URL = "https://calendly.com/sidselloschenkohl/monad-discovery";
 
 const BOOK_HREF = "#apply";
 
-const Eyebrow = ({ children }: { children: React.ReactNode }) => (
-  <p className="font-editorial italic text-mint text-[15px] tracking-[0.02em]">
+// Small mint caption — matches brand caption usage across the site.
+const Caption = ({ children }: { children: React.ReactNode }) => (
+  <p className="text-[12px] font-bold uppercase tracking-[0.18em] text-mint">
     {children}
   </p>
 );
@@ -34,13 +37,13 @@ const PillCta = ({
   <a
     href={href}
     {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-    className="inline-flex bg-accent text-accent-foreground text-[13px] font-semibold uppercase tracking-[0.16em] px-8 py-4 rounded-full hover:bg-accent/90 transition-colors"
+    className="inline-flex bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-8 py-3 rounded-full hover:bg-accent/90 transition-colors"
   >
     {label}
   </a>
 );
 
-// Underline an accent phrase inside a headline (mint thick underline like founderos.com).
+// Underline an accent phrase inside a headline (mint thick underline).
 const Underlined = ({ children }: { children: React.ReactNode }) => (
   <span className="relative inline-block">
     <span className="relative z-10">{children}</span>
