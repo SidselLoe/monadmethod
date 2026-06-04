@@ -565,14 +565,11 @@ const Apply = () => {
                   {answers.name ? `, ${answers.name.split(" ")[0]}` : ""}.
                 </h3>
                 <p className="mt-6 text-[16px] text-body leading-[1.75] max-w-[480px] mx-auto">
-                  Your application has been received. Choose a time below for a 30-minute call with Sidsel. No pitch.
+                  Choose a time below for your 30-minute call with Sidsel. No pitch.
                 </p>
                 <div className="mt-10">
                   <PillCta label="Book your call" href={CALENDLY_URL} external />
                 </div>
-                <p className="mt-6 text-[13px] text-body uppercase tracking-[0.14em]">
-                  Applications are reviewed personally
-                </p>
               </div>
             )}
           </div>
