@@ -322,7 +322,7 @@ const Apply = () => {
       <section className="bg-surface py-[120px] px-6 sm:px-8 mt-20">
         <div className="max-w-[1080px] mx-auto">
           <div className="text-center">
-            <Eyebrow>Your journey</Eyebrow>
+            <Caption>Your journey</Caption>
             <h2 className="mt-5 text-3xl sm:text-4xl md:text-[56px] font-extrabold text-foreground leading-[1.1] tracking-[-0.5px]">
               What you <Underlined>actually get</Underlined>.
             </h2>
@@ -334,8 +334,8 @@ const Apply = () => {
                 key={item.title}
                 className="bg-card border border-border rounded-xl p-8 flex gap-6"
               >
-                <div className="font-editorial italic text-mint text-[44px] leading-none flex-shrink-0 w-10">
-                  {i + 1}
+                <div className="text-mint text-[40px] font-extrabold leading-none flex-shrink-0 w-10 tracking-[-0.02em]">
+                  {String(i + 1).padStart(2, "0")}
                 </div>
                 <div>
                   <p className="text-[12px] font-semibold uppercase tracking-[0.18em] text-mint">
@@ -354,9 +354,7 @@ const Apply = () => {
 
           <div className="mt-16 text-center flex flex-col items-center gap-4">
             <PillCta />
-            <p className="text-[13px] text-body uppercase tracking-[0.14em]">
-              By application only · Reviewed personally by Sidsel
-            </p>
+            <Caption>By application only · Reviewed personally by Sidsel</Caption>
           </div>
         </div>
       </section>
@@ -365,7 +363,7 @@ const Apply = () => {
       <section className="py-[120px] px-6 sm:px-8">
         <div className="max-w-[1080px] mx-auto">
           <div className="text-center">
-            <Eyebrow>Results</Eyebrow>
+            <Caption>Results</Caption>
             <h2 className="mt-5 text-3xl sm:text-4xl md:text-[56px] font-extrabold text-foreground leading-[1.1] tracking-[-0.5px]">
               What <Underlined>founders</Underlined> are saying.
             </h2>
@@ -377,7 +375,7 @@ const Apply = () => {
                 key={t.name}
                 className="bg-card border border-border rounded-xl p-8 flex flex-col"
               >
-                <p className="font-editorial italic text-[20px] text-foreground leading-[1.45] flex-1">
+                <p className="text-[17px] text-foreground leading-[1.7] flex-1">
                   "{t.quote}"
                 </p>
                 <div className="mt-8 pt-6 border-t border-mint/40">
@@ -398,7 +396,7 @@ const Apply = () => {
       <section className="bg-surface py-[120px] px-6 sm:px-8">
         <div className="max-w-[1080px] mx-auto">
           <div className="text-center">
-            <Eyebrow>What this is</Eyebrow>
+            <Caption>What this is</Caption>
             <h2 className="mt-5 text-3xl sm:text-4xl md:text-[56px] font-extrabold text-foreground leading-[1.1] tracking-[-0.5px]">
               Not a course. Not coaching. <br className="hidden md:block" />
               Not a <Underlined>mastermind</Underlined>.
@@ -427,7 +425,7 @@ const Apply = () => {
       <section className="py-[120px] px-6 sm:px-8">
         <div className="max-w-[860px] mx-auto">
           <div className="text-center">
-            <Eyebrow>Questions answered</Eyebrow>
+            <Caption>Questions answered</Caption>
             <h2 className="mt-5 text-3xl sm:text-4xl md:text-[56px] font-extrabold text-foreground leading-[1.1] tracking-[-0.5px]">
               Everything you <Underlined>need to know</Underlined>.
             </h2>
@@ -459,7 +457,7 @@ const Apply = () => {
       >
         <div className="max-w-[820px] mx-auto">
           <div className="text-center">
-            <Eyebrow>Apply now</Eyebrow>
+            <Caption>Apply now</Caption>
             <h2 className="mt-5 text-3xl sm:text-4xl md:text-[56px] font-extrabold text-foreground leading-[1.1] tracking-[-0.5px]">
               See if you're the <Underlined>right fit</Underlined>.
             </h2>
