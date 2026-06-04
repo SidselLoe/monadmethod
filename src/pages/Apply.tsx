@@ -11,7 +11,7 @@ import monadSymbol from "@/assets/monad-symbol.png";
 
 // ⚠️ Replace these two placeholders when ready to go live.
 const VSL_VIDEO_URL = ""; // e.g. "https://www.youtube.com/embed/VIDEO_ID"
-const BOOKING_EMBED_URL = ""; // e.g. "https://cal.com/sidsel/apply?embed=true"
+const BOOKING_EMBED_URL = "https://calendly.com/sidselloschenkohl/monad-discovery";
 
 const BOOK_HREF = "#book";
 
