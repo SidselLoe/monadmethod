@@ -1,3 +1,4 @@
+import { useMemo, useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/sections/Footer";
 import usePageMeta from "@/hooks/usePageMeta";
@@ -9,11 +10,33 @@ import {
 } from "@/components/ui/accordion";
 import monadSymbol from "@/assets/monad-symbol.png";
 
-// ⚠️ Replace these two placeholders when ready to go live.
+// ⚠️ Placeholder — replace when the VSL is ready.
 const VSL_VIDEO_URL = ""; // e.g. "https://www.youtube.com/embed/VIDEO_ID"
-const BOOKING_EMBED_URL = "https://calendly.com/sidselloschenkohl/monad-discovery";
+// Existing Calendly link, revealed only after the questionnaire is completed.
+const CALENDLY_URL = "https://calendly.com/sidselloschenkohl/monad-discovery";
 
-const BOOK_HREF = "#book";
+const BOOK_HREF = "#apply";
+
+const Eyebrow = ({ children }: { children: React.ReactNode }) => (
+  <p className="text-[12px] font-bold uppercase tracking-[0.18em] text-mint">
+    {children}
+  </p>
+);
+
+const ScrollToApply = ({
+  label = "Book a Call",
+  className = "",
+}: {
+  label?: string;
+  className?: string;
+}) => (
+  <a
+    href={BOOK_HREF}
+    className={`inline-flex bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-7 py-3 rounded-full hover:bg-accent/90 transition-colors ${className}`}
+  >
+    {label}
+  </a>
+);
 
 const MintDivider = () => (
   <div className="px-8">
@@ -23,97 +46,22 @@ const MintDivider = () => (
   </div>
 );
 
-const BookButton = ({ className = "" }: { className?: string }) => (
-  <a
-    href={BOOK_HREF}
-    className={`inline-flex bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-7 py-3 rounded-full hover:bg-accent/90 transition-colors ${className}`}
-  >
-    Book a Call
-  </a>
-);
-
-const Eyebrow = ({ children }: { children: React.ReactNode }) => (
-  <p className="text-[12px] font-bold uppercase tracking-[0.18em] text-mint">
-    {children}
-  </p>
-);
-
-const modalities = [
+const whatThisIs = [
   {
-    title: "Get out of your head",
-    body: "Your best thinking has never arrived through effort. Activations clear what has been preventing it and take you into the state where clarity, creative power, and sharp decisions actually live. Guided, music-driven, experienced lying down. No technique. No performance. Each session compounds. What becomes available in that state is not something you find. It finds you.",
+    title: "Not a course",
+    body: "There is no module to complete. No framework that magically rearranges your business. The work happens in your nervous system, your identity, and your real-time decisions — not in a content library.",
   },
   {
-    title: "Reveal what's been running you",
-    body: "You can't see the patterns running your leadership from inside them. Structured self-inquiry surfaces them. Every reflection becomes the foundation for the next session. What has been making your decisions without your permission gets named.",
+    title: "Not coaching",
+    body: "Sidsel is not here to motivate you, hold you accountable to someone else's plan, or teach you what to think. Monad OS reveals what has been running you, so the next decision comes from a different place.",
   },
   {
-    title: "Take aligned action",
-    body: "The activations shift your state. The inquiry names what's been running underneath you. The sessions bring both into action. Priorities, delegation, decisions, communication. They move differently now. Not because the strategy is better. Because you have changed.",
+    title: "Not a mastermind",
+    body: "You do not need another room of founders to compare yourself to. This is private, one-to-one, and built around what is actually in the way for you.",
   },
-];
-
-const included = [
-  {
-    title: "10× Monad Activations",
-    body: "A guided, music-driven process that takes you into the state where your clearest decisions live. No technique. No performance. You show up, lie down, and let the static clear. The effect compounds. Each session goes deeper than the last.",
-  },
-  {
-    title: "4× Guided Inquiry",
-    body: "Your leadership is being shaped by patterns you have never examined. Structured self-inquiry surfaces them. Every reflection becomes the foundation for your next session. What was invisible becomes specific.",
-  },
-  {
-    title: "4× Private 1:1 Sessions (44 min)",
-    body: "The activations shift your state. The inquiry names what's been running underneath you. The sessions bring both into action. Priorities, delegation, decisions, communication. Built from the new state, not the old one.",
-  },
-  {
-    title: "30 Days Private Support",
-    body: "The shift does not pause between sessions. Private voice-note access for when something comes up mid-week and you need clarity now. Real follow-through. Accountability that does not drift.",
-  },
-];
-
-const mechanism = [
-  {
-    title: "State shifts first",
-    body: "You have tried other approaches. They gave you language for the problem, not relief from it. Your nervous system has been running on pressure so long you have forgotten what clear thinking feels like. When that resets, the clarity is already there.",
-  },
-  {
-    title: "Patterns become visible",
-    body: "The belief that if you step back, things fall apart. The habit of saying yes when the honest answer is no. The fusion between your worth and the company's performance. Not character flaws. Patterns making your decisions without your permission. Once you see them, they stop running you.",
-  },
-  {
-    title: "Direction gets honest",
-    body: "Most founders build toward a version of success they have never questioned. When the noise quiets, what surfaces is not what you expected. What do you actually want from this company? What would it feel like to build from purpose instead of pressure?",
-  },
-  {
-    title: "A new way of operating",
-    body: "You stop leading from patterns that were never yours. How you delegate, decide, and hold pressure starts to match where you are going, not where you have been. The internal shift leads. The external results follow.",
-  },
-];
-
-const forYou = [
-  "You are the business. If you disappeared tomorrow, the company would not persist. You have traction. You are not in survival mode. But how you have been operating is no longer sustainable.",
-  "You know there is more. You cannot fully name it yet, but the pull is there. What got you here is not what will get you there, and you can feel it.",
-  "You have taken your destiny into your own hands. No one is coming to save you. Not a cofounder, not a hire, not the next framework. The responsibility for what happens next sits with you.",
-  "You want to be pointed inward, not told what to do. You do not trust people who hand you formulas. What draws you to this work is that it reveals rather than prescribes.",
-  "You are open to energy work as a real mechanism for change. You do not need to fully understand it. You are willing to experience it, and you hold, or are open to holding, the belief that we are more than this physical 3D reality.",
-  "You are ready to look at what is underneath. The patterns, the identity fusion, the drive that built the company and is now the ceiling. You are open to something that works at a different layer than strategy.",
-];
-
-const notForYou = [
-  "You want someone to hand you a system or tell you what to do. This work does not prescribe. It reveals. If you are looking for a tactical roadmap or a revenue formula, you will be frustrated here.",
-  "You have not yet built anything. You are still in ideation, still in employment, or still in survival mode. This work assumes you have traction and the weight that comes with it.",
-  "You do not believe that internal state shapes external results. If that premise sounds like a metaphor to you rather than a mechanism, this is not the work you are looking for.",
-  "You are not willing to be honest with yourself. The work surfaces what has been running you. If you are here to perform self-awareness rather than actually do it, nothing will shift.",
 ];
 
 const testimonials = [
-  {
-    name: "Bianca Polizzi",
-    role: "Founder, Polizzi Media",
-    quote:
-      "I reclaimed my sense of self-worth. I've shed so much and become such a different version of myself.",
-  },
   {
     name: "Ilya Paveliev",
     role: "Hologram",
@@ -130,38 +78,14 @@ const testimonials = [
     name: "Rudi Adigbli",
     role: "ReeThink",
     quote:
-      "Working with Sidsel was the first truly holistic experience I've had. A lot of work focuses on strategy. Some goes deeper, into beliefs and how to change them. Very few work with your energy the way Sidsel does, and that's what makes it so effective.",
-  },
-  {
-    name: "Ella Cane",
-    role: "Business Owner, Live Your Truth",
-    quote:
-      "I needed someone who could help me structure everything — not just give me more ideas. Regular check-ins, accountability, strategic guidance. That's what I actually needed.",
-  },
-  {
-    name: "Ieva Urenceva",
-    role: "@catchagypsea",
-    quote:
-      "Sidsel appeared in my life at exactly the right time. The sessions helped me reconnect with myself after years of running on stress. Every session left me clearer and more centred than the last.",
+      "Very few work with your energy the way Sidsel does, and that's what makes it so effective.",
   },
 ];
 
 const faqs = [
   {
-    q: "Do I need to know my purpose before I start?",
-    a: "No. Most people arrive having built from push for years without ever naming it. The thirty days clears the interference and surfaces what has been underneath. Purpose clarity is usually something the work produces, not something you bring to it.",
-  },
-  {
-    q: "What actually happens over the thirty days?",
-    a: "Weekly Monad Activations, weekly private 1:1 sessions, guided voice-note inquiry between sessions, and private support throughout. Your state shifts first, the patterns running underneath become visible, your direction gets honest, and a new way of operating takes hold.",
-  },
-  {
-    q: "Is this strategy or inner work?",
-    a: "Both, in that order. The activations shift your state, the inquiry names what has been running underneath, and the sessions turn that into decisions, delegation, and structure. The internal shift leads. The external results follow.",
-  },
-  {
-    q: "I've done executive advisory work or therapy before. How is this different?",
-    a: "This works on your state and identity directly, through the nervous system, not only through insight or talking. People who have done other work consistently say this reaches a layer those did not.",
+    q: "What actually happens on the call?",
+    a: "Thirty minutes, one-to-one with Sidsel. We look at where you are, what is actually in the way, and whether Monad OS is the right next step. No pitch. If it is not a fit, you will know.",
   },
   {
     q: "What's the investment?",
@@ -177,31 +101,151 @@ const faqs = [
   },
 ];
 
+// -----------------------------
+// Application questionnaire
+// -----------------------------
+type QuestionType = "single" | "text" | "email";
+interface Question {
+  id: string;
+  prompt: string;
+  type: QuestionType;
+  options?: string[];
+  placeholder?: string;
+}
+
+const questions: Question[] = [
+  {
+    id: "stage",
+    prompt: "Which best describes where your business is right now?",
+    type: "single",
+    options: [
+      "I have traction, real revenue, and a company that works",
+      "I'm scaling and the way I'm operating is no longer sustainable",
+      "I've plateaued and more strategy is not moving the ceiling",
+      "I'm in early days, still finding traction",
+    ],
+  },
+  {
+    id: "challenge",
+    prompt: "What is the real constraint right now?",
+    type: "single",
+    options: [
+      "I am the bottleneck — the business depends on me",
+      "My identity is fused with the company and I can feel the cost",
+      "I keep making decisions from pressure, not clarity",
+      "I know there is more, but I cannot fully name it yet",
+      "Something else",
+    ],
+  },
+  {
+    id: "openness",
+    prompt:
+      "Are you open to working with state, identity, and energy — not only strategy?",
+    type: "single",
+    options: [
+      "Yes — that is exactly what I am looking for",
+      "Curious and open, even if I do not fully understand it yet",
+      "Only if it is grounded in real outcomes",
+      "No, I am looking for tactical advice",
+    ],
+  },
+  {
+    id: "why_now",
+    prompt: "Why now? What has shifted that brought you to this page?",
+    type: "text",
+    placeholder: "A few sentences is enough.",
+  },
+  {
+    id: "name",
+    prompt: "What's your full name?",
+    type: "text",
+    placeholder: "First and last name",
+  },
+  {
+    id: "email",
+    prompt: "What's the best email to reach you on?",
+    type: "email",
+    placeholder: "you@company.com",
+  },
+];
+
 const Apply = () => {
   usePageMeta(
     "Monad OS — Apply",
-    "The ceiling is internal. The work is how you move it. Three modalities. Thirty days. Apply to Monad OS."
+    "Watch the video. Answer a few questions. If it's a fit, book a 30-minute call with Sidsel."
   );
+
+  const [step, setStep] = useState(0);
+  const [answers, setAnswers] = useState<Record<string, string>>({});
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  const total = questions.length;
+  const current = questions[step];
+  const progress = useMemo(
+    () => Math.round(((submitted ? total : step) / total) * 100),
+    [step, submitted, total]
+  );
+
+  const validate = (q: Question, value: string | undefined) => {
+    if (!value || !value.trim()) return "Please complete this question to continue.";
+    if (q.type === "email") {
+      const ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim());
+      if (!ok) return "Please enter a valid email address.";
+    }
+    if (q.type === "text" && value.trim().length > 1000) {
+      return "Please keep your answer under 1000 characters.";
+    }
+    return null;
+  };
+
+  const handleNext = () => {
+    const value = answers[current.id];
+    const err = validate(current, value);
+    if (err) {
+      setError(err);
+      return;
+    }
+    setError(null);
+    if (step < total - 1) {
+      setStep(step + 1);
+    } else {
+      setSubmitted(true);
+    }
+  };
+
+  const handleBack = () => {
+    setError(null);
+    if (step > 0) setStep(step - 1);
+  };
+
+  const setAnswer = (id: string, value: string) => {
+    setAnswers((a) => ({ ...a, [id]: value }));
+    if (error) setError(null);
+  };
 
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
       <div className="h-16" />
 
-      {/* HERO */}
-      <section className="pt-[80px] pb-[60px] px-8">
-        <div className="max-w-[1100px] mx-auto text-center">
-          <Eyebrow>For founders who are the business</Eyebrow>
-          <h1 className="mt-6 text-4xl sm:text-5xl md:text-[68px] font-extrabold text-foreground leading-[1.05] tracking-[-0.5px] max-w-[900px] mx-auto">
-            You are the business. That's not a compliment.
+      {/* HERO — VSL + single CTA */}
+      <section className="pt-[80px] pb-[80px] px-8">
+        <div className="max-w-[1000px] mx-auto text-center">
+          <Eyebrow>Apply to work with Sidsel</Eyebrow>
+          <h1 className="mt-6 text-4xl sm:text-5xl md:text-[64px] font-extrabold text-foreground leading-[1.05] tracking-[-0.5px] max-w-[860px] mx-auto">
+            Watch the video. Then, if it lands, apply.
           </h1>
-          <p className="mt-6 text-[18px] sm:text-[20px] text-body leading-[1.6] max-w-[680px] mx-auto">
-            The ceiling is internal. The work is how you move it. Three modalities. Thirty days.
+          <p className="mt-6 text-[18px] text-body leading-[1.6] max-w-[640px] mx-auto">
+            Eight minutes on what Monad OS is, who it is for, and how the work moves the ceiling that strategy cannot.
           </p>
 
-          {/* VSL video */}
+          {/* VSL */}
           <div className="mt-12 max-w-[920px] mx-auto">
-            <div className="relative w-full rounded-xl overflow-hidden bg-foreground" style={{ aspectRatio: "16 / 9" }}>
+            <div
+              className="relative w-full rounded-xl overflow-hidden bg-foreground"
+              style={{ aspectRatio: "16 / 9" }}
+            >
               {VSL_VIDEO_URL ? (
                 <iframe
                   src={VSL_VIDEO_URL}
@@ -211,163 +255,67 @@ const Apply = () => {
                   allowFullScreen
                 />
               ) : (
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <img src={monadSymbol} alt="Monad" className="w-20 h-20 opacity-90 invert" />
+                <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
+                  <img src={monadSymbol} alt="Monad" className="w-16 h-16 opacity-90 invert" />
+                  <p className="text-background/60 text-[13px] uppercase tracking-[0.2em]">
+                    Video coming soon
+                  </p>
                 </div>
               )}
             </div>
           </div>
 
           <div className="mt-10">
-            <BookButton />
-            <p className="mt-4 text-[14px] text-body">No pressure. No pitch.</p>
-            <p className="mt-2 text-[13px] text-body/70">
-              150+ founders, leaders, and creators have experienced the work.
+            <ScrollToApply label="Start your application" />
+            <p className="mt-4 text-[14px] text-body">
+              Takes 2 minutes · Reviewed personally by Sidsel
             </p>
           </div>
-        </div>
-      </section>
 
-      <MintDivider />
-
-      {/* THE CEILING */}
-      <section className="py-[100px] px-8">
-        <div className="max-w-[820px] mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
-            You found the ceiling.
-          </h2>
-          <p className="mt-6 text-[18px] text-body leading-[1.75]">
-            The revenue is real. The recognition. The company that actually works. And the feeling you were climbing toward never arrived. More strategy will not raise the ceiling. What needs to change is underneath it.
+          <p className="mt-10 text-[13px] text-body/70">
+            150+ founders, leaders, and creators have experienced the work.
           </p>
         </div>
       </section>
 
       <MintDivider />
 
-      {/* THREE MODALITIES */}
-      <section className="bg-surface py-[100px] px-8">
+      {/* WHAT THIS IS NOT */}
+      <section className="py-[100px] px-8">
         <div className="max-w-[1100px] mx-auto">
-          <p className="text-center text-[18px] text-body max-w-[780px] mx-auto leading-[1.7]">
-            The Monad Method operates through three modalities that work together. Monad OS is how you install it.
-          </p>
-          <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-6">
-            {modalities.map((m) => (
-              <div key={m.title} className="bg-card border border-border rounded-xl p-8 text-left">
-                <h3 className="text-[20px] font-semibold text-foreground">{m.title}</h3>
-                <p className="mt-4 text-[15px] text-body leading-[1.75]">{m.body}</p>
-              </div>
-            ))}
+          <div className="text-center">
+            <Eyebrow>What this is</Eyebrow>
+            <h2 className="mt-5 text-3xl sm:text-4xl md:text-[44px] font-bold text-foreground leading-[1.2] max-w-[760px] mx-auto">
+              Not a course. Not coaching. Not a mastermind.
+            </h2>
           </div>
-        </div>
-      </section>
 
-      {/* WHAT'S INCLUDED */}
-      <section className="py-[100px] px-8">
-        <div className="max-w-[1100px] mx-auto text-center">
-          <Eyebrow>How it works</Eyebrow>
-          <h2 className="mt-5 text-3xl sm:text-4xl md:text-[44px] font-bold text-foreground leading-[1.2] max-w-[820px] mx-auto">
-            Thirty days. Three modalities. A different internal operating system.
-          </h2>
-
-          <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-5 text-left">
-            {included.map((c) => (
+          <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-6">
+            {whatThisIs.map((c) => (
               <div key={c.title} className="bg-card border border-border rounded-xl p-8">
                 <h3 className="text-[20px] font-semibold text-foreground">{c.title}</h3>
-                <p className="mt-3 text-[15px] text-body leading-[1.7]">{c.body}</p>
+                <p className="mt-3 text-[15px] text-body leading-[1.75]">{c.body}</p>
               </div>
             ))}
           </div>
-
-          <BookButton className="mt-12" />
-        </div>
-      </section>
-
-      {/* THE MECHANISM — dark section */}
-      <section className="bg-foreground py-[120px] px-8">
-        <div className="max-w-[980px] mx-auto">
-          <div className="text-center">
-            <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-background leading-[1.15]">
-              The mechanism.
-            </h2>
-            <p className="mt-6 text-[18px] text-background/80 leading-[1.75] max-w-[720px] mx-auto">
-              The Monad Method is a spiral, not a sequence. These four things happen together and deepen with each revolution.
-            </p>
-          </div>
-
-          <div className="mt-14 space-y-10">
-            {mechanism.map((m, i) => (
-              <div key={m.title} className="flex flex-col sm:flex-row gap-6 sm:gap-10">
-                <div className="flex-shrink-0 text-mint font-editorial text-[28px] leading-none sm:pt-1 w-12">
-                  0{i + 1}
-                </div>
-                <div>
-                  <h3 className="text-[22px] font-semibold text-background">{m.title}</h3>
-                  <p className="mt-3 text-[16px] text-background/80 leading-[1.75]">{m.body}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* PULL QUOTE */}
-      <section className="py-[100px] px-8">
-        <div className="max-w-[820px] mx-auto text-center">
-          <p className="font-editorial italic font-bold text-[28px] sm:text-[36px] text-foreground leading-[1.3]">
-            "You are the business. You are also the upgrade."
-          </p>
         </div>
       </section>
 
       <MintDivider />
 
-      {/* WHO MONAD OS IS FOR */}
-      <section className="py-[100px] px-8">
-        <div className="max-w-[1100px] mx-auto">
-          <h2 className="text-center text-3xl sm:text-4xl md:text-[44px] font-bold text-foreground leading-[1.2]">
-            Is Monad OS for you?
-          </h2>
-
-          <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* For you */}
-            <div className="bg-card border border-border rounded-xl p-8">
-              <h3 className="text-[18px] font-semibold text-foreground">Monad OS is for you if…</h3>
-              <ul className="mt-6 space-y-5">
-                {forYou.map((item) => (
-                  <li key={item} className="flex gap-3 text-[15px] text-body leading-[1.7]">
-                    <span className="flex-shrink-0 text-mint mt-1" aria-hidden>✓</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Not for you */}
-            <div className="bg-surface rounded-xl p-8">
-              <h3 className="text-[18px] font-semibold text-foreground/80">Monad OS is not for you if…</h3>
-              <ul className="mt-6 space-y-5">
-                {notForYou.map((item) => (
-                  <li key={item} className="flex gap-3 text-[15px] text-body/70 leading-[1.7]">
-                    <span className="flex-shrink-0 mt-1" aria-hidden>—</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* TESTIMONIALS */}
+      {/* TESTIMONIALS — short */}
       <section className="bg-surface py-[100px] px-8">
         <div className="max-w-[1100px] mx-auto">
           <h2 className="text-center text-3xl sm:text-4xl md:text-[44px] font-bold text-foreground leading-[1.2]">
-            What founders are saying
+            What founders say after the work
           </h2>
 
-          <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-5">
             {testimonials.map((t) => (
-              <div key={t.name} className="bg-card border border-border rounded-xl p-8 flex flex-col">
+              <div
+                key={t.name}
+                className="bg-card border border-border rounded-xl p-8 flex flex-col"
+              >
                 <p className="text-[15px] text-body leading-[1.75] flex-1">"{t.quote}"</p>
                 <div className="mt-6">
                   <p className="text-[15px] font-semibold text-foreground">{t.name}</p>
@@ -383,7 +331,7 @@ const Apply = () => {
       <section className="py-[100px] px-8">
         <div className="max-w-[820px] mx-auto">
           <h2 className="text-center text-3xl sm:text-4xl md:text-[44px] font-bold text-foreground leading-[1.2]">
-            Before you book
+            Before you apply
           </h2>
 
           <Accordion type="single" collapsible className="mt-12">
@@ -403,32 +351,126 @@ const Apply = () => {
 
       <MintDivider />
 
-      {/* FINAL CTA / BOOKING */}
-      <section id="book" className="py-[120px] px-8 scroll-mt-24">
-        <div className="max-w-[820px] mx-auto text-center">
-          <Eyebrow>Become the upgrade</Eyebrow>
-          <h2 className="mt-5 text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
-            You are the business. You are also the upgrade.
-          </h2>
-          <p className="mt-6 text-[18px] text-body leading-[1.75]">
-            Monad OS is how you make the shift. Thirty days. Three modalities. A different internal operating system.
-          </p>
-          <p className="mt-4 text-[14px] text-body/70">
-            Applications are reviewed personally. The call is 30 minutes. No pitch.
-          </p>
+      {/* APPLICATION QUESTIONNAIRE */}
+      <section id="apply" className="py-[120px] px-8 scroll-mt-24 bg-surface">
+        <div className="max-w-[760px] mx-auto">
+          <div className="text-center">
+            <Eyebrow>Apply now</Eyebrow>
+            <h2 className="mt-5 text-3xl sm:text-4xl md:text-[44px] font-bold text-foreground leading-[1.2]">
+              See if you're the right fit.
+            </h2>
+            <p className="mt-5 text-[16px] text-body leading-[1.7] max-w-[560px] mx-auto">
+              A short application. Sidsel reads every one personally. If it's a fit, you'll be invited to book a 30-minute call.
+            </p>
+          </div>
 
-          <div className="mt-12">
-            {BOOKING_EMBED_URL ? (
-              <div className="rounded-xl overflow-hidden border border-border bg-card">
-                <iframe
-                  src={BOOKING_EMBED_URL}
-                  title="Book a call"
-                  className="w-full"
-                  style={{ height: "720px", border: 0 }}
-                />
+          <div className="mt-12 bg-card border border-border rounded-xl p-8 sm:p-12">
+            {/* Progress */}
+            <div className="flex items-center justify-between text-[12px] font-semibold uppercase tracking-[0.16em] text-mint">
+              <span>{submitted ? "Complete" : `Step ${step + 1} / ${total}`}</span>
+              <span>{progress}%</span>
+            </div>
+            <div className="mt-3 h-[3px] bg-mint/20 rounded-full overflow-hidden">
+              <div
+                className="h-full bg-mint transition-all duration-300"
+                style={{ width: `${progress}%` }}
+              />
+            </div>
+
+            {/* Body */}
+            {!submitted ? (
+              <div className="mt-10">
+                <h3 className="text-[22px] sm:text-[24px] font-semibold text-foreground leading-[1.35]">
+                  {current.prompt}
+                </h3>
+
+                <div className="mt-8 space-y-3">
+                  {current.type === "single" &&
+                    current.options?.map((opt) => {
+                      const selected = answers[current.id] === opt;
+                      return (
+                        <button
+                          key={opt}
+                          type="button"
+                          onClick={() => setAnswer(current.id, opt)}
+                          className={`w-full text-left rounded-xl border px-5 py-4 text-[15px] leading-[1.5] transition-colors ${
+                            selected
+                              ? "bg-mint/30 border-mint text-foreground"
+                              : "bg-background border-border text-foreground hover:bg-mint/10"
+                          }`}
+                        >
+                          {opt}
+                        </button>
+                      );
+                    })}
+
+                  {current.type === "text" && (
+                    <textarea
+                      value={answers[current.id] ?? ""}
+                      onChange={(e) => setAnswer(current.id, e.target.value)}
+                      placeholder={current.placeholder}
+                      rows={5}
+                      maxLength={1000}
+                      className="w-full rounded-xl border border-border bg-background px-5 py-4 text-[15px] text-foreground placeholder:text-body/50 focus:outline-none focus:border-mint resize-none"
+                    />
+                  )}
+
+                  {current.type === "email" && (
+                    <input
+                      type="email"
+                      value={answers[current.id] ?? ""}
+                      onChange={(e) => setAnswer(current.id, e.target.value)}
+                      placeholder={current.placeholder}
+                      maxLength={255}
+                      className="w-full rounded-xl border border-border bg-background px-5 py-4 text-[15px] text-foreground placeholder:text-body/50 focus:outline-none focus:border-mint"
+                    />
+                  )}
+                </div>
+
+                {error && (
+                  <p className="mt-4 text-[13px] text-accent font-medium">{error}</p>
+                )}
+
+                {/* Controls */}
+                <div className="mt-10 flex items-center justify-between gap-4">
+                  <button
+                    type="button"
+                    onClick={handleBack}
+                    disabled={step === 0}
+                    className="text-[13px] font-semibold uppercase tracking-[0.16em] text-body/70 hover:text-foreground disabled:opacity-30 disabled:hover:text-body/70 transition-colors"
+                  >
+                    ← Back
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handleNext}
+                    className="inline-flex bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-7 py-3 rounded-full hover:bg-accent/90 transition-colors"
+                  >
+                    {step === total - 1 ? "Submit application" : "Next"}
+                  </button>
+                </div>
               </div>
             ) : (
-              <BookButton />
+              // Completion state — reveal Calendly link
+              <div className="mt-10 text-center">
+                <h3 className="text-[26px] sm:text-[30px] font-bold text-foreground leading-[1.25]">
+                  Thank you{answers.name ? `, ${answers.name.split(" ")[0]}` : ""}.
+                </h3>
+                <p className="mt-5 text-[16px] text-body leading-[1.75] max-w-[480px] mx-auto">
+                  Your application has been received. Choose a time below for a 30-minute call with Sidsel. No pitch.
+                </p>
+                <a
+                  href={CALENDLY_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex mt-8 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-8 py-3 rounded-full hover:bg-accent/90 transition-colors"
+                >
+                  Book your call
+                </a>
+                <p className="mt-5 text-[13px] text-body/70">
+                  Applications are reviewed personally.
+                </p>
+              </div>
             )}
           </div>
         </div>
