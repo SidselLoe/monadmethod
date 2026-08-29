@@ -344,29 +344,16 @@ const About = () => {
             <CarouselContent className="-ml-6">
               {blogPosts.map((post) => (
                 <CarouselItem
-                  key={post.title}
+                  key={post.href}
                   className="pl-6 basis-full sm:basis-1/2 md:basis-1/3"
                 >
-                  <Link
-                    to={post.href}
-                    className="group flex flex-col h-full bg-white border border-border rounded-xl p-8 transition-all duration-300 hover:border-mint hover:shadow-[0_8px_30px_rgba(126,200,200,0.15)]"
-                  >
-                    <h3 className="text-[22px] font-semibold text-foreground leading-[1.3]">
-                      {post.title}
-                    </h3>
-                    <p className="mt-3 text-[15px] text-body leading-[1.7] flex-1">
-                      {post.excerpt}
-                    </p>
-                    <span className="mt-6 inline-block text-[14px] font-medium text-teal-link group-hover:underline">
-                      Read more →
-                    </span>
-                  </Link>
+                  <BlogCard post={post} />
                 </CarouselItem>
               ))}
             </CarouselContent>
             <div className="mt-10 flex items-center justify-between">
               <Link
-                to="/reflections"
+                to="/blog"
                 className="text-[14px] font-medium text-teal-link hover:underline transition-colors"
               >
                 View all blog posts →
