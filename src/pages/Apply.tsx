@@ -210,7 +210,8 @@ const questions: Question[] = [
 const Apply = () => {
   usePageMeta(
     "Monad OS — Apply",
-    "Watch the video. Answer a few questions. Book a 30-minute call with Sidsel."
+    "Watch the video. Answer a few questions. Book a 30-minute call with Sidsel.",
+    { canonical: "https://www.monadmethod.com/apply", ogType: "website" }
   );
 
   const [step, setStep] = useState(0);

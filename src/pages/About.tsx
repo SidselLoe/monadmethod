@@ -36,7 +36,8 @@ const values = [
 const About = () => {
   usePageMeta(
     "About Sidsel Løschenkohl — The Monad Method",
-    "Sidsel Løschenkohl is a strategic partner to founders. Learn about the lineage, backstory, and philosophy behind The Monad Method."
+    "Sidsel Løschenkohl is a strategic partner to founders. Learn about the lineage, backstory, and philosophy behind The Monad Method.",
+    { canonical: "https://www.monadmethod.com/about", ogType: "website" }
   );
   return (
     <div className="min-h-screen">

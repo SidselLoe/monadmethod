@@ -1,7 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/sections/Footer";
 import usePageMeta from "@/hooks/usePageMeta";
-const CALENDLY_URL = "https://calendly.com/sidselloschenkohl/monad-discovery";
+
 
 const expectations = [
   "90 minutes total per session",
@@ -15,7 +15,8 @@ const expectations = [
 const MonadOS = () => {
   usePageMeta(
     "Monad OS — 30-Day Founder Programme",
-    "The 30-day entry point. Weekly energy activations, 1:1 strategic sessions, guided inquiry, and WhatsApp accountability for founders."
+    "The 30-day entry point. Weekly energy activations, 1:1 strategic sessions, guided inquiry, and WhatsApp accountability for founders.",
+    { canonical: "https://www.monadmethod.com/monad-os", ogType: "website" }
   );
   return (
     <div className="min-h-screen">
@@ -30,7 +31,7 @@ const MonadOS = () => {
             Included in Monad OS and every engagement that follows.
           </p>
           <a
-            href={CALENDLY_URL}
+            href="https://luma.com/monadmethod"
             target="_blank"
             rel="noopener noreferrer"
             className="flex-shrink-0 inline-flex bg-background text-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-background/90 transition-colors"
