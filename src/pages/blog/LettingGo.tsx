@@ -4,7 +4,11 @@ import BlogPostLayout from "@/components/blog/BlogPostLayout";
 const LettingGo = () => {
   usePageMeta(
     "Letting Go of the Version That Got You Here — Sidsel Løschenkohl",
-    "There is a point in growth where adding more stops working. The real question is what can no longer come with you."
+    "There is a point in growth where adding more stops working. The real question is what can no longer come with you.",
+    {
+      canonical: "https://www.monadmethod.com/blog/letting-go",
+      ogType: "article",
+    }
   );
 
   return (

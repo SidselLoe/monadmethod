@@ -13,6 +13,8 @@ import brandonCover from "@/assets/testimonials/brandon-hadwin-founder-healingwi
 import jessicaCover from "@/assets/testimonials/jessica-rainey-founder-wildflower-woman.png";
 import backstoryPhoto from "@/assets/backstory-sidsel.jpg";
 import LineageSection from "@/components/sections/about/LineageSection";
+import BlogCard from "@/components/blog/BlogCard";
+import { blogPosts } from "@/data/blogPosts";
 import speakerPhoto from "@/assets/sidsel-loschenkohl-living-from-the-heart-speaker.png";
 import bookCover from "@/assets/the-power-of-unwavering-belief-book-cover-sidsel-loschenkohl.png";
 import alexandraCover from "@/assets/testimonials/alexandra-feldman-founder-of-the-islands.png";
@@ -30,33 +32,6 @@ const values = [
   { title: "Structure as liberation", description: "Freedom comes from the right systems, frameworks, and simplicity. Structure should create spaciousness, not constraint." },
 ];
 
-const blogPosts = [
-  {
-    title: "What are you getting from staying this way?",
-    excerpt: "The deeper question is: what are you still getting from staying this way?",
-    href: "/blog/what-are-you-getting-from-staying-this-way",
-  },
-  {
-    title: "Letting go of the version that got you here",
-    excerpt: "There is a point in growth where adding more stops working. The real question is what can no longer come with you.",
-    href: "/blog/letting-go",
-  },
-  {
-    title: "The meaning ceiling",
-    excerpt: "You hit every target you set. So why does it feel like something is still missing?",
-    href: "/blog/the-meaning-ceiling",
-  },
-  {
-    title: "Push vs. pull: why your drive is the problem",
-    excerpt: "The same force that built everything is the force that is now in the way.",
-    href: "/blog/push-vs-pull",
-  },
-  {
-    title: "What I mean when I say internal operating system",
-    excerpt: "It is not strategy. It is not mindset. It is the layer underneath both.",
-    href: "/blog/internal-operating-system",
-  },
-];
 
 const About = () => {
   usePageMeta(
@@ -371,29 +346,16 @@ const About = () => {
             <CarouselContent className="-ml-6">
               {blogPosts.map((post) => (
                 <CarouselItem
-                  key={post.title}
+                  key={post.href}
                   className="pl-6 basis-full sm:basis-1/2 md:basis-1/3"
                 >
-                  <Link
-                    to={post.href}
-                    className="group flex flex-col h-full bg-white border border-border rounded-xl p-8 transition-all duration-300 hover:border-mint hover:shadow-[0_8px_30px_rgba(126,200,200,0.15)]"
-                  >
-                    <h3 className="text-[22px] font-semibold text-foreground leading-[1.3]">
-                      {post.title}
-                    </h3>
-                    <p className="mt-3 text-[15px] text-body leading-[1.7] flex-1">
-                      {post.excerpt}
-                    </p>
-                    <span className="mt-6 inline-block text-[14px] font-medium text-teal-link group-hover:underline">
-                      Read more →
-                    </span>
-                  </Link>
+                  <BlogCard post={post} />
                 </CarouselItem>
               ))}
             </CarouselContent>
             <div className="mt-10 flex items-center justify-between">
               <Link
-                to="/reflections"
+                to="/blog"
                 className="text-[14px] font-medium text-teal-link hover:underline transition-colors"
               >
                 View all blog posts →

@@ -4,7 +4,11 @@ import BlogPostLayout from "@/components/blog/BlogPostLayout";
 const MeaningCeiling = () => {
   usePageMeta(
     "The Meaning Ceiling — Sidsel Løschenkohl",
-    "You hit every target you set. So why does it feel like something is still missing? On the ceiling every founder who is the business eventually finds."
+    "You hit every target you set. So why does it feel like something is still missing? On the ceiling every founder who is the business eventually finds.",
+    {
+      canonical: "https://www.monadmethod.com/blog/the-meaning-ceiling",
+      ogType: "article",
+    }
   );
 
   return (
