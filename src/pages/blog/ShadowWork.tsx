@@ -14,7 +14,7 @@ const ShadowWork = () => {
   return (
     <BlogPostLayout
       category="Shadow Work"
-      title="Where shadow work actually starts"
+      title="Where Shadow Work Actually Starts"
       excerpt="The beliefs you most need to see feel like facts from the inside. So don't start with the blank page. Start with what still has a charge."
       readTime="7 min read"
       ctaTitle="Ready to work lower?"
