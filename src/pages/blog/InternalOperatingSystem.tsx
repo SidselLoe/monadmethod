@@ -4,7 +4,11 @@ import BlogPostLayout from "@/components/blog/BlogPostLayout";
 const InternalOperatingSystem = () => {
   usePageMeta(
     "What I Mean When I Say Internal Operating System — Sidsel Løschenkohl",
-    "It's not strategy. It's not mindset. It's the layer underneath both — the code your nervous system is running."
+    "It's not strategy. It's not mindset. It's the layer underneath both — the code your nervous system is running.",
+    {
+      canonical: "https://www.monadmethod.com/blog/internal-operating-system",
+      ogType: "article",
+    }
   );
 
   return (

@@ -4,7 +4,11 @@ import BlogPostLayout from "@/components/blog/BlogPostLayout";
 const PushVsPull = () => {
   usePageMeta(
     "Push vs. Pull: Why Your Drive Is the Problem — Sidsel Løschenkohl",
-    "The same force that built everything is the force that's now in the way. On push, pull, and the identity shift founders eventually have to make."
+    "The same force that built everything is the force that's now in the way. On push, pull, and the identity shift founders eventually have to make.",
+    {
+      canonical: "https://www.monadmethod.com/blog/push-vs-pull",
+      ogType: "article",
+    }
   );
 
   return (

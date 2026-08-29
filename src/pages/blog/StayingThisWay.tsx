@@ -4,7 +4,11 @@ import BlogPostLayout from "@/components/blog/BlogPostLayout";
 const StayingThisWay = () => {
   usePageMeta(
     "What Are You Getting From Staying This Way? — Sidsel Løschenkohl",
-    "The deeper question is: what are you still getting from staying this way?"
+    "The deeper question is: what are you still getting from staying this way?",
+    {
+      canonical: "https://www.monadmethod.com/blog/what-are-you-getting-from-staying-this-way",
+      ogType: "article",
+    }
   );
 
   return (
