@@ -18,7 +18,8 @@ import usePageMeta from "@/hooks/usePageMeta";
 const TheMethod = () => {
   usePageMeta(
     "The Monad Method — Three Modalities for Founder Transformation",
-    "Energy activations, guided inquiry, and strategic sessions. The Monad Method is a spiral methodology that shifts how founders operate from the inside out."
+    "Energy activations, guided inquiry, and strategic sessions. The Monad Method is a spiral methodology that shifts how founders operate from the inside out.",
+    { canonical: "https://www.monadmethod.com/the-method", ogType: "website" }
   );
   return (
     <div className="min-h-screen">

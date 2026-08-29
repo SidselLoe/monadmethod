@@ -6,7 +6,8 @@ import usePageMeta from "@/hooks/usePageMeta";
 const MonadLTS = () => {
   usePageMeta(
     "Monad LTS — Long-Term Support for Founders",
-    "The long-term continuation for founders who have completed Monad OS. Ongoing activations, strategic sessions, and AI integration. Invitation only."
+    "The long-term continuation for founders who have completed Monad OS. Ongoing activations, strategic sessions, and AI integration. Invitation only.",
+    { canonical: "https://www.monadmethod.com/monad-lts", ogType: "website" }
   );
   return (
     <div className="min-h-screen">
