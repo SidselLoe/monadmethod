@@ -33,6 +33,7 @@ const BlogPostLayout = ({
   ctaTitle,
   ctaBody,
   children,
+  sourceLine,
 }: BlogPostLayoutProps) => {
   return (
     <div className="min-h-screen">
