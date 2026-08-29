@@ -8,9 +8,9 @@ export interface BlogPostSummary {
 /** Newest first. */
 export const blogPosts: BlogPostSummary[] = [
   {
-    title: "Follow the moment that has a charge",
+    title: "Where shadow work actually starts",
     excerpt:
-      "The beliefs you most need to see feel like facts from the inside. So do not start with the blank page. Start with what still has a charge.",
+      "The beliefs you most need to see feel like facts from the inside. So don't start with the blank page. Start with what still has a charge.",
     href: "/blog/how-to-start-shadow-work",
     label: "Featured on Rosebud",
   },
