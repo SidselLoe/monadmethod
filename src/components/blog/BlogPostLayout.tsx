@@ -14,6 +14,7 @@ interface BlogPostLayoutProps {
   ctaTitle: string;
   ctaBody: string;
   children: ReactNode;
+  sourceLine?: ReactNode;
 }
 
 const MintDivider = () => (
