@@ -62,6 +62,12 @@ const BlogPostLayout = ({
             {excerpt}
           </p>
 
+          {sourceLine && (
+            <p className="mt-6 text-[14px] text-body leading-tight">
+              {sourceLine}
+            </p>
+          )}
+
           <div className="mt-10 flex items-center gap-4">
             <img
               src={HEADSHOT}
