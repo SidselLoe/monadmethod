@@ -19,6 +19,20 @@ const ShadowWork = () => {
       readTime="7 min read"
       ctaTitle="Ready to work lower?"
       ctaBody="If you can name your patterns and they're still running, book a call. No pitch. Just a conversation about what is underneath and whether the work is right for you."
+      sourceLine={
+        <>
+          Originally published on Rosebud.{" "}
+          <a
+            href="https://www.rosebud.app/blog/how-to-start-shadow-work"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-teal-link hover:underline"
+          >
+            Read the full article there
+          </a>
+          .
+        </>
+      }
     >
       <div className="space-y-7 text-[18px] leading-[1.8] text-body">
         <p>
