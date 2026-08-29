@@ -1,7 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/sections/Footer";
 import usePageMeta from "@/hooks/usePageMeta";
-const CALENDLY_URL = "https://calendly.com/sidselloschenkohl/monad-discovery";
+
 
 const expectations = [
   "90 minutes total per session",
