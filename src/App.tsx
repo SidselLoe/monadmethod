@@ -18,6 +18,8 @@ import PushVsPull from "./pages/blog/PushVsPull.tsx";
 import InternalOperatingSystem from "./pages/blog/InternalOperatingSystem.tsx";
 import LettingGo from "./pages/blog/LettingGo.tsx";
 import StayingThisWay from "./pages/blog/StayingThisWay.tsx";
+import ShadowWork from "./pages/blog/ShadowWork.tsx";
+import Blog from "./pages/Blog.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
