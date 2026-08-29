@@ -14,6 +14,7 @@ interface BlogPostLayoutProps {
   ctaTitle: string;
   ctaBody: string;
   children: ReactNode;
+  sourceLine?: ReactNode;
 }
 
 const MintDivider = () => (
@@ -32,6 +33,7 @@ const BlogPostLayout = ({
   ctaTitle,
   ctaBody,
   children,
+  sourceLine,
 }: BlogPostLayoutProps) => {
   return (
     <div className="min-h-screen">
@@ -59,6 +61,12 @@ const BlogPostLayout = ({
           <p className="mt-8 font-editorial italic text-[22px] sm:text-[26px] text-foreground/80 leading-[1.5]">
             {excerpt}
           </p>
+
+          {sourceLine && (
+            <p className="mt-6 text-[14px] text-body leading-tight">
+              {sourceLine}
+            </p>
+          )}
 
           <div className="mt-10 flex items-center gap-4">
             <img

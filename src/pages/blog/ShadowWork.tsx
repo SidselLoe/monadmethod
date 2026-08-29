@@ -19,6 +19,20 @@ const ShadowWork = () => {
       readTime="7 min read"
       ctaTitle="Ready to work lower?"
       ctaBody="If you can name your patterns and they're still running, book a call. No pitch. Just a conversation about what is underneath and whether the work is right for you."
+      sourceLine={
+        <>
+          Originally published on Rosebud.{" "}
+          <a
+            href="https://www.rosebud.app/blog/how-to-start-shadow-work"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-teal-link hover:underline"
+          >
+            Read the full article there
+          </a>
+          .
+        </>
+      }
     >
       <div className="space-y-7 text-[18px] leading-[1.8] text-body">
         <p>
@@ -106,36 +120,44 @@ const ShadowWork = () => {
         </p>
       </div>
 
-      <h2 className="mt-16 text-3xl sm:text-4xl md:text-[40px] font-bold text-foreground leading-[1.2]">
-        Where the rest of this lives
-      </h2>
-      <div className="mt-7 space-y-7 text-[18px] leading-[1.8] text-body">
-        <p>
-          Rosebud asked me to write the full piece for them, and to build a guided journal to go with it. Both are live now.
-        </p>
-        <p>
-          The article goes further than this one does. It covers the six-step map for working through a charged moment once it has settled, what to do when nothing seems to trigger you, and why integration is a practice rather than something you complete.{" "}
-          <a
-            href="https://www.rosebud.app/blog/how-to-start-shadow-work"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-teal-link hover:underline"
-          >
-            Read the full article on Rosebud
-          </a>
-        </p>
-        <p>
-          The Shadow Work journal sits inside the Rosebud app. You bring one situation that still has a charge and it takes you through it a question at a time, from the feeling, to the belief, to what the belief protected, to what you want to choose now. It remembers what surfaces, so the work carries across entries instead of resetting each time.{" "}
-          <a
-            href="https://rosebud.onelink.me/Zipo/sidsel15"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-teal-link hover:underline"
-          >
-            Try the Shadow Work journal
-          </a>{" "}
-          The code sidsel15 takes 15% off Rosebud Bloom for a year. If you already have a Rosebud account, enter it at checkout on web.
-        </p>
+      <div className="bg-mint/10 rounded-xl py-12 px-8 sm:px-14">
+        <h2 className="text-3xl sm:text-4xl md:text-[40px] font-bold text-foreground leading-[1.2]">
+          Where the rest of this lives
+        </h2>
+        <div className="mt-7 space-y-7 text-[18px] leading-[1.8] text-body">
+          <p>
+            Rosebud asked me to write the full piece for them, and to build a guided journal to go with it. Both are live now.
+          </p>
+          <p>
+            The article goes further than this one does. It covers the six-step map for working through a charged moment once it has settled, what to do when nothing seems to trigger you, and why integration is a practice rather than something you complete.
+          </p>
+          <p>
+            <a
+              href="https://www.rosebud.app/blog/how-to-start-shadow-work"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-[14px] font-medium text-teal-link hover:underline"
+            >
+              Read the full article on Rosebud →
+            </a>
+          </p>
+          <p>
+            The Shadow Work journal sits inside the Rosebud app. You bring one situation that still has a charge and it takes you through it a question at a time, from the feeling, to the belief, to what the belief protected, to what you want to choose now. It remembers what surfaces, so the work carries across entries instead of resetting each time.
+          </p>
+          <p>
+            <a
+              href="https://rosebud.onelink.me/Zipo/sidsel15"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-[14px] font-medium text-teal-link hover:underline"
+            >
+              Try the Shadow Work journal →
+            </a>
+          </p>
+          <p>
+            The code sidsel15 takes 15% off Rosebud Bloom for a year. If you already have a Rosebud account, enter it at checkout on web.
+          </p>
+        </div>
       </div>
 
       <h2 className="mt-16 text-3xl sm:text-4xl md:text-[40px] font-bold text-foreground leading-[1.2]">
