@@ -15,9 +15,9 @@ interface NavigationProps {
 }
 
 const Navigation = ({
-  ctaLabel = "Book a Call",
-  ctaHref = "https://calendly.com/sidselloschenkohl/monad-discovery",
-  ctaExternal = true,
+  ctaLabel = "Apply Now",
+  ctaHref = "/apply",
+  ctaExternal = false,
 }: NavigationProps) => {
   const [mobileOpen, setMobileOpen] = useState(false);
 

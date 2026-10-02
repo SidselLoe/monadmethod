@@ -133,12 +133,10 @@ const BlogPostLayout = ({
           </h2>
           <p className="mt-5 text-[16px] text-body leading-[1.75]">{ctaBody}</p>
           <a
-            href="https://calendly.com/sidselloschenkohl/monad-discovery"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/apply"
             className="inline-flex mt-8 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
           >
-            Book a Call
+            Apply Now
           </a>
         </div>
       </section>
