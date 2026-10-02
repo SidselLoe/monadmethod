@@ -291,15 +291,8 @@ const Apply = () => {
 
         <section className="bg-warm px-6 py-24 sm:px-8 sm:py-28">
           <div className="mx-auto grid max-w-[1120px] gap-5 md:grid-cols-3">
-            {TESTIMONIALS.map((testimonial) => (
-              <article key={testimonial.name} className="flex min-h-[330px] flex-col rounded-xl border border-border bg-card p-7 sm:p-8">
-                {testimonial.photo && <img src={testimonial.photo} alt={testimonial.name} className="mb-7 h-14 w-14 rounded-full object-cover" />}
-                <blockquote className="flex-1 text-[17px] font-medium leading-[1.65] text-foreground">“{testimonial.quote}”</blockquote>
-                <div className="mt-7 border-t border-mint pt-5">
-                  <p className="text-sm font-semibold text-foreground">{testimonial.name}</p>
-                  <p className="mt-1 text-sm text-foreground">{testimonial.company}</p>
-                </div>
-              </article>
+            {TESTIMONIALS.slice(0, 3).map((testimonial) => (
+              <TestimonialCard key={testimonial.quote} testimonial={testimonial} />
             ))}
           </div>
         </section>
@@ -382,6 +375,17 @@ const Apply = () => {
                   <h3 className="mt-5 text-[22px] font-bold text-foreground">{title}</h3>
                   {detail && <p className="mt-2 text-sm text-foreground">{detail}</p>}
                 </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-warm px-6 py-24 sm:px-8 sm:py-32">
+          <div className="mx-auto max-w-[1120px]">
+            <h2 className="text-4xl font-bold text-foreground sm:text-5xl md:text-[60px]">In their words</h2>
+            <div className="mt-14 grid gap-5 md:grid-cols-2">
+              {TESTIMONIALS.slice(3).map((testimonial) => (
+                <TestimonialCard key={testimonial.quote} testimonial={testimonial} />
               ))}
             </div>
           </div>
