@@ -43,7 +43,7 @@ const withoutItems = [
 const process = [
   ["Apply", "A few short questions. If it looks like a fit, you book a call."],
   ["A call with me", "We talk about where you are, what you're building and whether Monad OS is right for you. No pressure, no pitch."],
-  ["Your 30 days", "Live energy activations, weekly voice-note self-inquiry and strategic sessions, in a small group of up to eight founders, with private time with me built in."],
+  ["Your 30 days", "Live energy activations, weekly voice-note self-inquiry and strategic sessions, in a small group of up to ten founders, with private time with me built in."],
   ["Compounding", "Each round goes deeper than the last. If you want to keep going, you're invited into long-term support."],
 ];
 const cases: { headline: string; quote?: string; name?: string; photo?: string; attribution?: string; wide?: boolean }[] = [
@@ -71,7 +71,7 @@ const faqs = [
   ["Will you tell me what to do?", "No. I won't hand you a playbook. The work is getting you back to your own judgment, so the decisions come from you, and they hold."],
   ["What's an energy activation?", "A guided, music-driven session of about an hour, done lying down from home. Nothing to learn. You just show up."],
   ["How much time does it take?", "About three to four hours a week."],
-  ["Is it group or private?", "A small group of up to eight founders, with private time with me built in. A fully private version is available on request."],
+  ["Is it group or private?", "A small group of up to ten founders, with private time with me built in. A fully private version is available on request."],
   ["I'm not keen on groups. Is this still for me?", "That's a common feeling before your first session. In the activations you're lying down in your own space, in your own process. There's a short check-in at the start and an optional share at the end. That share is often the part you'll value most: hearing someone else's story is where your own pattern becomes visible."],
   ["Does this work online?", "Yes. You do the activations lying down at home, in your own space, with nothing to perform. That's part of why they work. Strategic sessions run on video."],
   ["Is this confidential?", "Yes. Your private sessions stay between us. In the group, sharing is optional and you choose what you bring. What's shared stays in the group."],
@@ -242,7 +242,7 @@ const Apply = () => {
 
       <section className={`${sectionClass} bg-funnel-alt`}><div className="mx-auto max-w-[720px]"><Badge>Questions</Badge><h2 className={headingClass}>Everything you need to know.</h2><Accordion type="single" collapsible className="mt-10 space-y-3">{faqs.map(([question, answer], index) => <AccordionItem key={question} value={`faq-${index}`} className={`${cardClass} px-6 py-0`}><AccordionTrigger className="group py-5 text-left text-[20px] font-semibold leading-[1.35] text-foreground hover:no-underline [&>svg]:hidden">{question}<span aria-hidden="true" className="ml-4 shrink-0 text-[24px] font-normal leading-none group-data-[state=open]:hidden">+</span><span aria-hidden="true" className="ml-4 hidden shrink-0 text-[24px] font-normal leading-none group-data-[state=open]:block">−</span></AccordionTrigger><AccordionContent className={`${bodyClass} pb-5`}>{answer}</AccordionContent></AccordionItem>)}</Accordion></div></section>
 
-      <section className={`${sectionClass} bg-ink text-center`}><div className="mx-auto max-w-[800px]"><Badge light>Limited availability</Badge><h2 className={`${headingClass} text-ink-foreground`}>The drive that got you here<br />can't take you where you're going.</h2><p className="mx-auto mt-7 max-w-[600px] text-[18px] font-normal leading-[1.7] text-ink-foreground/70">Monad OS runs in small groups of up to eight founders. The next group starts in November. If this resonates, apply now.</p><div className="mt-9"><ApplyLink>APPLY NOW</ApplyLink></div></div></section>
+      <section className={`${sectionClass} bg-ink text-center`}><div className="mx-auto max-w-[800px]"><Badge light>Limited availability</Badge><h2 className={`${headingClass} text-ink-foreground`}>The drive that got you here<br />can't take you where you're going.</h2><p className="mx-auto mt-7 max-w-[600px] text-[18px] font-normal leading-[1.7] text-ink-foreground/70">Monad OS runs in small groups of up to ten founders. The next group starts in November. If this resonates, apply now.</p><div className="mt-9"><ApplyLink>APPLY NOW</ApplyLink></div></div></section>
     </main>
     <footer className="bg-funnel-warm px-4 py-8 text-center text-[14px] font-normal text-foreground/70">© Monad Studios Ltd 2026 · <a href="/privacy-policy" className="hover:underline">Privacy</a> · <a href="/terms-of-service" className="hover:underline">Terms</a></footer>
   </div>;
