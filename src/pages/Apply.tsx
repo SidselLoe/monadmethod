@@ -190,7 +190,7 @@ const Apply = () => {
   return <div className="min-h-screen bg-funnel-warm font-sans text-foreground">
     <main>
       <section className={`${sectionClass} bg-funnel-warm pt-16 sm:pt-24`}>
-        <div className="mx-auto max-w-[1000px] text-center">
+        <div className="mx-auto max-w-[1100px] text-center">
           <h1 className="mx-auto max-w-[900px] text-[40px] font-bold leading-none tracking-[-0.5px] text-foreground md:max-w-[1100px] md:text-[72px]">The meaning ceiling:<br />why the founder who built the business becomes what's holding it back.</h1>
           <p className="mx-auto mt-6 max-w-[640px] text-[20px] font-normal leading-[1.7] text-foreground">You've outgrown the way you've been operating. Here's what changes when you clear it.</p>
           <div className="mt-14 flex items-center justify-center gap-3 text-[20px] font-semibold leading-[1.35]"><span className="flex h-9 w-9 items-center justify-center rounded-full bg-accent text-[20px] text-accent-foreground">1</span>Watch the video</div>
