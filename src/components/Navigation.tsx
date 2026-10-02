@@ -8,7 +8,17 @@ const navLinks = [
   { label: "About", href: "/about" },
 ];
 
-const Navigation = () => {
+interface NavigationProps {
+  ctaLabel?: string;
+  ctaHref?: string;
+  ctaExternal?: boolean;
+}
+
+const Navigation = ({
+  ctaLabel = "Book a Call",
+  ctaHref = "https://calendly.com/sidselloschenkohl/monad-discovery",
+  ctaExternal = true,
+}: NavigationProps) => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
@@ -44,12 +54,11 @@ const Navigation = () => {
         {/* Right side: CTA only */}
         <div className="hidden md:flex items-center ml-auto">
           <a
-            href="https://calendly.com/sidselloschenkohl/monad-discovery"
-            target="_blank"
-            rel="noopener noreferrer"
+            href={ctaHref}
+            {...(ctaExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
             className="bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-wide px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
           >
-            Book a Call
+            {ctaLabel}
           </a>
         </div>
 
@@ -77,13 +86,12 @@ const Navigation = () => {
             </Link>
           ))}
           <a
-            href="https://calendly.com/sidselloschenkohl/monad-discovery"
-            target="_blank"
-            rel="noopener noreferrer"
+            href={ctaHref}
+            {...(ctaExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
             onClick={() => setMobileOpen(false)}
             className="mt-2 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-wide px-6 py-3 rounded-full hover:bg-accent/90 transition-colors text-center"
           >
-            Book a Call
+            {ctaLabel}
           </a>
         </div>
       )}

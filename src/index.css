@@ -42,6 +42,11 @@
     --mint-border: 180 40% 64%;
     --body: 0 0% 10%;
     --teal-link: 180 38% 40%;
+    --ink: 0 0% 6.7%;
+    --ink-foreground: 0 0% 100%;
+    --ink-muted: 0 0% 72%;
+    --ink-border: 0 0% 22%;
+    --warm: 30 14% 97%;
   }
 }
 

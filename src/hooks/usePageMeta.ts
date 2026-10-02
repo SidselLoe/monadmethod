@@ -5,6 +5,8 @@ interface PageMetaOptions {
   canonical?: string;
   /** og:type — defaults to "website" */
   ogType?: string;
+  /** Optional robots directive for pages that should not be indexed. */
+  robots?: string;
 }
 
 const setMeta = (attr: "name" | "property", key: string, content: string) => {
@@ -26,6 +28,7 @@ const usePageMeta = (
 ) => {
   const canonical = options?.canonical;
   const ogType = options?.ogType;
+  const robots = options?.robots;
 
   useEffect(() => {
     const previousTitle = document.title;
@@ -71,10 +74,14 @@ const usePageMeta = (
       apply("property", "og:type", ogType);
     }
 
+    if (robots) {
+      apply("name", "robots", robots);
+    }
+
     return () => {
       restores.forEach((fn) => fn());
     };
-  }, [title, description, canonical, ogType]);
+  }, [title, description, canonical, ogType, robots]);
 };
 
 export default usePageMeta;

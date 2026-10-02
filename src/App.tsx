@@ -11,6 +11,7 @@ import MonadOS from "./pages/MonadOS.tsx";
 import MonadLTS from "./pages/MonadLTS.tsx";
 import About from "./pages/About.tsx";
 import Apply from "./pages/Apply.tsx";
+import ApplyBooked from "./pages/ApplyBooked.tsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
 import TermsOfService from "./pages/TermsOfService.tsx";
 import MeaningCeiling from "./pages/blog/MeaningCeiling.tsx";
@@ -44,6 +45,7 @@ const App = () => (
           <Route path="/monad-lts" element={<MonadLTS />} />
           <Route path="/about" element={<About />} />
           <Route path="/apply" element={<Apply />} />
+          <Route path="/apply/booked" element={<ApplyBooked />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/blog" element={<Blog />} />
