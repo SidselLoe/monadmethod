@@ -26,6 +26,13 @@ export default {
         surface: "hsl(var(--surface))",
         body: "hsl(var(--body))",
         "teal-link": "hsl(var(--teal-link))",
+        ink: {
+          DEFAULT: "hsl(var(--ink))",
+          foreground: "hsl(var(--ink-foreground))",
+          muted: "hsl(var(--ink-muted))",
+          border: "hsl(var(--ink-border))",
+        },
+        warm: "hsl(var(--warm))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",

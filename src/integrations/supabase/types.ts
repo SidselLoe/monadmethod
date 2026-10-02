@@ -14,7 +14,51 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      applications: {
+        Row: {
+          absence_impact: string
+          business: string
+          created_at: string
+          desired_outcome: string
+          email: string
+          id: string
+          investment_readiness: string
+          name: string
+          recurring_pattern: string
+          referral_source: string | null
+          updated_at: string
+          whatsapp_number: string
+        }
+        Insert: {
+          absence_impact: string
+          business: string
+          created_at?: string
+          desired_outcome: string
+          email: string
+          id?: string
+          investment_readiness: string
+          name: string
+          recurring_pattern: string
+          referral_source?: string | null
+          updated_at?: string
+          whatsapp_number: string
+        }
+        Update: {
+          absence_impact?: string
+          business?: string
+          created_at?: string
+          desired_outcome?: string
+          email?: string
+          id?: string
+          investment_readiness?: string
+          name?: string
+          recurring_pattern?: string
+          referral_source?: string | null
+          updated_at?: string
+          whatsapp_number?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
