@@ -16,44 +16,50 @@ export type Database = {
     Tables: {
       applications: {
         Row: {
-          absence_impact: string
-          business: string
+          absence_impact: string | null
+          business: string | null
           created_at: string
-          desired_outcome: string
+          desired_outcome: string | null
+          edit_token: string | null
           email: string
           id: string
-          investment_readiness: string
+          investment_readiness: string | null
           name: string
-          recurring_pattern: string
+          recurring_pattern: string | null
           referral_source: string | null
+          status: string
           updated_at: string
           whatsapp_number: string
         }
         Insert: {
-          absence_impact: string
-          business: string
+          absence_impact?: string | null
+          business?: string | null
           created_at?: string
-          desired_outcome: string
+          desired_outcome?: string | null
+          edit_token?: string | null
           email: string
           id?: string
-          investment_readiness: string
+          investment_readiness?: string | null
           name: string
-          recurring_pattern: string
+          recurring_pattern?: string | null
           referral_source?: string | null
+          status?: string
           updated_at?: string
           whatsapp_number: string
         }
         Update: {
-          absence_impact?: string
-          business?: string
+          absence_impact?: string | null
+          business?: string | null
           created_at?: string
-          desired_outcome?: string
+          desired_outcome?: string | null
+          edit_token?: string | null
           email?: string
           id?: string
-          investment_readiness?: string
+          investment_readiness?: string | null
           name?: string
-          recurring_pattern?: string
+          recurring_pattern?: string | null
           referral_source?: string | null
+          status?: string
           updated_at?: string
           whatsapp_number?: string
         }
@@ -64,7 +70,16 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      save_application_answer: {
+        Args: {
+          p_answer: string
+          p_application_id: string
+          p_application_token: string
+          p_complete?: boolean
+          p_field: string
+        }
+        Returns: undefined
+      }
     }
     Enums: {
       [_ in never]: never
