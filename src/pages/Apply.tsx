@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import usePageMeta from "@/hooks/usePageMeta";
 import { supabase } from "@/integrations/supabase/client";
+import type { TablesInsert } from "@/integrations/supabase/types";
 import sidselPhoto from "@/assets/sidsel-photo.jpg";
 import ilyaPhoto from "@/assets/testimonials/ilya-paveliev-founder-hologram.png";
 import rudiPhoto from "@/assets/testimonials/rudi-adigbli-founder-reethink.png";
@@ -172,7 +173,7 @@ const Apply = () => {
     }
     setSaving(true);
     setError("");
-    const { error: insertError } = await supabase.from("applications").insert({
+    const application: TablesInsert<"applications"> = {
       name: parsed.data.name,
       email: parsed.data.email,
       whatsapp_number: parsed.data.whatsapp_number,
@@ -182,7 +183,8 @@ const Apply = () => {
       desired_outcome: parsed.data.desired_outcome,
       investment_readiness: parsed.data.investment_readiness,
       referral_source: parsed.data.referral_source || null,
-    });
+    };
+    const { error: insertError } = await supabase.from("applications").insert(application);
     setSaving(false);
     if (insertError) {
       setError("Your application could not be saved. Please try again.");
