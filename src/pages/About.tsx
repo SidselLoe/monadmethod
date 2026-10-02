@@ -124,12 +124,10 @@ const About = () => {
               </div>
               <div className="mt-8">
                 <a
-                  href="https://calendly.com/sidselloschenkohl/monad-discovery"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/apply"
                   className="inline-flex bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
                 >
-                  Book a Call
+                  Apply Now
                 </a>
               </div>
             </div>
@@ -380,12 +378,10 @@ const About = () => {
             If something here spoke to you, book a call. No pitch. Just a conversation about where you are and whether the work is right for you.
           </p>
           <a
-            href="https://calendly.com/sidselloschenkohl/monad-discovery"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/apply"
             className="inline-flex mt-8 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
           >
-            Book a Call
+            Apply Now
           </a>
         </div>
       </section>
