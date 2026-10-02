@@ -33,6 +33,14 @@ export default {
           border: "hsl(var(--ink-border))",
         },
         warm: "hsl(var(--warm))",
+        funnel: {
+          warm: "hsl(var(--funnel-warm))",
+          alt: "hsl(var(--funnel-alt))",
+          body: "hsl(var(--funnel-body))",
+          subtle: "hsl(var(--funnel-subtle))",
+          border: "hsl(var(--funnel-border))",
+          redsoft: "hsl(var(--funnel-redsoft))",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -71,6 +79,10 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      boxShadow: {
+        funnel: "var(--shadow-funnel)",
+        "funnel-video": "var(--shadow-funnel-video)",
       },
       keyframes: {
         "accordion-down": {
