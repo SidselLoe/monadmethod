@@ -44,7 +44,7 @@ const process = [
   ["Apply", "A few short questions. If it looks like a fit, you book a call."],
   ["A call with me", "We talk about where you are, what you're building and whether Monad OS is right for you. No pressure, no pitch."],
   ["Your 30 days", "Live energy activations, weekly voice-note self-inquiry and strategic sessions, in a small group of up to eight founders, with private time with me built in."],
-  ["Compounding", "Each round goes deeper than the last. Founders who want to keep going are invited into long-term support."],
+  ["Compounding", "Each round goes deeper than the last. If you want to keep going, you're invited into long-term support."],
 ];
 const cases: { headline: string; quote?: string; name?: string; photo?: string; attribution?: string; wide?: boolean }[] = [
   { headline: "How a talent agency CEO stopped being the bottleneck, and had the best quarter in the business's history the quarter she gave birth.", attribution: "CEO, talent management agency" },
@@ -72,7 +72,7 @@ const faqs = [
   ["What's an energy activation?", "A guided, music-driven session of about an hour, done lying down from home. Nothing to learn. You just show up."],
   ["How much time does it take?", "About three to four hours a week."],
   ["Is it group or private?", "A small group of up to eight founders, with private time with me built in. A fully private version is available on request."],
-  ["I'm not keen on groups. Is this still for me?", "Most founders say that before their first session. In the activations you're lying down in your own space, in your own process. There's a short check-in at the start and an optional share at the end. That share is often the part people value most: hearing someone else's story is where their own pattern becomes visible."],
+  ["I'm not keen on groups. Is this still for me?", "That's a common feeling before your first session. In the activations you're lying down in your own space, in your own process. There's a short check-in at the start and an optional share at the end. That share is often the part you'll value most: hearing someone else's story is where your own pattern becomes visible."],
   ["Does this work online?", "Yes. You do the activations lying down at home, in your own space, with nothing to perform. That's part of why they work. Strategic sessions run on video."],
   ["Is this confidential?", "Yes. Your private sessions stay between us. In the group, sharing is optional and you choose what you bring. What's shared stays in the group."],
   ["What's the investment?", "Monad OS is a premium program. We go through it on your call, once we know where you are and whether it's the right fit."],
