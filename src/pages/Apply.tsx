@@ -16,6 +16,8 @@ import rudiPhoto from "@/assets/testimonials/rudi-adigbli-founder-reethink.png";
 import jessicaPhoto from "@/assets/testimonials/jessica-rainey-founder-wildflower-woman.png";
 import ellaPhoto from "@/assets/testimonials/ella-cane-founder.png";
 import alexandraPhoto from "@/assets/testimonials/alexandra-feldman-founder-of-the-islands.png";
+import brandonPhoto from "@/assets/testimonials/brandon-hadwin-founder-healingwithbrandon.png";
+import biancaPhoto from "@/assets/testimonials/bianca-polizzi-founder-polizzi-media.png";
 
 const VSL_EMBED_URL = "";
 const CALENDLY_URL = "https://calendly.com/sidselloschenkohl/monad-discovery";
@@ -23,24 +25,51 @@ const ACTIVATION_URL = "https://luma.com/monadmethod";
 
 const TESTIMONIALS = [
   {
-    quote: "I have done executive advisory work before. This is not that. Something shifted in how I relate to pressure and it changed how I show up with my team. Quietly. Permanently.",
-    name: "Ilya Paveliev",
-    company: "Hologram",
-    photo: ilyaPhoto,
+    quote: "I didn't realize that it was me. I was the business. And in order for the business to work, I needed to clear things inside of me.",
+    name: "Brandon Hadwin",
+    photo: brandonPhoto,
   },
   {
-    quote: "For the first time I am building the company around the life I want, not the other way around. That distinction sounds small. It changed everything.",
-    name: "Annie Reardon",
-    company: "LUDO",
-    photo: null,
+    quote: "It wasn't anything technical. I knew how to do all these things, but it wasn't moving because it was really me.",
+    name: "Alexandra Feldman",
+    photo: alexandraPhoto,
   },
   {
-    quote: "Very few work with your energy the way Sidsel does, and that's what makes it so effective.",
-    name: "Rudi Adigbli",
-    company: "ReeThink",
-    photo: rudiPhoto,
+    quote: "She's one of those people who's not going to let you sleep on yourself. She's not going to coddle you or baby you, but it's in the best way possible.",
+    name: "Jessica Rainey",
+    photo: jessicaPhoto,
+  },
+  {
+    quote: "You have a session with a coach and plan some things out, and you feel very motivated in that moment. Then the next day you're not motivated to execute on that plan. With this program, it's the opposite effect.",
+    name: "Alexandra Feldman",
+    photo: alexandraPhoto,
+  },
+  {
+    quote: "Before the program I wasn't really making decisions because I was scared to make decisions. Now when an idea comes into my head, I just execute it.",
+    name: "Brandon Hadwin",
+    photo: brandonPhoto,
+  },
+  {
+    quote: "I thought about the types of clients I wanted in my life. Within the following week, three came to me.",
+    name: "Bianca Polizzi",
+    photo: biancaPhoto,
+  },
+  {
+    quote: "I work with somatic practices as part of my job. But there's such a gentle, receiving, energetic support in these energy activations that I just haven't felt anywhere else.",
+    name: "Jessica Rainey",
+    photo: jessicaPhoto,
   },
 ];
+
+const TestimonialCard = ({ testimonial }: { testimonial: (typeof TESTIMONIALS)[number] }) => (
+  <article className="flex min-h-[330px] flex-col rounded-xl border border-border bg-card p-7 sm:p-8">
+    {testimonial.photo && <img src={testimonial.photo} alt={testimonial.name} className="mb-7 h-14 w-14 rounded-full object-cover" />}
+    <blockquote className="flex-1 text-[17px] font-medium leading-[1.65] text-foreground">“{testimonial.quote}”</blockquote>
+    <div className="mt-7 border-t border-mint pt-5">
+      <p className="text-sm font-semibold text-foreground">{testimonial.name}</p>
+    </div>
+  </article>
+);
 
 const avatars = [ilyaPhoto, rudiPhoto, jessicaPhoto, ellaPhoto, alexandraPhoto];
 
@@ -262,15 +291,8 @@ const Apply = () => {
 
         <section className="bg-warm px-6 py-24 sm:px-8 sm:py-28">
           <div className="mx-auto grid max-w-[1120px] gap-5 md:grid-cols-3">
-            {TESTIMONIALS.map((testimonial) => (
-              <article key={testimonial.name} className="flex min-h-[330px] flex-col rounded-xl border border-border bg-card p-7 sm:p-8">
-                {testimonial.photo && <img src={testimonial.photo} alt={testimonial.name} className="mb-7 h-14 w-14 rounded-full object-cover" />}
-                <blockquote className="flex-1 text-[17px] font-medium leading-[1.65] text-foreground">“{testimonial.quote}”</blockquote>
-                <div className="mt-7 border-t border-mint pt-5">
-                  <p className="text-sm font-semibold text-foreground">{testimonial.name}</p>
-                  <p className="mt-1 text-sm text-foreground">{testimonial.company}</p>
-                </div>
-              </article>
+            {TESTIMONIALS.slice(0, 3).map((testimonial) => (
+              <TestimonialCard key={testimonial.quote} testimonial={testimonial} />
             ))}
           </div>
         </section>
@@ -353,6 +375,17 @@ const Apply = () => {
                   <h3 className="mt-5 text-[22px] font-bold text-foreground">{title}</h3>
                   {detail && <p className="mt-2 text-sm text-foreground">{detail}</p>}
                 </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-warm px-6 py-24 sm:px-8 sm:py-32">
+          <div className="mx-auto max-w-[1120px]">
+            <h2 className="text-4xl font-bold text-foreground sm:text-5xl md:text-[60px]">In their words</h2>
+            <div className="mt-14 grid gap-5 md:grid-cols-2">
+              {TESTIMONIALS.slice(3).map((testimonial) => (
+                <TestimonialCard key={testimonial.quote} testimonial={testimonial} />
               ))}
             </div>
           </div>
