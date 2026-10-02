@@ -12,10 +12,12 @@ import alexandraPhoto from "@/assets/testimonials/alexandra-feldman-founder-of-t
 import brandonPhoto from "@/assets/testimonials/brandon-hadwin-founder-healingwithbrandon.png";
 import biancaPhoto from "@/assets/testimonials/bianca-polizzi-founder-polizzi-media.png";
 import jessicaPhoto from "@/assets/testimonials/jessica-rainey-founder-wildflower-woman.png";
+import speakerPhoto from "@/assets/sidsel-loschenkohl-living-from-the-heart-speaker.png";
 
 const VSL_EMBED_URL = "https://fast.wistia.net/embed/iframe/zzzwlio10p?videoFoam=true&playerColor=111111";
 const CALENDLY_URL = "https://calendly.com/sidselloschenkohl/monad-discovery";
 const ACTIVATION_URL = "https://luma.com/monadmethod";
+const HEADSHOT_URL = "https://hciqvcspehfitlgclhud.supabase.co/storage/v1/object/public/sidsel/Headshot%202.jpg";
 
 const TESTIMONIALS = [
   {
@@ -232,10 +234,10 @@ const Apply = () => {
         <section className="bg-ink px-5 pb-24 pt-32 text-center sm:px-8 sm:pb-32 sm:pt-40">
           <div className="mx-auto max-w-[1100px]">
             <h1 className="mx-auto max-w-[940px] text-[40px] font-semibold leading-[1.05] tracking-[-0.02em] text-ink-foreground sm:text-[56px] lg:text-[70px]">
-              The business runs because you run it.
+              You've outgrown the way you've been operating.
             </h1>
             <p className="mx-auto mt-7 max-w-[640px] text-[19px] leading-[1.6] text-ink-foreground/70 sm:text-[20px]">
-              Watch this first. If it sounds like you, apply below.
+              For founders who are the business. Watch this first. If it sounds like you, apply below.
             </p>
             <div className="relative mx-auto mt-12 aspect-video w-full max-w-[960px] overflow-hidden rounded-2xl bg-ink-border sm:mt-16">
               {VSL_EMBED_URL ? (
@@ -267,14 +269,18 @@ const Apply = () => {
           </div>
         </section>
 
+        <section className="bg-warm">
+          <img src={speakerPhoto} alt="" className="h-[50vh] w-full object-cover object-center sm:h-[70vh]" />
+        </section>
+
         <section className="bg-warm px-5 py-24 sm:px-8 sm:py-32">
           <div className="mx-auto max-w-[1100px]">
             <div className="max-w-[640px]">
               <h2 className="text-[32px] font-semibold leading-[1.1] tracking-[-0.02em] sm:text-[48px]">Nothing is wrong with you.</h2>
               <div className="mt-9 space-y-6 text-[19px] leading-[1.6] sm:text-[20px]">
                 <p>You hired senior people. You tightened the systems. You brought in a sharper strategy and joined another mastermind. Some of it helped. None of it touched the thing actually holding you back.</p>
-                <p>The way you've been operating got you here. It can't take you where you're going.</p>
-                <p>You've just outgrown it.</p>
+                <p>It all still runs through you. You can't switch off. You swing between all in and checked out.</p>
+                <p>That ceiling is internal. No amount of external fixing will move it.</p>
               </div>
             </div>
           </div>
@@ -282,14 +288,30 @@ const Apply = () => {
 
         <section className="bg-warm px-5 py-24 sm:px-8 sm:py-32">
           <div className="mx-auto max-w-[1100px]">
+            <div className="flex flex-col items-start gap-14 md:flex-row md:items-center md:gap-20">
+              <img src={HEADSHOT_URL} alt="Sidsel Løschenkohl" className="w-full max-w-[440px] rounded-2xl" loading="lazy" />
+              <div>
+                <h2 className="text-[32px] font-semibold leading-[1.1] tracking-[-0.02em] sm:text-[48px]">I know this because I've lived it.</h2>
+                <div className="mt-9 space-y-6 text-[19px] leading-[1.6] sm:text-[20px]">
+                  <p>I moved fast. I delivered. I was the one everyone came to. In 2023, my body stopped me.</p>
+                  <p>In the stillness, I saw what had been running me. I rebuilt from the inside out. The Monad Method is what came out of that.</p>
+                </div>
+                <p className="mt-9 text-[15px] font-semibold">Sidsel Løschenkohl</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-ink px-5 py-24 text-ink-foreground sm:px-8 sm:py-32">
+          <div className="mx-auto max-w-[1100px]">
             <div className="max-w-[760px]">
               <h2 className="text-[32px] font-semibold leading-[1.1] tracking-[-0.02em] sm:text-[48px]">Monad OS</h2>
-              <p className="mt-7 max-w-[640px] text-[19px] leading-[1.6] sm:text-[20px]">30 days. A small group of founders. Three practices working as one.</p>
+              <p className="mt-7 max-w-[640px] text-[19px] leading-[1.6] text-ink-foreground/75 sm:text-[20px]">30 days. A small group of founders. Three practices working as one.</p>
               <div className="mt-14 space-y-12">
                 {osItems.map(([title, body]) => (
                   <div key={title}>
                     <h3 className="text-[22px] font-semibold leading-[1.3]">{title}</h3>
-                    <p className="mt-3 max-w-[640px] text-[19px] leading-[1.6] sm:text-[20px]">{body}</p>
+                    <p className="mt-3 max-w-[640px] text-[19px] leading-[1.6] text-ink-foreground/75 sm:text-[20px]">{body}</p>
                   </div>
                 ))}
               </div>
