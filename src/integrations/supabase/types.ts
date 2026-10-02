@@ -80,13 +80,6 @@ export type Database = {
         }
         Returns: undefined
       }
-      start_application: {
-        Args: { p_email: string; p_name: string; p_whatsapp_number: string }
-        Returns: {
-          application_id: string
-          application_token: string
-        }[]
-      }
     }
     Enums: {
       [_ in never]: never
