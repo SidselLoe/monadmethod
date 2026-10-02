@@ -170,6 +170,7 @@ const Apply = () => {
     setSaving(false);
     if (saveError) { setError("Your application could not be saved. Please try again."); return; }
     setLead({ id, token });
+    void supabase.functions.invoke("notify-application", { body: { applicationId: id, token, stage: "started" } });
   };
   const next = async () => {
     if (!lead || !current) return;
@@ -183,7 +184,10 @@ const Apply = () => {
     });
     setSaving(false);
     if (saveError) { setError("Your answer could not be saved. Please try again."); return; }
-    if (step === questions.length - 1) setResult(answers.investment_readiness === "Not right now" ? "activation" : "ready");
+    if (step === questions.length - 1) {
+      void supabase.functions.invoke("notify-application", { body: { applicationId: lead.id, token: lead.token, stage: "complete" } });
+      setResult(answers.investment_readiness === "Not right now" ? "activation" : "ready");
+    }
     else setStep((previous) => previous + 1);
   };
 
