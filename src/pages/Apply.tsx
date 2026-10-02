@@ -13,7 +13,7 @@ import brandonPhoto from "@/assets/testimonials/brandon-hadwin-founder-healingwi
 import biancaPhoto from "@/assets/testimonials/bianca-polizzi-founder-polizzi-media.png";
 import jessicaPhoto from "@/assets/testimonials/jessica-rainey-founder-wildflower-woman.png";
 
-const VSL_EMBED_URL = "";
+const VSL_EMBED_URL = "https://fast.wistia.net/embed/iframe/zzzwlio10p?videoFoam=true&playerColor=111111";
 const CALENDLY_URL = "https://calendly.com/sidselloschenkohl/monad-discovery";
 const ACTIVATION_URL = "https://luma.com/monadmethod";
 
@@ -141,6 +141,16 @@ const Apply = () => {
   const [saving, setSaving] = useState(false);
   const current = questions[step];
   const progress = useMemo(() => result === "form" ? ((step + 1) / questions.length) * 100 : 100, [result, step]);
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://fast.wistia.net/assets/external/E-v1.js";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   useEffect(() => {
     if (result !== "ready") return;
