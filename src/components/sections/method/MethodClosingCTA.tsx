@@ -1,4 +1,4 @@
-const CALENDLY_URL = "https://calendly.com/sidselloschenkohl/monad-discovery";
+const APPLY_URL = "/apply";
 
 const MethodClosingCTA = () => {
   return (
@@ -13,12 +13,10 @@ const MethodClosingCTA = () => {
         </p>
 
         <a
-          href={CALENDLY_URL}
-          target="_blank"
-          rel="noopener noreferrer"
+          href={APPLY_URL}
           className="inline-flex mt-9 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
         >
-          Book a Discovery Call
+          Apply Now
         </a>
       </div>
     </section>
