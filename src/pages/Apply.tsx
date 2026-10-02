@@ -72,7 +72,9 @@ const faqs = [
   ["What's an energy activation?", "A guided, music-driven session of about an hour, done lying down from home. Nothing to learn. You just show up."],
   ["How much time does it take?", "About three to four hours a week."],
   ["Is it group or private?", "A small group of up to eight founders, with private time with me built in. A fully private version is available on request."],
-  ["Is this confidential?", "Completely. What you share stays between us and the group, and the group agrees to the same."],
+  ["I'm not keen on groups. Is this still for me?", "Most founders say that before their first session. In the activations you're lying down in your own space, in your own process. There's a short check-in at the start and an optional share at the end. That share is often the part people value most: hearing someone else's story is where their own pattern becomes visible."],
+  ["Does this work online?", "Yes. You do the activations lying down at home, in your own space, with nothing to perform. That's part of why they work. Strategic sessions run on video."],
+  ["Is this confidential?", "Yes. Your private sessions stay between us. In the group, sharing is optional and you choose what you bring. What's shared stays in the group."],
   ["What's the investment?", "Monad OS is a premium program. We go through it on your call, once we know where you are and whether it's the right fit."],
 ];
 const absenceOptions = ["It would run fine", "It would slow down", "It would stall without me", "It would fall apart"] as const;
