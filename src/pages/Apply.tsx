@@ -173,7 +173,14 @@ const Apply = () => {
     setSaving(true);
     setError("");
     const { error: insertError } = await supabase.from("applications").insert({
-      ...parsed.data,
+      name: parsed.data.name,
+      email: parsed.data.email,
+      whatsapp_number: parsed.data.whatsapp_number,
+      business: parsed.data.business,
+      absence_impact: parsed.data.absence_impact,
+      recurring_pattern: parsed.data.recurring_pattern,
+      desired_outcome: parsed.data.desired_outcome,
+      investment_readiness: parsed.data.investment_readiness,
       referral_source: parsed.data.referral_source || null,
     });
     setSaving(false);
