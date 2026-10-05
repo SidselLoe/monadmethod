@@ -1,3 +1,5 @@
+import AnimatedFounderCount from "@/components/AnimatedFounderCount";
+
 const APPLY_URL = "/apply";
 
 const ConversionBanner = () => {
@@ -20,7 +22,7 @@ const ConversionBanner = () => {
           {/* Text */}
           <div className="flex-1 text-center md:text-left">
             <h3 className="text-xl sm:text-2xl font-extrabold text-foreground">
-              200+ founders have already done this work.
+              <AnimatedFounderCount /> founders have already done this work.
             </h3>
             <p className="mt-3 text-[16px] text-foreground leading-[1.75]">
               The way you have been operating has a ceiling. More strategy will not raise it. The Monad OS is how founders shift what is underneath.
