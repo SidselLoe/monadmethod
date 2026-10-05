@@ -233,12 +233,12 @@ const Apply = () => {
           <MonadMark className="mx-auto h-12 w-12 text-mint" />
           <h1 className="mx-auto mt-14 max-w-[1100px] text-[40px] font-normal leading-none tracking-[-0.025em] text-foreground md:text-[72px]"><span className="font-extrabold">The meaning ceiling:</span><br />why the founder who built the business becomes what's holding it back.</h1>
           <p className="mx-auto mt-6 max-w-[640px] text-[20px] font-normal leading-[1.7] text-foreground">You've outgrown the way you've been operating. Here's what changes when you clear it.</p>
-          <div className="mt-14 flex items-center justify-center gap-3 text-[20px] font-extrabold leading-[1.35]"><span className="flex h-9 w-9 items-center justify-center rounded-full bg-ink text-[16px] text-ink-foreground">1</span>Watch the video</div>
+          <div className="mt-14 text-center text-[22px] leading-[1.35] text-foreground"><span className="font-extrabold">01</span> <span className="font-normal">Watch the video</span></div>
           <div className="mx-auto mt-6 aspect-video w-full max-w-[800px] overflow-hidden rounded-2xl bg-ink">
             {VSL_EMBED_URL ? <iframe src={VSL_EMBED_URL} title="Monad OS" className="h-full w-full border-0" allow="autoplay; fullscreen" allowFullScreen /> : <div className="flex h-full items-center justify-center"><span className="h-0 w-0 border-b-[16px] border-l-[26px] border-t-[16px] border-b-transparent border-l-ink-foreground border-t-transparent" /></div>}
           </div>
           <div id="apply" className="mt-16 scroll-mt-6">
-            <div className="flex items-center justify-center gap-3 text-[20px] font-extrabold leading-[1.35]"><span className="flex h-9 w-9 items-center justify-center rounded-full bg-ink text-[16px] text-ink-foreground">2</span>Apply here</div>
+            <div className="text-center text-[22px] leading-[1.35] text-foreground"><span className="font-extrabold">02</span> <span className="font-normal">Apply here</span></div>
             <div className={`${cardClass} mx-auto mt-6 max-w-[640px] text-left`}>
               {result === "form" && !lead && <form onSubmit={(event) => { event.preventDefault(); void start(); }} className="space-y-5">
                 <label className="block text-[14px] font-normal text-foreground">First name<Input autoComplete="given-name" maxLength={100} value={contact.name} onChange={(event) => { setContact({ ...contact, name: event.target.value }); setError(""); }} className="mt-2 h-12 rounded-xl border-border bg-card text-[18px]" /></label>
