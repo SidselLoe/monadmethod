@@ -23,7 +23,7 @@ const CALENDLY_URL = "https://calendly.com/sidselloschenkohl/monad-discovery";
 const ACTIVATION_URL = "https://luma.com/monadmethod";
 
 const founders = [
-  { name: "Brandon Hadwin", photo: brandonPhoto },
+  { name: "Brandon Hadwin", business: "Healing with Brandon", photo: brandonPhoto },
   { name: "Alexandra Feldman", business: "Of The Islands", photo: alexandraPhoto },
   { name: "Jessica Rainey", business: "Wildflower Woman", photo: jessicaPhoto },
   { name: "Bianca Polizzi", business: "Polizzi Media", photo: biancaPhoto },
@@ -119,11 +119,8 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 function ApplyLink({ children }: { children: React.ReactNode }) {
   return <Button asChild className={buttonClass}><a href="#apply">{children}</a></Button>;
 }
-function MonadBullet({ negative = false }: { negative?: boolean }) {
-  return <MonadMark className={`mt-1 h-5 w-5 ${negative ? "text-accent" : "text-mint"}`} />;
-}
-function ItemList({ items, positive }: { items: string[]; positive: boolean }) {
-  return <ul className="mt-7 space-y-5">{items.map((item) => <li key={item} className={`flex items-start gap-3 text-[18px] font-normal leading-[1.7] ${positive ? "text-foreground" : "text-foreground/60"}`}><MonadBullet negative={!positive} /><span>{item}</span></li>)}</ul>;
+function ItemList({ items, positive, negativeRed = false }: { items: string[]; positive: boolean; negativeRed?: boolean }) {
+  return <ul className="mt-7 space-y-5">{items.map((item) => <li key={item} className={`flex items-start gap-3 text-[18px] font-normal leading-[1.7] ${positive ? "text-foreground" : "text-foreground/60"}`}>{positive ? <MonadMark className="mt-1 h-5 w-5 text-mint" /> : negativeRed ? <MonadMark className="mt-1 h-5 w-5 text-accent" /> : <span aria-hidden="true" className="mt-[-2px] w-5 shrink-0 text-center text-[24px] font-normal text-foreground/50">×</span>}<span>{item}</span></li>)}</ul>;
 }
 
 const videoStories = cases.filter((story) => story.photo);
@@ -145,13 +142,13 @@ function ResultVideo({ story }: { story: (typeof cases)[number] }) {
     window.setTimeout(() => void videoRef.current?.play(), 0);
   };
   return <article>
-    <button type="button" onClick={play} className="group relative block aspect-[3/4] w-full overflow-hidden rounded-xl text-left" aria-label={`Play ${story.name} testimonial`}>
+    <Button type="button" variant="ghost" onClick={play} className="group relative block h-auto aspect-[3/4] w-full overflow-hidden rounded-xl p-0 text-left hover:bg-transparent" aria-label={`Play ${story.name} testimonial`}>
       {playing ? <video ref={videoRef} src={media.src} poster={media.poster} controls autoPlay playsInline preload="none" className="absolute inset-0 h-full w-full object-cover" /> : <>
         <img src={media.poster} alt="" className="testimonial-media absolute inset-0 h-full w-full object-cover" loading="lazy" />
         <span className="absolute inset-0 bg-image-overlay" />
         <span className="absolute inset-0 flex items-center justify-center"><span className="flex h-16 w-16 items-center justify-center rounded-full bg-card text-foreground transition-transform group-hover:scale-105"><span className="ml-1 h-0 w-0 border-b-[9px] border-l-[15px] border-t-[9px] border-b-transparent border-l-foreground border-t-transparent" /></span></span>
       </>}
-    </button>
+    </Button>
     <h3 className="mt-6 text-[20px] font-extrabold leading-[1.35] text-foreground">{story.headline}</h3>
     {story.quote && <blockquote className="mt-4 text-[18px] font-normal leading-[1.7] text-foreground">“{story.quote}”</blockquote>}
     <p className="mt-4 text-[14px] font-semibold text-foreground">{story.name}</p>
@@ -285,7 +282,7 @@ const Apply = () => {
 
       <section className={`${sectionClass} bg-background`}><div className="mx-auto max-w-[1100px]"><SectionLabel>Results</SectionLabel><h2 className={headingClass}><span className="font-extrabold">What founders</span> experience.</h2><div className="mt-12 grid gap-8 md:grid-cols-3">{videoStories.map((story) => <ResultVideo key={story.headline} story={story} />)}</div><div className="mx-auto mt-12 grid max-w-[900px] gap-5 md:grid-cols-2">{textStories.map((story) => <article key={story.headline} className={cardClass}><h3 className="text-[20px] font-extrabold leading-[1.35]">{story.headline}</h3><p className="mt-6 text-[14px] font-normal text-foreground/70">{story.attribution}</p></article>)}</div><div className="mt-10 text-center"><ApplyLink>APPLY NOW</ApplyLink></div></div></section>
 
-      <section className={`${sectionClass} bg-secondary`}><div className="mx-auto max-w-[1000px]"><SectionLabel>Not for everyone</SectionLabel><h2 className={headingClass}><span className="font-extrabold">This is</span> deliberately small.</h2><p className={`${bodyClass} mx-auto mt-6 max-w-[640px] text-center`}>I work with a small number of founders at a time, so the work can go deep.</p><div className="mt-10 grid gap-5 md:grid-cols-2"><article className={cardClass}><h3 className="text-[20px] font-extrabold leading-[1.35]">This <span className="rounded-sm bg-mint px-2 py-1">is for</span> you if.</h3><ItemList items={forItems} positive /></article><article className={cardClass}><h3 className="text-[20px] font-extrabold leading-[1.35]">This <span className="rounded-sm bg-accent px-2 py-1 text-accent-foreground">isn't for</span> you if.</h3><ItemList items={notForItems} positive={false} /></article></div></div></section>
+      <section className={`${sectionClass} bg-secondary`}><div className="mx-auto max-w-[1000px]"><SectionLabel>Not for everyone</SectionLabel><h2 className={headingClass}><span className="font-extrabold">This is</span> deliberately small.</h2><p className={`${bodyClass} mx-auto mt-6 max-w-[640px] text-center`}>I work with a small number of founders at a time, so the work can go deep.</p><div className="mt-10 grid gap-5 md:grid-cols-2"><article className={cardClass}><h3 className="text-[20px] font-extrabold leading-[1.35]">This <span className="rounded-sm bg-mint px-2 py-1">is for</span> you if.</h3><ItemList items={forItems} positive /></article><article className={cardClass}><h3 className="text-[20px] font-extrabold leading-[1.35]">This <span className="rounded-sm bg-accent px-2 py-1 text-accent-foreground">isn't for</span> you if.</h3><ItemList items={notForItems} positive={false} negativeRed /></article></div></div></section>
 
       <section className={`${sectionClass} bg-background`}><div className="mx-auto max-w-[760px]"><SectionLabel>Questions</SectionLabel><h2 className={headingClass}><span className="font-extrabold">Everything you need</span> to know.</h2><Accordion type="single" collapsible className="mt-10 border-t border-border">{faqs.map(([question, answer], index) => <AccordionItem key={question} value={`faq-${index}`} className="border-b border-border"><AccordionTrigger className="group py-6 text-left text-[20px] font-semibold leading-[1.35] text-foreground hover:no-underline [&>svg]:hidden">{question}<span aria-hidden="true" className="ml-4 shrink-0 text-[28px] font-normal leading-none text-mint group-data-[state=open]:hidden">+</span><span aria-hidden="true" className="ml-4 hidden shrink-0 text-[28px] font-normal leading-none text-mint group-data-[state=open]:block">−</span></AccordionTrigger><AccordionContent className={`${bodyClass} pb-6`}>{answer}</AccordionContent></AccordionItem>)}</Accordion></div></section>
 

@@ -12,5 +12,5 @@
 - [x] Verify the full redesign in preview at desktop and mobile widths without publishing.
 
 - [x] Correct the shared footer Instagram link to the Monad Method profile.
-- [ ] Redesign `/apply` in the new white and pale-teal visual system without changing copy or funnel behavior.
-- [ ] Verify the redesigned funnel across desktop, tablet, and mobile without publishing.
+- [x] Redesign `/apply` in the new white and pale-teal visual system without changing copy or funnel behavior.
+- [x] Verify the redesigned funnel across desktop, tablet, and mobile without publishing.
