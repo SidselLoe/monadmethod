@@ -109,6 +109,11 @@ h3 {
   transform: translateY(-2px);
 }
 
+.rounded-xl.border h3,
+.rounded-2xl.border h3 {
+  font-weight: 800;
+}
+
 /* Global scroll reveal — applied automatically to <section> elements
    (except the first/hero) and any element with .reveal-on-scroll. */
 .reveal-init {

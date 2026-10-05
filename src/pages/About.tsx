@@ -47,8 +47,8 @@ const About = () => {
       {/* 1. HERO */}
       <section className="bg-background pt-[200px] pb-[120px] px-8">
         <div className="max-w-[1100px] mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-[72px] font-bold text-foreground leading-[1.15] tracking-[-0.5px]">
-            Awakening people to their authentic power and purpose
+          <h1 className="text-4xl sm:text-5xl md:text-[72px] font-normal text-foreground leading-[1.15] tracking-[-0.025em]">
+            <span className="font-extrabold">Awakening people</span> to their authentic power and purpose
           </h1>
           <p className="mt-8 text-[20px] text-body font-normal max-w-[700px] mx-auto leading-[1.7]">
             I exist to help ambitious founders stop building from push and start building from pull.
@@ -95,8 +95,8 @@ const About = () => {
       {/* 3. MISSION */}
       <section className="bg-background py-[100px] px-8">
         <div className="max-w-[1100px] mx-auto">
-          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15] text-center">
-            My mission: Help founders and creators return to the clearest expression of who they are.
+          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground leading-[1.15] tracking-[-0.025em] text-center">
+            <span className="font-extrabold">My mission:</span> Help founders and creators return to the clearest expression of who they are.
           </h2>
           <p className="mt-6 text-[18px] text-body leading-[1.7] max-w-[700px] mx-auto text-center">
             I work with ambitious people whose business, brand, or body of work is deeply tied to who they are. They have built something real. But what got them here is no longer what will get them there.
@@ -138,13 +138,13 @@ const About = () => {
       {/* 4. VALUES */}
       <section className="bg-surface py-[100px] px-8">
         <div className="max-w-[1100px] mx-auto">
-          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15] text-center mb-14">
-            My values.
+          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground leading-[1.15] tracking-[-0.025em] text-center mb-14">
+            <span className="font-extrabold">My</span> values.
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {values.map((value) => (
               <div key={value.title} className="bg-white border border-border rounded-xl p-8">
-                <h3 className="text-[20px] font-semibold text-foreground mb-3">{value.title}</h3>
+                <h3 className="text-[20px] font-extrabold text-foreground mb-3">{value.title}</h3>
                 <p className="text-[15px] leading-[1.7] text-body">
                   {value.description}
                 </p>
@@ -159,8 +159,8 @@ const About = () => {
         <div className="max-w-[1100px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-[50px] items-start">
             <div>
-              <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
-                The back story.
+              <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground leading-[1.15] tracking-[-0.025em]">
+                <span className="font-extrabold">The back</span> story.
               </h2>
               <div className="mt-7 space-y-5 text-[16px] text-body leading-[1.75]">
                 <p>
@@ -208,11 +208,11 @@ const About = () => {
       <section className="bg-surface py-[100px] px-8">
         <div className="max-w-[1100px] mx-auto">
           <div className="text-center mb-16">
-            <span className="text-[13px] font-bold tracking-[0.12em] uppercase text-mint">
+            <span className="text-[13px] font-bold tracking-[0.12em] uppercase text-foreground">
               Speaking & Facilitation
             </span>
-            <h2 className="mt-4 text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
-              I speak on alignment, energy, and the future of leadership.
+            <h2 className="mt-4 text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground leading-[1.15] tracking-[-0.025em]">
+              <span className="font-extrabold">I speak on alignment,</span> energy, and the future of leadership.
             </h2>
             <p className="mt-5 text-[18px] leading-[1.7] text-body max-w-[700px] mx-auto">
               Inviting founders, creators, and communities to reconnect with intuition, truth, and embodied intelligence in an increasingly disembodied world.
@@ -228,7 +228,7 @@ const About = () => {
               />
             </div>
             <div>
-              <h3 className="text-[28px] font-bold text-foreground leading-[1.3]">
+              <h3 className="text-[28px] font-extrabold text-foreground leading-[1.3]">
                 Living from the Heart in the Age of AI
               </h3>
               <div className="mt-5 space-y-5 text-[16px] leading-[1.75] text-body">
@@ -242,8 +242,8 @@ const About = () => {
             </div>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15] mb-14">
-            Topics I speak on.
+          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground leading-[1.15] tracking-[-0.025em] mb-14">
+            <span className="font-extrabold">Topics I</span> speak on.
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {[
@@ -308,11 +308,11 @@ const About = () => {
           />
 
           <div className="text-center md:text-left">
-            <span className="text-[13px] font-bold tracking-[0.12em] uppercase text-mint">
+            <span className="text-[13px] font-bold tracking-[0.12em] uppercase text-foreground">
               The Book
             </span>
-            <h2 className="mt-3 text-[28px] sm:text-[32px] font-bold text-foreground leading-[1.2]">
-              The Power of Unwavering Belief
+            <h2 className="mt-3 text-[28px] sm:text-[32px] font-normal text-foreground leading-[1.2] tracking-[-0.025em]">
+              <span className="font-extrabold">The Power</span> of Unwavering Belief
             </h2>
             <p className="mt-4 text-[16px] leading-[1.75] text-body">
               A book about how reality changes when belief stops being abstract and becomes lived. On identity, inner state, and the unseen laws behind what we create.
@@ -332,8 +332,8 @@ const About = () => {
       {/* 8. BLOG */}
       <section className="bg-surface py-[100px] px-8">
         <div className="max-w-[1100px] mx-auto">
-          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
-            Blog
+          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground leading-[1.15] tracking-[-0.025em]">
+            <span className="font-extrabold">Blog</span>
           </h2>
           <p className="mt-3 text-[16px] text-body leading-[1.75] max-w-[700px]">
             Writing on founders, identity, state, and what it actually takes to build from alignment.
@@ -371,8 +371,8 @@ const About = () => {
       {/* 9. CTA */}
       <section className="bg-background py-[100px] px-8">
         <div className="max-w-[500px] mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15]">
-            Ready to talk?
+          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground leading-[1.15] tracking-[-0.025em]">
+            <span className="font-extrabold">Ready</span> to talk?
           </h2>
           <p className="mt-5 text-[16px] text-body leading-[1.75]">
             If something here spoke to you, book a call. No pitch. Just a conversation about where you are and whether the work is right for you.
