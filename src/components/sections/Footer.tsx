@@ -27,7 +27,7 @@ const Footer = () => {
               </a>
               {/* Instagram */}
               <a
-                href="https://www.instagram.com/sidselloschenkohl/"
+                href="https://www.instagram.com/monad.method/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary-foreground/90 hover:text-primary-foreground transition-opacity"

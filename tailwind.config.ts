@@ -33,6 +33,8 @@ export default {
           border: "hsl(var(--ink-border))",
         },
         warm: "hsl(var(--warm))",
+        "image-overlay": "hsl(var(--image-overlay))",
+        "image-overlay-strong": "hsl(var(--image-overlay-strong))",
         funnel: {
           warm: "hsl(var(--funnel-warm))",
           alt: "hsl(var(--funnel-alt))",
