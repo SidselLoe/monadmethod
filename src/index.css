@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -30,28 +30,28 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 180 40% 64%;
-    --input: 180 40% 64%;
+    --border: 180 50% 80%;
+    --input: 180 50% 80%;
     --ring: 0 0% 10%;
 
     --radius: 0.75rem;
 
     --surface: 180 33% 96%;
     --mint: 180 40% 64%;
-    --mint-light: 180 60% 92%;
-    --mint-border: 180 40% 64%;
+    --mint-light: 180 50% 80%;
+    --mint-border: 180 50% 80%;
     --body: 0 0% 10%;
-    --teal-link: 180 38% 40%;
+    --teal-link: 180 40% 64%;
     --ink: 0 0% 6.7%;
     --ink-foreground: 0 0% 100%;
     --ink-muted: 0 0% 72%;
     --ink-border: 0 0% 22%;
     --warm: 30 14% 97%;
-    --funnel-warm: 45 25% 97%;
-    --funnel-alt: 60 7% 94%;
-    --funnel-body: 0 0% 33.3%;
-    --funnel-subtle: 0 0% 46.7%;
-    --funnel-border: 60 5% 92%;
+    --funnel-warm: 0 0% 100%;
+    --funnel-alt: 180 33% 96%;
+    --funnel-body: 0 0% 10%;
+    --funnel-subtle: 0 0% 10%;
+    --funnel-border: 180 50% 80%;
     --funnel-redsoft: 0 100% 95%;
     --shadow-funnel: 0 1px 3px hsl(var(--ink) / 0.04);
     --shadow-funnel-video: 0 18px 48px hsl(var(--ink) / 0.1);
@@ -70,13 +70,48 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', system-ui, sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 1.35;
   }
 }
 
 .font-editorial {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Poppins', system-ui, sans-serif;
+  font-style: normal;
+}
+
+.split-heading {
+  font-family: 'Poppins', system-ui, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+
+.split-heading__lead {
+  font-weight: 800;
+}
+
+.split-heading__rest {
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 800 !important;
+}
+
+.rounded-xl.border,
+.rounded-2xl.border {
+  transition: transform 200ms ease, border-color 200ms ease;
+}
+
+.rounded-xl.border:hover,
+.rounded-2xl.border:hover {
+  border-color: hsl(var(--mint));
+  transform: translateY(-2px);
+}
+
+.rounded-xl.border h3,
+.rounded-2xl.border h3 {
+  font-weight: 800;
 }
 
 /* Global scroll reveal — applied automatically to <section> elements
@@ -100,31 +135,29 @@
   }
 }
 
-/* Global CTA zoom — pill buttons (anchor & button) gently scale up on hover
-   so navigating the site feels alive, matching the founderos.com interaction.
-   Covers both red (bg-accent) and white (bg-background) pill CTAs. */
+/* Global CTA lift */
 a.bg-accent.rounded-full,
 button.bg-accent.rounded-full,
 a.bg-background.rounded-full,
 button.bg-background.rounded-full {
-  transition: background-color 200ms ease, transform 250ms ease, box-shadow 250ms ease;
+  transition: background-color 200ms ease, transform 200ms ease, box-shadow 200ms ease;
   will-change: transform;
 }
 a.bg-accent.rounded-full:hover,
 button.bg-accent.rounded-full:hover {
-  transform: scale(1.05);
+  transform: translateY(-1px);
   box-shadow: 0 8px 22px -8px hsl(var(--accent) / 0.5);
 }
 a.bg-background.rounded-full:hover,
 button.bg-background.rounded-full:hover {
-  transform: scale(1.05);
+  transform: translateY(-1px);
   box-shadow: 0 8px 22px -8px rgba(0, 0, 0, 0.25);
 }
 a.bg-accent.rounded-full:active,
 button.bg-accent.rounded-full:active,
 a.bg-background.rounded-full:active,
 button.bg-background.rounded-full:active {
-  transform: scale(0.98);
+  transform: translateY(0);
 }
 @media (prefers-reduced-motion: reduce) {
   a.bg-accent.rounded-full,
@@ -142,6 +175,24 @@ button.bg-background.rounded-full:active {
     transform: none;
     transition: background-color 200ms ease;
   }
+
+  .rounded-xl.border,
+  .rounded-2xl.border,
+  .rounded-xl.border:hover,
+  .rounded-2xl.border:hover,
+  .testimonial-media,
+  .group:hover .testimonial-media {
+    transform: none;
+    transition: none;
+  }
+}
+
+.testimonial-media {
+  transition: transform 300ms ease;
+}
+
+.group:hover .testimonial-media {
+  transform: scale(1.04);
 }
 
 .prose-monad h2 {

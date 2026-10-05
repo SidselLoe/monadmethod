@@ -8,7 +8,7 @@ const MonadIcon = ({ color }: { color: string }) => (
 const columns = [
   {
     heading: "Strategic.",
-    color: "hsl(var(--accent))",
+    color: "hsl(var(--mint))",
     bullets: [
       "I've spent my whole career in the tech founder space, as founder, operator, and strategist.",
       "I've worked across every company size, but startups and the founder seat are the throughline.",
@@ -31,8 +31,8 @@ const LineageSection = () => {
   return (
     <section className="bg-surface py-[100px] px-8">
       <div className="max-w-[1100px] mx-auto">
-        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground  text-center">
-          Lineage.
+        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground text-center tracking-[-0.025em]">
+          <span className="font-extrabold">Lineage.</span>
         </h2>
 
         <p className="mt-6 text-[18px] text-body font-normal max-w-[700px] mx-auto leading-[1.7] text-center">
@@ -42,7 +42,7 @@ const LineageSection = () => {
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10">
           {columns.map((col) => (
             <div key={col.heading}>
-              <h3 className="text-[24px] font-bold text-foreground mb-6">
+              <h3 className="text-[24px] font-extrabold text-foreground mb-6">
                 {col.heading}
               </h3>
               <ul className="space-y-4">

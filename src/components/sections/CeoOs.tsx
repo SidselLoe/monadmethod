@@ -23,11 +23,11 @@ const CeoOs = () => {
   return (
     <section id="monad-os" className="bg-background py-[100px] px-8">
       <div className="max-w-[1100px] mx-auto text-center">
-        <p className="text-[13px] font-bold uppercase tracking-[0.12em] text-mint mb-4">
+        <p className="text-[13px] font-bold uppercase tracking-[0.12em] text-foreground mb-4">
           How It Works
         </p>
-        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground ">
-          The Monad Method operates through three modalities that work together. Monad OS is how you install it.
+        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground tracking-[-0.025em]">
+          <span className="font-extrabold">The Monad Method operates through three modalities that work together.</span>{" "}Monad OS is how you install it.
         </h2>
         <p className="mt-5 text-[18px] text-body max-w-[700px] mx-auto leading-[1.7]">
           Thirty days. Three modalities. A different internal operating system.
@@ -39,7 +39,7 @@ const CeoOs = () => {
               key={c.heading}
               className="bg-card border border-border rounded-xl p-8 text-left"
             >
-              <h3 className="text-[20px] font-semibold text-foreground">
+              <h3 className="text-[20px] font-extrabold text-foreground">
                 {c.heading}
               </h3>
               <p className="mt-3 text-[15px] text-body leading-[1.7]">

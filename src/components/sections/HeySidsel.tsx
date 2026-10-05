@@ -17,8 +17,8 @@ const HeySidsel = () => {
 
         {/* Text */}
         <div>
-          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground ">
-            Hey, I'm Sidsel.
+          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground tracking-[-0.025em]">
+            <span className="font-extrabold">Hey,</span> I'm Sidsel.
           </h2>
 
           <p className="mt-6 text-[18px] text-body leading-[1.7] max-w-[700px]">

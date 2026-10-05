@@ -28,8 +28,8 @@ const WhyThisWorks = () => {
   return (
     <section className="bg-background py-[100px] px-8">
       <div className="max-w-[1100px] mx-auto">
-        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground text-center ">
-          The mechanism.
+        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground text-center tracking-[-0.025em]">
+          <span className="font-extrabold">The</span> mechanism.
         </h2>
 
         <p className="mt-6 text-[18px] text-body text-center max-w-[700px] mx-auto leading-[1.7]">
@@ -45,7 +45,7 @@ const WhyThisWorks = () => {
               <div className="absolute top-8 right-8">
                 <MonadSymbol />
               </div>
-              <h3 className="text-[20px] font-semibold text-foreground pr-8">
+              <h3 className="text-[20px] font-extrabold text-foreground pr-8">
                 {c.heading}
               </h3>
               <p className="mt-2 text-[15px] text-body leading-[1.7]">

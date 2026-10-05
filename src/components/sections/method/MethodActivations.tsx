@@ -43,11 +43,11 @@ const MethodActivations = () => {
     <section className="bg-background py-[100px] px-8">
       <div className="max-w-[1100px] mx-auto">
         <div className="text-center">
-          <p className="text-[13px] font-bold uppercase tracking-[0.12em] text-mint mb-4">
+          <p className="text-[13px] font-bold uppercase tracking-[0.12em] text-foreground mb-4">
             Monad Activations
           </p>
-          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground ">
-            Access the state your thinking mind cannot reach.
+          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground tracking-[-0.025em]">
+            <span className="font-extrabold">Access the state</span> your thinking mind cannot reach.
           </h2>
           <p className="mt-5 text-[18px] text-body max-w-[700px] mx-auto leading-[1.7]">
             Sixty-minute energy sessions, scored to music. They work through direct transmission — shifting your state, clearing what has been stored, recalibrating your nervous system. All you have to do is show up.
@@ -76,7 +76,7 @@ const MethodActivations = () => {
               <img
                 src="/videos/monad-activation-poster.jpg"
                 alt="Monad Activation — energy session for founders"
-                className="absolute inset-0 w-full h-full object-cover"
+                className="testimonial-media absolute inset-0 w-full h-full object-cover"
                 loading="lazy"
               />
               <div className="relative z-10 w-14 h-14 rounded-full border-2 border-white/80 flex items-center justify-center bg-black/20 backdrop-blur-sm">
@@ -92,7 +92,7 @@ const MethodActivations = () => {
         <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-10 gap-y-10">
           {cells.map((c) => (
             <div key={c.heading}>
-              <h3 className="text-[17px] font-semibold text-foreground leading-[1.3]">
+              <h3 className="text-[17px] font-extrabold text-foreground leading-[1.3]">
                 {c.heading}
               </h3>
               <p className="mt-1.5 text-[15px] text-body leading-[1.7]">

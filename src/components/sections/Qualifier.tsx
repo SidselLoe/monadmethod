@@ -34,8 +34,8 @@ const Qualifier = () => {
     <section className="bg-background py-[100px] px-8">
       <div className="max-w-[1100px] mx-auto">
         {/* Section headline */}
-        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground text-center mb-16 ">
-          Is Monad OS for you?
+        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground text-center tracking-[-0.025em] mb-16">
+          <span className="font-extrabold">Is Monad OS</span> for you?
         </h2>
 
         {/* FOR YOU block */}
@@ -56,7 +56,7 @@ const Qualifier = () => {
         {/* NOT FOR YOU block */}
         <h3 className="text-[22px] sm:text-[26px] font-semibold text-foreground text-center mb-10">
           Monad OS{" "}
-          <span className="bg-[#ff3131] text-white px-1.5 py-0.5 rounded-sm">is not for</span>{" "}
+          <span className="bg-accent text-accent-foreground px-1.5 py-0.5 rounded-sm">is not for</span>{" "}
           you if...
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5">

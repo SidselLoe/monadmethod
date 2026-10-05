@@ -11,7 +11,7 @@ const ApplyBooked = () => {
   return <div className="flex min-h-screen flex-col bg-funnel-warm font-sans text-foreground">
     <main className="flex flex-1 items-center justify-center px-4 py-[72px] sm:py-28">
       <div className="w-full max-w-[720px] rounded-2xl border border-funnel-border bg-card p-7 text-center shadow-funnel sm:p-12">
-        <h1 className="text-[40px] font-bold leading-none tracking-[-0.5px] md:text-[72px]">Your call is booked.</h1>
+        <h1 className="text-[40px] font-normal leading-none tracking-[-0.025em] md:text-[72px]"><span className="font-extrabold">Your call</span> is booked.</h1>
         <div className="mx-auto mt-8 max-w-[600px] space-y-5 text-left text-[18px] font-normal leading-[1.7] text-foreground">
           <p>One thing before we speak. Send me a two-minute voice note on WhatsApp answering:</p>
           <p>1. What's taking most of your energy right now?</p>

@@ -14,8 +14,8 @@ const MethodLTS = () => {
       <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-[1.1fr_0.9fr] gap-12 md:gap-[50px] items-start">
         {/* Left column */}
         <div>
-          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground ">
-            Monad LTS
+          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground tracking-[-0.025em]">
+            <span className="font-extrabold">Monad</span> LTS
           </h2>
 
           <p className="mt-4 font-editorial italic text-[22px] text-foreground leading-[1.55]">

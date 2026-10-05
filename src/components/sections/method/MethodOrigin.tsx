@@ -16,8 +16,8 @@ const MethodOrigin = () => {
 
         {/* Right — Text */}
         <div>
-          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground ">
-            Working with Sidsel.
+          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground tracking-[-0.025em]">
+            <span className="font-extrabold">Working with</span> Sidsel.
           </h2>
 
           <div className="mt-6 space-y-5 text-[16px] text-body leading-[1.75]">

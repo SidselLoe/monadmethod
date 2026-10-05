@@ -54,7 +54,7 @@ const VideoCard = ({ name, company, vimeoId, localVideo, poster, cover }: { name
 
   return (
     <div
-      className="group rounded-xl overflow-hidden relative cursor-pointer"
+      className="group rounded-xl border border-border overflow-hidden relative cursor-pointer"
       style={{ aspectRatio: "3/4" }}
       onClick={handlePlay}
     >
@@ -79,7 +79,7 @@ const VideoCard = ({ name, company, vimeoId, localVideo, poster, cover }: { name
         />
       ) : (
         <>
-          <img src={cover} alt={`${name.replace('\n', ' ')} — ${company} — Monad Method testimonial`} className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+          <img src={cover} alt={`${name.replace('\n', ' ')} — ${company} — Monad Method testimonial`} className="testimonial-media absolute inset-0 w-full h-full object-cover" loading="lazy" />
           <div className="absolute inset-0 z-[2] flex items-end justify-end p-5" style={{ background: "linear-gradient(transparent 0%, rgba(0,0,0,0.55) 100%)" }}>
             <div className="text-right">
               <p className="text-lg font-semibold text-white leading-[1.2] whitespace-pre-line">{name}</p>
@@ -120,8 +120,8 @@ const MoreFromFounders = () => {
   return (
     <section className="bg-background py-[100px] px-8">
       <div className="max-w-[1100px] mx-auto">
-        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground text-center mb-10 ">
-          Join founders who operate differently.
+        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground text-center tracking-[-0.025em] mb-10">
+          <span className="font-extrabold">Join founders</span> who operate differently.
         </h2>
 
         {/* Desktop: 3-column masonry */}

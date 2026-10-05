@@ -73,12 +73,12 @@ const MethodTheState = () => {
   return (
     <section className="bg-surface py-[100px] px-8">
       <div className="max-w-[1100px] mx-auto">
-        <p className="text-[13px] font-bold uppercase tracking-[0.12em] text-mint text-center mb-4">
+        <p className="text-[13px] font-bold uppercase tracking-[0.12em] text-foreground text-center mb-4">
           The state.
         </p>
 
-        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground text-center  mb-5">
-          Your best ideas have never come from thinking harder.
+        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground text-center tracking-[-0.025em] mb-5">
+          <span className="font-extrabold">Your best ideas</span> have never come from thinking harder.
         </h2>
 
         <p className="text-[16px] text-body text-center max-w-[640px] mx-auto leading-[1.75] mb-14">
@@ -94,7 +94,7 @@ const MethodTheState = () => {
                   className="min-w-0 shrink-0 grow-0 basis-full sm:basis-1/2 pl-5"
                 >
                   <div className="bg-card border border-border rounded-xl overflow-hidden h-full flex flex-col">
-                    <div className="h-[3px] bg-accent" />
+                    <div className="h-[3px] bg-mint" />
 
                     <div className="px-6 pt-6 sm:px-8 sm:pt-8">
                       <div className="w-full aspect-square overflow-hidden rounded-xl">
@@ -111,7 +111,7 @@ const MethodTheState = () => {
                       <p className="text-[16px] font-medium text-foreground">
                         {card.name}
                       </p>
-                      <p className="text-[14px] text-accent font-medium mb-4">
+                      <p className="text-[14px] text-foreground/70 font-medium mb-4">
                         {card.descriptor}
                       </p>
                       <p className="font-editorial italic text-[18px] text-foreground leading-snug mb-3">

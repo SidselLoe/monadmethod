@@ -1,5 +1,3 @@
-import logoWhite from "@/assets/sidsel-loschenkohl-logo-white.svg";
-
 const Footer = () => {
   return (
     <footer className="bg-foreground px-8 pt-20 pb-10">
@@ -8,8 +6,9 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between gap-10">
           {/* Left side — all left-aligned */}
           <div className="max-w-[500px]">
-            <img src={logoWhite} alt="Sidsel Løschenkohl — The Monad Method for Founders" className="h-[50px] sm:h-[60px] w-auto" />
-
+            <p className="text-[34px] leading-none tracking-[-0.025em] text-primary-foreground">
+              <span className="font-extrabold">monad</span>{" "}<span className="font-normal">studios</span>
+            </p>
           </div>
 
           {/* Right side — Social icons + links */}
@@ -58,11 +57,11 @@ const Footer = () => {
             © Monad Studios Ltd 2026. All rights reserved.
           </p>
           <div className="mt-3 flex items-center justify-center gap-0 text-[13px]">
-            <a href="mailto:sidsel@loschenkohl.com" className="text-accent hover:underline">Contact</a>
+            <a href="mailto:sidsel@loschenkohl.com" className="text-mint hover:underline">Contact</a>
             <span className="mx-2 text-mint/50">|</span>
-            <a href="/privacy-policy" className="text-accent hover:underline">Privacy Policy</a>
+            <a href="/privacy-policy" className="text-mint hover:underline">Privacy Policy</a>
             <span className="mx-2 text-mint/50">|</span>
-            <a href="/terms-of-service" className="text-accent hover:underline">Terms of Service</a>
+            <a href="/terms-of-service" className="text-mint hover:underline">Terms of Service</a>
           </div>
         </div>
       </div>

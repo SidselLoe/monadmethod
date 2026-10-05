@@ -4,18 +4,18 @@ const DeltaSection = () => {
   return (
     <section className="bg-surface py-[100px] px-8">
       <div className="max-w-[1100px] mx-auto text-center">
-        <p className="text-[13px] font-bold uppercase tracking-[0.12em] text-mint mb-4">
+        <p className="text-[13px] font-bold uppercase tracking-[0.12em] text-foreground mb-4">
           What Comes Next
         </p>
-        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground ">
-          Monad LTS
+        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground tracking-[-0.025em]">
+          <span className="font-extrabold">Monad</span> LTS
         </h2>
         <p className="mt-3 text-[18px] text-body max-w-[700px] mx-auto leading-[1.7]">
           Invitation only. You've installed the operating system. This is what comes next.
         </p>
 
         <div className="mt-10 max-w-[720px] mx-auto bg-background border border-border rounded-xl p-8 sm:p-10 text-left">
-            <h3 className="text-[28px] font-bold text-foreground leading-[1.3]">Monad LTS</h3>
+            <h3 className="text-[28px] font-extrabold text-foreground leading-[1.3]">Monad LTS</h3>
             <p className="mt-2 text-[16px] text-body leading-[1.75]">
               Continued access to activations, inquiry, and strategic partnership that keeps the shift compounding. Not a programme. A private, ongoing relationship for founders who refuse to go back.
             </p>

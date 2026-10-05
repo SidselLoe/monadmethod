@@ -2,8 +2,8 @@ const MethodAI = () => {
   return (
     <section className="bg-surface pt-0 pb-[100px] px-8">
       <div className="max-w-[1100px] mx-auto">
-        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground  text-center">
-          The signal is yours. AI makes it louder.
+        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground text-center tracking-[-0.025em]">
+          <span className="font-extrabold">The signal is yours.</span> AI makes it louder.
         </h2>
 
         <p className="mt-6 text-[18px] text-body font-normal max-w-[700px] mx-auto leading-[1.7] text-center">
@@ -12,7 +12,7 @@ const MethodAI = () => {
 
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10">
           <div>
-            <h3 className="text-[24px] font-bold text-foreground mb-6">
+            <h3 className="text-[24px] font-extrabold text-foreground mb-6">
               What AI does here.
             </h3>
             <div className="space-y-4 text-[16px] leading-[1.75] text-body">
@@ -23,7 +23,7 @@ const MethodAI = () => {
           </div>
 
           <div>
-            <h3 className="text-[24px] font-bold text-foreground mb-6">
+            <h3 className="text-[24px] font-extrabold text-foreground mb-6">
               Why it works.
             </h3>
             <div className="space-y-4 text-[16px] leading-[1.75] text-body">
