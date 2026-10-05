@@ -7,3 +7,6 @@
 - [x] Match `/apply` and `/apply/booked` typography to the homepage and update the comparison headings.
 - [x] Set the booked-page WhatsApp destination and direct site-wide Book a Call buttons to `/apply`.
 - [x] Verify the updated application pages and CTA destinations on desktop and mobile without publishing.
+- [ ] Apply the new typography, palette, card, banner, grid, button, and footer system across Home, The Monad Method, About, Apply/VSL, and booked confirmation.
+- [ ] Update the homepage hero order and copy removals, replace every 150+ with an animated 200+, and verify reduced motion.
+- [ ] Verify the full redesign in preview at desktop and mobile widths without publishing.
