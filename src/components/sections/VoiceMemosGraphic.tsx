@@ -47,7 +47,7 @@ const VoiceMemosGraphic = () => (
     <div className="rounded-xl bg-secondary flex items-center justify-center gap-6 flex-shrink-0" style={{ height: 80 }}>
       {/* Transcribe icon */}
       <div className="w-7 h-7 flex items-center justify-center">
-        <svg viewBox="0 0 24 24" fill="none" stroke="hsl(180 38% 64%)" strokeWidth="1.8" strokeLinecap="round" className="w-[18px] h-[18px]">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" className="w-[18px] h-[18px] text-mint">
           <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
         </svg>
       </div>
@@ -62,7 +62,7 @@ const VoiceMemosGraphic = () => (
 
       {/* Sliders icon */}
       <div className="w-7 h-7 flex items-center justify-center">
-        <svg viewBox="0 0 24 24" fill="none" stroke="hsl(180 38% 64%)" strokeWidth="1.8" strokeLinecap="round" className="w-[18px] h-[18px]">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" className="w-[18px] h-[18px] text-mint">
           <line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/>
           <line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/>
           <line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/>
