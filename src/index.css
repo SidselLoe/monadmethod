@@ -55,6 +55,8 @@
     --funnel-redsoft: 0 100% 95%;
     --shadow-funnel: 0 1px 3px hsl(var(--ink) / 0.04);
     --shadow-funnel-video: 0 18px 48px hsl(var(--ink) / 0.1);
+    --image-overlay: 0 0% 0% / 0.28;
+    --image-overlay-strong: 0 0% 0% / 0.45;
   }
 }
 

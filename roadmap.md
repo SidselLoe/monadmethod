@@ -10,3 +10,7 @@
 - [x] Apply the new typography, palette, card, banner, grid, button, and footer system across Home, The Monad Method, About, Apply/VSL, and booked confirmation.
 - [x] Update the homepage hero order and copy removals, replace every 150+ with an animated 200+, and verify reduced motion.
 - [x] Verify the full redesign in preview at desktop and mobile widths without publishing.
+
+- [x] Correct the shared footer Instagram link to the Monad Method profile.
+- [x] Redesign `/apply` in the new white and pale-teal visual system without changing copy or funnel behavior.
+- [x] Verify the redesigned funnel across desktop, tablet, and mobile without publishing.
