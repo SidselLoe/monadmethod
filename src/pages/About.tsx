@@ -18,6 +18,7 @@ import { blogPosts } from "@/data/blogPosts";
 import speakerPhoto from "@/assets/sidsel-loschenkohl-living-from-the-heart-speaker.png";
 import bookCover from "@/assets/the-power-of-unwavering-belief-book-cover-sidsel-loschenkohl.png";
 import alexandraCover from "@/assets/testimonials/alexandra-feldman-founder-of-the-islands.png";
+import MonadMark from "@/components/MonadMark";
 
 const socialProofQuotes = [
   { quote: "Once you see it, you can't unsee it.", name: "Alexandra", role: "Founder & Creative Director, Of The Islands", avatar: alexandraCover },
@@ -279,6 +280,7 @@ const About = () => {
           </div>
 
           <div className="mt-14 bg-mint-light rounded-xl px-10 py-6 sm:px-12 sm:py-8 flex flex-col md:flex-row items-center gap-8">
+            <MonadMark />
             <div className="flex-1 text-center md:text-left">
               <h3 className="text-xl sm:text-2xl font-extrabold text-foreground">
                 Interested in having me speak at your event or conference?

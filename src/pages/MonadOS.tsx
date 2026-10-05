@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/sections/Footer";
 import usePageMeta from "@/hooks/usePageMeta";
+import MonadMark from "@/components/MonadMark";
 
 
 const expectations = [
@@ -26,6 +27,7 @@ const MonadOS = () => {
       {/* Access strip */}
       <section className="bg-mint-light py-[100px] px-8">
         <div className="max-w-[1100px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+          <MonadMark />
           <p className="text-[18px] font-normal text-foreground leading-[1.5] text-center sm:text-left">
             10 Monad Activations every month, online.<br />
             Included in Monad OS and every engagement that follows.
