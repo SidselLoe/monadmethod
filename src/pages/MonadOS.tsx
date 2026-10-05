@@ -45,7 +45,7 @@ const MonadOS = () => {
       <section className="bg-secondary py-[100px] px-8">
         <div className="max-w-[1100px] mx-auto">
           <div className="bg-card border border-border rounded-xl p-10 sm:p-12">
-            <span className="block text-[13px] font-bold uppercase tracking-[0.12em] text-mint mb-6">
+            <span className="block text-[13px] font-bold uppercase tracking-[0.12em] text-foreground mb-6">
               What to expect
             </span>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-2 list-disc pl-5">

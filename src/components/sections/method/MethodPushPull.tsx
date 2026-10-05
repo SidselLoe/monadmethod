@@ -59,10 +59,10 @@ const MethodPushPull = () => {
         <div className="mt-16">
           <h3 className="text-[22px] font-semibold text-foreground text-center mb-8">
             You are building from{" "}
-            <span className="bg-accent text-white px-1.5 py-0.5 rounded-sm">push</span>{" "}
+            <span className="bg-mint px-1.5 py-0.5 rounded-sm text-foreground">push</span>{" "}
             if...
           </h3>
-          <BulletGrid bullets={pushBullets} dotColor="bg-accent" />
+          <BulletGrid bullets={pushBullets} dotColor="bg-mint" />
         </div>
 
         {/* Pull block */}

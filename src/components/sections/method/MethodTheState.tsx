@@ -94,7 +94,7 @@ const MethodTheState = () => {
                   className="min-w-0 shrink-0 grow-0 basis-full sm:basis-1/2 pl-5"
                 >
                   <div className="bg-card border border-border rounded-xl overflow-hidden h-full flex flex-col">
-                    <div className="h-[3px] bg-accent" />
+                    <div className="h-[3px] bg-mint" />
 
                     <div className="px-6 pt-6 sm:px-8 sm:pt-8">
                       <div className="w-full aspect-square overflow-hidden rounded-xl">
@@ -111,7 +111,7 @@ const MethodTheState = () => {
                       <p className="text-[16px] font-medium text-foreground">
                         {card.name}
                       </p>
-                      <p className="text-[14px] text-accent font-medium mb-4">
+                      <p className="text-[14px] text-foreground/70 font-medium mb-4">
                         {card.descriptor}
                       </p>
                       <p className="font-editorial italic text-[18px] text-foreground leading-snug mb-3">

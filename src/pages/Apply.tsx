@@ -111,7 +111,7 @@ const bodyClass = "text-[18px] font-normal leading-[1.7] text-foreground";
 const sectionClass = "px-4 py-[72px] sm:py-28";
 
 function Badge({ children, light = false }: { children: React.ReactNode; light?: boolean }) {
-  return <div className="mb-6 text-center"><span className={`inline-flex items-center gap-2 rounded-full px-[14px] py-[6px] text-[12px] font-semibold uppercase tracking-[0.06em] ${light ? "bg-card text-foreground" : "bg-ink text-ink-foreground"}`}><span className="h-2 w-2 rounded-full bg-accent" />{children}</span></div>;
+  return <div className="mb-6 text-center"><span className={`inline-flex items-center gap-2 rounded-full px-[14px] py-[6px] text-[12px] font-semibold uppercase tracking-[0.06em] ${light ? "bg-card text-foreground" : "bg-ink text-ink-foreground"}`}><span className="h-2 w-2 rounded-full bg-mint" />{children}</span></div>;
 }
 function ApplyLink({ children }: { children: React.ReactNode }) {
   return <Button asChild className={buttonClass}><a href="#apply">{children}</a></Button>;
@@ -214,7 +214,7 @@ const Apply = () => {
                  <p className="text-center text-[14px] font-normal leading-[1.7] text-foreground/70">By continuing you agree to be contacted about your application. <a href="/privacy-policy" className="underline">Privacy</a> · <a href="/terms-of-service" className="underline">Terms</a></p>
               </form>}
               {result === "form" && lead && current && <div>
-                <div className="mb-8 h-1 overflow-hidden rounded-full bg-funnel-border"><div className="h-full bg-accent transition-[width]" style={{ width: `${((step + 1) / questions.length) * 100}%` }} /></div>
+                <div className="mb-8 h-1 overflow-hidden rounded-full bg-funnel-border"><div className="h-full bg-mint transition-[width]" style={{ width: `${((step + 1) / questions.length) * 100}%` }} /></div>
                  <label htmlFor={`answer-${current.key}`} className="block text-[20px] font-extrabold leading-[1.35] text-foreground">{current.label}</label>
                 <div className="mt-5">
                    {current.type === "choice" ? <div className="grid gap-3">{current.options?.map((option) => <Button key={option} type="button" variant="outline" onClick={() => { setAnswers({ ...answers, [current.key]: option }); setError(""); }} className={`h-auto min-h-12 w-full justify-start whitespace-normal rounded-lg border-funnel-border px-4 py-3 text-left text-[18px] font-normal leading-[1.7] ${answers[current.key] === option ? "border-accent bg-accent text-accent-foreground hover:bg-accent hover:text-accent-foreground" : "bg-card text-foreground hover:bg-funnel-alt hover:text-foreground"}`}>{option}</Button>)}</div> : current.type === "textarea" ? <Textarea id={`answer-${current.key}`} rows={4} maxLength={2000} value={answers[current.key] ?? ""} onChange={(event) => { setAnswers({ ...answers, [current.key]: event.target.value }); setError(""); }} className="border-funnel-border bg-card text-[18px]" /> : <Input id={`answer-${current.key}`} maxLength={current.key === "business" || current.key === "referral_source" ? 300 : 2000} value={answers[current.key] ?? ""} onChange={(event) => { setAnswers({ ...answers, [current.key]: event.target.value }); setError(""); }} onKeyDown={(event) => { if (event.key === "Enter") { event.preventDefault(); void next(); } }} className="h-12 border-funnel-border bg-card text-[18px]" />}

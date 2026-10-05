@@ -19,7 +19,7 @@ const MethodOfferings = () => {
           <div className="border border-border rounded-xl overflow-hidden">
             <div className="h-[3px] bg-mint" />
             <div className="p-8 sm:p-10 flex flex-col h-full">
-              <p className="text-[13px] font-bold uppercase tracking-[0.12em] text-mint mb-3">
+              <p className="text-[13px] font-bold uppercase tracking-[0.12em] text-foreground mb-3">
                 Monad OS
               </p>
               <h3 className="text-[24px] font-extrabold text-foreground leading-[1.3]">
@@ -49,7 +49,7 @@ const MethodOfferings = () => {
           <div className="border border-border rounded-xl overflow-hidden">
             <div className="h-[3px] bg-mint-light" />
             <div className="p-8 sm:p-10 flex flex-col h-full">
-              <p className="text-[13px] font-bold uppercase tracking-[0.12em] text-mint-light mb-3">
+              <p className="text-[13px] font-bold uppercase tracking-[0.12em] text-foreground mb-3">
                 Monad LTS
               </p>
               <h3 className="text-[24px] font-extrabold text-foreground leading-[1.3]">
