@@ -141,7 +141,7 @@ const About = () => {
           <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground leading-[1.15] text-center mb-14">
             My values.
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {values.map((value) => (
               <div key={value.title} className="bg-white border border-border rounded-xl p-8">
                 <h3 className="text-[20px] font-semibold text-foreground mb-3">{value.title}</h3>
@@ -278,18 +278,18 @@ const About = () => {
             ))}
           </div>
 
-          <div className="mt-14 bg-accent rounded-xl px-10 py-6 sm:px-12 sm:py-8 flex flex-col md:flex-row items-center gap-8">
+          <div className="mt-14 bg-mint-light rounded-xl px-10 py-6 sm:px-12 sm:py-8 flex flex-col md:flex-row items-center gap-8">
             <div className="flex-1 text-center md:text-left">
-              <h3 className="text-xl sm:text-2xl font-bold text-accent-foreground">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-foreground">
                 Interested in having me speak at your event or conference?
               </h3>
-              <p className="mt-3 text-[16px] text-accent-foreground/85 leading-[1.75]">
+              <p className="mt-3 text-[16px] text-foreground leading-[1.75]">
                 I speak at conferences, retreats, and private events on alignment, identity, and the future of leadership.
               </p>
             </div>
             <a
               href="mailto:sidsel@loschenkohl.com"
-              className="flex-shrink-0 inline-flex bg-background text-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-background/90 transition-colors"
+              className="flex-shrink-0 inline-flex bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
             >
               Get in Touch
             </a>

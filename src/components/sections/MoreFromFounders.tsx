@@ -79,7 +79,7 @@ const VideoCard = ({ name, company, vimeoId, localVideo, poster, cover }: { name
         />
       ) : (
         <>
-          <img src={cover} alt={`${name.replace('\n', ' ')} — ${company} — Monad Method testimonial`} className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+          <img src={cover} alt={`${name.replace('\n', ' ')} — ${company} — Monad Method testimonial`} className="testimonial-media absolute inset-0 w-full h-full object-cover" loading="lazy" />
           <div className="absolute inset-0 z-[2] flex items-end justify-end p-5" style={{ background: "linear-gradient(transparent 0%, rgba(0,0,0,0.55) 100%)" }}>
             <div className="text-right">
               <p className="text-lg font-semibold text-white leading-[1.2] whitespace-pre-line">{name}</p>

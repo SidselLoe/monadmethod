@@ -24,9 +24,9 @@ const MonadOS = () => {
       <div className="h-16" />
 
       {/* Access strip */}
-      <section className="bg-accent py-[100px] px-8">
+      <section className="bg-mint-light py-[100px] px-8">
         <div className="max-w-[1100px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
-          <p className="text-[18px] font-medium text-accent-foreground leading-[1.5] text-center sm:text-left">
+          <p className="text-[18px] font-normal text-foreground leading-[1.5] text-center sm:text-left">
             10 Monad Activations every month, online.<br />
             Included in Monad OS and every engagement that follows.
           </p>
@@ -34,7 +34,7 @@ const MonadOS = () => {
             href="https://luma.com/monadmethod"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-shrink-0 inline-flex bg-background text-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-background/90 transition-colors"
+            className="flex-shrink-0 inline-flex bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
           >
             View Upcoming Sessions
           </a>
