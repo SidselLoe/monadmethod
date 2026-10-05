@@ -3,6 +3,8 @@ import jessicaAvatar from "@/assets/testimonials/jessica-rainey-founder-wildflow
 import ilyaAvatar from "@/assets/testimonials/ilya-paveliev-founder-hologram.png";
 import ellaAvatar from "@/assets/testimonials/ella-cane-founder.png";
 import alexandraAvatar from "@/assets/testimonials/alexandra-feldman-founder-of-the-islands.png";
+import AnimatedFounderCount from "@/components/AnimatedFounderCount";
+import SplitHeading from "@/components/SplitHeading";
 
 const APPLY_URL = "/apply";
 
@@ -18,22 +20,21 @@ const Hero = () => {
   return (
     <section className="bg-background pt-[200px] pb-[120px] px-8">
       <div className="max-w-[1100px] mx-auto text-center">
-        <p className="text-[13px] font-bold uppercase tracking-[0.12em] text-mint mb-8">
-          For founders who are the business.
-        </p>
-
-        <h1 className="text-4xl sm:text-5xl md:text-[72px] font-bold text-foreground  tracking-[-0.5px]">
-          You are the business.<br />That's not a compliment.
-        </h1>
+        <SplitHeading as="h1" first="You are the business." rest={<> <br />That's not a compliment.</>} className="text-4xl sm:text-5xl md:text-[72px] text-foreground" />
 
         <p className="mt-8 text-[20px] text-foreground font-normal max-w-[700px] mx-auto leading-[1.7]">
-          The ceiling is internal. The work is how you move it.<br />
-          Three modalities. Thirty days.
+          The ceiling is internal. The work is how you move it.
         </p>
 
-        {/* Avatar stack + social proof */}
-        <div className="mt-10 flex flex-col items-center gap-3">
-          <div className="flex">
+        <a
+          href={APPLY_URL}
+          className="inline-flex mt-10 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
+        >
+          Apply Now
+        </a>
+
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+          <div className="flex shrink-0">
             {avatars.map((avatar, i) => (
               <img
                 key={i}
@@ -45,15 +46,8 @@ const Hero = () => {
               />
             ))}
           </div>
-          <span className="text-[14px] text-foreground">150+ founders, leaders, and creators have experienced the work.</span>
+          <span className="text-[14px] text-foreground"><AnimatedFounderCount /> founders have experienced the work.</span>
         </div>
-
-        <a
-          href={APPLY_URL}
-          className="inline-flex mt-10 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
-        >
-          Apply Now
-        </a>
       </div>
     </section>
   );
