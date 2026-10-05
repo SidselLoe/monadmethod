@@ -22,8 +22,8 @@ const MethodModalities = () => {
         <MethodName />
 
         <div className="text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground ">
-            Three modalities. One integrated method.
+          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground tracking-[-0.025em]">
+            <span className="font-extrabold">Three modalities.</span> One integrated method.
           </h2>
           <p className="mt-3 text-[18px] text-body max-w-[700px] mx-auto leading-[1.7]">
             Not a sequence. A spiral, like the Monad. Each revolution deeper than the last.
@@ -36,7 +36,7 @@ const MethodModalities = () => {
               key={m.title}
               className="bg-background border border-border rounded-xl p-8 flex flex-col"
             >
-              <h3 className="text-[20px] font-semibold text-foreground leading-[1.3]">
+              <h3 className="text-[20px] font-extrabold text-foreground leading-[1.3]">
                 {m.title}
               </h3>
               <p className="mt-2 text-[15px] text-body leading-[1.7]">

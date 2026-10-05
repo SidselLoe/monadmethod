@@ -46,8 +46,8 @@ const MethodPushPull = () => {
     <section className="bg-background py-[100px] px-8">
       <div className="max-w-[1100px] mx-auto">
         {/* H2 */}
-        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-bold text-foreground text-center ">
-          Most founders build from push. Very few know it.
+        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground text-center tracking-[-0.025em]">
+          <span className="font-extrabold">Most founders build from push.</span> Very few know it.
         </h2>
 
         {/* Subhead */}
