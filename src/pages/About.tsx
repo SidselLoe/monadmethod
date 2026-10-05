@@ -268,7 +268,7 @@ const About = () => {
                 key={topic.title}
                 className="bg-white border border-border rounded-xl p-8"
               >
-                <span className="text-[13px] font-bold tracking-[0.12em] uppercase text-mint">
+                <span className="text-[13px] font-bold tracking-[0.12em] uppercase text-foreground">
                   {topic.title}
                 </span>
                 <p className="mt-3 text-[15px] leading-[1.7] text-body">
