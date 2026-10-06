@@ -27,6 +27,7 @@ const Index = () => {
       <MoreFromFounders />
       <ConversionBanner />
       <ProblemProgram />
+      <ModalityCards />
       <CeoOs />
       <Testimonials />
       <WhyThisWorks />
