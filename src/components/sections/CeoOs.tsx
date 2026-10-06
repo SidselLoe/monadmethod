@@ -2,16 +2,20 @@ const APPLY_URL = "/apply";
 
 const cards = [
   {
-    heading: "Clear the backlog",
-    body: "Most of what holds you back is stored below thought. Monad Activations clear it while you lie down and receive. Guided, music-driven, nothing to do.",
+    heading: "10 live Monad Activations",
+    body: "Join as many as you like; most people do four to six. Small groups: mostly you, receiving, with a few minutes to share at the end.",
   },
   {
-    heading: "Name what's been running you",
-    body: "Hidden beliefs show up the moment you grow. Voice-note self-inquiry catches them as they surface, in your own words.",
+    heading: "Four weeks of voice-note self-inquiry",
+    body: "A workbook each week, answered out loud.",
   },
   {
-    heading: "Move from the new state",
-    body: "Private sessions turn what has opened up into real moves: hiring, delegating, selling, deciding.",
+    heading: "Four private sessions",
+    body: "One to one with me, once a week.",
+  },
+  {
+    heading: "WhatsApp support",
+    body: "For when something comes up mid-week.",
   },
 ];
 
@@ -23,11 +27,8 @@ const CeoOs = () => {
           How It Works
         </p>
         <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground tracking-[-0.025em]">
-          <span className="font-extrabold">The Monad Method operates through three modalities that work together.</span>{" "}Monad OS is how you install it.
+          <span className="font-extrabold">Thirty days.</span>{" "}A new operating system.
         </h2>
-        <p className="mt-5 text-[18px] text-body max-w-[700px] mx-auto leading-[1.7]">
-          Thirty days. Three modalities. A different internal operating system.
-        </p>
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-5">
           {cards.map((c) => (
@@ -45,11 +46,15 @@ const CeoOs = () => {
           ))}
         </div>
 
+        <p className="mt-10 text-[18px] text-body leading-[1.7]">
+          Now taking applications for November.
+        </p>
+
         <a
           href={APPLY_URL}
-          className="inline-flex mt-12 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
+          className="inline-flex mt-6 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
         >
-          Apply Now
+          APPLY NOW
         </a>
       </div>
     </section>
