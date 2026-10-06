@@ -51,7 +51,7 @@ const About = () => {
         <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-10 md:gap-14">
           <div>
             <p className="text-[13px] uppercase font-semibold text-foreground mb-5">ABOUT</p>
-            <h1 className="text-[40px] md:text-[52px] lg:text-[60px] font-normal text-foreground leading-[1.1] tracking-[-0.025em]">
+            <h1 className="text-[40px] md:text-[clamp(34px,5.2vw-6px,56px)] font-normal text-foreground leading-[1.1] tracking-[-0.025em]">
               <span className="font-extrabold block">Everything I teach,</span>{" "}
               <span className="font-normal block">I lived first.</span>
             </h1>
