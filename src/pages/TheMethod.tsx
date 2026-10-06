@@ -17,8 +17,8 @@ import usePageMeta from "@/hooks/usePageMeta";
 
 const TheMethod = () => {
   usePageMeta(
-    "The Monad Method | Sidsel Løschenkohl",
-    "Monad OS: thirty days to clear the pattern underneath and build from who you are becoming.",
+    "The Monad Method — Three Modalities for Founder Transformation",
+    "Energy activations, guided inquiry, and strategic sessions. The Monad Method is a spiral methodology that shifts how founders operate from the inside out.",
     { canonical: "https://www.monadmethod.com/the-method", ogType: "website" }
   );
   return (
