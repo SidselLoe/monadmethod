@@ -5,42 +5,48 @@ const ProblemProgram = () => {
       <div className="max-w-[1100px] mx-auto">
         {/* Problem statement */}
         <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground text-center tracking-[-0.025em]">
-          <span className="font-extrabold">You found</span> the ceiling.
+          <span className="font-extrabold">Different ceilings.</span> Same root.
         </h2>
-
-        {/* Solution bridge */}
-        <p className="mt-6 text-[18px] text-body text-center max-w-[700px] mx-auto leading-[1.7]">
-          The revenue is real. The recognition. The company that actually works. And the feeling you were climbing toward never arrived. More strategy will not raise the ceiling. What needs to change is underneath it.
-        </p>
 
         {/* Asymmetric bento grid */}
         <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Big card - left, spans full height */}
-          <div className="md:row-span-2 bg-card border border-border rounded-xl overflow-hidden flex flex-col">
+          <div className="bg-card border border-border rounded-xl overflow-hidden flex flex-col">
             <div className="p-7 sm:p-8">
-              <h3 className="text-[20px] font-extrabold text-foreground">Get out of your head</h3>
+              <h3 className="text-[20px] font-extrabold text-foreground">The plateau.</h3>
               <p className="mt-3 text-[15px] text-body leading-[1.7]">
-                Your best thinking has never arrived through effort. Activations clear what has been preventing it and take you into the state where clarity, creative power, and sharp decisions actually live. Guided, music-driven, experienced lying down. No technique. No performance. Each session compounds. What becomes available in that state is not something you find. It finds you.
+                Same effort. Same results. Same ceiling.
               </p>
             </div>
           </div>
 
           {/* Top right card */}
           <div className="bg-card border border-border rounded-xl p-7 sm:p-8">
-              <h3 className="text-[20px] font-extrabold text-foreground">Reveal what's been running you</h3>
+              <h3 className="text-[20px] font-extrabold text-foreground">The pattern.</h3>
               <p className="mt-2 text-[15px] text-body leading-[1.7]">
-                You can't see the patterns running your leadership from inside them. Structured self-inquiry surfaces them. Every reflection becomes the foundation for the next session. What has been making your decisions without your permission gets named.
+                New people, same problem. Someone joins, someone leaves.
               </p>
           </div>
 
           {/* Bottom right card */}
           <div className="bg-card border border-border rounded-xl p-7 sm:p-8">
-              <h3 className="text-[20px] font-extrabold text-foreground">Take aligned action</h3>
+              <h3 className="text-[20px] font-extrabold text-foreground">The weight.</h3>
               <p className="mt-2 text-[15px] text-body leading-[1.7]">
-                The activations shift your state. The inquiry names what's been running underneath you. The sessions bring both into action. Priorities, delegation, decisions, communication. They move differently now. Not because the strategy is better. Because you have changed.
+                Everything runs through you, and there's more you want to build.
+              </p>
+          </div>
+
+          <div className="bg-card border border-border rounded-xl p-7 sm:p-8">
+              <h3 className="text-[20px] font-extrabold text-foreground">The pull.</h3>
+              <p className="mt-2 text-[15px] text-body leading-[1.7]">
+                It's working, and you can feel there's more.
               </p>
           </div>
         </div>
+
+        <p className="mt-10 text-[18px] text-body text-center max-w-[820px] mx-auto leading-[1.7]">
+          It's the old operating system: the patterns, beliefs and stored stress that got you here. It built what you have. It also sets the ceiling. You can't think your way out of what your body has learned, so the work starts with your state.
+        </p>
       </div>
     </section>
   );

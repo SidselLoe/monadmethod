@@ -14,3 +14,5 @@
 - [x] Correct the shared footer Instagram link to the Monad Method profile.
 - [x] Redesign `/apply` in the new white and pale-teal visual system without changing copy or funnel behavior.
 - [x] Verify the redesigned funnel across desktop, tablet, and mobile without publishing.
+
+- [x] Apply homepage copy update part 1 without changing layout, imagery, styling, animation, links, or publishing.

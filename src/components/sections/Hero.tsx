@@ -20,10 +20,10 @@ const Hero = () => {
   return (
     <section className="bg-background pt-[200px] pb-[120px] px-8">
       <div className="max-w-[1100px] mx-auto text-center">
-        <SplitHeading as="h1" first="You are the business." rest={<> <br />That's not a compliment.</>} className="text-4xl sm:text-5xl md:text-[72px] text-foreground" />
+        <SplitHeading as="h1" first="You know how to do it." rest={<> <br />So why isn't it moving?</>} className="text-4xl sm:text-5xl md:text-[72px] text-foreground" />
 
         <p className="mt-8 text-[20px] text-foreground font-normal max-w-[700px] mx-auto leading-[1.7]">
-          The ceiling is internal. The work is how you move it.
+          It was never the strategy. It's the pattern running underneath. Monad OS clears it in thirty days.
         </p>
 
         <a
@@ -46,7 +46,7 @@ const Hero = () => {
               />
             ))}
           </div>
-          <span className="text-[14px] text-foreground"><AnimatedFounderCount /> founders have experienced the work.</span>
+          <span className="text-[14px] text-foreground"><AnimatedFounderCount /> people have experienced the work.</span>
         </div>
       </div>
     </section>

@@ -2,20 +2,16 @@ const APPLY_URL = "/apply";
 
 const cards = [
   {
-    heading: "10× Monad Activations",
-    body: "A guided, music-driven process that takes you into the state where your clearest decisions live. No technique. No performance. You show up, lie down, and let the static clear. The effect compounds. Each session goes deeper than the last.",
+    heading: "Clear the backlog",
+    body: "Most of what holds you back is stored below thought. Monad Activations clear it while you lie down and receive. Guided, music-driven, nothing to do.",
   },
   {
-    heading: "4× Guided Inquiry",
-    body: "Your leadership is being shaped by patterns you have never examined. Structured self-inquiry surfaces them. Every reflection becomes the foundation for your next session. What was invisible becomes specific.",
+    heading: "Name what's been running you",
+    body: "Hidden beliefs show up the moment you grow. Voice-note self-inquiry catches them as they surface, in your own words.",
   },
   {
-    heading: "4× Private 1:1 Sessions (44 min)",
-    body: "The activations shift your state. The inquiry names what's been running underneath you. The sessions bring both into action. Priorities, delegation, decisions, communication. Built from the new state, not the old one.",
-  },
-  {
-    heading: "30 Days Private Support",
-    body: "The shift does not pause between sessions. Private voice-note access for when something comes up mid-week and you need clarity now. Real follow-through. Accountability that does not drift.",
+    heading: "Move from the new state",
+    body: "Private sessions turn what has opened up into real moves: hiring, delegating, selling, deciding.",
   },
 ];
 
