@@ -1,14 +1,8 @@
-const MonadIcon = ({ color }: { color: string }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="20" height="20" className="flex-shrink-0 mt-[3px]">
-    <circle cx="60" cy="60" r="46" fill="none" stroke={color} strokeWidth="13"/>
-    <circle cx="60" cy="60" r="11" fill={color}/>
-  </svg>
-);
+import MonadMark from "@/components/MonadMark";
 
 const columns = [
   {
     heading: "Strategic.",
-    color: "hsl(var(--mint))",
     bullets: [
       "I've spent my whole career in the tech founder space, as founder, operator, and strategist.",
       "I've worked across every company size, but startups and the founder seat are the throughline.",
@@ -17,7 +11,6 @@ const columns = [
   },
   {
     heading: "Energetic.",
-    color: "hsl(var(--mint))",
     bullets: [
       "I carry a direct Usui lineage of Reiki that traces back to Dr. Mikao Usui in Japan.",
       "I've trained in Integrated Kundalini Activation.",
@@ -29,9 +22,9 @@ const columns = [
 
 const LineageSection = () => {
   return (
-    <section className="bg-surface py-[100px] px-8">
+    <section className="bg-surface py-16 md:py-[100px] px-4 sm:px-8">
       <div className="max-w-[1100px] mx-auto">
-        <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground text-center tracking-[-0.025em]">
+        <h2 className="text-[32px] md:text-[48px] leading-[1.1] font-normal text-foreground text-center tracking-[-0.025em]">
           <span className="font-extrabold">Lineage.</span>
         </h2>
 
@@ -39,17 +32,17 @@ const LineageSection = () => {
           Trained on both sides.
         </p>
 
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-5">
           {columns.map((col) => (
-            <div key={col.heading}>
+            <div key={col.heading} className="bg-card border border-border rounded-2xl p-7 sm:p-8">
               <h3 className="text-[24px] font-extrabold text-foreground mb-6">
                 {col.heading}
               </h3>
               <ul className="space-y-4">
                 {col.bullets.map((bullet, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <MonadIcon color={col.color} />
-                    <span className="text-[16px] leading-[1.75] text-body">{bullet}</span>
+                    <MonadMark className="h-5 w-5 mt-1 text-mint" />
+                    <span className="text-[18px] leading-[1.7] text-body">{bullet}</span>
                   </li>
                 ))}
               </ul>

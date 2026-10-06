@@ -19,6 +19,7 @@ import speakerPhoto from "@/assets/sidsel-loschenkohl-living-from-the-heart-spea
 import bookCover from "@/assets/the-power-of-unwavering-belief-book-cover-sidsel-loschenkohl.png";
 import alexandraCover from "@/assets/testimonials/alexandra-feldman-founder-of-the-islands.png";
 import MonadMark from "@/components/MonadMark";
+import { Button } from "@/components/ui/button";
 
 const socialProofQuotes = [
   { quote: "Once you see it, you can't unsee it.", name: "Alexandra", role: "Founder & Creative Director, Of The Islands", avatar: alexandraCover },
@@ -45,125 +46,34 @@ const About = () => {
       <Navigation />
       <div className="h-16" />
 
-      {/* 1. HERO */}
-      <section className="bg-background pt-[200px] pb-[120px] px-8">
-        <div className="max-w-[1100px] mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-[72px] font-normal text-foreground leading-[1.15] tracking-[-0.025em]">
-            <span className="font-extrabold">Awakening people</span> to their authentic power and purpose
-          </h1>
-          <p className="mt-8 text-[20px] text-body font-normal max-w-[700px] mx-auto leading-[1.7]">
-            I help people stop building from push and start building from pull.
-          </p>
-        </div>
-      </section>
-
-      {/* 2. QUOTES (stacked rows with dividers) */}
-      <section className="bg-background px-8">
-        <div className="max-w-[1100px] mx-auto">
-          {socialProofQuotes.map((item, index) => (
-            <div key={item.name}>
-              <div className="border-t-2 border-mint" />
-              <div className="flex flex-col md:flex-row md:items-center py-12 md:py-16 gap-6 md:gap-16">
-                <p className="font-editorial italic text-[22px] text-foreground leading-[1.55] md:w-1/2">
-                  "{item.quote}"
-                </p>
-                <div className="flex items-center gap-4 md:w-1/2">
-                  {item.avatar ? (
-                    <img
-                      src={item.avatar}
-                      alt={item.name}
-                      className="w-12 h-12 rounded-full object-cover flex-shrink-0"
-                    />
-                  ) : (
-                    <div className="w-12 h-12 rounded-full bg-mint flex items-center justify-center flex-shrink-0">
-                      <span className="text-white font-semibold text-lg">{item.name[0]}</span>
-                    </div>
-                  )}
-                  <div>
-                    <p className="text-[16px] font-semibold text-foreground">{item.name}</p>
-                    <p className="text-[14px] text-body">{item.role}</p>
-                  </div>
-                </div>
-              </div>
-              {index === socialProofQuotes.length - 1 && (
-                <div className="border-t-2 border-mint" />
-              )}
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* 3. MISSION */}
-      <section className="bg-background py-[100px] px-8">
-        <div className="max-w-[1100px] mx-auto">
-          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground leading-[1.15] tracking-[-0.025em] text-center">
-            <span className="font-extrabold">My mission:</span> Help people return to the clearest expression of who they are.
-          </h2>
-          <p className="mt-6 text-[18px] text-body leading-[1.7] max-w-[700px] mx-auto text-center">
-            I work with ambitious people whose business, brand, or body of work is deeply tied to who they are. They have built something real. But what got them here is no longer what will get them there.
-          </p>
-
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-[50px] items-start">
-            <div>
-              <img
-                src="https://hciqvcspehfitlgclhud.supabase.co/storage/v1/object/public/sidsel/Headshot%202.jpg"
-                alt="Sidsel Løschenkohl"
-                className="w-full rounded-lg object-cover"
-              />
-              <p className="mt-3 text-[14px] font-medium text-foreground">
-                Sidsel Løschenkohl / Founder & Creator
-              </p>
-            </div>
-            <div>
-              <div className="space-y-5 text-[16px] leading-[1.75] text-body">
-                <p>For many, the drive that built everything is the same drive that is now creating friction. They are operating from push. From pressure, perfectionism, proving, survival, or a pattern they have outgrown.</p>
-                <p>My work is about shifting that.</p>
-                <p>Because building from push has a ceiling. Building from pull changes everything.</p>
-                <p>This work starts internally. Through activations, inquiry, and deep recalibration, we clear the interference that keeps the old identity in place. As that changes, clarity increases. Purpose becomes easier to see. Aligned action becomes more natural. The way you build begins to change because the person building it has changed.</p>
-                <p>I work at the intersection of spiritual alignment, strategic clarity, and operational intelligence.</p>
-                <p>For the right person, this is not about being given a formula. It is about becoming more coherent, more self-trusting, and more fully expressed in what you create.</p>
-              </div>
-              <div className="mt-8">
-                <a
-                  href="/apply"
-                  className="inline-flex bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
-                >
-                  Apply Now
-                </a>
-              </div>
-            </div>
+      {/* Hero */}
+      <section className="bg-background py-16 md:py-24 px-4 sm:px-8">
+        <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-10 md:gap-14">
+          <div>
+            <p className="text-[13px] uppercase font-semibold text-foreground mb-5">ABOUT</p>
+            <h1 className="text-[40px] md:text-[64px] lg:text-[72px] font-normal text-foreground leading-[1.1] tracking-[-0.025em]">
+              <span className="font-extrabold">Everything I teach,</span>{" "}<span className="font-normal">I lived first.</span>
+            </h1>
+            <p className="mt-7 text-[20px] text-body font-normal leading-[1.7]">
+              I help people stop building from push and start building from pull.
+            </p>
+            <Button asChild className="mt-8 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 h-auto rounded-full hover:bg-accent/90">
+              <Link to="/apply">APPLY NOW</Link>
+            </Button>
           </div>
-        </div>
-      </section>
-
-      {/* 4. VALUES */}
-      <section className="bg-surface py-[100px] px-8">
-        <div className="max-w-[1100px] mx-auto">
-          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground leading-[1.15] tracking-[-0.025em] text-center mb-14">
-            <span className="font-extrabold">My</span> values.
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {values.map((value) => (
-              <div key={value.title} className="bg-white border border-border rounded-xl p-8">
-                <h3 className="text-[20px] font-extrabold text-foreground mb-3">{value.title}</h3>
-                <p className="text-[15px] leading-[1.7] text-body">
-                  {value.description}
-                </p>
-              </div>
-            ))}
-          </div>
+          <img src="https://hciqvcspehfitlgclhud.supabase.co/storage/v1/object/public/sidsel/Headshot%202.jpg" alt="Sidsel Løschenkohl" className="w-full aspect-[4/5] rounded-2xl object-cover object-top" />
         </div>
       </section>
 
       {/* 5. BACKSTORY */}
-      <section className="bg-background py-[100px] px-8">
+      <section className="bg-surface py-16 md:py-[100px] px-4 sm:px-8">
         <div className="max-w-[1100px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-[50px] items-start">
             <div>
-              <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground leading-[1.15] tracking-[-0.025em]">
+              <h2 className="text-[32px] md:text-[48px] font-normal text-foreground leading-[1.1] tracking-[-0.025em]">
                 <span className="font-extrabold">The back</span> story.
               </h2>
-              <div className="mt-7 space-y-5 text-[16px] text-body leading-[1.75]">
+              <div className="mt-7 space-y-5 text-[18px] text-body leading-[1.7]">
                 <p>
                   This work came out of a period that broke my life open.
                 </p>
@@ -185,15 +95,15 @@ const About = () => {
               <img
                 src={backstoryPhoto}
                 alt="Sidsel Løschenkohl"
-                className="w-full rounded-lg object-cover object-top"
-                style={{ maxHeight: '600px' }}
+                className="w-full aspect-[4/5] rounded-2xl object-cover object-top"
+                
               />
             </div>
           </div>
 
           {/* Quote strip — Component E */}
-          <div className="mt-14 bg-mint rounded-xl py-[52px] px-8 sm:px-14 text-center">
-            <p className="font-editorial italic text-[22px] text-foreground max-w-[720px] mx-auto leading-[1.55]">
+          <div className="mt-14 bg-mint-light rounded-2xl py-[52px] px-8 sm:px-14 text-center">
+            <p className="font-normal text-[24px] md:text-[32px] text-foreground max-w-[900px] mx-auto leading-[1.55]">
               "Building a business is a spiritual act. It asks you to become the person who can hold what you are here to create."
             </p>
             <span className="block mt-5 text-[14px] font-normal text-foreground/70">
@@ -203,16 +113,72 @@ const About = () => {
         </div>
       </section>
 
+      {/* What I do now */}
+      <section className="bg-surface py-16 md:py-[100px] px-4 sm:px-8">
+        <div className="max-w-[1280px] mx-auto">
+          <h2 className="text-[32px] md:text-[48px] font-normal text-foreground leading-[1.1] tracking-[-0.025em] text-center">
+            <span className="font-extrabold">My mission:</span>{" "}<span className="font-normal">help people return to the clearest expression of who they are.</span>
+          </h2>
+          <div className="mt-10 space-y-6 text-[18px] leading-[1.7] font-normal text-body max-w-[640px] mx-auto text-center">
+            <p>I work with people whose business, brand or body of work is tied to who they are. They have built something real. The drive that built it is now creating friction.</p>
+            <p>The work starts inside. Activations, inquiry and deep recalibration clear what keeps the old identity in place. As that changes, clarity rises, purpose gets easier to see, and the way you build changes, because the person building it has changed.</p>
+            <p>I work at the intersection of spiritual alignment, strategic clarity and operational intelligence.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* In their words */}
+      <section className="bg-background py-16 md:py-[100px] px-4 sm:px-8">
+        <div className="max-w-[1100px] mx-auto">
+          <h2 className="text-[32px] md:text-[48px] font-normal text-foreground leading-[1.1] tracking-[-0.025em] text-center mb-12">
+            <span className="font-extrabold">In their</span>{" "}<span className="font-normal">words.</span>
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {socialProofQuotes.map((item) => (
+              <div key={item.name} className="bg-card border border-border rounded-2xl p-7 flex flex-col">
+                <p className="text-[18px] text-foreground font-normal leading-[1.7] flex-1">"{item.quote}"</p>
+                <div className="flex items-start gap-3 mt-8">
+                  <img src={item.avatar} alt={item.name} className="w-12 h-12 rounded-full object-cover shrink-0" />
+                  <div>
+                    <p className="text-[16px] font-extrabold text-foreground">{item.name}</p>
+                    <p className="text-[14px] text-body leading-[1.7]">{item.role}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <LineageSection />
 
+      {/* 4. VALUES */}
+      <section className="bg-background py-16 md:py-[100px] px-4 sm:px-8">
+        <div className="max-w-[1100px] mx-auto">
+          <h2 className="text-[32px] md:text-[48px] font-normal text-foreground leading-[1.1] tracking-[-0.025em] text-center mb-14">
+            <span className="font-extrabold">My</span> values.
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {values.map((value) => (
+              <div key={value.title} className="bg-card border border-border rounded-2xl p-8">
+                <h3 className="text-[20px] font-extrabold text-foreground mb-3">{value.title}</h3>
+                <p className="text-[18px] leading-[1.7] text-body">
+                  {value.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* 6. SPEAKING & FACILITATION */}
-      <section className="bg-surface py-[100px] px-8">
+      <section className="bg-surface py-16 md:py-[100px] px-4 sm:px-8">
         <div className="max-w-[1100px] mx-auto">
           <div className="text-center mb-16">
             <span className="text-[13px] font-bold tracking-[0.12em] uppercase text-foreground">
               Speaking & Facilitation
             </span>
-            <h2 className="mt-4 text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground leading-[1.15] tracking-[-0.025em]">
+            <h2 className="mt-4 text-[32px] md:text-[48px] font-normal text-foreground leading-[1.1] tracking-[-0.025em]">
               <span className="font-extrabold">I speak on alignment,</span> energy, and the future of leadership.
             </h2>
             <p className="mt-5 text-[18px] leading-[1.7] text-body max-w-[700px] mx-auto">
@@ -225,14 +191,14 @@ const About = () => {
               <img
                 src={speakerPhoto}
                 alt="Sidsel Løschenkohl speaking on living from the heart in the age of AI"
-                className="w-full rounded-lg object-cover aspect-[4/3]"
+                className="w-full rounded-2xl object-cover aspect-[4/3]"
               />
             </div>
             <div>
               <h3 className="text-[28px] font-extrabold text-foreground leading-[1.3]">
                 Living from the Heart in the Age of AI
               </h3>
-              <div className="mt-5 space-y-5 text-[16px] leading-[1.75] text-body">
+              <div className="mt-5 space-y-5 text-[18px] leading-[1.7] text-body">
                 <p>
                   My talks sit at the intersection of identity, spirituality, and strategy. I explore embodied intelligence, the patterns that shape how people lead, and why AI amplifies the signal you bring. The clearer and more coherent the human behind the tool, the more powerful the result.
                 </p>
@@ -243,7 +209,7 @@ const About = () => {
             </div>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground leading-[1.15] tracking-[-0.025em] mb-14">
+          <h2 className="text-[32px] md:text-[48px] font-normal text-foreground leading-[1.1] tracking-[-0.025em] mb-14">
             <span className="font-extrabold">Topics I</span> speak on.
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -267,19 +233,19 @@ const About = () => {
             ].map((topic) => (
               <div
                 key={topic.title}
-                className="bg-white border border-border rounded-xl p-8"
+                className="bg-card border border-border rounded-2xl p-8"
               >
                 <span className="text-[13px] font-bold tracking-[0.12em] uppercase text-foreground">
                   {topic.title}
                 </span>
-                <p className="mt-3 text-[15px] leading-[1.7] text-body">
+                <p className="mt-3 text-[18px] leading-[1.7] text-body">
                   {topic.body}
                 </p>
               </div>
             ))}
           </div>
 
-          <div className="mt-14 bg-mint-light rounded-xl px-10 py-6 sm:px-12 sm:py-8 flex flex-col md:flex-row items-center gap-8">
+          <div className="mt-14 bg-mint-light rounded-2xl px-10 py-6 sm:px-12 sm:py-8 flex flex-col md:flex-row items-center gap-8">
             <MonadMark />
             <div className="flex-1 text-center md:text-left">
               <h3 className="text-xl sm:text-2xl font-extrabold text-foreground">
@@ -289,41 +255,38 @@ const About = () => {
                 I speak at conferences, retreats, and private events on alignment, identity, and the future of leadership.
               </p>
             </div>
-            <a
-              href="mailto:sidsel@loschenkohl.com"
-              className="flex-shrink-0 inline-flex bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
+            <Button asChild className="flex-shrink-0 inline-flex bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
             >
-              Get in Touch
-            </a>
+              <a href="mailto:sidsel@loschenkohl.com">Get in Touch</a>
+            </Button>
           </div>
         </div>
       </section>
 
       {/* 7. THE BOOK */}
-      <section className="bg-background py-[100px] px-8">
+      <section className="bg-background py-16 md:py-[100px] px-4 sm:px-8">
         <div className="max-w-[1100px] mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-14">
           <img
             src={bookCover}
             alt="The Power of Unwavering Belief — Book by Sidsel Løschenkohl"
-            className="flex-shrink-0 w-[160px] md:w-[200px] rounded-md"
-            style={{ boxShadow: '8px 8px 32px rgba(0,0,0,0.12)' }}
+            className="flex-shrink-0 w-[160px] md:w-[200px] rounded-2xl"
           />
 
           <div className="text-center md:text-left">
             <span className="text-[13px] font-bold tracking-[0.12em] uppercase text-foreground">
               The Book
             </span>
-            <h2 className="mt-3 text-[28px] sm:text-[32px] font-normal text-foreground leading-[1.2] tracking-[-0.025em]">
+            <h2 className="mt-3 text-[32px] md:text-[48px] font-normal text-foreground leading-[1.1] tracking-[-0.025em]">
               <span className="font-extrabold">The Power</span> of Unwavering Belief
             </h2>
-            <p className="mt-4 text-[16px] leading-[1.75] text-body">
+            <p className="mt-4 text-[18px] leading-[1.7] text-body">
               A book about how reality changes when belief stops being abstract and becomes lived. On identity, inner state, and the unseen laws behind what we create.
             </p>
             <a
               href="https://thepowerofunwaveringbelief.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-5 text-[14px] font-medium text-teal-link hover:underline transition-colors"
+              className="inline-block mt-5 text-[14px] font-medium text-foreground hover:underline transition-colors"
             >
               Explore the Book →
             </a>
@@ -332,12 +295,12 @@ const About = () => {
       </section>
 
       {/* 8. BLOG */}
-      <section className="bg-surface py-[100px] px-8">
+      <section className="bg-surface py-16 md:py-[100px] px-4 sm:px-8">
         <div className="max-w-[1100px] mx-auto">
-          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground leading-[1.15] tracking-[-0.025em]">
+          <h2 className="text-[32px] md:text-[48px] font-normal text-foreground leading-[1.1] tracking-[-0.025em]">
             <span className="font-extrabold">Blog</span>
           </h2>
-          <p className="mt-3 text-[16px] text-body leading-[1.75] max-w-[700px]">
+          <p className="mt-3 text-[18px] text-body leading-[1.7] max-w-[700px]">
             Writing on identity, state, and building from alignment.
           </p>
           <Carousel
@@ -357,7 +320,7 @@ const About = () => {
             <div className="mt-10 flex items-center justify-between">
               <Link
                 to="/blog"
-                className="text-[14px] font-medium text-teal-link hover:underline transition-colors"
+                className="text-[14px] font-medium text-foreground hover:underline transition-colors"
               >
                 View all blog posts →
               </Link>
@@ -371,20 +334,18 @@ const About = () => {
       </section>
 
       {/* 9. CTA */}
-      <section className="bg-background py-[100px] px-8">
+      <section className="bg-background py-16 md:py-[100px] px-4 sm:px-8">
         <div className="max-w-[500px] mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground leading-[1.15] tracking-[-0.025em]">
-            <span className="font-extrabold">Ready</span> to talk?
+          <h2 className="text-[32px] md:text-[48px] font-normal text-foreground leading-[1.1] tracking-[-0.025em]">
+            <span className="font-extrabold">Ready to</span>{" "}<span className="font-normal">start?</span>
           </h2>
-          <p className="mt-5 text-[16px] text-body leading-[1.75]">
-            If something here spoke to you, book a call. No pitch. Just a conversation about where you are and whether the work is right for you.
+          <p className="mt-5 text-[18px] text-body leading-[1.7]">
+            Every engagement starts with a short application and a call.
           </p>
-          <a
-            href="/apply"
-            className="inline-flex mt-8 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
+          <Button asChild className="inline-flex mt-8 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
           >
-            Apply Now
-          </a>
+            <Link to="/apply">APPLY NOW</Link>
+          </Button>
         </div>
       </section>
 
