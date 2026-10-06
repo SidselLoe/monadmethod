@@ -21,7 +21,7 @@ const ModalityCards = () => {
           {cards.map((c) => (
             <div
               key={c.title}
-              className="bg-card border border-border rounded-xl p-8 transition-all duration-300 hover:-translate-y-0.5 hover:border-primary"
+              className="bg-card border border-border rounded-xl p-8 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#7ec8c8]"
             >
               <h3 className="text-[20px] font-extrabold text-foreground">
                 {c.title}
