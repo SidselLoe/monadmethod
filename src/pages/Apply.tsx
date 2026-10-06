@@ -76,7 +76,7 @@ const faqs = [
   ["What's an energy activation?", "A guided, music-driven session of about an hour, done lying down from home. Nothing to learn. You just show up."],
   ["How much time does it take?", "About three to four hours a week."],
   ["Is it group or private?", "The activations run live in small groups. They are mostly you, receiving, with a few minutes to share at the end if you want to. Everything else is one to one: your voice notes, your four sessions and WhatsApp."],
-  ["I'm not keen on groups. Is this still for me?", "You don't need to speak in the activations. Most people simply lie down and receive. All the strategic work is private."],
+  ["I'm not keen on groups. Is this still for me?", "Yes. You don't need to speak in the activations. Most people simply lie down and receive. All the strategic work is private."],
   ["Does this work online?", "Yes. You do the activations lying down at home, in your own space, with nothing to perform. That's part of why they work. Strategic sessions run on video."],
   ["Is this confidential?", "Yes. Your private sessions stay between us. In the group, sharing is optional and you choose what you bring. What's shared stays in the group."],
   ["What's the investment?", "£1,500 if you start in November, in full or in two installments. From 1 December it is £2,500."],
