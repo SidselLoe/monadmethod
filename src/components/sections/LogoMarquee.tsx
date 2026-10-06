@@ -5,6 +5,11 @@ import earnkit from "@/assets/logo-earnkit.png";
 import helixMarkets from "@/assets/logo-helix-markets.png";
 import infosys from "@/assets/logo-infosys.png";
 import pwrHouse from "@/assets/logo-pwr-house.png";
+import kintsugiStudio from "@/assets/logo-kintsugi-studio.png";
+import polizziMedia from "@/assets/logo-polizzi-media.png";
+import ember from "@/assets/logo-ember.png";
+import rosebud from "@/assets/logo-rosebud.png";
+import ofTheIslands from "@/assets/logo-of-the-islands.png";
 
 const logos = [
   { src: coastlineCreatives, alt: "Coastline Creatives" },
@@ -14,6 +19,11 @@ const logos = [
   { src: helixMarkets, alt: "Helix Markets" },
   { src: infosys, alt: "Infosys" },
   { src: pwrHouse, alt: "PWR House" },
+  { src: kintsugiStudio, alt: "Kintsugi Studio" },
+  { src: polizziMedia, alt: "Polizzi Media" },
+  { src: ember, alt: "Ember" },
+  { src: rosebud, alt: "Rosebud" },
+  { src: ofTheIslands, alt: "Of The Islands" },
 ];
 
 const LogoMarquee = () => {
