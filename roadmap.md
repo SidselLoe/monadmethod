@@ -18,3 +18,5 @@
 - [x] Apply homepage copy update part 1 without changing layout, imagery, styling, animation, links, or publishing.
 - [x] Apply homepage copy update part 2 without changing layout, imagery, styling, animation, links, or publishing.
 - [x] Apply copy updates to The Monad Method, About, and Apply pages without changing layout, imagery, styling, form behavior, video, or publishing.
+
+- [ ] Redesign About in the requested order and shared design system; preserve photos, links, book, carousel, and footer; verify desktop/mobile without publishing.
