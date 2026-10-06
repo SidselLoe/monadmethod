@@ -16,3 +16,4 @@
 - [x] Verify the redesigned funnel across desktop, tablet, and mobile without publishing.
 
 - [x] Apply homepage copy update part 1 without changing layout, imagery, styling, animation, links, or publishing.
+- [x] Apply homepage copy update part 2 without changing layout, imagery, styling, animation, links, or publishing.

@@ -15,10 +15,10 @@ const FinalCTA = () => {
           {/* Text */}
           <div className="flex-1 text-center md:text-left">
             <h3 className="text-xl sm:text-2xl font-extrabold text-foreground">
-              You are the business. You are also the upgrade.
+              Build from who you're becoming.
             </h3>
             <p className="mt-3 text-[16px] text-foreground leading-[1.75]">
-              Monad OS is how you make the shift. Thirty days. Three modalities. A different internal operating system.
+              You are the upgrade. £1,500 if you start in November. From 1 December, £2,500.
             </p>
           </div>
 
@@ -27,7 +27,7 @@ const FinalCTA = () => {
             href={APPLY_URL}
             className="flex-shrink-0 inline-flex bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
           >
-            Apply Now
+            APPLY NOW
           </a>
         </div>
       </div>

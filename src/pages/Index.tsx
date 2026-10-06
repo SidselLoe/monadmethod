@@ -15,8 +15,8 @@ import usePageMeta from "@/hooks/usePageMeta";
 
 const Index = () => {
   usePageMeta(
-    "The Monad Method — For Founders Who Are the Business | Sidsel Løschenkohl",
-    "Three modalities. Thirty days. Energy activations, guided inquiry, and strategic sessions for founders who are the business."
+    "The Monad Method | Sidsel Løschenkohl",
+    "Monad OS: thirty days to clear the pattern underneath and build from who you are becoming."
   );
   return (
     <div className="min-h-screen">

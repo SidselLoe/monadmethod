@@ -14,19 +14,17 @@ const MonadSymbol = ({ color }: { color: string }) => (
 );
 
 const forYou = [
-  "You are the business. If you disappeared tomorrow, the company would not persist. You have traction. You are not in survival mode. But how you have been operating is no longer sustainable.",
-  "You know there is more. You cannot fully name it yet, but the pull is there. What got you here is not what will get you there, and you can feel it.",
-  "You have taken your destiny into your own hands. No one is coming to save you. Not a cofounder, not a hire, not the next framework. The responsibility for what happens next sits with you.",
-  "You want to be pointed inward, not told what to do. You do not trust people who hand you formulas. What draws you to this work is that it reveals rather than prescribes.",
-  "You are open to energy work as a real mechanism for change. You do not need to fully understand it. You are willing to experience it, and you hold, or are open to holding, the belief that we are more than this physical 3D reality.",
-  "You are ready to look at what is underneath. The patterns, the identity fusion, the drive that built the company and is now the ceiling. You are open to something that works at a different layer than strategy.",
+  "What you build comes from you",
+  "You can feel there's more, even if you can't name it yet",
+  "You've taken your life into your own hands. No one is coming to save you.",
+  "You're open to energy work and you'll show up fully in the sessions",
+  "You believe you can build something real and have a life",
 ];
 
 const notForYou = [
-  "You want someone to hand you a system or tell you what to do. This work does not prescribe. It reveals. If you are looking for a tactical roadmap or a revenue formula, you will be frustrated here.",
-  "You have not yet built anything. You are still in ideation, still in employment, or still in survival mode. This work assumes you have traction and the weight that comes with it.",
-  "You do not believe that internal state shapes external results. If that premise sounds like a metaphor to you rather than a mechanism, this is not the work you are looking for.",
-  "You are not willing to be honest with yourself. The work surfaces what has been running you. If you are here to perform self-awareness rather than actually do it, nothing will shift.",
+  "You want a formula handed to you",
+  "You're not willing to be honest with yourself",
+  "Internal state sounds like a metaphor to you. Here it's the mechanism.",
 ];
 
 const Qualifier = () => {
