@@ -3,7 +3,7 @@ import coinvise from "@/assets/logo-coinvise.png";
 import cultureDrivers from "@/assets/logo-culture-drivers.png";
 import earnkit from "@/assets/logo-earnkit.png";
 import helixMarkets from "@/assets/logo-helix-markets.png";
-import infosys from "@/assets/logo-infosys.png";
+import infyos from "@/assets/logo-infyos.png";
 import pwrHouse from "@/assets/logo-pwr-house.png";
 import kintsugiStudio from "@/assets/logo-kintsugi-studio.png";
 import polizziMedia from "@/assets/logo-polizzi-media.png";
@@ -17,7 +17,7 @@ const logos = [
   { src: cultureDrivers, alt: "CultureDrivers" },
   { src: earnkit, alt: "Earnkit" },
   { src: helixMarkets, alt: "Helix Markets" },
-  { src: infosys, alt: "Infosys" },
+  { src: infyos, alt: "Infyos" },
   { src: pwrHouse, alt: "PWR House" },
   { src: kintsugiStudio, alt: "Kintsugi Studio" },
   { src: polizziMedia, alt: "Polizzi Media" },
