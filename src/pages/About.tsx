@@ -52,7 +52,7 @@ const About = () => {
             <span className="font-extrabold">Awakening people</span> to their authentic power and purpose
           </h1>
           <p className="mt-8 text-[20px] text-body font-normal max-w-[700px] mx-auto leading-[1.7]">
-            I exist to help ambitious founders stop building from push and start building from pull.
+            I help people stop building from push and start building from pull.
           </p>
         </div>
       </section>
@@ -97,7 +97,7 @@ const About = () => {
       <section className="bg-background py-[100px] px-8">
         <div className="max-w-[1100px] mx-auto">
           <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground leading-[1.15] tracking-[-0.025em] text-center">
-            <span className="font-extrabold">My mission:</span> Help founders and creators return to the clearest expression of who they are.
+            <span className="font-extrabold">My mission:</span> Help people return to the clearest expression of who they are.
           </h2>
           <p className="mt-6 text-[18px] text-body leading-[1.7] max-w-[700px] mx-auto text-center">
             I work with ambitious people whose business, brand, or body of work is deeply tied to who they are. They have built something real. But what got them here is no longer what will get them there.
@@ -116,7 +116,7 @@ const About = () => {
             </div>
             <div>
               <div className="space-y-5 text-[16px] leading-[1.75] text-body">
-                <p>For many, the drive that built the business is the same drive that is now creating friction. They are operating from push. From pressure, perfectionism, proving, survival, or a pattern they have outgrown.</p>
+                <p>For many, the drive that built everything is the same drive that is now creating friction. They are operating from push. From pressure, perfectionism, proving, survival, or a pattern they have outgrown.</p>
                 <p>My work is about shifting that.</p>
                 <p>Because building from push has a ceiling. Building from pull changes everything.</p>
                 <p>This work starts internally. Through activations, inquiry, and deep recalibration, we clear the interference that keeps the old identity in place. As that changes, clarity increases. Purpose becomes easier to see. Aligned action becomes more natural. The way you build begins to change because the person building it has changed.</p>
@@ -338,7 +338,7 @@ const About = () => {
             <span className="font-extrabold">Blog</span>
           </h2>
           <p className="mt-3 text-[16px] text-body leading-[1.75] max-w-[700px]">
-            Writing on founders, identity, state, and what it actually takes to build from alignment.
+            Writing on identity, state, and building from alignment.
           </p>
           <Carousel
             opts={{ align: "start", loop: false }}

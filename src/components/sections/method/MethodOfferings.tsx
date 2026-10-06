@@ -26,13 +26,13 @@ const MethodOfferings = () => {
                 The 30-day entry point.
               </h3>
               <p className="mt-3 text-[16px] text-body leading-[1.75] flex-1">
-                Installs the Monad Method into your daily operating rhythm. Weekly Monad Activations, weekly 1:1 Strategic Sessions, Guided Inquiry, WhatsApp accountability, and strategic frameworks. Weekly rolling starts. This is where everyone begins.
+                Thirty days. 10 live Activations, four weeks of voice-note self-inquiry, four private sessions with me, WhatsApp support.
               </p>
               <Link
-                to="/#monad-os"
+                to="/apply"
                 className="inline-flex self-start mt-6 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
               >
-                Explore Monad OS
+                APPLY NOW
               </Link>
             </div>
           </div>
@@ -56,7 +56,7 @@ const MethodOfferings = () => {
                 Long-term support.
               </h3>
               <p className="mt-3 text-[16px] text-body leading-[1.75] flex-1">
-                The long-term continuation, for founders who have completed Monad OS and want to keep building from the new baseline. Ongoing activations, strategic sessions, and inquiry, with systems and AI integration entering the partnership here. Invitation only.
+                For Monad OS graduates who run a business. Ongoing work, with systems and AI entering the partnership. Invitation only.
               </p>
               <span className="inline-flex self-start mt-6 border border-mint-border text-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full">
                 For Monad OS Graduates

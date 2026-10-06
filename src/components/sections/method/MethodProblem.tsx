@@ -14,19 +14,19 @@ const MethodProblem = () => {
       <div className="max-w-[1100px] mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 gap-5">
         <div className="bg-card border border-border rounded-xl p-8 sm:p-10">
           <h3 className="text-[20px] sm:text-[22px] font-extrabold text-foreground leading-[1.3]">
-            Not a strategy problem.
+            Underneath strategy.
           </h3>
           <p className="mt-3 text-[15px] text-body leading-[1.7]">
-            Most founders who hit a ceiling try to solve it with more strategy. More discipline. A new framework. It rarely works, because the ceiling isn't strategic. It is internal.
+            More strategy, more discipline, a new framework. They all run on the same old system.
           </p>
         </div>
 
         <div className="bg-card border border-border rounded-xl p-8 sm:p-10">
           <h3 className="text-[20px] sm:text-[22px] font-extrabold text-foreground leading-[1.3]">
-            Not a mindset problem.
+            Underneath mindset.
           </h3>
           <p className="mt-3 text-[15px] text-body leading-[1.7]">
-            The way you operate is upstream of everything the company does. Change the operating system and the outputs change on their own.
+            You can't think your way into a new state. The way you operate sits upstream of everything you make.
           </p>
         </div>
       </div>
