@@ -4,7 +4,7 @@ const pushBullets = [
   "You oscillate between all-in and completely checked out. There is no middle gear, because the only way you know how to work is at the edge.",
   "Your strategy is sharp, but you are making decisions from a part of you that has something to prove. The output looks right and feels wrong.",
   "You have hit a ceiling that more effort will not break. You already know this, because you have tried.",
-  "The business runs on you. If you stopped, it would stop. And you cannot remember the last time you actually stopped.",
+  "It all runs on you. If you stopped, it would stop.",
 ];
 
 const pullBullets = [
@@ -13,7 +13,7 @@ const pullBullets = [
   "You can feel the difference between a real yes and a performance yes, and you trust the read. Decisions get faster because there is less to filter through.",
   "Strategy becomes an expression of who you are, not a defence against what you fear. Execution feels clean because nothing internal is fighting it.",
   "You can hold success without it costing your health, your relationships, or your sense of self. The more the business grows, the more you come home to yourself.",
-  "The business still runs on you. But now you are the signal, not the sacrifice.",
+  "It still runs on you. Now you're the signal.",
 ];
 
 const BulletGrid = ({

@@ -32,7 +32,7 @@ const MethodTestimonials = () => {
     <section className="bg-surface py-[100px] px-8">
       <div className="max-w-[1100px] mx-auto">
         <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground text-center tracking-[-0.025em] mb-14">
-          <span className="font-extrabold">What founders</span> say.
+          <span className="font-extrabold">In their</span> words.
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">

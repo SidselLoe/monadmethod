@@ -34,7 +34,7 @@ const withItems = [
   "Your state shifts first, directly, through live energy activations",
   "What's been running you gets named, out loud, in voice-note self-inquiry",
   "Clarity turns into decisions, delegation and structure in strategic sessions",
-  "A small group of founders doing the same work alongside you",
+  "A small community receiving alongside you in the live activations",
   "Nobody telling you what to do. The answers come from you",
   "Complete discretion",
 ];
@@ -47,7 +47,7 @@ const withoutItems = [
 const process = [
   ["Apply", "A few short questions. If it looks like a fit, you book a call."],
   ["A call with me", "We talk about where you are, what you're building and whether Monad OS is right for you. No pressure, no pitch."],
-  ["Your 30 days", "Live energy activations, weekly voice-note self-inquiry and strategic sessions, in a small group of up to ten founders, with private time with me built in."],
+  ["Your 30 days", "10 live energy activations, four weeks of voice-note self-inquiry, four private sessions with me and WhatsApp support."],
   ["Compounding", "Each round goes deeper than the last. If you want to keep going, you're invited into long-term support."],
 ];
 const cases: { headline: string; quote?: string; name?: string; photo?: string; attribution?: string; wide?: boolean }[] = [
@@ -58,7 +58,7 @@ const cases: { headline: string; quote?: string; name?: string; photo?: string; 
   { headline: "Why a somatic practitioner calls it support she hasn't felt anywhere else.", quote: "I work with somatic practices as part of my job. But there's such a gentle, receiving, energetic support in these energy activations that I just haven't felt anywhere else.", name: "Jessica Rainey", photo: jessicaPhoto, wide: true },
 ];
 const forItems = [
-  "You're the business, and every decision, client and problem still comes back to you",
+  "Everything comes back to you: every decision, every client, every problem",
   "You can't switch off, and you're running on empty more often than you'd admit",
   "You've hit the targets and it doesn't feel the way you thought it would",
   "You've tried coaching, retreats or frameworks and found them helpful but incomplete",
@@ -75,11 +75,11 @@ const faqs = [
   ["Will you tell me what to do?", "No. I won't hand you a playbook. The work is getting you back to your own judgment, so the decisions come from you, and they hold."],
   ["What's an energy activation?", "A guided, music-driven session of about an hour, done lying down from home. Nothing to learn. You just show up."],
   ["How much time does it take?", "About three to four hours a week."],
-  ["Is it group or private?", "A small group of up to ten founders, with private time with me built in. A fully private version is available on request."],
-  ["I'm not keen on groups. Is this still for me?", "That's a common feeling before your first session. In the activations you're lying down in your own space, in your own process. There's a short check-in at the start and an optional share at the end. That share is often the part you'll value most: hearing someone else's story is where your own pattern becomes visible."],
+  ["Is it group or private?", "The activations run live in small groups. They are mostly you, receiving, with a few minutes to share at the end if you want to. Everything else is one to one: your voice notes, your four sessions and WhatsApp."],
+  ["I'm not keen on groups. Is this still for me?", "You don't need to speak in the activations. Most people simply lie down and receive. All the strategic work is private."],
   ["Does this work online?", "Yes. You do the activations lying down at home, in your own space, with nothing to perform. That's part of why they work. Strategic sessions run on video."],
   ["Is this confidential?", "Yes. Your private sessions stay between us. In the group, sharing is optional and you choose what you bring. What's shared stays in the group."],
-  ["What's the investment?", "Monad OS is a premium program. We go through it on your call, once we know where you are and whether it's the right fit."],
+  ["What's the investment?", "£1,500 if you start in November, in full or in two installments. From 1 December it is £2,500."],
 ];
 const absenceOptions = ["It would run fine", "It would slow down", "It would stall without me", "It would fall apart"] as const;
 const investmentOptions = ["Yes", "Not right now"] as const;
@@ -268,9 +268,9 @@ const Apply = () => {
 
       <section className={`${sectionClass} bg-secondary`}>
         <div className="mx-auto max-w-[1000px] text-center">
-          <p className="text-[14px] font-semibold uppercase tracking-[0.12em] text-foreground">Trusted by founders and creators</p>
+          <p className="text-[14px] font-semibold uppercase tracking-[0.12em] text-foreground">TRUSTED BY 200+ PEOPLE</p>
           <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">{founders.map((founder) => <article key={founder.name} className="group relative aspect-[3/4] overflow-hidden rounded-xl"><img src={founder.photo} alt="" className="testimonial-media h-full w-full object-cover" loading="lazy" /><span className="absolute inset-0 bg-image-overlay" /><div className="absolute inset-x-0 bottom-0 p-4 text-left text-ink-foreground"><h3 className="text-[16px] font-extrabold leading-[1.25]">{founder.name}</h3>{founder.business && <p className="mt-1 text-[12px] font-normal text-ink-foreground/80">{founder.business}</p>}</div></article>)}</div>
-          <p className="mt-8 text-[18px] font-normal text-foreground"><AnimatedFounderCount /> founders, leaders and creators have experienced the work.</p>
+          <p className="mt-8 text-[18px] font-normal text-foreground"><AnimatedFounderCount /> people have experienced the work.</p>
         </div>
       </section>
 
@@ -282,13 +282,13 @@ const Apply = () => {
 
       <section className={`${sectionClass} bg-secondary`}><div className="mx-auto max-w-[1100px]"><SectionLabel>How it works</SectionLabel><h2 className={headingClass}><span className="font-extrabold">The</span> process.</h2><div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">{process.map(([title, description], index) => <article key={title} className={cardClass}><span className="text-[42px] font-extrabold leading-none text-foreground">{String(index + 1).padStart(2, "0")}</span><h3 className="mt-6 text-[20px] font-extrabold leading-[1.35]">{title}</h3><p className={`${bodyClass} mt-3`}>{description}</p></article>)}</div></div></section>
 
-      <section className={`${sectionClass} bg-background`}><div className="mx-auto max-w-[1100px]"><SectionLabel>Results</SectionLabel><h2 className={headingClass}><span className="font-extrabold">What founders</span> experience.</h2><div className="mt-12 grid gap-8 md:grid-cols-3">{videoStories.map((story) => <ResultVideo key={story.headline} story={story} />)}</div><div className="mx-auto mt-12 grid max-w-[900px] gap-5 md:grid-cols-2">{textStories.map((story) => <article key={story.headline} className={cardClass}><h3 className="text-[20px] font-extrabold leading-[1.35]">{story.headline}</h3><p className="mt-6 text-[14px] font-normal text-foreground/70">{story.attribution}</p></article>)}</div><div className="mt-10 text-center"><ApplyLink>APPLY NOW</ApplyLink></div></div></section>
+      <section className={`${sectionClass} bg-background`}><div className="mx-auto max-w-[1100px]"><SectionLabel>Results</SectionLabel><h2 className={headingClass}><span className="font-extrabold">What people</span> experience.</h2><div className="mt-12 grid gap-8 md:grid-cols-3">{videoStories.map((story) => <ResultVideo key={story.headline} story={story} />)}</div><div className="mx-auto mt-12 grid max-w-[900px] gap-5 md:grid-cols-2">{textStories.map((story) => <article key={story.headline} className={cardClass}><h3 className="text-[20px] font-extrabold leading-[1.35]">{story.headline}</h3><p className="mt-6 text-[14px] font-normal text-foreground/70">{story.attribution}</p></article>)}</div><div className="mt-10 text-center"><ApplyLink>APPLY NOW</ApplyLink></div></div></section>
 
-      <section className={`${sectionClass} bg-secondary`}><div className="mx-auto max-w-[1000px]"><SectionLabel>Not for everyone</SectionLabel><h2 className={headingClass}><span className="font-extrabold">This is</span> deliberately small.</h2><p className={`${bodyClass} mx-auto mt-6 max-w-[640px] text-center`}>I work with a small number of founders at a time, so the work can go deep.</p><div className="mt-10 grid gap-5 md:grid-cols-2"><article className={cardClass}><h3 className="text-[20px] font-extrabold leading-[1.35]">This <span className="rounded-sm bg-mint px-2 py-1">is for</span> you if.</h3><ItemList items={forItems} positive /></article><article className={cardClass}><h3 className="text-[20px] font-extrabold leading-[1.35]">This <span className="rounded-sm bg-accent px-2 py-1 text-accent-foreground">isn't for</span> you if.</h3><ItemList items={notForItems} positive={false} negativeRed /></article></div></div></section>
+      <section className={`${sectionClass} bg-secondary`}><div className="mx-auto max-w-[1000px]"><SectionLabel>Not for everyone</SectionLabel><h2 className={headingClass}><span className="font-extrabold">This is</span> deliberately small.</h2><p className={`${bodyClass} mx-auto mt-6 max-w-[640px] text-center`}>I work with a small number of people at a time, so the work can go deep.</p><div className="mt-10 grid gap-5 md:grid-cols-2"><article className={cardClass}><h3 className="text-[20px] font-extrabold leading-[1.35]">This <span className="rounded-sm bg-mint px-2 py-1">is for</span> you if.</h3><ItemList items={forItems} positive /></article><article className={cardClass}><h3 className="text-[20px] font-extrabold leading-[1.35]">This <span className="rounded-sm bg-accent px-2 py-1 text-accent-foreground">isn't for</span> you if.</h3><ItemList items={notForItems} positive={false} negativeRed /></article></div></div></section>
 
       <section className={`${sectionClass} bg-background`}><div className="mx-auto max-w-[760px]"><SectionLabel>Questions</SectionLabel><h2 className={headingClass}><span className="font-extrabold">Everything you need</span> to know.</h2><Accordion type="single" collapsible className="mt-10 border-t border-border">{faqs.map(([question, answer], index) => <AccordionItem key={question} value={`faq-${index}`} className="border-b border-border"><AccordionTrigger className="group py-6 text-left text-[20px] font-semibold leading-[1.35] text-foreground hover:no-underline [&>svg]:hidden">{question}<span aria-hidden="true" className="ml-4 shrink-0 text-[28px] font-normal leading-none text-mint group-data-[state=open]:hidden">+</span><span aria-hidden="true" className="ml-4 hidden shrink-0 text-[28px] font-normal leading-none text-mint group-data-[state=open]:block">−</span></AccordionTrigger><AccordionContent className={`${bodyClass} pb-6`}>{answer}</AccordionContent></AccordionItem>)}</Accordion></div></section>
 
-      <section className={`${sectionClass} relative min-h-[680px] overflow-hidden text-center`}><img src={closingSea} alt="Calm sea at dawn" className="absolute inset-0 h-full w-full object-cover" loading="lazy" width={1920} height={1080} /><span className="absolute inset-0 bg-image-overlay-strong" /><div className="relative mx-auto flex min-h-[536px] max-w-[800px] flex-col items-center justify-center"><p className="mb-6 text-[12px] font-semibold uppercase tracking-[0.12em] text-ink-foreground">Limited availability</p><h2 className="text-center text-[32px] font-normal leading-[1.1] tracking-[-0.025em] text-ink-foreground sm:text-[48px]"><span className="font-extrabold">The drive that got you here</span><br />can't take you where you're going.</h2><p className="mx-auto mt-7 max-w-[600px] text-[18px] font-normal leading-[1.7] text-ink-foreground">Monad OS runs in small groups of up to ten founders. The next group starts in November. If this resonates, apply now.</p><div className="mt-9"><ApplyLink>APPLY NOW</ApplyLink></div></div></section>
+      <section className={`${sectionClass} relative min-h-[680px] overflow-hidden text-center`}><img src={closingSea} alt="Calm sea at dawn" className="absolute inset-0 h-full w-full object-cover" loading="lazy" width={1920} height={1080} /><span className="absolute inset-0 bg-image-overlay-strong" /><div className="relative mx-auto flex min-h-[536px] max-w-[800px] flex-col items-center justify-center"><p className="mb-6 text-[12px] font-semibold uppercase tracking-[0.12em] text-ink-foreground">Limited availability</p><h2 className="text-center text-[32px] font-normal leading-[1.1] tracking-[-0.025em] text-ink-foreground sm:text-[48px]"><span className="font-extrabold">The drive that got you here</span><br />can't take you where you're going.</h2><p className="mx-auto mt-7 max-w-[600px] text-[18px] font-normal leading-[1.7] text-ink-foreground">Monad OS works with a small number of people at a time. Now taking applications for November. If this resonates, apply now.</p><div className="mt-9"><ApplyLink>APPLY NOW</ApplyLink></div></div></section>
     </main>
     <footer className="bg-background px-4 py-8 text-center text-[14px] font-normal text-foreground/70">© Monad Studios Ltd 2026 · <a href="/privacy-policy" className="hover:underline">Privacy</a> · <a href="/terms-of-service" className="hover:underline">Terms</a></footer>
   </div>;

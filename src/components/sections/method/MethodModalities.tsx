@@ -11,7 +11,7 @@ const modalities = [
   },
   {
     title: "Strategic Sessions.",
-    body: "Private 1:1 sessions that turn state and clarity into decisions, priorities, and execution. Partner-level sparring, not prescription. This is where the inner work meets the outer company and reshapes how you lead.",
+    body: "Private sessions that turn state and clarity into decisions, priorities and execution. Partner-level sparring, where the inner work meets what you're building.",
   },
 ];
 

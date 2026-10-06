@@ -52,6 +52,9 @@ const MethodActivations = () => {
           <p className="mt-5 text-[18px] text-body max-w-[700px] mx-auto leading-[1.7]">
             Sixty-minute energy sessions, scored to music. They work through direct transmission — shifting your state, clearing what has been stored, recalibrating your nervous system. All you have to do is show up.
           </p>
+          <p className="mt-5 text-[18px] text-body max-w-[700px] mx-auto leading-[1.7]">
+            What happens in a session: the music slows your thinking, your attention moves into the body, and your state shifts without effort. In that state, old patterns loosen and new ones can take hold. All you have to do is show up.
+          </p>
         </div>
 
         {/* Activation video */}
