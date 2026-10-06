@@ -137,6 +137,9 @@ function ResultVideo({ story }: { story: (typeof cases)[number] }) {
   if (!story.name) return null;
   const media = testimonialVideos[story.name];
   if (!media) return null;
+  useEffect(() => {
+    if (playing) void videoRef.current?.play().catch(() => {});
+  }, [playing]);
   const play = () => {
     setPlaying(true);
   };
