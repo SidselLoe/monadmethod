@@ -42,8 +42,7 @@ const LogoMarquee = () => {
               key={i}
               src={logo.src}
               alt={logo.alt}
-              className="flex-shrink-0 opacity-50"
-              style={{ height: 36 }}
+              className="flex-shrink-0 opacity-50 h-10 sm:h-14 w-auto max-w-[160px] object-contain"
               loading="lazy"
             />
           ))}
