@@ -22,11 +22,11 @@ const HeySidsel = () => {
           </h2>
 
           <p className="mt-6 text-[18px] text-body leading-[1.7] max-w-[700px]">
-            I work as a strategic partner to founders who are the business and who know there is more but cannot get to it without something changing in them first.
+            I work with people who have built something real and can feel there's more.
           </p>
 
           <p className="mt-4 text-[16px] text-body leading-[1.75] max-w-[700px]">
-            My approach is direct and structured. The Monad Method is the methodology I developed after a health collapse in 2023 forced me to rebuild everything. It rests on one belief: your next level requires an identity shift. You are not your business. You are the creator of it.
+            The Monad Method came out of a health collapse in 2023 that made me rebuild everything. It rests on one belief: what you create follows who you are being. Change the one creating, and what you create changes with it.
           </p>
 
           <Link
