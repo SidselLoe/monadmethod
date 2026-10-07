@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/sections/Footer";
 import usePageMeta from "@/hooks/usePageMeta";
 import MonadMark from "@/components/MonadMark";
+import NewTestimonialVideos from "@/components/NewTestimonialVideos";
 
 
 const expectations = [
@@ -61,6 +62,7 @@ const MonadOS = () => {
         </div>
       </section>
 
+      <NewTestimonialVideos />
       <Footer />
     </div>
   );
