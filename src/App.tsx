@@ -22,6 +22,7 @@ import StayingThisWay from "./pages/blog/StayingThisWay.tsx";
 import ShadowWork from "./pages/blog/ShadowWork.tsx";
 import Blog from "./pages/Blog.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import Welcome from "./pages/Welcome.tsx";
 
 const queryClient = new QueryClient();
 
@@ -56,6 +57,7 @@ const App = () => (
           <Route path="/blog/what-are-you-getting-from-staying-this-way" element={<StayingThisWay />} />
           <Route path="/blog/how-to-start-shadow-work" element={<ShadowWork />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/welcome/:name" element={<Welcome />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
