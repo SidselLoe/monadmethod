@@ -5,6 +5,7 @@ import ellaAvatar from "@/assets/testimonials/ella-cane-founder.png";
 import alexandraAvatar from "@/assets/testimonials/alexandra-feldman-founder-of-the-islands.png";
 import AnimatedFounderCount from "@/components/AnimatedFounderCount";
 import SplitHeading from "@/components/SplitHeading";
+import { BrandonTestimonial } from "@/components/NewTestimonialVideos";
 
 const APPLY_URL = "/apply";
 
@@ -48,6 +49,7 @@ const Hero = () => {
           </div>
           <span className="text-[14px] text-foreground"><AnimatedFounderCount /> people have experienced the work.</span>
         </div>
+        <BrandonTestimonial />
       </div>
     </section>
   );
