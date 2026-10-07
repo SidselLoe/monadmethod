@@ -17,7 +17,6 @@ import AnimatedFounderCount from "@/components/AnimatedFounderCount";
 import MonadMark from "@/components/MonadMark";
 import sidselPhoto from "@/assets/sidsel-photo.jpg";
 import closingSea from "@/assets/apply-closing-sea.jpg";
-import TestimonialVideoTile from "@/components/TestimonialVideoTile";
 
 const VSL_EMBED_URL = "https://fast.wistia.net/embed/iframe/zzzwlio10p?videoFoam=true&playerColor=111111";
 const CALENDLY_URL = "https://calendly.com/sidselloschenkohl/monad-discovery";
@@ -133,11 +132,25 @@ const testimonialVideos: Record<string, { src: string; poster: string }> = {
 };
 
 function ResultVideo({ story }: { story: (typeof cases)[number] }) {
+  const [playing, setPlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
   if (!story.name) return null;
   const media = testimonialVideos[story.name];
   if (!media) return null;
+  useEffect(() => {
+    if (playing) void videoRef.current?.play().catch(() => {});
+  }, [playing]);
+  const play = () => {
+    setPlaying(true);
+  };
   return <article>
-    <TestimonialVideoTile name={story.name} {...media} />
+    {playing ? <div className="relative aspect-[3/4] w-full overflow-hidden rounded-xl">
+      <video ref={videoRef} src={media.src} poster={media.poster} controls autoPlay playsInline preload="none" className="absolute inset-0 h-full w-full object-cover" />
+    </div> : <Button type="button" variant="ghost" onClick={play} className="group relative block h-auto aspect-[3/4] w-full overflow-hidden rounded-xl p-0 text-left hover:bg-transparent" aria-label={`Play ${story.name} testimonial`}>
+        <img src={media.poster} alt="" className="testimonial-media absolute inset-0 h-full w-full object-cover" loading="lazy" />
+        <span className="absolute inset-0 bg-image-overlay" />
+        <span className="absolute inset-0 flex items-center justify-center"><span className="flex h-16 w-16 items-center justify-center rounded-full bg-card text-foreground transition-transform group-hover:scale-105"><span className="ml-1 h-0 w-0 border-b-[9px] border-l-[15px] border-t-[9px] border-b-transparent border-l-foreground border-t-transparent" /></span></span>
+    </Button>}
     <h3 className="mt-6 text-[20px] font-extrabold leading-[1.35] text-foreground">{story.headline}</h3>
     {story.quote && <blockquote className="mt-4 text-[18px] font-normal leading-[1.7] text-foreground">“{story.quote}”</blockquote>}
     <p className="mt-4 text-[14px] font-semibold text-foreground">{story.name}</p>
