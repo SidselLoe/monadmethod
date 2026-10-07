@@ -20,3 +20,4 @@
 - [x] Apply copy updates to The Monad Method, About, and Apply pages without changing layout, imagery, styling, form behavior, video, or publishing.
 
 - [x] Redesign About in the requested order and shared design system; preserve photos, links, book, carousel, and footer; verify desktop/mobile without publishing.
+- [ ] Add four new Monad OS testimonial videos and the centered homepage Brandon tile, preserving existing content; verify desktop/mobile without publishing.
