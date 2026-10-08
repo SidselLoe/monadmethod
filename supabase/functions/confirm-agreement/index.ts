@@ -1,0 +1,59 @@
+import { corsHeaders } from 'npm:@supabase/supabase-js@2/cors'
+import { z } from 'npm:zod@3.23.8'
+import { sendTemplateEmail } from '../_shared/transactional-email-templates/send-email.ts'
+
+// Monad OS onboarding pages (public/welcome/<slug>.html) post here when a client signs.
+// Only known slugs are accepted, and the agreement wording comes from the server, never the browser.
+const CLIENTS: Record<string, string> = {
+  philip: 'Philip', nils: 'Nils', ryan: 'Ryan', anders: 'Anders', annie: 'Annie',
+}
+
+const COMMITMENTS = [
+  "I'll attend all four strategic sessions within my 30 days, each booked at least 24 hours ahead, and I'm happy for them to be recorded with Fireflies.",
+  "I'll join at least four Monad Activations, ideally as many as I can, booked in advance.",
+  "I'll complete each workbook at least 24 hours before its strategic session.",
+  "I'll join a recorded final conversation within a week of our last session, and Sidsel can use my words, video and picture from it in her marketing and tag me, once I've seen it.",
+  "I've read the agreement and accept it.",
+]
+
+const Body = z.object({
+  slug: z.string().regex(/^[a-z0-9-]{1,40}$/),
+  name: z.string().trim().min(3).max(100),
+  email: z.string().trim().email().max(200),
+})
+
+const json = (body: unknown, status = 200) =>
+  new Response(JSON.stringify(body), { status, headers: { ...corsHeaders, 'Content-Type': 'application/json' } })
+
+Deno.serve(async (req) => {
+  if (req.method === 'OPTIONS') return new Response('ok', { headers: corsHeaders })
+  if (req.method !== 'POST') return json({ error: 'Method not allowed' }, 405)
+
+  const parsed = Body.safeParse(await req.json().catch(() => null))
+  if (!parsed.success) return json({ error: 'Invalid request' }, 400)
+  const { slug, name, email } = parsed.data
+  const first = CLIENTS[slug]
+  if (!first) return json({ error: 'Not available' }, 404)
+
+  const time = new Intl.DateTimeFormat('en-GB', {
+    dateStyle: 'medium', timeStyle: 'short', timeZone: 'Europe/London',
+  }).format(new Date()) + ' (London)'
+  const templateData = {
+    first, name, email, time, commitments: COMMITMENTS,
+    pageUrl: `https://monadmethod.com/welcome/${slug}`,
+  }
+  const key = `agreement-${slug}-${email.toLowerCase()}`
+
+  try {
+    const owner = await sendTemplateEmail('agreement-signed-owner', 'sidsel@loschenkohl.com', {
+      templateData, idempotencyKey: `${key}-owner`, fromName: 'Monad OS', replyTo: email,
+    })
+    const client = await sendTemplateEmail('agreement-signed', email, {
+      templateData, idempotencyKey: `${key}-client`, fromName: 'Sidsel Løschenkohl', replyTo: 'sidsel@loschenkohl.com',
+    })
+    return json({ owner: owner.sent, client: client.sent })
+  } catch (e) {
+    console.error('send failed', (e as any)?.code ?? (e as Error).message)
+    return json({ error: 'Send failed' }, 500)
+  }
+})

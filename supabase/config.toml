@@ -9,3 +9,6 @@ project_id = "mezcbtqvtpwmfmyvjkcj"
 
   [functions.notify-application]
     verify_jwt = false
+
+  [functions.confirm-agreement]
+    verify_jwt = false

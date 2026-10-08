@@ -1,5 +1,6 @@
 import { template as applicationStarted } from './application-started.tsx'
 import { template as applicationComplete } from './application-complete.tsx'
+import { template as agreementSigned, ownerTemplate as agreementSignedOwner } from './agreement-signed.tsx'
 import type { ComponentType } from 'npm:react@18.3.1'
 
 export interface TemplateEntry {
@@ -22,6 +23,8 @@ export interface TemplateEntry {
 export const TEMPLATES: Record<string, TemplateEntry> = {
   'application-started': applicationStarted,
   'application-complete': applicationComplete,
+  'agreement-signed': agreementSigned,
+  'agreement-signed-owner': agreementSignedOwner,
   // Add templates here as they are created, e.g.:
   // 'welcome': welcomeTemplate,
 }
