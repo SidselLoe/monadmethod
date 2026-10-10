@@ -23,7 +23,7 @@ const COMMITMENTS = [
 // Sabrina's agreement uses the updated booking rhythm: sessions a week ahead, activations 24 hours ahead.
 const COMMITMENTS_BY_CLIENT: Record<string, string[]> = {
   sabrina: [
-    "I'll attend all four strategic sessions within my 30 days, each booked at least one week ahead, and I'm happy for them to be recorded with Fireflies.",
+    "I'll attend all four strategic sessions within my 30 days, each booked for the following week, and I'm happy for them to be recorded with Fireflies.",
     "I'll join at least four Monad Activations, ideally as many as I can, each booked at least 24 hours in advance.",
     COMMITMENTS[2], COMMITMENTS[3], COMMITMENTS[4],
   ],
