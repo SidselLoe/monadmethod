@@ -20,6 +20,15 @@ const COMMITMENTS = [
   "I've read the agreement and accept it.",
 ]
 
+// Sabrina's agreement uses the updated booking rhythm: sessions a week ahead, activations 24 hours ahead.
+const COMMITMENTS_BY_CLIENT: Record<string, string[]> = {
+  sabrina: [
+    "I'll attend all four strategic sessions within my 30 days, each booked at least one week ahead, and I'm happy for them to be recorded with Fireflies.",
+    "I'll join at least four Monad Activations, ideally as many as I can, each booked at least 24 hours in advance.",
+    COMMITMENTS[2], COMMITMENTS[3], COMMITMENTS[4],
+  ],
+}
+
 const Body = z.object({
   slug: z.string().regex(/^[a-z0-9-]{1,40}$/),
   name: z.string().trim().min(3).max(100),
@@ -43,7 +52,7 @@ Deno.serve(async (req) => {
     dateStyle: 'medium', timeStyle: 'short', timeZone: 'Europe/London',
   }).format(new Date()) + ' (London)'
   const templateData = {
-    first: client.first, agreementDate: client.date, name, email, time, commitments: COMMITMENTS,
+    first: client.first, agreementDate: client.date, name, email, time, commitments: COMMITMENTS_BY_CLIENT[slug] ?? COMMITMENTS,
     pageUrl: `https://monadmethod.com/welcome/${slug}`,
   }
   const key = `agreement-${slug}-${email.toLowerCase()}`
