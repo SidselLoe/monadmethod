@@ -10,9 +10,10 @@ interface Props {
   pageUrl?: string
   commitments?: string[]
   forOwner?: boolean
+  agreementDate?: string
 }
 
-const Email = ({ first = '', name = '', email = '', time = '', pageUrl = '', commitments = [], forOwner = false }: Props) => (
+const Email = ({ first = '', name = '', email = '', time = '', pageUrl = '', commitments = [], forOwner = false, agreementDate = '8 October 2026' }: Props) => (
   <Html lang="en" dir="ltr">
     <Head />
     <Preview>{forOwner ? `${name} signed the Monad OS agreement` : 'Your signed Monad OS agreement'}</Preview>
@@ -20,7 +21,7 @@ const Email = ({ first = '', name = '', email = '', time = '', pageUrl = '', com
       <Container style={container}>
         <Text style={text}>{forOwner ? `${name} just confirmed their place in Monad OS.` : `Hi ${first},`}</Text>
         {!forOwner && <Text style={text}>Thank you for saying yes. This is your copy of the agreement you just signed. I'm really looking forward to doing this work with you.</Text>}
-        <Text style={heading}>Monad OS Private · Exchange Agreement, 8 October 2026</Text>
+        <Text style={heading}>Monad OS Private · Exchange Agreement, {agreementDate}</Text>
         <Text style={text}><strong>Signed by:</strong> {name}</Text>
         <Text style={text}><strong>Email:</strong> {email}</Text>
         <Text style={text}><strong>Signed:</strong> {time}</Text>

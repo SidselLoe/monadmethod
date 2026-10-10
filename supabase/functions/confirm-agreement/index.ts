@@ -4,8 +4,12 @@ import { sendTemplateEmail } from '../_shared/transactional-email-templates/send
 
 // Monad OS onboarding pages (public/welcome/<slug>.html) post here when a client signs.
 // Only known slugs are accepted, and the agreement wording comes from the server, never the browser.
-const CLIENTS: Record<string, string> = {
-  philip: 'Philip', nils: 'Nils', ryan: 'Ryan', anders: 'Anders', annie: 'Annie',
+const CLIENTS: Record<string, { first: string; date: string }> = {
+  philip: { first: 'Philip', date: '8 October 2026' },
+  nils: { first: 'Nils', date: '8 October 2026' },
+  ryan: { first: 'Ryan', date: '8 October 2026' },
+  anders: { first: 'Anders', date: '8 October 2026' },
+  sabrina: { first: 'Sabrina', date: '10 October 2026' },
 }
 
 const COMMITMENTS = [
@@ -32,14 +36,14 @@ Deno.serve(async (req) => {
   const parsed = Body.safeParse(await req.json().catch(() => null))
   if (!parsed.success) return json({ error: 'Invalid request' }, 400)
   const { slug, name, email } = parsed.data
-  const first = CLIENTS[slug]
-  if (!first) return json({ error: 'Not available' }, 404)
+  const client = CLIENTS[slug]
+  if (!client) return json({ error: 'Not available' }, 404)
 
   const time = new Intl.DateTimeFormat('en-GB', {
     dateStyle: 'medium', timeStyle: 'short', timeZone: 'Europe/London',
   }).format(new Date()) + ' (London)'
   const templateData = {
-    first, name, email, time, commitments: COMMITMENTS,
+    first: client.first, agreementDate: client.date, name, email, time, commitments: COMMITMENTS,
     pageUrl: `https://monadmethod.com/welcome/${slug}`,
   }
   const key = `agreement-${slug}-${email.toLowerCase()}`
@@ -48,10 +52,10 @@ Deno.serve(async (req) => {
     const owner = await sendTemplateEmail('agreement-signed-owner', 'sidsel@loschenkohl.com', {
       templateData, idempotencyKey: `${key}-owner`, fromName: 'Monad OS', replyTo: email,
     })
-    const client = await sendTemplateEmail('agreement-signed', email, {
+    const clientCopy = await sendTemplateEmail('agreement-signed', email, {
       templateData, idempotencyKey: `${key}-client`, fromName: 'Sidsel Løschenkohl', replyTo: 'sidsel@loschenkohl.com',
     })
-    return json({ owner: owner.sent, client: client.sent })
+    return json({ owner: owner.sent, client: clientCopy.sent })
   } catch (e) {
     console.error('send failed', (e as any)?.code ?? (e as Error).message)
     return json({ error: 'Send failed' }, 500)
