@@ -6,28 +6,18 @@ import { sendTemplateEmail } from '../_shared/transactional-email-templates/send
 // Only known slugs are accepted, and the agreement wording comes from the server, never the browser.
 const CLIENTS: Record<string, { first: string; date: string }> = {
   philip: { first: 'Philip', date: '8 October 2026' },
-  nils: { first: 'Nils', date: '8 October 2026' },
-  ryan: { first: 'Ryan', date: '8 October 2026' },
-  anders: { first: 'Anders', date: '8 October 2026' },
+  nils: { first: 'Nils', date: '10 October 2026' },
+  ryan: { first: 'Ryan', date: '10 October 2026' },
   sabrina: { first: 'Sabrina', date: '10 October 2026' },
 }
 
 const COMMITMENTS = [
-  "I'll attend all four strategic sessions within my 30 days, each booked at least 24 hours ahead, and I'm happy for them to be recorded with Fireflies.",
-  "I'll join at least four Monad Activations, ideally as many as I can, booked in advance.",
+  "I'll attend all four strategic sessions within my 30 days, each booked for the following week, and I'm happy for them to be recorded with Fireflies.",
+  "I'll join at least four Monad Activations, ideally as many as I can, each booked at least 24 hours in advance.",
   "I'll complete each workbook at least 24 hours before its strategic session.",
   "I'll join a recorded final conversation within a week of our last session, and Sidsel can use my words, video and picture from it in her marketing and tag me, once I've seen it.",
   "I've read the agreement and accept it.",
 ]
-
-// Sabrina's agreement uses the updated booking rhythm: sessions a week ahead, activations 24 hours ahead.
-const COMMITMENTS_BY_CLIENT: Record<string, string[]> = {
-  sabrina: [
-    "I'll attend all four strategic sessions within my 30 days, each booked for the following week, and I'm happy for them to be recorded with Fireflies.",
-    "I'll join at least four Monad Activations, ideally as many as I can, each booked at least 24 hours in advance.",
-    COMMITMENTS[2], COMMITMENTS[3], COMMITMENTS[4],
-  ],
-}
 
 const Body = z.object({
   slug: z.string().regex(/^[a-z0-9-]{1,40}$/),
@@ -52,7 +42,7 @@ Deno.serve(async (req) => {
     dateStyle: 'medium', timeStyle: 'short', timeZone: 'Europe/London',
   }).format(new Date()) + ' (London)'
   const templateData = {
-    first: client.first, agreementDate: client.date, name, email, time, commitments: COMMITMENTS_BY_CLIENT[slug] ?? COMMITMENTS,
+    first: client.first, agreementDate: client.date, name, email, time, commitments: COMMITMENTS,
     pageUrl: `https://monadmethod.com/welcome/${slug}`,
   }
   const key = `agreement-${slug}-${email.toLowerCase()}`
