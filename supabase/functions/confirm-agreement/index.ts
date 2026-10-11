@@ -7,7 +7,6 @@ import { sendTemplateEmail } from '../_shared/transactional-email-templates/send
 const CLIENTS: Record<string, { first: string; date: string }> = {
   philip: { first: 'Philip', date: '8 October 2026' },
   nils: { first: 'Nils', date: '10 October 2026' },
-  ryan: { first: 'Ryan', date: '10 October 2026' },
   sabrina: { first: 'Sabrina', date: '10 October 2026' },
   shabaz: { first: 'Shabaz', date: '11 October 2026' },
   galeen: { first: 'Galeen', date: '11 October 2026' },
