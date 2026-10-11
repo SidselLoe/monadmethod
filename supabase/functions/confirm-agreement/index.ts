@@ -11,6 +11,7 @@ const CLIENTS: Record<string, { first: string; date: string }> = {
   sabrina: { first: 'Sabrina', date: '10 October 2026' },
   shabaz: { first: 'Shabaz', date: '11 October 2026' },
   galeen: { first: 'Galeen', date: '11 October 2026' },
+  chris: { first: 'Chris', date: '11 October 2026' },
 }
 
 const COMMITMENTS = [
