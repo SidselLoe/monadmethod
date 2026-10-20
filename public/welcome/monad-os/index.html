@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="/favicon.png">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Monad OS</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Monad Method">
+<meta property="og:title" content="Monad OS · What to expect">
+<meta property="og:description" content="Everything you need for your month of Monad OS, in one place. From Sidsel Løschenkohl.">
+<meta property="og:url" content="https://monadmethod.com/welcome/monad-os">
+<meta property="og:image" content="https://monadmethod.com/og-welcome.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://monadmethod.com/og-welcome.png">
+<meta name="description" content="Everything you need for your month of Monad OS, in one place.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400&display=swap">
+<style>
+/* Layout: one reading column, sections in the order the person acts on them. Square corners, teal for the method, one red pill. */
+:root{
+  --ground:#ffffff; --ink:#1a1a1a; --ink-muted:rgba(26,26,26,.72); --line:rgba(26,26,26,.14); --line-strong:#1a1a1a;
+  --teal:#7ec8c8; --teal-wash:rgba(126,200,200,.14); --red:#ff3131; --on-red:#ffffff;
+  --sans:Poppins,"Helvetica Neue",Arial,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --ground:#1a1a1a; --ink:#ffffff; --ink-muted:rgba(255,255,255,.72); --line:rgba(255,255,255,.16); --line-strong:rgba(255,255,255,.6);
+  --teal-wash:rgba(126,200,200,.12); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --ground:#1a1a1a; --ink:#ffffff; --ink-muted:rgba(255,255,255,.72); --line:rgba(255,255,255,.16); --line-strong:rgba(255,255,255,.6);
+  --teal-wash:rgba(126,200,200,.12); color-scheme:dark}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding-inline:20px;padding-block:40px 96px}
+a{color:inherit;text-decoration-color:var(--teal);text-underline-offset:3px;text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+h1,h2,h3{text-wrap:balance;margin:0}
+p{margin:0}
+.label{font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-muted)}
+section{padding-block:56px 0;display:grid;gap:22px}
+section + section{border-top:1px solid var(--line);margin-top:56px}
+h2{font-size:clamp(26px,4.4vw,32px);line-height:1.18;font-weight:800;letter-spacing:-.02em}
+h3{font-size:18px;font-weight:800;line-height:1.3}
+.muted{color:var(--ink-muted)}
+.hint{font-size:14px;color:var(--ink-muted)}
+
+/* Hero */
+.hero{display:grid;gap:24px}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.topbar svg{width:40px;height:40px;flex:none}
+.hero h1{font-size:clamp(40px,8vw,60px);line-height:1.04;font-weight:800;letter-spacing:-.025em;padding-top:8px}
+.hero .lede{font-size:18px;max-width:62ch}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:2px solid var(--ink);border-bottom:1px solid var(--line)}
+.facts div{padding:16px 16px 16px 0;display:grid;gap:4px;min-width:0}
+.facts div + div{padding-left:16px;border-left:1px solid var(--line)}
+.facts b{font-size:18px;font-weight:800;line-height:1.3}
+@media (max-width:560px){.facts{grid-template-columns:1fr}.facts div + div{border-left:0;padding-left:0;border-top:1px solid var(--line)}}
+
+/* Lists */
+.ticks{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.ticks li{display:grid;grid-template-columns:22px minmax(0,1fr);gap:12px;align-items:start}
+.ticks li::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--teal);margin-top:10px;justify-self:center}
+.ticks b{font-weight:600}
+
+.parts{display:grid;gap:0;border-top:1px solid var(--line)}
+.part{display:grid;grid-template-columns:150px minmax(0,1fr);gap:20px;padding-block:22px;border-bottom:1px solid var(--line)}
+.part h3{font-size:17px}
+.part .tag{font-size:13px;color:var(--ink-muted);font-weight:400;display:block;margin-top:2px}
+.part div{display:grid;gap:8px;min-width:0}
+@media (max-width:560px){.part{grid-template-columns:1fr;gap:8px}}
+
+/* Value */
+.value{display:grid;gap:0;border:1px solid var(--line-strong)}
+.vrow{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 20px}
+.vrow + .vrow{border-top:1px solid var(--line)}
+.vrow b{font-size:22px;font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
+.vrow.you b{color:var(--ink)}
+.vrow.you{background:var(--teal-wash)}
+.vrow s{color:var(--ink-muted);font-weight:600;text-decoration-thickness:2px}
+
+/* Exchange */
+.ask{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border:1px solid var(--line-strong)}
+.ask > div{padding:20px;display:grid;gap:12px;align-content:start;min-width:0}
+.ask > div + div{border-left:1px solid var(--line-strong)}
+@media (max-width:620px){.ask{grid-template-columns:1fr}.ask > div + div{border-left:0;border-top:1px solid var(--line-strong)}}
+
+.time{display:grid;gap:10px}
+.time-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid var(--line)}
+.time-row div{padding:16px;display:grid;gap:2px;align-content:start;min-width:0}
+.time-row div + div{border-left:1px solid var(--line)}
+.time-row b{font-size:18px;font-weight:800;line-height:1.25}
+.time-row span{font-size:14px;color:var(--ink-muted);line-height:1.4}
+.time-row .sum{background:var(--teal-wash)}
+@media (max-width:620px){.time-row{grid-template-columns:1fr 1fr}.time-row div:nth-child(3){border-left:0}.time-row div:nth-child(n+3){border-top:1px solid var(--line)}}
+
+/* Name + circle */
+.name{display:grid;grid-template-columns:56px minmax(0,1fr);gap:18px;align-items:start;padding:20px;background:var(--teal-wash);border:1px solid var(--teal)}
+.name svg{width:56px;height:56px}
+.name > div{display:grid;gap:6px;min-width:0}
+.sub{margin-top:8px}
+.circle{display:grid;grid-template-columns:170px minmax(0,1fr);gap:32px;align-items:center}
+.circle svg{width:100%;max-width:170px;height:auto}
+.circle-text{display:grid;gap:16px;min-width:0}
+@media (max-width:560px){.circle{grid-template-columns:1fr;gap:20px}.circle svg{max-width:130px}}
+.pull{margin:8px 0;padding:6px 0 6px 22px;border-left:3px solid var(--teal);font-size:clamp(20px,3.4vw,24px);line-height:1.35;font-weight:800;letter-spacing:-.01em;display:grid;gap:8px}
+.pull span{font-size:14px;font-weight:400;color:var(--ink-muted);letter-spacing:0}
+.quotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 32px}
+.quotes figure{margin:0;display:grid;gap:8px;align-content:start}
+.quotes blockquote{margin:0;font-size:17px;line-height:1.5;font-weight:600}
+.quotes figcaption{font-size:14px;color:var(--ink-muted)}
+@media (max-width:560px){.quotes{grid-template-columns:1fr}}
+
+/* Steps */
+.steps{list-style:none;margin:0;padding:0;display:grid;counter-reset:s}
+.steps > li{counter-increment:s;display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px;padding-block:20px;border-top:1px solid var(--line)}
+.steps > li:first-child{border-top:0;padding-top:4px}
+.steps > li::before{content:counter(s);width:36px;height:36px;border-radius:50%;border:2px solid var(--teal);display:grid;place-items:center;font-weight:800;font-size:15px}
+.step{display:grid;gap:8px;min-width:0}
+.due{font-size:14px;font-weight:600}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:4px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border:1.5px solid var(--line-strong);background:transparent;color:var(--ink);font:600 15px/1 var(--sans);text-decoration:none;cursor:pointer;border-radius:999px}
+.btn:hover{background:var(--teal-wash)}
+.btn.primary{background:var(--red);border-color:var(--red);color:var(--on-red);font-size:17px;padding:15px 26px}
+.btn.primary:hover{filter:brightness(.94);background:var(--red)}
+.btn[disabled]{opacity:.35;cursor:not-allowed}
+.code{display:inline-flex;align-items:center;gap:10px;padding:8px 8px 8px 14px;border:1.5px dashed var(--teal);font:600 15px/1 var(--sans);letter-spacing:.06em;max-width:100%;overflow-wrap:anywhere}
+.code button{border:0;background:var(--teal-wash);color:var(--ink);font:600 13px/1 var(--sans);padding:8px 10px;cursor:pointer}
+.lock{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:1.5px dashed var(--line-strong);border-radius:999px;font:600 14px/1.2 var(--sans);color:var(--ink-muted)}
+.lock svg{width:14px;height:14px;flex:none}
+
+.rhythm{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid var(--line)}
+.rhythm div{padding:18px;display:grid;gap:6px;align-content:start;min-width:0}
+.rhythm div + div{border-left:1px solid var(--line)}
+.rhythm b{font-weight:800}
+.rhythm p{font-size:15px;line-height:1.55}
+@media (max-width:620px){.rhythm{grid-template-columns:1fr}.rhythm div + div{border-left:0;border-top:1px solid var(--line)}}
+
+.links{display:grid;border-top:1px solid var(--line)}
+.links a,.links .row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none;align-items:center}
+.links a:hover b{text-decoration:underline;text-decoration-color:var(--teal);text-decoration-thickness:2px;text-underline-offset:3px}
+.links b{font-weight:600}
+.links small{display:block;font-size:14px;color:var(--ink-muted);line-height:1.4}
+.links .go{font-size:14px;color:var(--ink-muted)}
+
+/* Agreement */
+details.terms{border-top:1px solid var(--line-strong);border-bottom:1px solid var(--line-strong)}
+details.terms summary{cursor:pointer;padding:18px 0;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px}
+details.terms summary::-webkit-details-marker{display:none}
+details.terms summary::after{content:"Read";font-weight:400;color:var(--ink-muted)}
+details.terms[open] summary::after{content:"Close"}
+.terms .body{padding:0 0 22px;display:grid;gap:18px;font-size:15.5px;line-height:1.6}
+.terms h4{margin:0 0 4px;font-size:15.5px;font-weight:800}
+.terms ul{margin:6px 0 0;padding-left:20px;display:grid;gap:4px}
+
+.sign{display:grid;gap:20px}
+.checks{display:grid;border-top:1px solid var(--line)}
+.checks label{display:grid;grid-template-columns:24px minmax(0,1fr);gap:14px;align-items:start;padding:16px 0;border-bottom:1px solid var(--line);cursor:pointer;font-size:16px;line-height:1.5}
+.checks input{width:20px;height:20px;margin:3px 0 0;accent-color:var(--teal)}
+.field{display:grid;gap:6px;max-width:420px}
+.field input{font:600 20px/1.3 var(--sans);padding:10px 0;border:0;border-bottom:2px solid var(--line-strong);background:transparent;color:var(--ink);border-radius:0;width:100%}
+.field input:focus{outline:none;border-bottom-color:var(--teal)}
+.out{display:grid;gap:12px;padding:20px 0 0 20px;border-left:3px solid var(--teal)}
+.out textarea{font:400 15px/1.5 var(--sans);padding:12px 14px;border:1px solid var(--line);background:var(--ground);color:var(--ink);width:100%;min-height:92px;resize:vertical;border-radius:0}
+
+footer{margin-top:72px;padding-top:28px;border-top:1px solid var(--line);display:flex;gap:14px;align-items:center;color:var(--ink-muted);font-size:14px}
+footer svg{width:28px;height:28px;flex:none}
+@media (prefers-reduced-motion:no-preference){.btn{transition:background .15s ease}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="topbar">
+      <span class="label">Monad OS · Overview</span>
+      <svg viewBox="0 0 100 100" aria-label="Monad symbol" role="img"><circle cx="50" cy="50" r="42" fill="none" stroke="#7ec8c8" stroke-width="13"/><circle cx="50" cy="50" r="10" fill="#7ec8c8"/></svg>
+    </div>
+    <h1>Monad OS</h1>
+    <p class="lede">A private 30-day container for people at a point of transition. You already know what you're here to do. This month is about becoming the person who can hold it: your power back inside you, your energy going where you choose, and a calmer, steadier version of you leading the way.</p>
+    <div class="facts">
+      <div><span class="label">Length</span><b>30 days</b></div>
+      <div><span class="label">Format</span><b>Live and online</b></div>
+      <div><span class="label">Your time</span><b>About 3 hours a week</b></div>
+    </div>
+  </header>
+
+  <section id="expect" aria-labelledby="h-expect">
+    <h2 id="h-expect">What it's for</h2>
+    <p>Monad OS is built for the moment you're stepping into your next level: a launch, a leap, a choice between two paths, a goal bigger than anything you've done before. The person you've been got you here, but getting there asks you to become someone new. Same you, same results.</p>
+    <p>Most people arrive with plenty of vision and plenty of drive. What's missing is capacity: the ability to hold more without it spilling out as overthinking, over-giving, pushing or running in five directions at once. What you build can only grow as far as you can hold. The work expands what you can hold.</p>
+    <div class="name">
+      <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="40" fill="none" stroke="#7ec8c8" stroke-width="12"/><circle cx="50" cy="50" r="10" fill="#7ec8c8"/></svg>
+      <div>
+        <h3>Why it's called Monad OS</h3>
+        <p>The monad is one of the oldest symbols there is. Pythagoras called it the source of all numbers: the one, indivisible point that everything else comes from. In this work it stands for your essential self, the part of you that remains when the noise is removed. OS is your operating system, the beliefs and habits running in the background that decide how you think, feel and act. Monad OS updates that system so it runs from that self.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="receive" aria-labelledby="h-receive">
+    <h2 id="h-receive">What's included</h2>
+    <div class="parts">
+      <div class="part"><h3>Monad Activations<span class="tag">10 on the calendar each month</span></h3><div>
+        <p>Live group energy sessions, 1.5 hours each, and the heart of the work. To become someone new, your identity has to change, and that's what the activations are designed to do: shift your state and your energy so the change can happen. You join at least four, and ideally as many as you can.</p></div></div>
+      <div class="part"><h3>Workbooks<span class="tag">One before each session</span></h3><div>
+        <p>Four workbooks, each one a layer deeper than the last. You answer them out loud, as a voice note, which gets you out of your head and past the internal editor. They help you process what comes up in the activations. It's my take on strategic shadow work, because integration is where the change lands.</p></div></div>
+      <div class="part"><h3>Strategic sessions<span class="tag">Four private, 45 minutes</span></h3><div>
+        <p>This is where things move. I prepare for each one with your workbook recording, and because the activations and workbooks are already doing their part, we move at a very different pace. We turn what you've seen into decisions and clear next steps.</p></div></div>
+      <div class="part"><h3>WhatsApp<span class="tag">Throughout</span></h3><div>
+        <p>Support between sessions, directly with me.</p></div></div>
+    </div>
+  </section>
+
+  <section id="how" aria-labelledby="h-how">
+    <h2 id="h-how">How it works</h2>
+    <p>Most of your day runs on autopilot. The same thoughts bring the same feelings, the same feelings drive the same choices, and the same choices give you the same results. That's why you can understand a pattern perfectly and still repeat it.</p>
+    <p>In an activation your brain slows down and your heart and brain fall into sync, and in that state the autopilot can be rewritten. You get to feel what it's like to be the next version of you before it has happened, and the more often you feel it, the more natural it becomes.</p>
+    <div class="circle">
+      <svg viewBox="0 0 220 220" role="img" aria-label="The month as a circle: activations, workbooks and strategic sessions, coming round again and going deeper each time">
+        <circle cx="110" cy="110" r="84" fill="none" stroke="#7ec8c8" stroke-width="10"/>
+        <circle cx="110" cy="110" r="14" fill="#7ec8c8"/>
+        <circle cx="110" cy="26" r="11" fill="var(--ground)" stroke="#7ec8c8" stroke-width="4"/>
+        <circle cx="182.7" cy="152" r="11" fill="var(--ground)" stroke="#7ec8c8" stroke-width="4"/>
+        <circle cx="37.3" cy="152" r="11" fill="var(--ground)" stroke="#7ec8c8" stroke-width="4"/>
+      </svg>
+      <div class="circle-text">
+        <p>The month goes round in a circle rather than a straight line. You come back to the same things, and each time you go a little deeper.</p>
+        <ul class="ticks">
+          <li><span><b>Activations</b> shift your state and your identity.</span></li>
+          <li><span><b>Workbooks</b> help you process what comes up, and often you'll hear your own answers as you speak.</span></li>
+          <li><span><b>Strategic sessions</b> turn what you've seen into decisions and clear next steps.</span></li>
+        </ul>
+        <p><b>The answers come from you.</b> My role is to hold up the mirror, so you can see what you already know.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="month" aria-labelledby="h-month">
+    <h2 id="h-month">The shape of the month</h2>
+    <div class="rhythm">
+      <div><b>Week 1 · Where you are</b><p>Taking stock, honestly. What you want, and what's been in the way.</p></div>
+      <div><b>Week 2 · What's been running you</b><p>The beliefs and patterns underneath, where they came from, and what they've been protecting.</p></div>
+      <div><b>Week 3 · Who you're becoming</b><p>The version of you that already holds what you want, and how it feels to be them.</p></div>
+      <div><b>Week 4 · How you build from here</b><p>Decisions, structure and how you show up, from a steadier place.</p></div>
+    </div>
+  </section>
+
+  <section id="time" aria-labelledby="h-time">
+    <h2 id="h-time">What it asks of you</h2>
+    <p>The work only works if you do it. That means all four strategic sessions within the 30 days, at least four activations, and each workbook recorded before its session.</p>
+    <div class="time">
+      <div class="label">Your time each week</div>
+      <div class="time-row">
+        <div><b>1.5 hours</b><span>One Monad Activation, or more</span></div>
+        <div><b>45 minutes</b><span>Your strategic session</span></div>
+        <div><b>30 to 60 minutes</b><span>Your workbook voice note</span></div>
+        <div class="sum"><b>2¾ to 3¼ hours</b><span>a week, plus any extra activations</span></div>
+      </div>
+    </div>
+    <blockquote class="pull">“Things have to start from within. When you're connected to yourself, you can build the structures around it.”<span>Sidsel</span></blockquote>
+  </section>
+
+  <section id="words" aria-labelledby="h-words">
+    <h2 id="h-words">In their words</h2>
+    <div class="quotes">
+      <figure><blockquote>“I am the most stable mentally I've ever been, and also the most clear I've ever been on where I want to be going.”</blockquote><figcaption>Bianca</figcaption></figure>
+      <figure><blockquote>“It's almost like a fog has been lifted away.”</blockquote><figcaption>Jessica</figcaption></figure>
+      <figure><blockquote>“If I hadn't done the program, I firmly believe nothing would have changed.”</blockquote><figcaption>Brandon</figcaption></figure>
+      <figure><blockquote>“You become more yourself.”</blockquote><figcaption>Alexandra</figcaption></figure>
+    </div>
+    <p class="muted">If it feels like the right time, message me and we'll talk it through.</p>
+  </section>
+
+  <footer>
+    <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="42" fill="none" stroke="#7ec8c8" stroke-width="13"/><circle cx="50" cy="50" r="10" fill="#7ec8c8"/></svg>
+    <span>Sidsel Løschenkohl · Monad Studios</span>
+  </footer>
+</div>
+</body>
+</html>
