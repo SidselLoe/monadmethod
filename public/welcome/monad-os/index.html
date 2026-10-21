@@ -96,6 +96,8 @@ h3{font-size:18px;font-weight:800;line-height:1.3}
 .time-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid var(--line)}
 .time-row div{padding:16px;display:grid;gap:2px;align-content:start;min-width:0}
 .time-row div + div{border-left:1px solid var(--line)}
+.time-row.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:640px){.time-row.three{grid-template-columns:1fr}.time-row.three div + div{border-left:0;border-top:1px solid var(--line)}}
 .time-row b{font-size:18px;font-weight:800;line-height:1.25}
 .time-row span{font-size:14px;color:var(--ink-muted);line-height:1.4}
 .time-row .sum{background:var(--teal-wash)}
@@ -218,7 +220,7 @@ footer svg{width:28px;height:28px;flex:none}
     <h2 id="h-three">Health, money, love</h2>
     <p>Almost everything we want in life sits in one of three places: our health, our money, our relationships. Most programs pick one and work on the outside of it. A new plan, a new strategy, a new routine.</p>
     <p>But it's the same you showing up in all three. The pattern that keeps your income at the same ceiling is often the one that keeps you tired, and the one that keeps choosing the same kind of love. Change one area from the outside, and the same patterns find their way back in somewhere else.</p>
-    <div class="time-row" style="margin-top:8px">
+    <div class="time-row three" style="margin:8px 0 16px">
       <div><b>Health</b><span>A nervous system that can rest. Energy that stays with you. A body that isn't holding everything.</span></div>
       <div><b>Money</b><span>Receiving without guilt. Decisions from steadiness, not fear. Worth that doesn't depend on the number.</span></div>
       <div><b>Love</b><span>Letting people in. Not over-giving to be chosen. Being fully seen, and staying.</span></div>
