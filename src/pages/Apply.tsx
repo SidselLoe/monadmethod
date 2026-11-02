@@ -268,7 +268,7 @@ const Apply = () => {
 
       <section className={`${sectionClass} bg-secondary`}>
         <div className="mx-auto max-w-[1000px] text-center">
-          <p className="text-[14px] font-semibold uppercase tracking-[0.12em] text-foreground">TRUSTED BY 200+ PEOPLE</p>
+          <p className="text-[14px] font-semibold uppercase tracking-[0.12em] text-foreground">TRUSTED BY 250+ PEOPLE</p>
           <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">{founders.map((founder) => <article key={founder.name} className="group relative aspect-[3/4] overflow-hidden rounded-xl"><img src={founder.photo} alt="" className="testimonial-media h-full w-full object-cover" loading="lazy" /><span className="absolute inset-0 bg-image-overlay" /><div className="absolute inset-x-0 bottom-0 p-4 text-left text-ink-foreground"><h3 className="text-[16px] font-extrabold leading-[1.25]">{founder.name}</h3>{founder.business && <p className="mt-1 text-[12px] font-normal text-ink-foreground/80">{founder.business}</p>}</div></article>)}</div>
           <p className="mt-8 text-[18px] font-normal text-foreground"><AnimatedFounderCount /> people have experienced the work.</p>
         </div>
