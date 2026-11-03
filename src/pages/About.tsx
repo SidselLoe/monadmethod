@@ -76,16 +76,13 @@ const About = () => {
               </h2>
               <div className="mt-7 space-y-5 text-[18px] text-body leading-[1.7]">
                 <p>
-                  For years I believed I'd be happy once I'd built a company I could sell. In my consulting years, I worked nights all through the Christmas holidays to hit a client's deadline. When we delivered, the relief lasted about a day, and then I was already bracing for the next one.
+                  For years I thought happiness was something I'd reach once I sold the company and could finally do what I actually cared about: advising and helping people. Ironic, I know.
                 </p>
                 <p>
-                  Then in 2023 a serious head injury, a broken eye and a detached retina forced the stop I wasn't willing to choose, and my health collapsed with it. The identity I'd built my whole life around fell apart, and I had to find out who I am without it.
+                  Then in 2023 a serious head injury, a broken eye and a detached retina forced the stop I wasn't willing to choose. The identity I'd built my whole life around fell apart, and I had to find out who I am without it.
                 </p>
                 <p>
                   Slowly, the pattern showed itself. I'd put my worth in a finish line outside me, so I had to keep earning my way toward it. I studied NLP, trained in energy work, quit alcohol overnight and tried everything on myself first. What actually worked became the Monad Method.
-                </p>
-                <p>
-                  Before all of this, I spent my career around technology and the people building it, from Silicon Valley in 2016 to crypto, Saxo Bank and Deloitte. I know what it's like when the work is you.
                 </p>
               </div>
             </div>
@@ -120,7 +117,7 @@ const About = () => {
           <div className="mt-10 space-y-6 text-[18px] leading-[1.7] font-normal text-body max-w-[640px] mx-auto text-center">
             <p>I work with people whose business, career or creative work comes from who they are, at the point where the next chapter is asking for something different.</p>
             <p>The work starts inside. Activations, workbooks and strategic sessions clear what keeps the old identity in place, and as that changes, the way you build changes too, because the person building it has changed. Same you, same results.</p>
-            <p>I work at the intersection of spiritual alignment, strategic clarity and operational intelligence.</p>
+            <p>I naturally gravitate to founders. When you live from the most authentic expression of yourself, you want to create, and building someone else's vision stops being enough. That's why Monad LTS exists. You don't need to be a founder to do this work, but for a lot of people it's where living in alignment leads.</p>
           </div>
         </div>
       </section>
@@ -262,31 +259,32 @@ const About = () => {
       </section>
 
       {/* 7. THE BOOK */}
-      <section className="bg-background py-16 md:py-[100px] px-4 sm:px-8">
-        <div className="max-w-[1100px] mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-14">
-          <img
-            src={bookCover}
-            alt="The Power of Unwavering Belief — Book by Sidsel Løschenkohl"
-            className="flex-shrink-0 w-[160px] md:w-[200px] rounded-2xl"
-          />
-
+      <section className="bg-ink text-ink-foreground py-16 md:py-[100px] px-4 sm:px-8 overflow-hidden">
+        <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-[0.9fr_1.1fr] items-center gap-12 md:gap-16">
+          <div className="relative flex justify-center">
+            <div aria-hidden="true" className="absolute inset-0 m-auto w-[320px] h-[320px] md:w-[420px] md:h-[420px] rounded-full bg-mint/20 blur-3xl" />
+            <img
+              src={bookCover}
+              alt="The Power of Unwavering Belief by Sidsel Løschenkohl"
+              className="relative w-[230px] md:w-[300px] -rotate-3 drop-shadow-[0_30px_40px_rgba(0,0,0,0.55)]"
+              loading="lazy"
+            />
+          </div>
           <div className="text-center md:text-left">
-            <span className="text-[13px] font-bold tracking-[0.12em] uppercase text-foreground">
-              The Book
-            </span>
-            <h2 className="mt-3 text-[32px] md:text-[48px] font-normal text-foreground leading-[1.1] tracking-[-0.025em]">
+            <span className="text-[13px] font-bold tracking-[0.12em] uppercase text-mint">The book</span>
+            <h2 className="mt-4 text-[32px] md:text-[48px] font-normal leading-[1.1] tracking-[-0.025em]">
               <span className="font-extrabold">The Power</span> of Unwavering Belief
             </h2>
-            <p className="mt-4 text-[18px] leading-[1.7] text-body">
+            <p className="mt-6 text-[18px] leading-[1.7] text-ink-foreground/85">
               A book about how reality changes when belief stops being abstract and becomes lived. On identity, inner state, and the unseen laws behind what we create.
             </p>
             <a
               href="https://thepowerofunwaveringbelief.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-5 text-[14px] font-medium text-foreground hover:underline transition-colors"
+              className="inline-flex mt-8 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
             >
-              Explore the Book →
+              Explore the book
             </a>
           </div>
         </div>
@@ -333,17 +331,23 @@ const About = () => {
 
       {/* 9. CTA */}
       <section className="bg-background py-16 md:py-[100px] px-4 sm:px-8">
-        <div className="max-w-[500px] mx-auto text-center">
-          <h2 className="text-[32px] md:text-[48px] font-normal text-foreground leading-[1.1] tracking-[-0.025em]">
-            <span className="font-extrabold">Ready to</span>{" "}<span className="font-normal">start</span>
-          </h2>
-          <p className="mt-5 text-[18px] text-body leading-[1.7]">
-            Every engagement starts with a short application and a call.
-          </p>
-          <Button asChild className="inline-flex mt-8 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
-          >
-            <Link to="/apply">APPLY NOW</Link>
-          </Button>
+        <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="rounded-xl bg-mint-light p-8 sm:p-10 flex flex-col">
+            <p className="text-[12px] font-semibold uppercase tracking-[0.12em] text-foreground/70">Feel it first</p>
+            <h3 className="mt-3 text-[26px] font-extrabold text-foreground leading-[1.25]">Come to a Monad Activation</h3>
+            <p className="mt-3 text-[16px] text-foreground leading-[1.7] flex-1">Lie down at home, close your eyes and receive. 90 minutes, online, £44.</p>
+            <Link to="/activations" className="mt-7 self-start inline-flex border border-foreground/20 text-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-background transition-colors">
+              See how it works
+            </Link>
+          </div>
+          <div className="rounded-xl bg-ink text-ink-foreground p-8 sm:p-10 flex flex-col">
+            <p className="text-[12px] font-semibold uppercase tracking-[0.12em] text-mint">Go all in</p>
+            <h3 className="mt-3 text-[26px] font-extrabold leading-[1.25]">Start Monad OS</h3>
+            <p className="mt-3 text-[16px] text-ink-foreground/85 leading-[1.7] flex-1">30 days, one to one with me. It starts every Monday.</p>
+            <Link to="/" className="mt-7 self-start inline-flex bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors">
+              See Monad OS
+            </Link>
+          </div>
         </div>
       </section>
 
