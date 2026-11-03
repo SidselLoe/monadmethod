@@ -12,6 +12,7 @@ import {
   currentStep,
   formatPrice,
   isFoundingRound,
+  GUARANTEE,
 } from "@/data/monadOs";
 
 const APPLY_URL = "/apply";
@@ -137,6 +138,19 @@ const Offer = ({ applyHref = APPLY_URL }: { applyHref?: string }) => {
             </ul>
           </div>
         </div>
+
+        <div className="mt-5 rounded-xl border border-border bg-card p-8 flex flex-col md:flex-row md:items-center gap-4 md:gap-8">
+          <p className="shrink-0 text-[12px] font-semibold uppercase tracking-[0.12em] text-foreground">My promise</p>
+          <p className="flex-1 text-[16px] text-body leading-[1.7]">{GUARANTEE}</p>
+        </div>
+
+        <p className="mt-10 text-[16px] text-body text-center">
+          Not ready yet?{" "}
+          <a href="/activations" className="font-semibold text-foreground underline underline-offset-4 decoration-[#7ec8c8]">
+            Come to a Monad Activation first
+          </a>{" "}
+          and feel the work for {formatPrice(ACTIVATION_PRICE)}.
+        </p>
       </div>
     </section>
   );

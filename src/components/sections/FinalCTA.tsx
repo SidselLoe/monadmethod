@@ -27,10 +27,10 @@ const FinalCTA = () => {
 
           {/* CTA */}
           <a
-            href={APPLY_URL}
+            href="#offer"
             className="flex-shrink-0 inline-flex bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
           >
-            APPLY NOW
+            Join Monad OS
           </a>
         </div>
       </div>

@@ -39,13 +39,13 @@ const Hero = () => {
 
         <div className="mt-10 flex flex-wrap items-center justify-center gap-6">
           <a
-            href={APPLY_URL}
+            href="#offer"
             className="inline-flex bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
           >
-            Apply Now
+            Join Monad OS
           </a>
-          <a href="#offer" className="text-[14px] font-semibold text-foreground underline underline-offset-4 decoration-[#7ec8c8] hover:decoration-2">
-            See what's included
+          <a href={APPLY_URL} className="text-[14px] font-semibold text-foreground underline underline-offset-4 decoration-[#7ec8c8] hover:decoration-2">
+            Talk to me first
           </a>
         </div>
 

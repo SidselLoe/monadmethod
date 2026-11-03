@@ -69,7 +69,7 @@ const forItems = [
 const notForItems = [
   "You want a quick fix or a motivational boost",
   "You want someone to tell you what to do",
-  "You're not willing to be honest about what's really going on",
+  "You're not willing to look at what's really going on",
   "You're in crisis and need clinical mental health support",
 ];
 

@@ -22,7 +22,7 @@ const testimonials = [
     type: "photo" as const,
     name: "Anthony McGuire",
     role: "CEO & Co-founder, PWR House",
-    quote: "I used to hold everything in. People-pleasing was running my co-founder dynamics, my team, my day. Now I'm direct — constructively, but direct. The leadership is sharper. The self-respect came back.",
+    quote: "I used to hold everything in. People-pleasing was running my co-founder dynamics, my team, my day. Now I'm direct, constructively, but direct. The leadership is sharper. The self-respect came back.",
     img: anthonyPhoto,
   },
 ];

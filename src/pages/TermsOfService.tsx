@@ -74,6 +74,7 @@ const TermsOfService = () => {
 
             <h2>No guarantees</h2>
             <p>We stand behind the quality of the work. We do not guarantee specific outcomes — business growth, income, health, or otherwise. What you get out depends on what you put in, your circumstances, and your willingness to meet the work honestly.</p>
+            <p>Monad OS comes with one commitment from us: if you complete all four strategic sessions, at least four Monad Activations and every workbook, and you have not felt a shift by the end of the 30 days, we continue working with you at no extra cost until you do. This replaces a refund and does not change the refund terms above.</p>
 
             <h2>Your responsibilities</h2>
             <p>To get the most from the work you agree to:</p>

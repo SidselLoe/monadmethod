@@ -171,7 +171,7 @@ const About = () => {
         <div className="max-w-[1100px] mx-auto">
           <div className="text-center mb-16">
             <span className="text-[13px] font-bold tracking-[0.12em] uppercase text-foreground">
-              Speaking & Facilitation
+              Speaking & Workshops
             </span>
             <h2 className="mt-4 text-[32px] md:text-[48px] font-normal text-foreground leading-[1.1] tracking-[-0.025em]">
               <span className="font-extrabold">I speak on alignment,</span> energy and the future of leadership

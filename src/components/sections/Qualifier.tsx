@@ -23,7 +23,7 @@ const forYou = [
 
 const notForYou = [
   "You want a formula handed to you",
-  "You're not willing to be honest with yourself",
+  "You're not willing to look at yourself",
   "Internal state sounds like a metaphor to you. Here it's the mechanism.",
 ];
 
@@ -69,10 +69,10 @@ const Qualifier = () => {
         {/* CTA */}
         <div className="flex justify-center mt-14">
           <a
-            href={APPLY_URL}
+            href="#offer"
             className="inline-flex items-center justify-center bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-wide px-8 py-3 rounded-full hover:bg-accent/90 transition-colors"
           >
-            Apply Now
+            Join Monad OS
           </a>
         </div>
       </div>

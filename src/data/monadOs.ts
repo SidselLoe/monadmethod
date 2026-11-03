@@ -48,6 +48,8 @@ export function priceSentence(now = new Date()) {
   return `${formatPrice(step.price)}.${next ? ` ${next.label} it's ${formatPrice(next.price)}.` : ""}`;
 }
 
+export const GUARANTEE = "Do the whole thing: all four sessions, at least four activations and every workbook. If you haven't felt the shift by the end, I keep working with you until you do, at no extra cost.";
+
 export const TIME_COMMITMENT = "About 4 to 5 hours a week, including everything";
 
 export function faqs(now = new Date()): [string, string][] {
@@ -66,6 +68,7 @@ export function faqs(now = new Date()): [string, string][] {
   if (bonusOpen(now)) {
     list.push(["What's the early sign-up bonus?", `Sign up by 11 November and you get three more months of Monad Activations after your 30 days, free. That's worth over ${formatPrice(1300)} at the single-session price, and it gives the work time to settle in.`]);
   }
+  list.push(["Is there a guarantee?", GUARANTEE]);
   list.push(["What happens after the 30 days?", "Plenty of people keep coming to the activations. If you're building something and we both feel there's more to do, I'll invite you into long-term work with me."]);
   return list;
 }
