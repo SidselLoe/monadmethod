@@ -33,10 +33,10 @@ const founders = [
 ];
 
 const withItems = [
-  "Your state shifts first, directly, through live energy activations",
+  "Your state shifts first, directly, through Monad Activations",
   "What's been running you gets named, out loud, in voice-note self-inquiry",
   "Clarity turns into decisions, delegation and structure in strategic sessions",
-  "A small community receiving alongside you in the live activations",
+  "A small community receiving alongside you in the activations",
   "Nobody telling you what to do. The answers come from you",
   "Complete discretion",
 ];
@@ -49,7 +49,7 @@ const withoutItems = [
 const process = [
   ["Apply", "A few short questions. If it looks like a fit, you book a call."],
   ["A 20-minute call", "We talk about where you are and whether Monad OS is right for you. If it's not a clear yes for both of us, we don't do it."],
-  ["Your 30 days", "10+ live energy activations a month, a workbook made for you each week, four private hours with me and WhatsApp support."],
+  ["Your 30 days", "10 Monad Activations a month, a workbook made for you each week, four private hours with me and WhatsApp support."],
   ["Compounding", "Each round goes deeper than the last. If you want to keep going, you're invited into long-term support."],
 ];
 const cases: { headline: string; quote?: string; name?: string; photo?: string; attribution?: string; wide?: boolean }[] = [

@@ -26,7 +26,7 @@ const MethodOfferings = () => {
                 The 30-day entry point.
               </h3>
               <p className="mt-3 text-[16px] text-body leading-[1.75] flex-1">
-                Thirty days. 10+ live Activations, a workbook made for you each week, four private 60-minute sessions with me, WhatsApp support.
+                Thirty days. 10 Monad Activations a month, a workbook made for you each week, four private 60-minute sessions with me, WhatsApp support.
               </p>
               <Link
                 to="/apply"

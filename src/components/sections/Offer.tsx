@@ -4,7 +4,9 @@ import {
   ACTIVATIONS_PER_MONTH,
   FOUNDING_PLACES,
   LAST_2026_START,
+  PAYMENT_LINKS,
   PRICE_STEPS,
+  canBuyDirect,
   TIME_COMMITMENT,
   bonusOpen,
   currentStep,
@@ -16,7 +18,7 @@ const APPLY_URL = "/apply";
 
 const included = [
   {
-    title: `${ACTIVATIONS_PER_MONTH}+ live Monad Activations a month`,
+    title: `${ACTIVATIONS_PER_MONTH} Monad Activations a month`,
     body: "Group energy sessions online, 90 minutes each, and the heart of the work. Join as many as you like. Six or more is ideal.",
     value: `${formatPrice(ACTIVATIONS_PER_MONTH * ACTIVATION_PRICE)} a month on their own`,
   },
@@ -26,7 +28,7 @@ const included = [
   },
   {
     title: "A workbook made for you, every week",
-    body: "Written around what's coming up for you, answered as a voice note, with the exercises you need: letters to your past, somatic work, exposure, meditations.",
+    body: "I take everything you tell me and turn it into questions that take you deeper. You answer them out loud as a voice note, with the exercises you need along the way.",
   },
   {
     title: "WhatsApp with me",
@@ -69,7 +71,7 @@ const Offer = ({ applyHref = APPLY_URL }: { applyHref?: string }) => {
           <div className="mt-5 rounded-xl border-2 border-[#7ec8c8] bg-mint-light p-8 flex flex-col md:flex-row md:items-center gap-4 md:gap-8">
             <p className="shrink-0 text-[12px] font-semibold uppercase tracking-[0.12em] text-foreground">Until 11 November</p>
             <div className="flex-1">
-              <h3 className="text-[20px] font-extrabold text-foreground leading-[1.35]">Three more months of live activations, free</h3>
+              <h3 className="text-[20px] font-extrabold text-foreground leading-[1.35]">Three more months of Monad Activations, free</h3>
               <p className="mt-2 text-[15px] text-body leading-[1.7]">
                 Sign up by midnight on 11 November and you keep coming to the activations for three months after your 30 days, so the work has time to settle in. That's worth over {formatPrice(1300)} at the single-session price.
               </p>
@@ -90,15 +92,38 @@ const Offer = ({ applyHref = APPLY_URL }: { applyHref?: string }) => {
               <p className="mt-4 text-[56px] sm:text-[72px] font-extrabold leading-none tracking-[-0.025em]">{formatPrice(step.price)}</p>
               <p className="mt-4 text-[16px] leading-[1.7] text-ink-foreground/85">
                 {founding
-                  ? `In full, or two payments of £800. ${FOUNDING_PLACES} places for anyone who starts in 2026, on any Monday until ${LAST_2026_START}.`
-                  : "In full or in installments."}
+                  ? `In full, or two payments of £800. ${FOUNDING_PLACES} places. Monad OS starts every Monday, and for this price your first Monday has to be ${LAST_2026_START} at the latest.`
+                  : "In full or in installments. Monad OS starts every Monday."}
               </p>
-              <a
-                href={applyHref}
-                className="inline-flex mt-8 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
-              >
-                Apply Now
-              </a>
+              <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
+                {canBuyDirect() ? (
+                  <>
+                    <a
+                      href={PAYMENT_LINKS.full}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
+                    >
+                      Join now
+                    </a>
+                    {PAYMENT_LINKS.split && (
+                      <a href={PAYMENT_LINKS.split} target="_blank" rel="noopener noreferrer" className="text-[14px] font-semibold text-ink-foreground underline underline-offset-4 decoration-[#7ec8c8]">
+                        Pay in two parts
+                      </a>
+                    )}
+                    <a href={applyHref} className="text-[14px] font-semibold text-ink-foreground underline underline-offset-4 decoration-[#7ec8c8]">
+                      Talk to me first
+                    </a>
+                  </>
+                ) : (
+                  <a
+                    href={applyHref}
+                    className="inline-flex bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
+                  >
+                    Apply Now
+                  </a>
+                )}
+              </div>
             </div>
             <ul className="space-y-3">
               {PRICE_STEPS.map((s) => {
@@ -108,7 +133,7 @@ const Offer = ({ applyHref = APPLY_URL }: { applyHref?: string }) => {
                     key={s.label}
                     className={`flex items-center justify-between rounded-lg px-5 py-4 ${active ? "bg-ink-foreground text-ink" : "border border-ink-foreground/20 text-ink-foreground/70"}`}
                   >
-                    <span className="text-[15px] font-semibold">{s.label}</span>
+                    <span className="text-[15px] font-semibold">{s.label === "Start in 2026" ? "Start by 28 December" : s.label}</span>
                     <span className="text-[18px] font-extrabold">{formatPrice(s.price)}</span>
                   </li>
                 );

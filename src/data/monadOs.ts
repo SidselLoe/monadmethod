@@ -6,6 +6,14 @@ export const ACTIVATIONS_PER_MONTH = 10;
 export const FOUNDING_PLACES = 11;
 export const LAST_2026_START = "28 December";
 
+// Stripe payment links. Paste them in to switch on "Join now" buttons.
+// While empty, every button goes to /apply instead.
+export const PAYMENT_LINKS = {
+  full: "", // £1,500 in full
+  split: "", // 2 × £800
+};
+export const canBuyDirect = () => Boolean(PAYMENT_LINKS.full);
+
 // Midnight at the end of Wednesday 11 November, London time (GMT in November).
 const BONUS_DEADLINE = new Date("2026-11-12T00:00:00Z");
 
@@ -36,7 +44,7 @@ export function priceSentence(now = new Date()) {
   const step = currentStep(now);
   const next = upcomingSteps(now)[0];
   if (isFoundingRound(now)) {
-    return `${formatPrice(step.price)} if you start in 2026, in full or in two payments of £800. There are ${FOUNDING_PLACES} places at this price, and you can start any Monday until ${LAST_2026_START}.${next ? ` From 1 January it's ${formatPrice(next.price)}.` : ""}`;
+    return `${formatPrice(step.price)} if you start in 2026, in full or in two payments of £800. There are ${FOUNDING_PLACES} places at this price. Monad OS starts every Monday, and to get this price your first Monday has to be ${LAST_2026_START} at the latest.${next ? ` From 1 January it's ${formatPrice(next.price)}.` : ""}`;
   }
   return `${formatPrice(step.price)}.${next ? ` ${next.label} it's ${formatPrice(next.price)}.` : ""}`;
 }
@@ -46,6 +54,7 @@ export const TIME_COMMITMENT = "About 4 to 5 hours a week, including everything"
 export function faqs(now = new Date()): [string, string][] {
   const list: [string, string][] = [
     ["Do I need to be a founder?", "No. The people doing Monad OS right now are at a turning point: starting a business, leaving a career, going all in on a creative path, deciding what's next. What matters is that what you build comes from you, and that you're open to energy work."],
+    ["Can I just join, or do I need a call?", "You can join straight away. If you'd like to talk it through first, apply and book a 20-minute call with me. Either way, we start on a Monday."],
     ["Do I need to know my purpose?", "No. That's usually something the work surfaces, not something you bring to it."],
     ["Will you tell me what to do?", "No. I won't hand you a playbook. The work gets you back to your own judgment, so the decisions come from you, and they hold."],
     ["What's a Monad Activation?", "A live group session online, 90 minutes in total. For about an hour of it you lie down at home with your eyes closed, guided by music, while I work with your energy. There's nothing to learn and nothing to get right. The frequency does the work."],
@@ -56,7 +65,7 @@ export function faqs(now = new Date()): [string, string][] {
     ["What does it cost?", priceSentence(now)],
   ];
   if (bonusOpen(now)) {
-    list.push(["What's the early sign-up bonus?", `Sign up by 11 November and you get three more months of live Monad Activations after your 30 days, free. That's worth over ${formatPrice(1300)} at the single-session price, and it gives the work time to settle in.`]);
+    list.push(["What's the early sign-up bonus?", `Sign up by 11 November and you get three more months of Monad Activations after your 30 days, free. That's worth over ${formatPrice(1300)} at the single-session price, and it gives the work time to settle in.`]);
   }
   list.push(["What happens after the 30 days?", "Plenty of people keep coming to the activations. If you're building something and we both feel there's more to do, I'll invite you into long-term work with me."]);
   return list;

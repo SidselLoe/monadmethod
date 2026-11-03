@@ -7,7 +7,7 @@ const parts = [
   {
     label: "Workbooks",
     title: "See what's been running you",
-    body: "A workbook written for you every week and answered out loud as a voice note. Speaking gets you past the internal editor, and you'll often hear your own answers as you say them.",
+    body: "I take everything you tell me and turn it into questions that take you deeper, every week. You answer out loud as a voice note, which gets you past the internal editor, and you'll often hear your own answers as you say them.",
   },
   {
     label: "Strategic sessions",

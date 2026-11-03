@@ -1,6 +1,6 @@
 import rudiAvatar from "@/assets/testimonials/rudi-adigbli-founder-reethink.png";
 import jessicaAvatar from "@/assets/testimonials/jessica-rainey-founder-wildflower-woman.png";
-import ilyaAvatar from "@/assets/testimonials/ilya-paveliev-founder-hologram.png";
+import brandonAvatar from "@/assets/testimonials/brandon-hadwin-founder-healingwithbrandon.png";
 import ellaAvatar from "@/assets/testimonials/ella-cane-founder.png";
 import alexandraAvatar from "@/assets/testimonials/alexandra-feldman-founder-of-the-islands.png";
 import AnimatedFounderCount from "@/components/AnimatedFounderCount";
@@ -12,7 +12,7 @@ const APPLY_URL = "/apply";
 const avatars = [
   { src: rudiAvatar, alt: "Rudi Adigbli" },
   { src: jessicaAvatar, alt: "Jessica Rainey" },
-  { src: ilyaAvatar, alt: "Ilya Paveliev" },
+  { src: brandonAvatar, alt: "Brandon Hadwin" },
   { src: ellaAvatar, alt: "Ella Cane" },
   { src: alexandraAvatar, alt: "Alexandra Feldman" },
 ];

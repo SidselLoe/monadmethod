@@ -1,19 +1,24 @@
-import { LAST_2026_START, bonusOpen, isFoundingRound } from "@/data/monadOs";
+import { LAST_2026_START, bonusOpen, canBuyDirect, isFoundingRound } from "@/data/monadOs";
 
 const HowItWorks = () => {
   const steps: [string, string][] = [
-    ["Apply", "A few short questions about where you are and what you want to change."],
-    ["A 20-minute call", "We talk about where you are and whether Monad OS is right for you. If it's not a clear yes for both of us, we don't do it."],
     [
-      "Start on a Monday",
-      isFoundingRound()
-        ? `Any Monday until ${LAST_2026_START}. Your first workbook and our WhatsApp group are ready the same day.`
-        : "Any Monday. Your first workbook and our WhatsApp group are ready the same day.",
+      "Join",
+      canBuyDirect()
+        ? "Pay in full or in two parts and you're in. If you'd rather talk first, apply and book a 20-minute call with me."
+        : "Apply with a few short questions, then book a 20-minute call with me so we can see if it's right for you.",
     ],
+    [
+      "Starts every Monday",
+      isFoundingRound()
+        ? `Pick the Monday that works for you. For the founding price, your first Monday has to be ${LAST_2026_START} at the latest.`
+        : "Pick the Monday that works for you.",
+    ],
+    ["Day one", "Your first workbook and our WhatsApp group are ready, and you can book your first activation and your first session."],
     [
       "Your 30 days, and after",
       bonusOpen()
-        ? "Four sessions, four workbooks and as many activations as you can make. Sign up by 11 November and the activations carry on for three more months."
+        ? "Four sessions, four workbooks and as many activations as you can make. Join by 11 November and the activations carry on for three more months."
         : "Four sessions, four workbooks and as many activations as you can make. If there's more to build together, I'll invite you into long-term work.",
     ],
   ];

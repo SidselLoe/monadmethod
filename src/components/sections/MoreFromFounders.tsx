@@ -3,7 +3,6 @@ import biancaCover from "@/assets/testimonials/bianca-polizzi-founder-polizzi-me
 import brandonCover from "@/assets/testimonials/brandon-hadwin-founder-healingwithbrandon.png";
 import jessicaCover from "@/assets/testimonials/jessica-rainey-founder-wildflower-woman.png";
 import rudiPhoto from "@/assets/testimonials/rudi-adigbli-founder-reethink.png";
-import ilyaPhoto from "@/assets/testimonials/ilya-paveliev-founder-hologram.png";
 import alexandraCover from "@/assets/testimonials/alexandra-feldman-founder-of-the-islands.png";
 
 const videoCards = [
@@ -21,22 +20,22 @@ const quoteCards = [
     quote: "Working with Sidsel was the first truly holistic experience I've had. A lot of work focuses on strategy. Some goes deeper, into beliefs and how to change them. Very few work with your energy the way Sidsel does, and that's what makes it so effective.",
   },
   {
-    name: "Annie Reardon",
-    company: "LUDO",
-    photo: null,
-    quote: "For the first time I am building the company around the life I want, not the other way around. That distinction sounds small. It changed everything.",
+    name: "Alexandra Feldman",
+    company: "Of The Islands",
+    photo: alexandraCover,
+    quote: "Fix your energy, and then use your powerhouse drive to do everything else.",
   },
   {
-    name: "Ilya Paveliev",
-    company: "Hologram",
-    photo: ilyaPhoto,
-    quote: "I have done executive advisory work before. This is not that. Something shifted in how I relate to pressure and it changed how I show up with my team. Quietly. Permanently.",
+    name: "Bianca Polizzi",
+    company: "Polizzi Media",
+    photo: biancaCover,
+    quote: "I am the most stable mentally I've ever been, and also the most clear I've ever been on where I want to be going.",
   },
   {
-    name: "Ieva Urenceva",
-    company: "@catchagypsea",
-    photo: null,
-    quote: "Sidsel appeared in my life at exactly the right time. The sessions helped me reconnect with myself after years of running on stress — I started setting real boundaries, dreaming vividly again, and feeling a kind of self-love I hadn't accessed before. Every session left me clearer and more centred than the last.",
+    name: "Brandon Hadwin",
+    company: "Healing with Brandon",
+    photo: brandonCover,
+    quote: "I was the person I was looking for.",
   },
 ];
 
