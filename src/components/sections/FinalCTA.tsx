@@ -18,7 +18,7 @@ const FinalCTA = () => {
               Build from who you're becoming.
             </h3>
             <p className="mt-3 text-[16px] text-foreground leading-[1.75]">
-              You are the upgrade. £1,500 if you start in November. From 1 December, £2,500.
+              You are the upgrade. £1,500 if you start in 2026, with 11 places at that price. Sign up by 11 November and three months of live activations are on me. From 1 January, £2,000.
             </p>
           </div>
 

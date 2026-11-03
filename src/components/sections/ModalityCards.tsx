@@ -1,7 +1,7 @@
 const cards = [
   {
     title: "Clear the backlog",
-    body: "Most of what holds you back is stored below thought. Monad Activations clear it while you lie down and receive. Guided, music-driven, nothing to do.",
+    body: "Most of what drives you runs below conscious thought. Monad Activations reach that level while you lie down and receive, guided by music, with nothing to do but show up.",
   },
   {
     title: "Name what's been running you",
@@ -9,7 +9,7 @@ const cards = [
   },
   {
     title: "Move from the new state",
-    body: "Private sessions turn what has opened up into real moves: hiring, delegating, selling, deciding.",
+    body: "Private sessions turn what has opened up into real moves, in your work, your money and your relationships.",
   },
 ];
 

@@ -24,7 +24,7 @@ const ProblemProgram = () => {
           <div className="bg-card border border-border rounded-xl p-7 sm:p-8">
               <h3 className="text-[20px] font-extrabold text-foreground">The pattern.</h3>
               <p className="mt-2 text-[15px] text-body leading-[1.7]">
-                New people, same problem. Someone joins, someone leaves.
+                New people, new places, same story. In love, in work, in friendships.
               </p>
           </div>
 
@@ -32,7 +32,7 @@ const ProblemProgram = () => {
           <div className="bg-card border border-border rounded-xl p-7 sm:p-8">
               <h3 className="text-[20px] font-extrabold text-foreground">The weight.</h3>
               <p className="mt-2 text-[15px] text-body leading-[1.7]">
-                Everything runs through you, and there's more you want to build.
+                Everything runs through you. You're always on, and you can't switch off.
               </p>
           </div>
 
@@ -45,7 +45,7 @@ const ProblemProgram = () => {
         </div>
 
         <p className="mt-10 text-[18px] text-body text-center max-w-[820px] mx-auto leading-[1.7]">
-          It's the old operating system: the patterns, beliefs and stored stress that got you here. It built what you have. It also sets the ceiling. You can't think your way out of what your body has learned, so the work starts with your state.
+          It's the old operating system: the patterns and beliefs that got you here. It built what you have, and it also sets the ceiling, in your work, your money, your health and your relationships. Most of it runs below conscious thought, which is why you can understand a pattern perfectly and still repeat it, so the work starts with your state.
         </p>
       </div>
     </section>

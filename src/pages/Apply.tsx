@@ -47,7 +47,7 @@ const withoutItems = [
 const process = [
   ["Apply", "A few short questions. If it looks like a fit, you book a call."],
   ["A call with me", "We talk about where you are, what you're building and whether Monad OS is right for you. No pressure, no pitch."],
-  ["Your 30 days", "10 live energy activations, four weeks of voice-note self-inquiry, four private sessions with me and WhatsApp support."],
+  ["Your 30 days", "10+ live energy activations, a workbook made for you each week, four private 60-minute sessions with me and WhatsApp support."],
   ["Compounding", "Each round goes deeper than the last. If you want to keep going, you're invited into long-term support."],
 ];
 const cases: { headline: string; quote?: string; name?: string; photo?: string; attribution?: string; wide?: boolean }[] = [
@@ -58,7 +58,7 @@ const cases: { headline: string; quote?: string; name?: string; photo?: string; 
   { headline: "Why a somatic practitioner calls it support she hasn't felt anywhere else.", quote: "I work with somatic practices as part of my job. But there's such a gentle, receiving, energetic support in these energy activations that I just haven't felt anywhere else.", name: "Jessica Rainey", photo: jessicaPhoto, wide: true },
 ];
 const forItems = [
-  "Everything comes back to you: every decision, every client, every problem",
+  "Everything comes back to you, at work and at home",
   "You can't switch off, and you're running on empty more often than you'd admit",
   "You've hit the targets and it doesn't feel the way you thought it would",
   "You've tried coaching, retreats or frameworks and found them helpful but incomplete",
@@ -73,13 +73,13 @@ const notForItems = [
 const faqs = [
   ["Do I need to know my purpose?", "No. That's usually something the work surfaces, not something you bring to it."],
   ["Will you tell me what to do?", "No. I won't hand you a playbook. The work is getting you back to your own judgment, so the decisions come from you, and they hold."],
-  ["What's an energy activation?", "A guided, music-driven session of about an hour, done lying down from home. Nothing to learn. You just show up."],
-  ["How much time does it take?", "About three to four hours a week."],
-  ["Is it group or private?", "The activations run live in small groups. They are mostly you, receiving, with a few minutes to share at the end if you want to. Everything else is one to one: your voice notes, your four sessions and WhatsApp."],
+  ["What's an energy activation?", "A live group session of 90 minutes, with an hour of it lying down at home, guided by music. Nothing to learn. You just show up."],
+  ["How much time does it take?", "Plan on four to five hours a week: a 60-minute session with me, a workbook voice note that usually takes 40 minutes to an hour and gets longer as you go deeper, one or two activations, and a short daily meditation. That's the minimum, and the more time you give it, the further it goes."],
+  ["Is it group or private?", "The activations run live in small groups. They are mostly you, receiving, with a few minutes to share at the end if you want to. Everything else is one to one: your workbooks, your four sessions and WhatsApp."],
   ["I'm not keen on groups. Is this still for me?", "Yes. You don't need to speak in the activations. Most people simply lie down and receive. All the strategic work is private."],
   ["Does this work online?", "Yes. You do the activations lying down at home, in your own space, with nothing to perform. That's part of why they work. Strategic sessions run on video."],
   ["Is this confidential?", "Yes. Your private sessions stay between us. In the group, sharing is optional and you choose what you bring. What's shared stays in the group."],
-  ["What's the investment?", "£1,500 if you start in November, in full or in two installments. From 1 December it is £2,500."],
+  ["What's the investment?", "£1,500 if you start in 2026, in full or in two payments of £800. There are 11 places at this price, and you can start any Monday until 28 December. Sign up by 11 November and you also get three months of live activations, free. From 1 January it's £2,000, and from 1 February £2,500."],
 ];
 const absenceOptions = ["It would run fine", "It would slow down", "It would stall without me", "It would fall apart"] as const;
 const investmentOptions = ["Yes", "Not right now"] as const;

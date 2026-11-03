@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/sections/Hero";
 import ProblemProgram from "@/components/sections/ProblemProgram";
 import ModalityCards from "@/components/sections/ModalityCards";
+import WholeLife from "@/components/sections/WholeLife";
 import HeySidsel from "@/components/sections/HeySidsel";
 import Testimonials from "@/components/sections/Testimonials";
 import WhyThisWorks from "@/components/sections/WhyThisWorks";
@@ -27,6 +28,7 @@ const Index = () => {
       <MoreFromFounders />
       <ConversionBanner />
       <ProblemProgram />
+      <WholeLife />
       <ModalityCards />
       <CeoOs />
       <Testimonials />

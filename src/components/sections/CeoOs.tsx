@@ -2,16 +2,16 @@ const APPLY_URL = "/apply";
 
 const cards = [
   {
-    heading: "10 live Monad Activations",
-    body: "Join as many as you like; most people do four to six. Small groups: mostly you, receiving, with a few minutes to share at the end.",
+    heading: "10+ live Monad Activations",
+    body: "Group energy sessions of 90 minutes and the heart of the work. Six or more is ideal. Mostly you, lying down and receiving, with a few minutes to share at the end.",
   },
   {
-    heading: "Four weeks of voice-note self-inquiry",
-    body: "A workbook each week, answered out loud.",
+    heading: "A workbook made for you, every week",
+    body: "Written around what came up for you and answered out loud as a voice note, with exercises and a meditation that goes with the activations.",
   },
   {
     heading: "Four private sessions",
-    body: "One to one with me, once a week.",
+    body: "One to one with me, 60 minutes, once a week. This is where what you've seen turns into decisions.",
   },
   {
     heading: "WhatsApp support",
@@ -47,7 +47,7 @@ const CeoOs = () => {
         </div>
 
         <p className="mt-10 text-[18px] text-body leading-[1.7]">
-          Now taking applications for November.
+          Start any Monday until 28 December. Sign up by 11 November and you also get three months of live activations, free.
         </p>
 
         <a
