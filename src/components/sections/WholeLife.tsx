@@ -18,11 +18,11 @@ const WholeLife = () => {
     <section className="bg-background py-[100px] px-8">
       <div className="max-w-[1100px] mx-auto">
         <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground text-center tracking-[-0.025em]">
-          <span className="font-extrabold">Health, wealth, relationships.</span> One root.
+          <span className="font-extrabold">Health, wealth, relationships,</span> the same you
         </h2>
 
         <p className="mt-8 text-[18px] text-body text-center max-w-[820px] mx-auto leading-[1.7]">
-          It's the same you showing up in all three. The pattern that keeps your income at the same ceiling is often the one that keeps you tired, and the one that keeps you choosing the same kind of love.
+          The pattern that keeps your income at the same ceiling is often the one that keeps you tired, and the one that keeps you choosing the same kind of love.
         </p>
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-5">

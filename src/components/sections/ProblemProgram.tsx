@@ -5,7 +5,7 @@ const ProblemProgram = () => {
       <div className="max-w-[1100px] mx-auto">
         {/* Problem statement */}
         <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground text-center tracking-[-0.025em]">
-          <span className="font-extrabold">Different ceilings.</span> Same root.
+          <span className="font-extrabold">Different ceilings,</span> same root
         </h2>
 
         {/* Asymmetric bento grid */}
@@ -13,16 +13,16 @@ const ProblemProgram = () => {
           {/* Big card - left, spans full height */}
           <div className="bg-card border border-border rounded-xl overflow-hidden flex flex-col">
             <div className="p-7 sm:p-8">
-              <h3 className="text-[20px] font-extrabold text-foreground">The plateau.</h3>
+              <h3 className="text-[20px] font-extrabold text-foreground">The plateau</h3>
               <p className="mt-3 text-[15px] text-body leading-[1.7]">
-                Same effort. Same results. Same ceiling.
+                Same effort, same results, same ceiling. You keep doing more, and it keeps not moving.
               </p>
             </div>
           </div>
 
           {/* Top right card */}
           <div className="bg-card border border-border rounded-xl p-7 sm:p-8">
-              <h3 className="text-[20px] font-extrabold text-foreground">The pattern.</h3>
+              <h3 className="text-[20px] font-extrabold text-foreground">The pattern</h3>
               <p className="mt-2 text-[15px] text-body leading-[1.7]">
                 New people, new places, same story. In love, in work, in friendships.
               </p>
@@ -30,14 +30,14 @@ const ProblemProgram = () => {
 
           {/* Bottom right card */}
           <div className="bg-card border border-border rounded-xl p-7 sm:p-8">
-              <h3 className="text-[20px] font-extrabold text-foreground">The weight.</h3>
+              <h3 className="text-[20px] font-extrabold text-foreground">The weight</h3>
               <p className="mt-2 text-[15px] text-body leading-[1.7]">
                 Everything runs through you. You're always on, and you can't switch off.
               </p>
           </div>
 
           <div className="bg-card border border-border rounded-xl p-7 sm:p-8">
-              <h3 className="text-[20px] font-extrabold text-foreground">The pull.</h3>
+              <h3 className="text-[20px] font-extrabold text-foreground">The pull</h3>
               <p className="mt-2 text-[15px] text-body leading-[1.7]">
                 It's working, and you can feel there's more.
               </p>
@@ -45,7 +45,7 @@ const ProblemProgram = () => {
         </div>
 
         <p className="mt-10 text-[18px] text-body text-center max-w-[820px] mx-auto leading-[1.7]">
-          It's the old operating system: the patterns and beliefs that got you here. It built what you have, and it also sets the ceiling, in your work, your money, your health and your relationships. Most of it runs below conscious thought, which is why you can understand a pattern perfectly and still repeat it, so the work starts with your state.
+          It's the old operating system, the patterns and beliefs that got you here. It built what you have, and it also sets the ceiling.
         </p>
       </div>
     </section>

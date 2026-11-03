@@ -1,15 +1,15 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/sections/Hero";
-import ProblemProgram from "@/components/sections/ProblemProgram";
-import ModalityCards from "@/components/sections/ModalityCards";
-import WholeLife from "@/components/sections/WholeLife";
-import HeySidsel from "@/components/sections/HeySidsel";
-import Testimonials from "@/components/sections/Testimonials";
-import WhyThisWorks from "@/components/sections/WhyThisWorks";
-import ConversionBanner from "@/components/sections/ConversionBanner";
-import CeoOs from "@/components/sections/CeoOs";
-import Qualifier from "@/components/sections/Qualifier";
 import MoreFromFounders from "@/components/sections/MoreFromFounders";
+import ProblemProgram from "@/components/sections/ProblemProgram";
+import WholeLife from "@/components/sections/WholeLife";
+import SameYou from "@/components/sections/SameYou";
+import HeySidsel from "@/components/sections/HeySidsel";
+import Offer from "@/components/sections/Offer";
+import HowItWorks from "@/components/sections/HowItWorks";
+import WhyThisWorks from "@/components/sections/WhyThisWorks";
+import Qualifier from "@/components/sections/Qualifier";
+import Faq from "@/components/sections/Faq";
 import LogoMarquee from "@/components/sections/LogoMarquee";
 import FinalCTA from "@/components/sections/FinalCTA";
 import Footer from "@/components/sections/Footer";
@@ -17,23 +17,23 @@ import usePageMeta from "@/hooks/usePageMeta";
 
 const Index = () => {
   usePageMeta(
-    "The Monad Method | Sidsel Løschenkohl",
-    "Monad OS: thirty days to clear the pattern underneath and build from who you are becoming."
+    "Monad OS | Sidsel Løschenkohl",
+    "You know how to do it, so why isn't it moving? Monad OS clears the pattern running underneath in 30 days, one to one, with energy activations, workbooks made for you and four private sessions."
   );
   return (
     <div className="min-h-screen">
       <Navigation />
       <Hero />
-      <HeySidsel />
       <MoreFromFounders />
-      <ConversionBanner />
       <ProblemProgram />
       <WholeLife />
-      <ModalityCards />
-      <CeoOs />
-      <Testimonials />
+      <SameYou />
+      <HeySidsel />
+      <Offer />
+      <HowItWorks />
       <WhyThisWorks />
       <Qualifier />
+      <Faq />
       <LogoMarquee />
       <FinalCTA />
       <Footer />

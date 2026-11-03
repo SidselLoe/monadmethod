@@ -5,6 +5,7 @@ import ellaAvatar from "@/assets/testimonials/ella-cane-founder.png";
 import alexandraAvatar from "@/assets/testimonials/alexandra-feldman-founder-of-the-islands.png";
 import AnimatedFounderCount from "@/components/AnimatedFounderCount";
 import SplitHeading from "@/components/SplitHeading";
+import { FOUNDING_PLACES, bonusOpen, currentStep, formatPrice, isFoundingRound } from "@/data/monadOs";
 
 const APPLY_URL = "/apply";
 
@@ -18,20 +19,35 @@ const avatars = [
 
 const Hero = () => {
   return (
-    <section className="bg-background pt-[200px] pb-[120px] px-8">
+    <section className="bg-background pt-[170px] pb-[120px] px-8">
       <div className="max-w-[1100px] mx-auto text-center">
+        {isFoundingRound() && (
+          <a
+            href="#offer"
+            className="inline-flex items-center gap-2 mb-10 rounded-full border border-border bg-mint-light px-4 py-1.5 text-[13px] text-foreground hover:border-[#7ec8c8] transition-colors"
+          >
+            <span className="font-extrabold">{FOUNDING_PLACES} places at {formatPrice(currentStep().price)}</span>
+            <span>for anyone starting in 2026{bonusOpen() ? ", plus a bonus until 11 November" : ""}</span>
+          </a>
+        )}
+
         <SplitHeading as="h1" first="You know how to do it." rest={<> <br />So why isn't it moving?</>} className="text-4xl sm:text-5xl md:text-[72px] text-foreground" />
 
-        <p className="mt-8 text-[20px] text-foreground font-normal max-w-[700px] mx-auto leading-[1.7]">
-          It was never the strategy. It's the pattern running underneath. Monad OS clears it in thirty days.
+        <p className="mt-8 text-[20px] text-foreground font-normal max-w-[720px] mx-auto leading-[1.7]">
+          It was never the strategy. It's the pattern running underneath, and it shows up in your work, your money, your health and your relationships. Monad OS clears it in 30 days, one to one with me.
         </p>
 
-        <a
-          href={APPLY_URL}
-          className="inline-flex mt-10 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
-        >
-          Apply Now
-        </a>
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-6">
+          <a
+            href={APPLY_URL}
+            className="inline-flex bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 rounded-full hover:bg-accent/90 transition-colors"
+          >
+            Apply Now
+          </a>
+          <a href="#offer" className="text-[14px] font-semibold text-foreground underline underline-offset-4 decoration-[#7ec8c8] hover:decoration-2">
+            See what's included
+          </a>
+        </div>
 
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
           <div className="flex shrink-0">

@@ -1,3 +1,4 @@
+import { FOUNDING_PLACES, bonusOpen, currentStep, formatPrice, isFoundingRound } from "@/data/monadOs";
 import MonadMark from "@/components/MonadMark";
 
 const APPLY_URL = "/apply";
@@ -15,10 +16,12 @@ const FinalCTA = () => {
           {/* Text */}
           <div className="flex-1 text-center md:text-left">
             <h3 className="text-xl sm:text-2xl font-extrabold text-foreground">
-              Build from who you're becoming.
+              Your next chapter starts on a Monday
             </h3>
             <p className="mt-3 text-[16px] text-foreground leading-[1.75]">
-              You are the upgrade. £1,500 if you start in 2026, with 11 places at that price. Sign up by 11 November and three months of live activations are on me. From 1 January, £2,000.
+              {isFoundingRound()
+                ? `${FOUNDING_PLACES} places at ${formatPrice(currentStep().price)} for anyone who starts in 2026.${bonusOpen() ? " Sign up by 11 November and three more months of activations are on me." : ""}`
+                : `Monad OS, 30 days one to one with me, ${formatPrice(currentStep().price)}.`}
             </p>
           </div>
 

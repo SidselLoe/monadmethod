@@ -1,21 +1,21 @@
 const cards = [
   {
-    heading: "The fog lifts.",
+    heading: "The fog lifts",
     body: "\"It's almost like a fog has been lifted away. It's just now it's me.\"",
     name: "Jessica",
   },
   {
-    heading: "You trust yourself.",
+    heading: "You trust yourself",
     body: "\"I'm not second guessing myself as much.\"",
     name: "Jessica",
   },
   {
-    heading: "The fuel comes back.",
+    heading: "The fuel comes back",
     body: "\"Ten times more motivated. Before, I was completely directionless.\"",
     name: "Brandon",
   },
   {
-    heading: "It comes to you.",
+    heading: "It comes to you",
     body: "\"Within that following week, three came to me. It wasn't like I had to do outreach.\"",
     name: "Bianca",
   },
@@ -33,7 +33,7 @@ const WhyThisWorks = () => {
     <section className="bg-background py-[100px] px-8">
       <div className="max-w-[1100px] mx-auto">
         <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground text-center tracking-[-0.025em]">
-          <span className="font-extrabold">When the pattern clears,</span>{" "}the path was there all along.
+          <span className="font-extrabold">When the pattern clears,</span>{" "}<br className="hidden md:block" />the path was there all along
         </h2>
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-5">

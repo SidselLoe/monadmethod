@@ -18,7 +18,7 @@ const forYou = [
   "You can feel there's more, even if you can't name it yet",
   "You've taken your life into your own hands. No one is coming to save you.",
   "You're open to energy work and you'll show up fully in the sessions",
-  "You believe you can build something real and have a life",
+  "You're at a turning point, in your work, your money, your health or your relationships, and you want to go through it differently",
 ];
 
 const notForYou = [
@@ -33,7 +33,7 @@ const Qualifier = () => {
       <div className="max-w-[1100px] mx-auto">
         {/* Section headline */}
         <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground text-center tracking-[-0.025em] mb-16">
-          <span className="font-extrabold">Is Monad OS</span> for you?
+          <span className="font-extrabold">Is Monad OS</span> for you
         </h2>
 
         {/* FOR YOU block */}

@@ -18,15 +18,15 @@ const HeySidsel = () => {
         {/* Text */}
         <div>
           <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground tracking-[-0.025em]">
-            <span className="font-extrabold">Hey,</span> I'm Sidsel.
+            <span className="font-extrabold">Hey,</span> I'm Sidsel
           </h2>
 
           <p className="mt-6 text-[18px] text-body leading-[1.7] max-w-[700px]">
-            I work with people who have built something real and can feel there's more.
+            I was visiting my grandpa in his 80s, and I was more tired than him. I was wearing sunglasses inside. Something was wrong, and in 2023 my health collapsed and forced a full stop.
           </p>
 
           <p className="mt-4 text-[16px] text-body leading-[1.75] max-w-[700px]">
-            The Monad Method came out of a health collapse in 2023 that made me rebuild everything. It rests on one belief: what you create follows who you are being. Change the one creating, and what you create changes with it.
+            Rebuilding meant trying everything, on myself first, and keeping only what actually worked for someone who can't go and live in a monastery. That became Monad OS. Two years and 250+ people later, it still rests on one belief: what you create follows who you are being. Change the one creating, and what you create changes with it.
           </p>
 
           <Link
