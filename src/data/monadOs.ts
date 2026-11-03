@@ -9,7 +9,7 @@ export const LAST_2026_START = "28 December";
 // Stripe payment link. Paste it in to switch on the "Join now" buttons.
 // While empty, every button goes to /apply instead.
 export const PAYMENT_LINKS = {
-  full: "", // £1,500
+  full: "https://buy.stripe.com/5kQfZg8nef9Z7c80yU9oc00", // £1,500, Stripe limits it to 11 payments
 };
 export const canBuyDirect = () => Boolean(PAYMENT_LINKS.full);
 
