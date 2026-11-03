@@ -38,7 +38,7 @@ const values = [
 const About = () => {
   usePageMeta(
     "About Sidsel Løschenkohl — The Monad Method",
-    "Sidsel Løschenkohl is a strategic partner to founders. Learn about the lineage, backstory, and philosophy behind The Monad Method.",
+    "Sidsel Løschenkohl helps founders and high achievers upgrade the operating system they're running on. Her story, lineage and the philosophy behind the Monad Method.",
     { canonical: "https://www.monadmethod.com/about", ogType: "website" }
   );
   return (
@@ -52,11 +52,11 @@ const About = () => {
           <div>
             <p className="text-[13px] uppercase font-semibold text-foreground mb-5">ABOUT</p>
             <h1 className="text-[40px] md:text-[clamp(34px,5.2vw-6px,56px)] font-normal text-foreground leading-[1.1] tracking-[-0.025em]">
-              <span className="font-extrabold block">Everything I teach,</span>{" "}
-              <span className="font-normal block">I lived first.</span>
+              <span className="font-extrabold block">Everything I offer,</span>{" "}
+              <span className="font-normal block">I lived first</span>
             </h1>
             <p className="mt-7 text-[20px] text-body font-normal leading-[1.7]">
-              I help people stop building from push and start building from pull.
+              I help founders and high achievers upgrade the operating system they're running on.
             </p>
             <Button asChild className="mt-8 bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-[0.3px] px-6 py-2.5 h-auto rounded-full hover:bg-accent/90">
               <Link to="/apply">APPLY NOW</Link>
@@ -72,23 +72,20 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-[50px] items-start">
             <div>
               <h2 className="text-[32px] md:text-[48px] font-normal text-foreground leading-[1.1] tracking-[-0.025em]">
-                <span className="font-extrabold">The back</span> story.
+                <span className="font-extrabold">The back</span> story
               </h2>
               <div className="mt-7 space-y-5 text-[18px] text-body leading-[1.7]">
                 <p>
-                  This work came out of a period that broke my life open.
+                  For years I believed I'd be happy once I'd built a company I could sell. In my consulting years, I worked nights all through the Christmas holidays to hit a client's deadline. When we delivered, the relief lasted about a day, and then I was already bracing for the next one.
                 </p>
                 <p>
-                  I had been building the way many high performers do. Full intensity. Always onto the next thing. Always on. I was producing, performing, and succeeding by every external measure, while becoming increasingly disconnected from myself.
+                  Then in 2023 a serious head injury, a broken eye and a detached retina forced the stop I wasn't willing to choose, and my health collapsed with it. The identity I'd built my whole life around fell apart, and I had to find out who I am without it.
                 </p>
                 <p>
-                  Then a serious head injury, a broken eye, and retinal detachment forced the stop I was not willing to choose. What followed was not a pause. It was a collapse. Physical, emotional, and existential. The life I had built was deeply out of alignment, and the injury forced me to see how far I had drifted from my authentic self.
+                  Slowly, the pattern showed itself. I'd put my worth in a finish line outside me, so I had to keep earning my way toward it. I studied NLP, trained in energy work, quit alcohol overnight and tried everything on myself first. What actually worked became the Monad Method.
                 </p>
                 <p>
-                  What came after was not abstract growth. It was a rebuilding. When everything was stripped away, I was left with the question most driven people avoid: who am I? That question became the beginning of my life's work.
-                </p>
-                <p>
-                  That experience changed how I work, what I value, and what I am willing to build. Everything I offer now is rooted in what I have lived first.
+                  Before all of this, I spent my career around technology and the people building it, from Silicon Valley in 2016 to crypto, Saxo Bank and Deloitte. I know what it's like when the work is you.
                 </p>
               </div>
             </div>
@@ -118,11 +115,11 @@ const About = () => {
       <section className="bg-surface py-16 md:py-[100px] px-4 sm:px-8">
         <div className="max-w-[1280px] mx-auto">
           <h2 className="text-[32px] md:text-[48px] font-normal text-foreground leading-[1.1] tracking-[-0.025em] text-center">
-            <span className="font-extrabold">My mission:</span>{" "}<span className="font-normal">help people return to the clearest expression of who they are.</span>
+            <span className="font-extrabold">My mission:</span>{" "}<span className="font-normal">help people return to the clearest expression of who they are</span>
           </h2>
           <div className="mt-10 space-y-6 text-[18px] leading-[1.7] font-normal text-body max-w-[640px] mx-auto text-center">
-            <p>I work with people whose business, brand or body of work is tied to who they are. They have built something real. The drive that built it is now creating friction.</p>
-            <p>The work starts inside. Activations, inquiry and deep recalibration clear what keeps the old identity in place. As that changes, clarity rises, purpose gets easier to see, and the way you build changes, because the person building it has changed.</p>
+            <p>I work with people whose business, career or creative work comes from who they are, at the point where the next chapter is asking for something different.</p>
+            <p>The work starts inside. Activations, workbooks and strategic sessions clear what keeps the old identity in place, and as that changes, the way you build changes too, because the person building it has changed. Same you, same results.</p>
             <p>I work at the intersection of spiritual alignment, strategic clarity and operational intelligence.</p>
           </div>
         </div>
@@ -132,7 +129,7 @@ const About = () => {
       <section className="bg-background py-16 md:py-[100px] px-4 sm:px-8">
         <div className="max-w-[1100px] mx-auto">
           <h2 className="text-[32px] md:text-[48px] font-normal text-foreground leading-[1.1] tracking-[-0.025em] text-center mb-12">
-            <span className="font-extrabold">In their</span>{" "}<span className="font-normal">words.</span>
+            <span className="font-extrabold">In their</span>{" "}<span className="font-normal">words</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {socialProofQuotes.map((item) => (
@@ -157,7 +154,7 @@ const About = () => {
       <section className="bg-background py-16 md:py-[100px] px-4 sm:px-8">
         <div className="max-w-[1100px] mx-auto">
           <h2 className="text-[32px] md:text-[48px] font-normal text-foreground leading-[1.1] tracking-[-0.025em] text-center mb-14">
-            <span className="font-extrabold">My</span> values.
+            <span className="font-extrabold">My</span> values
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {values.map((value) => (
@@ -180,7 +177,7 @@ const About = () => {
               Speaking & Facilitation
             </span>
             <h2 className="mt-4 text-[32px] md:text-[48px] font-normal text-foreground leading-[1.1] tracking-[-0.025em]">
-              <span className="font-extrabold">I speak on alignment,</span> energy, and the future of leadership.
+              <span className="font-extrabold">I speak on alignment,</span> energy and the future of leadership
             </h2>
             <p className="mt-5 text-[18px] leading-[1.7] text-body max-w-[700px] mx-auto">
               Inviting founders, creators, and communities to reconnect with intuition, truth, and embodied intelligence in an increasingly disembodied world.
@@ -211,7 +208,7 @@ const About = () => {
           </div>
 
           <h2 className="text-[32px] md:text-[48px] font-normal text-foreground leading-[1.1] tracking-[-0.025em] mb-14">
-            <span className="font-extrabold">Topics I</span> speak on.
+            <span className="font-extrabold">Topics I</span> speak on
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {[
@@ -338,7 +335,7 @@ const About = () => {
       <section className="bg-background py-16 md:py-[100px] px-4 sm:px-8">
         <div className="max-w-[500px] mx-auto text-center">
           <h2 className="text-[32px] md:text-[48px] font-normal text-foreground leading-[1.1] tracking-[-0.025em]">
-            <span className="font-extrabold">Ready to</span>{" "}<span className="font-normal">start?</span>
+            <span className="font-extrabold">Ready to</span>{" "}<span className="font-normal">start</span>
           </h2>
           <p className="mt-5 text-[18px] text-body leading-[1.7]">
             Every engagement starts with a short application and a call.

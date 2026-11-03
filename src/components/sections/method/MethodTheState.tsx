@@ -74,15 +74,15 @@ const MethodTheState = () => {
     <section className="bg-surface py-[100px] px-8">
       <div className="max-w-[1100px] mx-auto">
         <p className="text-[13px] font-bold uppercase tracking-[0.12em] text-foreground text-center mb-4">
-          The state.
+          The state
         </p>
 
         <h2 className="text-3xl sm:text-4xl md:text-[48px] font-normal text-foreground text-center tracking-[-0.025em] mb-5">
-          <span className="font-extrabold">Your best ideas</span> have never come from thinking harder.
+          <span className="font-extrabold">Your best ideas</span> <br className="hidden md:block" />have never come from thinking harder
         </h2>
 
         <p className="text-[16px] text-body text-center max-w-[640px] mx-auto leading-[1.75] mb-14">
-          They arrived when you stopped. In the shower. On a walk. At 3 AM. Already complete. You know this state exists. You just cannot reach it on demand. Every great mind you admire has described the same thing. The work did not come from effort. It came from access.
+          They arrived when you stopped, in the shower, on a walk or at 3 a.m., already complete. You know this state exists, you just can't reach it on demand, and the people whose work you admire have described the same thing. It didn't come from effort. It came from access.
         </p>
 
         <div className="relative">

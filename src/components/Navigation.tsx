@@ -5,6 +5,7 @@ import monadSymbol from "@/assets/monad-symbol.png";
 
 const navLinks = [
   { label: "The Monad Method", href: "/the-method" },
+  { label: "Activations", href: "/activations" },
   { label: "About", href: "/about" },
 ];
 

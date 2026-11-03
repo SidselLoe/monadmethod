@@ -1,5 +1,5 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -7,7 +7,7 @@ import useScrollToHash from "@/hooks/useScrollToHash";
 import useGlobalScrollReveal from "@/hooks/useGlobalScrollReveal";
 import Index from "./pages/Index.tsx";
 import TheMethod from "./pages/TheMethod.tsx";
-import MonadOS from "./pages/MonadOS.tsx";
+import Activations from "./pages/Activations";
 import MonadLTS from "./pages/MonadLTS.tsx";
 import About from "./pages/About.tsx";
 import Apply from "./pages/Apply.tsx";
@@ -42,7 +42,8 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/the-method" element={<TheMethod />} />
-          <Route path="/monad-os" element={<MonadOS />} />
+          <Route path="/monad-os" element={<Navigate to="/" replace />} />
+          <Route path="/activations" element={<Activations />} />
           <Route path="/monad-lts" element={<MonadLTS />} />
           <Route path="/about" element={<About />} />
           <Route path="/apply" element={<Apply />} />

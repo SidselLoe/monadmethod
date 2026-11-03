@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const parts = [
   {
     label: "Monad Activations",
@@ -48,6 +49,11 @@ const SameYou = () => {
 
         <p className="mt-12 text-[22px] sm:text-[26px] text-foreground text-center leading-[1.4]">
           <span className="font-extrabold">The answers come from you.</span> My role is to hold up the mirror.
+        </p>
+        <p className="mt-6 text-center">
+          <Link to="/activations" className="text-[14px] font-semibold text-foreground underline underline-offset-4 decoration-[#7ec8c8] hover:decoration-2">
+            What happens in an activation, and why it works
+          </Link>
         </p>
       </div>
     </section>
