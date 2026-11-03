@@ -6,11 +6,10 @@ export const ACTIVATIONS_PER_MONTH = 10;
 export const FOUNDING_PLACES = 11;
 export const LAST_2026_START = "28 December";
 
-// Stripe payment links. Paste them in to switch on "Join now" buttons.
+// Stripe payment link. Paste it in to switch on the "Join now" buttons.
 // While empty, every button goes to /apply instead.
 export const PAYMENT_LINKS = {
-  full: "", // £1,500 in full
-  split: "", // 2 × £800
+  full: "", // £1,500
 };
 export const canBuyDirect = () => Boolean(PAYMENT_LINKS.full);
 
@@ -20,7 +19,7 @@ const BONUS_DEADLINE = new Date("2026-11-12T00:00:00Z");
 type PriceStep = { label: string; price: number; from: Date; note?: string };
 
 export const PRICE_STEPS: PriceStep[] = [
-  { label: "Start in 2026", price: 1500, from: new Date("2000-01-01T00:00:00Z"), note: `${FOUNDING_PLACES} places, or two payments of £800` },
+  { label: "Start in 2026", price: 1500, from: new Date("2000-01-01T00:00:00Z"), note: `${FOUNDING_PLACES} places` },
   { label: "From 1 January", price: 2000, from: new Date("2027-01-01T00:00:00Z") },
   { label: "From 1 February", price: 2500, from: new Date("2027-02-01T00:00:00Z") },
 ];
@@ -44,7 +43,7 @@ export function priceSentence(now = new Date()) {
   const step = currentStep(now);
   const next = upcomingSteps(now)[0];
   if (isFoundingRound(now)) {
-    return `${formatPrice(step.price)} if you start in 2026, in full or in two payments of £800. There are ${FOUNDING_PLACES} places at this price. Monad OS starts every Monday, and to get this price your first Monday has to be ${LAST_2026_START} at the latest.${next ? ` From 1 January it's ${formatPrice(next.price)}.` : ""}`;
+    return `${formatPrice(step.price)} if you start in 2026. There are ${FOUNDING_PLACES} places at this price. Monad OS starts every Monday, and to get this price your first Monday has to be ${LAST_2026_START} at the latest.${next ? ` From 1 January it's ${formatPrice(next.price)}.` : ""}`;
   }
   return `${formatPrice(step.price)}.${next ? ` ${next.label} it's ${formatPrice(next.price)}.` : ""}`;
 }

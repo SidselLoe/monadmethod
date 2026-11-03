@@ -5,7 +5,7 @@ const HowItWorks = () => {
     [
       "Join",
       canBuyDirect()
-        ? "Pay in full or in two parts and you're in. If you'd rather talk first, apply and book a 20-minute call with me."
+        ? "Pay and you're in. If you'd rather talk first, apply and book a 20-minute call with me."
         : "Apply with a few short questions, then book a 20-minute call with me so we can see if it's right for you.",
     ],
     [

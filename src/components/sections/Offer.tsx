@@ -92,8 +92,8 @@ const Offer = ({ applyHref = APPLY_URL }: { applyHref?: string }) => {
               <p className="mt-4 text-[56px] sm:text-[72px] font-extrabold leading-none tracking-[-0.025em]">{formatPrice(step.price)}</p>
               <p className="mt-4 text-[16px] leading-[1.7] text-ink-foreground/85">
                 {founding
-                  ? `In full, or two payments of £800. ${FOUNDING_PLACES} places. Monad OS starts every Monday, and for this price your first Monday has to be ${LAST_2026_START} at the latest.`
-                  : "In full or in installments. Monad OS starts every Monday."}
+                  ? `${FOUNDING_PLACES} places. Monad OS starts every Monday, and for this price your first Monday has to be ${LAST_2026_START} at the latest.`
+                  : "Monad OS starts every Monday."}
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
                 {canBuyDirect() ? (
@@ -106,11 +106,6 @@ const Offer = ({ applyHref = APPLY_URL }: { applyHref?: string }) => {
                     >
                       Join now
                     </a>
-                    {PAYMENT_LINKS.split && (
-                      <a href={PAYMENT_LINKS.split} target="_blank" rel="noopener noreferrer" className="text-[14px] font-semibold text-ink-foreground underline underline-offset-4 decoration-[#7ec8c8]">
-                        Pay in two parts
-                      </a>
-                    )}
                     <a href={applyHref} className="text-[14px] font-semibold text-ink-foreground underline underline-offset-4 decoration-[#7ec8c8]">
                       Talk to me first
                     </a>
