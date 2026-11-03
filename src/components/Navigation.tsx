@@ -16,8 +16,8 @@ interface NavigationProps {
 }
 
 const Navigation = ({
-  ctaLabel = "Apply Now",
-  ctaHref = "/apply",
+  ctaLabel = "Join Monad OS",
+  ctaHref = "/#offer",
   ctaExternal = false,
 }: NavigationProps) => {
   const [mobileOpen, setMobileOpen] = useState(false);

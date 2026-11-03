@@ -28,10 +28,10 @@ const socialProofQuotes = [
 ];
 
 const values = [
-  { title: "Alignment over everything", description: "I do not optimize for short-term gains at the expense of long-term integrity." },
-  { title: "Clarity is power", description: "Clear vision, clear systems, and clear communication change what becomes possible." },
-  { title: "Sovereign leadership", description: "You are not here to follow someone else's blueprint. You are here to trust yourself, think clearly, and lead from your own signal." },
-  { title: "Structure as liberation", description: "Freedom comes from the right systems, frameworks, and simplicity. Structure should create spaciousness, not constraint." },
+  { title: "I'll tell you what I see", description: "If a pattern is running you, I'll name it. With care, and without cushioning, because that's what moves things." },
+  { title: "The answers come from you", description: "I won't hand you a playbook. I hold up the mirror so you can see what's been running you, and choose what comes next." },
+  { title: "I've done it first", description: "Everything I ask of you, I've done myself. I still do the work every week." },
+  { title: "No one is coming to save you", description: "That's the good news. What you've been looking for was never missing, and the work is how you recover it." },
 ];
 
 
@@ -151,7 +151,7 @@ const About = () => {
       <section className="bg-background py-16 md:py-[100px] px-4 sm:px-8">
         <div className="max-w-[1100px] mx-auto">
           <h2 className="text-[32px] md:text-[48px] font-normal text-foreground leading-[1.1] tracking-[-0.025em] text-center mb-14">
-            <span className="font-extrabold">My</span> values
+            <span className="font-extrabold">How</span> I work
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {values.map((value) => (
