@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 import biancaCover from "@/assets/testimonials/bianca-polizzi-founder-polizzi-media.png";
 import brandonCover from "@/assets/testimonials/brandon-hadwin-founder-healingwithbrandon.png";
 import jessicaCover from "@/assets/testimonials/jessica-rainey-founder-wildflower-woman.png";
+import sarahPhoto from "@/assets/testimonials/sarah-montgomery-founder-infyos.png";
 import rudiPhoto from "@/assets/testimonials/rudi-adigbli-founder-reethink.png";
 import alexandraCover from "@/assets/testimonials/alexandra-feldman-founder-of-the-islands.png";
 
@@ -32,10 +33,10 @@ const quoteCards = [
     quote: "I am the most stable mentally I've ever been, and also the most clear I've ever been on where I want to be going.",
   },
   {
-    name: "Brandon Hadwin",
-    company: "Healing with Brandon",
-    photo: brandonCover,
-    quote: "I was the person I was looking for.",
+    name: "Sarah Montgomery",
+    company: "Co-founder and CEO, Infyos",
+    photo: sarahPhoto,
+    quote: "Bringing people to us rather than us chasing them.",
   },
 ];
 
