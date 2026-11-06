@@ -1,4 +1,3 @@
-import headshotPhoto from "@/assets/sidsel-headshot-about.jpg";
 import { Link } from "react-router-dom";
 import usePageMeta from "@/hooks/usePageMeta";
 import Navigation from "@/components/Navigation";
@@ -63,7 +62,7 @@ const About = () => {
               <Link to="/apply">APPLY NOW</Link>
             </Button>
           </div>
-          <img src={headshotPhoto} alt="Sidsel Løschenkohl" className="w-full aspect-[4/5] rounded-2xl object-cover object-top" />
+          <img src="https://hciqvcspehfitlgclhud.supabase.co/storage/v1/object/public/sidsel/Headshot%202.jpg" alt="Sidsel Løschenkohl" className="w-full aspect-[4/5] rounded-2xl object-cover object-top" />
         </div>
       </section>
 

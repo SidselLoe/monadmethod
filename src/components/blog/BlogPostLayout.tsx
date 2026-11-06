@@ -1,11 +1,10 @@
-import headshotPhoto from "@/assets/sidsel-headshot-about.jpg";
 import { Link } from "react-router-dom";
 import { ReactNode } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/sections/Footer";
 
 const HEADSHOT =
-  headshotPhoto;
+  "https://hciqvcspehfitlgclhud.supabase.co/storage/v1/object/public/sidsel/Headshot%202.jpg";
 
 interface BlogPostLayoutProps {
   category: string;
