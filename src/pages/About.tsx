@@ -264,12 +264,21 @@ const About = () => {
         <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-[0.9fr_1.1fr] items-center gap-12 md:gap-16">
           <div className="relative flex justify-center">
             <div aria-hidden="true" className="absolute inset-0 m-auto w-[320px] h-[320px] md:w-[420px] md:h-[420px] rounded-full bg-mint/20 blur-3xl" />
-            <img
-              src={bookCover}
-              alt="The Power of Unwavering Belief by Sidsel Løschenkohl"
-              className="relative w-[220px] md:w-[280px] -rotate-3 rounded-[3px] shadow-[0_30px_60px_rgba(0,0,0,0.55)]"
-              loading="lazy"
-            />
+            <div className="relative w-[220px] md:w-[280px] -rotate-3">
+              <div aria-hidden="true" className="absolute top-[4px] bottom-[4px] -right-[7px] w-[9px] rounded-r-[3px] bg-[#ece7dc] bg-[repeating-linear-gradient(90deg,rgba(0,0,0,0.08)_0px,rgba(0,0,0,0.08)_1px,transparent_1px,transparent_3px)] shadow-[0_20px_40px_rgba(0,0,0,0.45)]" />
+              <div className="relative overflow-hidden rounded-l-[3px] rounded-r-[6px] shadow-[0_30px_60px_rgba(0,0,0,0.55),0_8px_16px_rgba(0,0,0,0.35)]">
+                <img
+                  src={bookCover}
+                  alt="The Power of Unwavering Belief by Sidsel Løschenkohl"
+                  className="block w-full"
+                  loading="lazy"
+                />
+                <span aria-hidden="true" className="absolute inset-y-0 left-0 w-[8%] bg-gradient-to-r from-black/45 via-black/10 to-transparent" />
+                <span aria-hidden="true" className="absolute inset-y-0 left-[5.5%] w-px bg-white/15" />
+                <span aria-hidden="true" className="absolute inset-y-0 left-[6.2%] w-px bg-black/25" />
+                <span aria-hidden="true" className="absolute inset-0 bg-gradient-to-br from-white/[0.08] via-transparent to-black/20" />
+              </div>
+            </div>
           </div>
           <div className="text-center md:text-left">
             <span className="text-[13px] font-bold tracking-[0.12em] uppercase text-mint">The book</span>
