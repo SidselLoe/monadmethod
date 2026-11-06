@@ -17,7 +17,7 @@ import LineageSection from "@/components/sections/about/LineageSection";
 import BlogCard from "@/components/blog/BlogCard";
 import { blogPosts } from "@/data/blogPosts";
 import speakerPhoto from "@/assets/sidsel-loschenkohl-living-from-the-heart-speaker.png";
-import bookCover from "@/assets/the-power-of-unwavering-belief-book-cover-sidsel-loschenkohl.png";
+import bookCover from "@/assets/book-cover-power-of-unwavering-belief.jpg";
 import alexandraCover from "@/assets/testimonials/alexandra-feldman-founder-of-the-islands.png";
 import MonadMark from "@/components/MonadMark";
 import { Button } from "@/components/ui/button";
@@ -267,7 +267,7 @@ const About = () => {
             <img
               src={bookCover}
               alt="The Power of Unwavering Belief by Sidsel Løschenkohl"
-              className="relative w-[230px] md:w-[300px] -rotate-3 drop-shadow-[0_30px_40px_rgba(0,0,0,0.55)]"
+              className="relative w-[220px] md:w-[280px] -rotate-3 rounded-[3px] shadow-[0_30px_60px_rgba(0,0,0,0.55)]"
               loading="lazy"
             />
           </div>
