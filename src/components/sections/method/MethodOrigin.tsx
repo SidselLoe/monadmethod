@@ -1,3 +1,4 @@
+import headshotPhoto from "@/assets/sidsel-headshot.jpg";
 const MethodOrigin = () => {
   return (
     <section className="bg-surface py-[100px] px-8">
@@ -6,7 +7,7 @@ const MethodOrigin = () => {
         <div className="flex flex-col items-center md:items-start">
           <div className="w-full max-w-[400px] aspect-[3/4] rounded-lg overflow-hidden">
             <img
-              src="https://hciqvcspehfitlgclhud.supabase.co/storage/v1/object/public/sidsel/Headshot%202.jpg"
+              src={headshotPhoto}
               alt="Sidsel Løschenkohl"
               className="w-full h-full object-cover object-top"
               loading="lazy"
