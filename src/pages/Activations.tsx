@@ -93,9 +93,14 @@ const Activations = () => {
           ) : (
             <>
               <img src="/videos/monad-activation-poster.jpg" alt="A Monad Activation in progress" className="testimonial-media absolute inset-0 w-full h-full object-cover" loading="lazy" />
-              <span className="absolute inset-0 flex items-center justify-center">
-                <span className="w-16 h-16 rounded-full border-2 border-white/80 flex items-center justify-center bg-black/20 backdrop-blur-sm">
-                  <span className="ml-1 h-0 w-0 border-b-[9px] border-l-[15px] border-t-[9px] border-b-transparent border-l-white border-t-transparent" />
+              <span className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/60 to-transparent" />
+              <span className="absolute left-5 bottom-5 sm:left-8 sm:bottom-7 flex items-center gap-4 text-left text-white">
+                <span className="shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-white/80 flex items-center justify-center bg-black/20 backdrop-blur-sm">
+                  <span className="ml-1 h-0 w-0 border-b-[8px] border-l-[13px] border-t-[8px] border-b-transparent border-l-white border-t-transparent" />
+                </span>
+                <span>
+                  <span className="block text-[18px] sm:text-[26px] font-extrabold tracking-[-0.01em] leading-tight">Inside a Monad Activation</span>
+                  <span className="block text-[13px] sm:text-[15px] text-white/80 mt-0.5">90 seconds</span>
                 </span>
               </span>
             </>
