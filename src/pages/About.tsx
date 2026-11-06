@@ -80,7 +80,7 @@ const About = () => {
                   For years I thought happiness was something I'd reach once I sold the company and could finally do what I actually cared about: advising and helping people. Ironic, I know.
                 </p>
                 <p>
-                  Then in 2023 a serious head injury, a broken eye and a detached retina forced the stop I wasn't willing to choose. The identity I'd built my whole life around fell apart, and I had to find out who I am without it.
+                  Then in 2023 a serious head injury and a detached retina forced the stop I wasn't willing to choose. The identity I'd built my whole life around fell apart, and I had to find out who I am without it.
                 </p>
                 <p>
                   Slowly, the pattern showed itself. I'd put my worth in a finish line outside me, so I had to keep earning my way toward it. I studied NLP, trained in energy work, quit alcohol overnight and tried everything on myself first. What actually worked became the Monad Method.
