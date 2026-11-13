@@ -4,17 +4,27 @@ import { sendTemplateEmail } from '../_shared/transactional-email-templates/send
 
 // Monad OS onboarding pages (public/welcome/<slug>.html) post here when a client signs.
 // Only known slugs are accepted, and the agreement wording comes from the server, never the browser.
-const CLIENTS: Record<string, { first: string; date: string }> = {
+const CLIENTS: Record<string, { first: string; date: string; commitments?: string[] }> = {
   philip: { first: 'Philip', date: '8 October 2026' },
   nils: { first: 'Nils', date: '10 October 2026' },
   sabrina: { first: 'Sabrina', date: '10 October 2026' },
-  galeen: { first: 'Galeen', date: '11 October 2026' },
   chris: { first: 'Chris', date: '11 October 2026' },
   giacomo: { first: 'Giacomo', date: '11 October 2026' },
   jenil: { first: 'Jenil', date: '12 October 2026' },
   emily: { first: 'Emily', date: '13 October 2026' },
   shahram: { first: 'Shahram', date: '14 October 2026' },
   alla: { first: 'Alla', date: '14 October 2026' },
+  galeen: {
+    first: 'Galeen',
+    date: '13 November 2026',
+    commitments: [
+      "I'll attend four strategic sessions before 31 December 2026, and I'm happy for them to be recorded with Fireflies.",
+      "I'll complete each workbook at least 24 hours before its strategic session.",
+      "I'll join two recorded conversations, one now and one at the end of round two, and Sidsel can use my words, video and picture from them in her marketing and tag me, once I've seen them.",
+      "I'll pay £500 using the payment link on the page.",
+      "I've read the agreement and accept it.",
+    ],
+  },
 }
 
 const COMMITMENTS = [
@@ -48,10 +58,10 @@ Deno.serve(async (req) => {
     dateStyle: 'medium', timeStyle: 'short', timeZone: 'Europe/London',
   }).format(new Date()) + ' (London)'
   const templateData = {
-    first: client.first, agreementDate: client.date, name, email, time, commitments: COMMITMENTS,
+    first: client.first, agreementDate: client.date, name, email, time, commitments: client.commitments ?? COMMITMENTS,
     pageUrl: `https://monadmethod.com/welcome/${slug}`,
   }
-  const key = `agreement-${slug}-${email.toLowerCase()}`
+  const key = `agreement-${slug}-${client.date.replace(/\s+/g, '-')}-${email.toLowerCase()}`
 
   try {
     const owner = await sendTemplateEmail('agreement-signed-owner', 'sidsel@loschenkohl.com', {
