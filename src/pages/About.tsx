@@ -35,10 +35,10 @@ const socialProofQuotes = [
 
 // Clips where clients talk about working with Sidsel.
 const workingWithClips = [
-  { name: "Sabrina\nKennedy", company: "Singer, Songwriter and Actress", localVideo: "/videos/sabrina-about.mp4", poster: "/videos/sabrina-about-poster.jpg", cover: sabrinaAboutCover },
-  { name: "Galeen\nMegerditchian", company: "Paid Media and Brand Marketing Manager", localVideo: "/videos/galeen-about.mp4", poster: "/videos/galeen-about-poster.jpg", cover: galeenAboutCover },
-  { name: "Giacomo\nGallazzi", company: "Student and Podcast Host", localVideo: "/videos/giacomo-about-v2.mp4", poster: "/videos/giacomo-about-poster.jpg", cover: giacomoAboutCover },
-  { name: "Philip\nChristiansen", company: "Business Owner and Hypnotist", localVideo: "/videos/philip-about-v2.mp4", poster: "/videos/philip-about-poster.jpg", cover: philipAboutCover },
+  { name: "Sabrina\nKennedy", company: "Singer, Songwriter and Actress", localVideo: "/videos/sabrina-about-v2.mp4", poster: "/videos/sabrina-about-poster.jpg", cover: sabrinaAboutCover },
+  { name: "Galeen\nMegerditchian", company: "Paid Media and Brand Marketing Manager", localVideo: "/videos/galeen-about-v2.mp4", poster: "/videos/galeen-about-poster.jpg", cover: galeenAboutCover },
+  { name: "Giacomo\nGallazzi", company: "Student and Podcast Host", localVideo: "/videos/giacomo-about-v3.mp4", poster: "/videos/giacomo-about-poster.jpg", cover: giacomoAboutCover },
+  { name: "Philip\nChristiansen", company: "Business Owner and Hypnotist", localVideo: "/videos/philip-about-v3.mp4", poster: "/videos/philip-about-poster.jpg", cover: philipAboutCover },
 ];
 
 const values = [
