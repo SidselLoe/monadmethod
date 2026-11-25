@@ -16,7 +16,7 @@ import philipAvatar from "@/assets/testimonials/philip-avatar.jpg";
 
 export const videoCards = [
   { name: "Sabrina\nKennedy", company: "Singer, Songwriter and Actress", localVideo: "/videos/sabrina-testimonial-v3.mp4", poster: "/videos/sabrina-testimonial-poster.jpg", cover: sabrinaCover },
-  { name: "Giacomo\nGallazzi", company: "Education Podcast Host", localVideo: "/videos/giacomo-testimonial-v2.mp4", poster: "/videos/giacomo-testimonial-poster.jpg", cover: giacomoCover },
+  { name: "Giacomo\nGallazzi", company: "Student and Podcast Host", localVideo: "/videos/giacomo-testimonial-v2.mp4", poster: "/videos/giacomo-testimonial-poster.jpg", cover: giacomoCover },
   { name: "Galeen\nMegerditchian", company: "Paid Media and Brand Marketing Manager, London", localVideo: "/videos/galeen-testimonial-v3.mp4", poster: "/videos/galeen-testimonial-v3-poster.jpg", cover: galeenCover },
   { name: "Philip\nChristiansen", company: "Hypnotist, Copenhagen", localVideo: "/videos/philip-testimonial-v3.mp4", poster: "/videos/philip-testimonial-v3-poster.jpg", cover: philipCover },
   { name: "Bianca\nPolizzi", company: "Business Owner", localVideo: "/videos/bianca-testimonial.mp4", poster: "/videos/bianca-testimonial-poster.jpg", cover: biancaCover },
@@ -34,7 +34,7 @@ const quoteCards = [
   },
   {
     name: "Giacomo Gallazzi",
-    company: "Education Podcast Host",
+    company: "Student and Podcast Host",
     photo: giacomoAvatar,
     quote: "I'd done six months of coaching before, but one month of Monad OS was more impactful. I saw a change week by week.",
   },
