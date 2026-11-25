@@ -6,7 +6,7 @@ import philipCover from "@/assets/testimonials/philip-cover.jpg";
 
 // Short clips where clients answer the same question: what would you say to someone on the fence?
 const fenceCards = [
-  { name: "Sabrina\nKennedy", company: "Singer, songwriter and actress", localVideo: "/videos/sabrina-on-the-fence-v2.mp4", poster: "/videos/sabrina-on-the-fence-v2-poster.jpg", cover: sabrinaCover },
+  { name: "Sabrina\nKennedy", company: "Singer, songwriter and actress", localVideo: "/videos/sabrina-on-the-fence-v3.mp4", poster: "/videos/sabrina-on-the-fence-v3-poster.jpg", cover: sabrinaCover },
   { name: "Giacomo\nGallazzi", company: "Education podcast host", localVideo: "/videos/giacomo-on-the-fence.mp4", poster: "/videos/giacomo-on-the-fence-poster.jpg", cover: giacomoCover },
   { name: "Galeen\nMegerditchian", company: "Paid media and brand marketing manager, London", localVideo: "/videos/galeen-on-the-fence-v2.mp4", poster: "/videos/galeen-on-the-fence-v2-poster.jpg", cover: galeenCover },
   { name: "Philip\nChristiansen", company: "Hypnotist, Copenhagen", localVideo: "/videos/philip-on-the-fence-v3.mp4", poster: "/videos/philip-on-the-fence-poster.jpg", cover: philipCover },

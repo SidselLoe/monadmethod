@@ -15,7 +15,7 @@ import galeenAvatar from "@/assets/testimonials/galeen-avatar.jpg";
 import philipAvatar from "@/assets/testimonials/philip-avatar.jpg";
 
 export const videoCards = [
-  { name: "Sabrina\nKennedy", company: "Singer, songwriter and actress", localVideo: "/videos/sabrina-testimonial-v2.mp4", poster: "/videos/sabrina-testimonial-poster.jpg", cover: sabrinaCover },
+  { name: "Sabrina\nKennedy", company: "Singer, songwriter and actress", localVideo: "/videos/sabrina-testimonial-v3.mp4", poster: "/videos/sabrina-testimonial-poster.jpg", cover: sabrinaCover },
   { name: "Giacomo\nGallazzi", company: "Education podcast host", localVideo: "/videos/giacomo-testimonial-v2.mp4", poster: "/videos/giacomo-testimonial-poster.jpg", cover: giacomoCover },
   { name: "Galeen\nMegerditchian", company: "Paid media and brand marketing manager, London", localVideo: "/videos/galeen-testimonial-v2.mp4", poster: "/videos/galeen-testimonial-v2-poster.jpg", cover: galeenCover },
   { name: "Philip\nChristiansen", company: "Hypnotist, Copenhagen", localVideo: "/videos/philip-testimonial-v3.mp4", poster: "/videos/philip-testimonial-v3-poster.jpg", cover: philipCover },
