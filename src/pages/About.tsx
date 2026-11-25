@@ -23,8 +23,8 @@ import MonadMark from "@/components/MonadMark";
 import { Button } from "@/components/ui/button";
 
 const socialProofQuotes = [
-  { quote: "Once you see it, you can't unsee it.", name: "Alexandra", role: "Founder & Creative Director, Of The Islands", avatar: alexandraCover },
-  { quote: "It's not about the actions we're taking, but where the action's coming from.", name: "Brandon", role: "Business Owner, Healing with Brandon", avatar: brandonCover },
+  { quote: "Once you see it, you can't unsee it.", name: "Alexandra", role: "Business Owner", avatar: alexandraCover },
+  { quote: "It's not about the actions we're taking, but where the action's coming from.", name: "Brandon", role: "Business Owner", avatar: brandonCover },
   { quote: "She doesn't coddle, but she's uniquely supportive in helping you carve an authentic path that actually fits you.", name: "Jessica", role: "Founder and CEO, Wildflower Women", avatar: jessicaCover },
 ];
 

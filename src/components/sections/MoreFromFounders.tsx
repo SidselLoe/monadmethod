@@ -15,32 +15,32 @@ import galeenAvatar from "@/assets/testimonials/galeen-avatar.jpg";
 import philipAvatar from "@/assets/testimonials/philip-avatar.jpg";
 
 export const videoCards = [
-  { name: "Sabrina\nKennedy", company: "Singer, songwriter and actress", localVideo: "/videos/sabrina-testimonial-v3.mp4", poster: "/videos/sabrina-testimonial-poster.jpg", cover: sabrinaCover },
-  { name: "Giacomo\nGallazzi", company: "Education podcast host", localVideo: "/videos/giacomo-testimonial-v2.mp4", poster: "/videos/giacomo-testimonial-poster.jpg", cover: giacomoCover },
-  { name: "Galeen\nMegerditchian", company: "Paid media and brand marketing manager, London", localVideo: "/videos/galeen-testimonial-v2.mp4", poster: "/videos/galeen-testimonial-v3-poster.jpg", cover: galeenCover },
+  { name: "Sabrina\nKennedy", company: "Singer, Songwriter and Actress", localVideo: "/videos/sabrina-testimonial-v3.mp4", poster: "/videos/sabrina-testimonial-poster.jpg", cover: sabrinaCover },
+  { name: "Giacomo\nGallazzi", company: "Education Podcast Host", localVideo: "/videos/giacomo-testimonial-v2.mp4", poster: "/videos/giacomo-testimonial-poster.jpg", cover: giacomoCover },
+  { name: "Galeen\nMegerditchian", company: "Paid Media and Brand Marketing Manager, London", localVideo: "/videos/galeen-testimonial-v3.mp4", poster: "/videos/galeen-testimonial-v3-poster.jpg", cover: galeenCover },
   { name: "Philip\nChristiansen", company: "Hypnotist, Copenhagen", localVideo: "/videos/philip-testimonial-v3.mp4", poster: "/videos/philip-testimonial-v3-poster.jpg", cover: philipCover },
-  { name: "Bianca\nPolizzi", company: "Polizzi Media", localVideo: "/videos/bianca-testimonial.mp4", poster: "/videos/bianca-testimonial-poster.jpg", cover: biancaCover },
-  { name: "Brandon\nHadwin", company: "HealingwithBrandon", localVideo: "/videos/brandon-testimonial.mp4", poster: "/videos/brandon-testimonial-v3-poster.jpg", cover: brandonCover },
+  { name: "Bianca\nPolizzi", company: "Business Owner", localVideo: "/videos/bianca-testimonial.mp4", poster: "/videos/bianca-testimonial-poster.jpg", cover: biancaCover },
+  { name: "Brandon\nHadwin", company: "Business Owner", localVideo: "/videos/brandon-testimonial.mp4", poster: "/videos/brandon-testimonial-v3-poster.jpg", cover: brandonCover },
   { name: "Jessica\nRainey", company: "Wildflower Woman", localVideo: "/videos/jessica-testimonial.mp4", poster: "/videos/jessica-testimonial-poster.jpg", cover: jessicaCover },
-  { name: "Alexandra\nFeldman", company: "Of The Islands", localVideo: "/videos/alexandra-testimonial.mp4", poster: "/videos/alexandra-testimonial-poster.jpg", cover: alexandraCover },
+  { name: "Alexandra\nFeldman", company: "Business Owner", localVideo: "/videos/alexandra-testimonial.mp4", poster: "/videos/alexandra-testimonial-poster.jpg", cover: alexandraCover },
 ];
 
 const quoteCards = [
   {
     name: "Sabrina Kennedy",
-    company: "Singer, songwriter and actress",
+    company: "Singer, Songwriter and Actress",
     photo: sabrinaAvatar,
     quote: "I was choosing a familiar hell over an unfamiliar peace. One month of Monad OS shifted this perspective.",
   },
   {
     name: "Giacomo Gallazzi",
-    company: "Education podcast host",
+    company: "Education Podcast Host",
     photo: giacomoAvatar,
     quote: "I'd done six months of coaching before, but one month of Monad OS was more impactful. I saw a change week by week.",
   },
   {
     name: "Galeen Megerditchian",
-    company: "Paid media and brand marketing manager, London",
+    company: "Paid Media and Brand Marketing Manager, London",
     photo: galeenAvatar,
     quote: "In 30 days my energy went from 1 to 9. I'm kinder to myself, and I've found my voice.",
   },
@@ -52,19 +52,19 @@ const quoteCards = [
   },
   {
     name: "Rudi Adigbli",
-    company: "ReeThink",
+    company: "Business Owner",
     photo: rudiPhoto,
     quote: "Working with Sidsel was the first truly holistic experience I've had. A lot of work focuses on strategy. Some goes deeper, into beliefs and how to change them. Very few work with your energy the way Sidsel does, and that's what makes it so effective.",
   },
   {
     name: "Alexandra Feldman",
-    company: "Of The Islands",
+    company: "Business Owner",
     photo: alexandraCover,
     quote: "Fix your energy, and then use your powerhouse drive to do everything else.",
   },
   {
     name: "Bianca Polizzi",
-    company: "Polizzi Media",
+    company: "Business Owner",
     photo: biancaCover,
     quote: "I am the most stable mentally I've ever been, and also the most clear I've ever been on where I want to be going.",
   },

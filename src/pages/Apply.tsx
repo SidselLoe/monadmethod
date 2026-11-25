@@ -25,10 +25,10 @@ const CALENDLY_URL = "https://calendly.com/sidselloschenkohl/monad-discovery";
 const ACTIVATION_URL = "https://luma.com/monadmethod";
 
 const founders = [
-  { name: "Brandon Hadwin", business: "Healing with Brandon", photo: brandonPhoto },
-  { name: "Alexandra Feldman", business: "Of The Islands", photo: alexandraPhoto },
+  { name: "Brandon Hadwin", business: "Business Owner", photo: brandonPhoto },
+  { name: "Alexandra Feldman", business: "Business Owner", photo: alexandraPhoto },
   { name: "Jessica Rainey", business: "Wildflower Woman", photo: jessicaPhoto },
-  { name: "Bianca Polizzi", business: "Polizzi Media", photo: biancaPhoto },
+  { name: "Bianca Polizzi", business: "Business Owner", photo: biancaPhoto },
   { name: "Anton Rytter", business: "Kintsugi Studio", photo: antonPhoto },
 ];
 
