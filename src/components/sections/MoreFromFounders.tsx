@@ -17,8 +17,8 @@ import philipAvatar from "@/assets/testimonials/philip-avatar.jpg";
 export const videoCards = [
   { name: "Sabrina\nKennedy", company: "Singer, Songwriter and Actress", localVideo: "/videos/sabrina-testimonial-v3.mp4", poster: "/videos/sabrina-testimonial-poster.jpg", cover: sabrinaCover },
   { name: "Giacomo\nGallazzi", company: "Student and Podcast Host", localVideo: "/videos/giacomo-testimonial-v2.mp4", poster: "/videos/giacomo-testimonial-poster.jpg", cover: giacomoCover },
-  { name: "Galeen\nMegerditchian", company: "Paid Media and Brand Marketing Manager, London", localVideo: "/videos/galeen-testimonial-v3.mp4", poster: "/videos/galeen-testimonial-v3-poster.jpg", cover: galeenCover },
-  { name: "Philip\nChristiansen", company: "Hypnotist, Copenhagen", localVideo: "/videos/philip-testimonial-v3.mp4", poster: "/videos/philip-testimonial-v3-poster.jpg", cover: philipCover },
+  { name: "Galeen\nMegerditchian", company: "Paid Media and Brand Marketing Manager", localVideo: "/videos/galeen-testimonial-v3.mp4", poster: "/videos/galeen-testimonial-v3-poster.jpg", cover: galeenCover },
+  { name: "Philip\nChristiansen", company: "Business Owner and Hypnotist", localVideo: "/videos/philip-testimonial-v3.mp4", poster: "/videos/philip-testimonial-v3-poster.jpg", cover: philipCover },
   { name: "Bianca\nPolizzi", company: "Business Owner", localVideo: "/videos/bianca-testimonial.mp4", poster: "/videos/bianca-testimonial-poster.jpg", cover: biancaCover },
   { name: "Brandon\nHadwin", company: "Business Owner", localVideo: "/videos/brandon-testimonial.mp4", poster: "/videos/brandon-testimonial-v3-poster.jpg", cover: brandonCover },
   { name: "Jessica\nRainey", company: "Content Creator and Business Owner", localVideo: "/videos/jessica-testimonial.mp4", poster: "/videos/jessica-testimonial-poster.jpg", cover: jessicaCover },
@@ -40,13 +40,13 @@ const quoteCards = [
   },
   {
     name: "Galeen Megerditchian",
-    company: "Paid Media and Brand Marketing Manager, London",
+    company: "Paid Media and Brand Marketing Manager",
     photo: galeenAvatar,
     quote: "In 30 days my energy went from 1 to 9. I'm kinder to myself, and I've found my voice.",
   },
   {
     name: "Philip Christiansen",
-    company: "Hypnotist, Copenhagen",
+    company: "Business Owner and Hypnotist",
     photo: philipAvatar,
     quote: "Monad OS helped me realize it's safe to be seen. There's still some fear, but I don't let it control my actions.",
   },

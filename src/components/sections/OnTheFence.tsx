@@ -8,8 +8,8 @@ import philipCover from "@/assets/testimonials/philip-cover.jpg";
 const fenceCards = [
   { name: "Sabrina\nKennedy", company: "Singer, Songwriter and Actress", localVideo: "/videos/sabrina-on-the-fence-v3.mp4", poster: "/videos/sabrina-on-the-fence-v3-poster.jpg", cover: sabrinaCover },
   { name: "Giacomo\nGallazzi", company: "Student and Podcast Host", localVideo: "/videos/giacomo-on-the-fence.mp4", poster: "/videos/giacomo-on-the-fence-poster.jpg", cover: giacomoCover },
-  { name: "Galeen\nMegerditchian", company: "Paid Media and Brand Marketing Manager, London", localVideo: "/videos/galeen-on-the-fence-v2.mp4", poster: "/videos/galeen-on-the-fence-v2-poster.jpg", cover: galeenCover },
-  { name: "Philip\nChristiansen", company: "Hypnotist, Copenhagen", localVideo: "/videos/philip-on-the-fence-v3.mp4", poster: "/videos/philip-on-the-fence-poster.jpg", cover: philipCover },
+  { name: "Galeen\nMegerditchian", company: "Paid Media and Brand Marketing Manager", localVideo: "/videos/galeen-on-the-fence-v2.mp4", poster: "/videos/galeen-on-the-fence-v2-poster.jpg", cover: galeenCover },
+  { name: "Philip\nChristiansen", company: "Business Owner and Hypnotist", localVideo: "/videos/philip-on-the-fence-v3.mp4", poster: "/videos/philip-on-the-fence-poster.jpg", cover: philipCover },
 ];
 
 const OnTheFence = () => (
