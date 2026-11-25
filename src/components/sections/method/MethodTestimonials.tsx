@@ -14,7 +14,7 @@ const testimonials = [
   {
     type: "photo" as const,
     name: "Sarah Montgomery",
-    role: "Co-Founder and CEO, Infyos",
+    role: "CEO and Co-Founder",
     quote: "This program connected my vision with my actions. I now feel empowered, not overwhelmed.",
     img: sarahPhoto,
   },

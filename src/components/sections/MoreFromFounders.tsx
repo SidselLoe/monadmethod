@@ -21,7 +21,7 @@ export const videoCards = [
   { name: "Philip\nChristiansen", company: "Hypnotist, Copenhagen", localVideo: "/videos/philip-testimonial-v3.mp4", poster: "/videos/philip-testimonial-v3-poster.jpg", cover: philipCover },
   { name: "Bianca\nPolizzi", company: "Business Owner", localVideo: "/videos/bianca-testimonial.mp4", poster: "/videos/bianca-testimonial-poster.jpg", cover: biancaCover },
   { name: "Brandon\nHadwin", company: "Business Owner", localVideo: "/videos/brandon-testimonial.mp4", poster: "/videos/brandon-testimonial-v3-poster.jpg", cover: brandonCover },
-  { name: "Jessica\nRainey", company: "Wildflower Woman", localVideo: "/videos/jessica-testimonial.mp4", poster: "/videos/jessica-testimonial-poster.jpg", cover: jessicaCover },
+  { name: "Jessica\nRainey", company: "Content Creator and Business Owner", localVideo: "/videos/jessica-testimonial.mp4", poster: "/videos/jessica-testimonial-poster.jpg", cover: jessicaCover },
   { name: "Alexandra\nFeldman", company: "Business Owner", localVideo: "/videos/alexandra-testimonial.mp4", poster: "/videos/alexandra-testimonial-poster.jpg", cover: alexandraCover },
 ];
 
@@ -70,7 +70,7 @@ const quoteCards = [
   },
   {
     name: "Sarah Montgomery",
-    company: "Co-founder and CEO, Infyos",
+    company: "CEO and Co-Founder",
     photo: sarahPhoto,
     quote: "Bringing people to us rather than us chasing them.",
   },
