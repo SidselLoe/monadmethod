@@ -4,7 +4,7 @@ import brandonCover from "@/assets/testimonials/brandon-cover.jpg";
 import jessicaCover from "@/assets/testimonials/jessica-cover-v2.jpg";
 import sarahPhoto from "@/assets/testimonials/sarah-montgomery-founder-infyos.png";
 import rudiPhoto from "@/assets/testimonials/rudi-avatar.jpg";
-import alexandraCover from "@/assets/testimonials/alexandra-feldman-founder-of-the-islands.png";
+import alexandraCover from "@/assets/testimonials/alexandra-cover.jpg";
 import sabrinaCover from "@/assets/testimonials/sabrina-cover.jpg";
 import giacomoCover from "@/assets/testimonials/giacomo-cover.jpg";
 import galeenCover from "@/assets/testimonials/galeen-cover.jpg";
@@ -76,7 +76,7 @@ const quoteCards = [
   },
 ];
 
-export const VideoCard = ({ name, company, vimeoId, localVideo, poster, cover, compact = false }: { name: string; company: string; vimeoId?: string; localVideo?: string; poster?: string; cover: string; compact?: boolean }) => {
+export const VideoCard = ({ name, company, vimeoId, localVideo, poster, cover, compact = false, small = false }: { name: string; company: string; vimeoId?: string; localVideo?: string; poster?: string; cover: string; compact?: boolean; small?: boolean }) => {
   const [playing, setPlaying] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
@@ -116,15 +116,15 @@ export const VideoCard = ({ name, company, vimeoId, localVideo, poster, cover, c
       ) : (
         <>
           <img src={cover} alt={`${name.replace('\n', ' ')} — ${company} — Monad Method testimonial`} className="testimonial-media absolute inset-0 w-full h-full object-cover" loading="lazy" />
-          <div className="absolute inset-0 z-[2] flex items-end justify-end p-5" style={{ background: "linear-gradient(transparent 0%, rgba(0,0,0,0.55) 100%)" }}>
+          <div className={`absolute inset-0 z-[2] flex items-end justify-end ${small ? "p-3" : "p-5"}`} style={{ background: "linear-gradient(transparent 0%, rgba(0,0,0,0.55) 100%)" }}>
             <div className="text-right">
-              <p className="text-lg font-semibold text-white leading-[1.2] whitespace-pre-line">{name}</p>
-              <p className="text-xs text-white/70">{company}</p>
+              <p className={`${small ? "text-[13px]" : "text-lg"} font-semibold text-white leading-[1.2] whitespace-pre-line`}>{name}</p>
+              <p className={`${small ? "text-[10px] leading-[1.3]" : "text-xs"} text-white/70`}>{company}</p>
             </div>
           </div>
           {/* Large centered Monad-style play button */}
           <div className="absolute inset-0 z-[3] flex items-center justify-center pointer-events-none">
-            <div className={`relative ${compact ? "w-14 h-14 md:w-16 md:h-16" : "w-20 h-20 md:w-24 md:h-24"} transition-transform duration-300 group-hover:scale-110`}>
+            <div className={`relative ${small ? "w-10 h-10 md:w-12 md:h-12" : compact ? "w-14 h-14 md:w-16 md:h-16" : "w-20 h-20 md:w-24 md:h-24"} transition-transform duration-300 group-hover:scale-110`}>
               <svg viewBox="0 0 120 120" className="w-full h-full" aria-hidden="true">
                 <circle cx="60" cy="60" r="50" fill="rgba(255,255,255,0.18)" stroke="white" strokeWidth="3.5" />
                 <polygon points="50,42 82,60 50,78" fill="white" />

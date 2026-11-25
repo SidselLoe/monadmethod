@@ -9,7 +9,7 @@ import usePageMeta from "@/hooks/usePageMeta";
 import { supabase } from "@/integrations/supabase/client";
 import type { TablesInsert } from "@/integrations/supabase/types";
 import brandonPhoto from "@/assets/testimonials/brandon-cover.jpg";
-import alexandraPhoto from "@/assets/testimonials/alexandra-feldman-founder-of-the-islands.png";
+import alexandraPhoto from "@/assets/testimonials/alexandra-cover.jpg";
 import biancaPhoto from "@/assets/testimonials/bianca-polizzi-founder-polizzi-media.png";
 import jessicaPhoto from "@/assets/testimonials/jessica-cover-v2.jpg";
 import antonPhoto from "@/assets/testimonials/anton-rytter-founder.png";

@@ -18,13 +18,13 @@ import BlogCard from "@/components/blog/BlogCard";
 import { blogPosts } from "@/data/blogPosts";
 import speakerPhoto from "@/assets/sidsel-loschenkohl-living-from-the-heart-speaker.png";
 import bookCover from "@/assets/book-cover-power-of-unwavering-belief.jpg";
-import alexandraCover from "@/assets/testimonials/alexandra-feldman-founder-of-the-islands.png";
+import alexandraCover from "@/assets/testimonials/alexandra-cover.jpg";
 import MonadMark from "@/components/MonadMark";
 import { VideoCard } from "@/components/sections/MoreFromFounders";
-import sabrinaCover from "@/assets/testimonials/sabrina-cover.jpg";
-import giacomoCover from "@/assets/testimonials/giacomo-cover.jpg";
-import galeenCover from "@/assets/testimonials/galeen-cover.jpg";
-import philipCover from "@/assets/testimonials/philip-cover.jpg";
+import sabrinaAboutCover from "@/assets/testimonials/sabrina-about-cover.jpg";
+import giacomoAboutCover from "@/assets/testimonials/giacomo-about-cover.jpg";
+import galeenAboutCover from "@/assets/testimonials/galeen-about-cover.jpg";
+import philipAboutCover from "@/assets/testimonials/philip-about-cover.jpg";
 import { Button } from "@/components/ui/button";
 
 const socialProofQuotes = [
@@ -35,10 +35,10 @@ const socialProofQuotes = [
 
 // Clips where clients talk about working with Sidsel.
 const workingWithClips = [
-  { name: "Sabrina\nKennedy", company: "Singer, Songwriter and Actress", localVideo: "/videos/sabrina-about.mp4", poster: "/videos/sabrina-about-poster.jpg", cover: sabrinaCover },
-  { name: "Galeen\nMegerditchian", company: "Paid Media and Brand Marketing Manager", localVideo: "/videos/galeen-about.mp4", poster: "/videos/galeen-about-poster.jpg", cover: galeenCover },
-  { name: "Giacomo\nGallazzi", company: "Student and Podcast Host", localVideo: "/videos/giacomo-about.mp4", poster: "/videos/giacomo-about-poster.jpg", cover: giacomoCover },
-  { name: "Philip\nChristiansen", company: "Business Owner and Hypnotist", localVideo: "/videos/philip-about.mp4", poster: "/videos/philip-about-poster.jpg", cover: philipCover },
+  { name: "Sabrina\nKennedy", company: "Singer, Songwriter and Actress", localVideo: "/videos/sabrina-about.mp4", poster: "/videos/sabrina-about-poster.jpg", cover: sabrinaAboutCover },
+  { name: "Galeen\nMegerditchian", company: "Paid Media and Brand Marketing Manager", localVideo: "/videos/galeen-about.mp4", poster: "/videos/galeen-about-poster.jpg", cover: galeenAboutCover },
+  { name: "Giacomo\nGallazzi", company: "Student and Podcast Host", localVideo: "/videos/giacomo-about-v2.mp4", poster: "/videos/giacomo-about-poster.jpg", cover: giacomoAboutCover },
+  { name: "Philip\nChristiansen", company: "Business Owner and Hypnotist", localVideo: "/videos/philip-about-v2.mp4", poster: "/videos/philip-about-poster.jpg", cover: philipAboutCover },
 ];
 
 const values = [
@@ -157,9 +157,9 @@ const About = () => {
             ))}
           </div>
           <p className="mt-16 text-[13px] uppercase font-semibold text-foreground text-center">What it's like to work with me</p>
-          <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[18px]">
+          <div className="mt-6 max-w-[760px] mx-auto grid grid-cols-2 sm:grid-cols-4 gap-3">
             {workingWithClips.map((c) => (
-              <VideoCard key={c.localVideo} {...c} compact />
+              <VideoCard key={c.localVideo} {...c} small />
             ))}
           </div>
         </div>

@@ -2,7 +2,7 @@ import rudiAvatar from "@/assets/testimonials/rudi-avatar.jpg";
 import jessicaAvatar from "@/assets/testimonials/jessica-cover-v2.jpg";
 import brandonAvatar from "@/assets/testimonials/brandon-cover.jpg";
 import ellaAvatar from "@/assets/testimonials/ella-cane-founder.png";
-import alexandraAvatar from "@/assets/testimonials/alexandra-feldman-founder-of-the-islands.png";
+import alexandraAvatar from "@/assets/testimonials/alexandra-cover.jpg";
 import AnimatedFounderCount from "@/components/AnimatedFounderCount";
 import SplitHeading from "@/components/SplitHeading";
 import { FOUNDING_PLACES, bonusOpen, currentStep, formatPrice, isFoundingRound } from "@/data/monadOs";
