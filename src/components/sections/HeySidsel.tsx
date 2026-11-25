@@ -26,7 +26,7 @@ const HeySidsel = () => {
           </p>
 
           <p className="mt-4 text-[16px] text-body leading-[1.75] max-w-[700px]">
-            Rebuilding meant trying everything, on myself first, and keeping only what actually worked for someone who can't go and live in a monastery. That became Monad OS. Two years and 250+ people later, it still rests on one belief: what you create follows who you are being. Change the one creating, and what you create changes with it.
+            Rebuilding meant trying everything, on myself first, and keeping only what actually worked for someone who can't go and live in a monastery. That became Monad OS. Two years and 300+ people later, it still rests on one belief: what you create follows who you are being. Change the one creating, and what you create changes with it.
           </p>
 
           <Link

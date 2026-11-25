@@ -5,14 +5,24 @@ const cards = [
     name: "Jessica",
   },
   {
-    heading: "You trust yourself",
-    body: "\"I'm not second guessing myself as much.\"",
-    name: "Jessica",
+    heading: "Your energy comes back",
+    body: "\"In 30 days my energy went from 1 to 9.\"",
+    name: "Galeen",
+  },
+  {
+    heading: "Years come down in a month",
+    body: "\"It's allowed me to bring down years and years of conditioning in a span of a month.\"",
+    name: "Sabrina",
   },
   {
     heading: "The fuel comes back",
     body: "\"Ten times more motivated. Before, I was completely directionless.\"",
     name: "Brandon",
+  },
+  {
+    heading: "You stop waiting",
+    body: "\"I was stuck before the month. Now I've restarted my project.\"",
+    name: "Giacomo",
   },
   {
     heading: "It comes to you",

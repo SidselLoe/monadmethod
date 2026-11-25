@@ -6,7 +6,7 @@ const AnimatedFounderCount = ({ className = "" }: { className?: string }) => {
 
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setCount(250);
+      setCount(300);
       return;
     }
 
@@ -20,7 +20,7 @@ const AnimatedFounderCount = ({ className = "" }: { className?: string }) => {
       const tick = (now: number) => {
         const progress = Math.min((now - startedAt) / 1800, 1);
         const eased = 1 - Math.pow(1 - progress, 3);
-        setCount(Math.round(250 * eased));
+        setCount(Math.round(300 * eased));
         if (progress < 1) frame = requestAnimationFrame(tick);
       };
       frame = requestAnimationFrame(tick);

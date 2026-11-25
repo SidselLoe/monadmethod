@@ -161,7 +161,7 @@ const Activations = () => {
             <span className="font-extrabold">Where it</span> comes from
           </h2>
           <p className="mt-8 text-[18px] text-body leading-[1.7]">
-            I carry a direct Usui lineage of Reiki that traces back to Dr. Mikao Usui in Japan, I trained in Integrated Kundalini Activation, and I work through direct energy transmission. The Monad Activations are my own, built on those foundations and on everything I tested on myself first. 250+ people have experienced the work, online and in person, including group sessions at Burning Man.
+            I carry a direct Usui lineage of Reiki that traces back to Dr. Mikao Usui in Japan, I trained in Integrated Kundalini Activation, and I work through direct energy transmission. The Monad Activations are my own, built on those foundations and on everything I tested on myself first. 300+ people have experienced the work, online and in person, including group sessions at Burning Man.
           </p>
         </div>
       </section>

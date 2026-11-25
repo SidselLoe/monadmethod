@@ -10,6 +10,7 @@ import HowItWorks from "@/components/sections/HowItWorks";
 import WhyThisWorks from "@/components/sections/WhyThisWorks";
 import Qualifier from "@/components/sections/Qualifier";
 import Faq from "@/components/sections/Faq";
+import OnTheFence from "@/components/sections/OnTheFence";
 import LogoMarquee from "@/components/sections/LogoMarquee";
 import FinalCTA from "@/components/sections/FinalCTA";
 import Footer from "@/components/sections/Footer";
@@ -33,6 +34,7 @@ const Index = () => {
       <HowItWorks />
       <WhyThisWorks />
       <Qualifier />
+      <OnTheFence />
       <Faq />
       <LogoMarquee />
       <FinalCTA />

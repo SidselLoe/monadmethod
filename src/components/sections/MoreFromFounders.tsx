@@ -5,8 +5,20 @@ import jessicaCover from "@/assets/testimonials/jessica-rainey-founder-wildflowe
 import sarahPhoto from "@/assets/testimonials/sarah-montgomery-founder-infyos.png";
 import rudiPhoto from "@/assets/testimonials/rudi-adigbli-founder-reethink.png";
 import alexandraCover from "@/assets/testimonials/alexandra-feldman-founder-of-the-islands.png";
+import sabrinaCover from "@/assets/testimonials/sabrina-cover.jpg";
+import giacomoCover from "@/assets/testimonials/giacomo-cover.jpg";
+import galeenCover from "@/assets/testimonials/galeen-cover.jpg";
+import philipCover from "@/assets/testimonials/philip-cover.jpg";
+import sabrinaAvatar from "@/assets/testimonials/sabrina-avatar.jpg";
+import giacomoAvatar from "@/assets/testimonials/giacomo-avatar.jpg";
+import galeenAvatar from "@/assets/testimonials/galeen-avatar.jpg";
+import philipAvatar from "@/assets/testimonials/philip-avatar.jpg";
 
-const videoCards = [
+export const videoCards = [
+  { name: "Sabrina\nKennedy", company: "Singer, songwriter and actress", localVideo: "/videos/sabrina-testimonial.mp4", poster: "/videos/sabrina-testimonial-poster.jpg", cover: sabrinaCover },
+  { name: "Giacomo\nGallazzi", company: "Education podcast host", localVideo: "/videos/giacomo-testimonial.mp4", poster: "/videos/giacomo-testimonial-poster.jpg", cover: giacomoCover },
+  { name: "Galeen\nMegerditchian", company: "Paid media and brand marketing manager, London", localVideo: "/videos/galeen-testimonial.mp4", poster: "/videos/galeen-testimonial-poster.jpg", cover: galeenCover },
+  { name: "Philip\nChristiansen", company: "Hypnotist, Copenhagen", localVideo: "/videos/philip-testimonial.mp4", poster: "/videos/philip-testimonial-poster.jpg", cover: philipCover },
   { name: "Bianca\nPolizzi", company: "Polizzi Media", localVideo: "/videos/bianca-testimonial.mp4", poster: "/videos/bianca-testimonial-poster.jpg", cover: biancaCover },
   { name: "Brandon\nHadwin", company: "HealingwithBrandon", localVideo: "/videos/brandon-testimonial.mp4", poster: "/videos/brandon-testimonial-poster.jpg", cover: brandonCover },
   { name: "Jessica\nRainey", company: "Wildflower Woman", localVideo: "/videos/jessica-testimonial.mp4", poster: "/videos/jessica-testimonial-poster.jpg", cover: jessicaCover },
@@ -14,6 +26,30 @@ const videoCards = [
 ];
 
 const quoteCards = [
+  {
+    name: "Sabrina Kennedy",
+    company: "Singer, songwriter and actress",
+    photo: sabrinaAvatar,
+    quote: "I was choosing a familiar hell over an unfamiliar peace. One month of Monad OS shifted this perspective.",
+  },
+  {
+    name: "Giacomo Gallazzi",
+    company: "Education podcast host",
+    photo: giacomoAvatar,
+    quote: "I'd done six months of coaching before, but one month of Monad OS was more impactful. I saw a change week by week.",
+  },
+  {
+    name: "Galeen Megerditchian",
+    company: "Paid media and brand marketing manager, London",
+    photo: galeenAvatar,
+    quote: "In 30 days my energy went from 1 to 9. I'm kinder to myself, and I've found my voice.",
+  },
+  {
+    name: "Philip Christiansen",
+    company: "Hypnotist, Copenhagen",
+    photo: philipAvatar,
+    quote: "Monad OS helped me realize it's safe to be seen. There's still some fear, but I don't let it control my actions.",
+  },
   {
     name: "Rudi Adigbli",
     company: "ReeThink",
@@ -40,7 +76,7 @@ const quoteCards = [
   },
 ];
 
-const VideoCard = ({ name, company, vimeoId, localVideo, poster, cover }: { name: string; company: string; vimeoId?: string; localVideo?: string; poster?: string; cover: string }) => {
+export const VideoCard = ({ name, company, vimeoId, localVideo, poster, cover }: { name: string; company: string; vimeoId?: string; localVideo?: string; poster?: string; cover: string }) => {
   const [playing, setPlaying] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
@@ -116,6 +152,26 @@ const QuoteCard = ({ name, company, quote, photo }: { name: string; company: str
   </div>
 );
 
+// Indexes: videoCards 0 Sabrina, 1 Giacomo, 2 Galeen, 3 Philip, 4 Bianca, 5 Brandon, 6 Jessica, 7 Alexandra.
+// quoteCards 0 Sabrina, 1 Giacomo, 2 Galeen, 3 Philip, 4 Rudi, 5 Alexandra, 6 Bianca, 7 Sarah.
+// Arranged so nobody's quote sits right next to their own video.
+type Slot = ["v" | "q", number];
+const toNode = ([type, i]: Slot) => ({
+  key: `${type}${i}`,
+  node: type === "v" ? <VideoCard {...videoCards[i]} /> : <QuoteCard {...quoteCards[i]} />,
+});
+
+const desktopColumns: Slot[][] = [
+  [["v", 0], ["q", 1], ["v", 4], ["q", 4], ["v", 3]],
+  [["q", 2], ["v", 5], ["q", 3], ["v", 6], ["q", 0]],
+  [["v", 1], ["q", 5], ["v", 2], ["q", 6], ["v", 7], ["q", 7]],
+];
+
+const wall = ([
+  ["v", 0], ["q", 2], ["v", 1], ["q", 3], ["v", 4], ["q", 4], ["v", 2], ["q", 0],
+  ["v", 5], ["q", 1], ["v", 3], ["q", 5], ["v", 6], ["q", 6], ["v", 7], ["q", 7],
+] as Slot[]).map(toNode);
+
 const MoreFromFounders = () => {
   return (
     <section className="bg-background py-[100px] px-8">
@@ -124,40 +180,23 @@ const MoreFromFounders = () => {
           <span className="font-extrabold">In their</span> words
         </h2>
 
-        {/* Desktop: 3-column masonry */}
-        <div className="hidden md:block" style={{ columns: 3, columnGap: "18px" }}>
-          <div className="mb-[18px] break-inside-avoid"><VideoCard {...videoCards[0]} /></div>
-          <div className="mb-[18px] break-inside-avoid"><QuoteCard {...quoteCards[1]} /></div>
-          <div className="mb-[18px] break-inside-avoid"><VideoCard {...videoCards[1]} /></div>
-          <div className="mb-[18px] break-inside-avoid"><QuoteCard {...quoteCards[0]} /></div>
-          <div className="mb-[18px] break-inside-avoid"><VideoCard {...videoCards[2]} /></div>
-          <div className="mb-[18px] break-inside-avoid"><QuoteCard {...quoteCards[2]} /></div>
-          <div className="mb-[18px] break-inside-avoid"><VideoCard {...videoCards[3]} /></div>
-          <div className="mb-[18px] break-inside-avoid"><QuoteCard {...quoteCards[3]} /></div>
+        {/* Desktop: three hand-placed columns */}
+        <div className="hidden md:grid grid-cols-3 gap-[18px] items-start">
+          {desktopColumns.map((col, c) => (
+            <div key={c} className="flex flex-col gap-[18px]">
+              {col.map(toNode).map((item) => <div key={item.key}>{item.node}</div>)}
+            </div>
+          ))}
         </div>
 
         {/* Tablet */}
         <div className="hidden sm:grid md:hidden grid-cols-2 gap-[18px]">
-          <VideoCard {...videoCards[0]} />
-          <QuoteCard {...quoteCards[0]} />
-          <VideoCard {...videoCards[1]} />
-          <QuoteCard {...quoteCards[1]} />
-          <VideoCard {...videoCards[2]} />
-          <QuoteCard {...quoteCards[2]} />
-          <VideoCard {...videoCards[3]} />
-          <QuoteCard {...quoteCards[3]} />
+          {wall.map((item) => <div key={item.key}>{item.node}</div>)}
         </div>
 
         {/* Mobile */}
         <div className="sm:hidden flex flex-col gap-[18px]">
-          <VideoCard {...videoCards[0]} />
-          <QuoteCard {...quoteCards[0]} />
-          <VideoCard {...videoCards[1]} />
-          <QuoteCard {...quoteCards[1]} />
-          <VideoCard {...videoCards[2]} />
-          <QuoteCard {...quoteCards[2]} />
-          <VideoCard {...videoCards[3]} />
-          <QuoteCard {...quoteCards[3]} />
+          {wall.map((item) => <div key={item.key}>{item.node}</div>)}
         </div>
       </div>
     </section>
