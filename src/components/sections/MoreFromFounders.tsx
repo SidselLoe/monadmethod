@@ -72,7 +72,7 @@ const quoteCards = [
     name: "Sarah Montgomery",
     company: "CEO and Co-Founder",
     photo: sarahPhoto,
-    quote: "Bringing people to us rather than us chasing them.",
+    quote: "There's been a big mentality shift. I'm so much more aware of how the beliefs we have about ourselves and our work are self-limiting, and become our reality.",
   },
 ];
 
