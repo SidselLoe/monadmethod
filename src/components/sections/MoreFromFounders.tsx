@@ -18,7 +18,7 @@ export const videoCards = [
   { name: "Sabrina\nKennedy", company: "Singer, songwriter and actress", localVideo: "/videos/sabrina-testimonial-v2.mp4", poster: "/videos/sabrina-testimonial-poster.jpg", cover: sabrinaCover },
   { name: "Giacomo\nGallazzi", company: "Education podcast host", localVideo: "/videos/giacomo-testimonial-v2.mp4", poster: "/videos/giacomo-testimonial-poster.jpg", cover: giacomoCover },
   { name: "Galeen\nMegerditchian", company: "Paid media and brand marketing manager, London", localVideo: "/videos/galeen-testimonial-v2.mp4", poster: "/videos/galeen-testimonial-v2-poster.jpg", cover: galeenCover },
-  { name: "Philip\nChristiansen", company: "Hypnotist, Copenhagen", localVideo: "/videos/philip-testimonial-v2.mp4", poster: "/videos/philip-testimonial-v3-poster.jpg", cover: philipCover },
+  { name: "Philip\nChristiansen", company: "Hypnotist, Copenhagen", localVideo: "/videos/philip-testimonial-v3.mp4", poster: "/videos/philip-testimonial-v3-poster.jpg", cover: philipCover },
   { name: "Bianca\nPolizzi", company: "Polizzi Media", localVideo: "/videos/bianca-testimonial.mp4", poster: "/videos/bianca-testimonial-poster.jpg", cover: biancaCover },
   { name: "Brandon\nHadwin", company: "HealingwithBrandon", localVideo: "/videos/brandon-testimonial.mp4", poster: "/videos/brandon-testimonial-v3-poster.jpg", cover: brandonCover },
   { name: "Jessica\nRainey", company: "Wildflower Woman", localVideo: "/videos/jessica-testimonial.mp4", poster: "/videos/jessica-testimonial-poster.jpg", cover: jessicaCover },
