@@ -21,7 +21,7 @@ export const videoCards = [
   { name: "Philip\nChristiansen", company: "Business Owner and Hypnotist", localVideo: "/videos/philip-testimonial-v3.mp4", poster: "/videos/philip-testimonial-v3-poster.jpg", cover: philipCover },
   { name: "Bianca\nPolizzi", company: "Business Owner", localVideo: "/videos/bianca-testimonial.mp4", poster: "/videos/bianca-testimonial-poster.jpg", cover: biancaCover },
   { name: "Brandon\nHadwin", company: "Business Owner", localVideo: "/videos/brandon-testimonial.mp4", poster: "/videos/brandon-testimonial-v3-poster.jpg", cover: brandonCover },
-  { name: "Jessica\nRainey", company: "Content Creator and Business Owner", localVideo: "/videos/jessica-testimonial.mp4", poster: "/videos/jessica-testimonial-poster.jpg", cover: jessicaCover },
+  { name: "Jessica\nRainey", company: "Business Owner and Creator", localVideo: "/videos/jessica-testimonial.mp4", poster: "/videos/jessica-testimonial-poster.jpg", cover: jessicaCover },
   { name: "Alexandra\nFeldman", company: "Business Owner", localVideo: "/videos/alexandra-testimonial.mp4", poster: "/videos/alexandra-testimonial-poster.jpg", cover: alexandraCover },
 ];
 
@@ -52,7 +52,7 @@ const quoteCards = [
   },
   {
     name: "Rudi Adigbli",
-    company: "Business Owner",
+    company: "Business Owner and Podcast Host",
     photo: rudiPhoto,
     quote: "Working with Sidsel was the first truly holistic experience I've had. A lot of work focuses on strategy. Some goes deeper, into beliefs and how to change them. Very few work with your energy the way Sidsel does, and that's what makes it so effective.",
   },

@@ -27,7 +27,7 @@ const ACTIVATION_URL = "https://luma.com/monadmethod";
 const founders = [
   { name: "Brandon Hadwin", business: "Business Owner", photo: brandonPhoto },
   { name: "Alexandra Feldman", business: "Business Owner", photo: alexandraPhoto },
-  { name: "Jessica Rainey", business: "Content Creator and Business Owner", photo: jessicaPhoto },
+  { name: "Jessica Rainey", business: "Business Owner and Creator", photo: jessicaPhoto },
   { name: "Bianca Polizzi", business: "Business Owner", photo: biancaPhoto },
   { name: "Anton Rytter", business: "Kintsugi Studio", photo: antonPhoto },
 ];
