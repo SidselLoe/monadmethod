@@ -118,7 +118,7 @@ function ItemList({ items, positive, negativeRed = false }: { items: string[]; p
 const videoStories = cases.filter((story) => story.photo);
 const textStories = cases.filter((story) => !story.photo);
 const testimonialVideos: Record<string, { src: string; poster: string }> = {
-  "Brandon Hadwin": { src: "/videos/brandon-testimonial.mp4", poster: "/videos/brandon-testimonial-v2-poster.jpg" },
+  "Brandon Hadwin": { src: "/videos/brandon-testimonial.mp4", poster: "/videos/brandon-testimonial-v3-poster.jpg" },
   "Alexandra Feldman": { src: "/videos/alexandra-testimonial.mp4", poster: "/videos/alexandra-testimonial-poster.jpg" },
   "Jessica Rainey": { src: "/videos/jessica-testimonial.mp4", poster: "/videos/jessica-testimonial-poster.jpg" },
 };
