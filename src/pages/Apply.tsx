@@ -11,7 +11,7 @@ import type { TablesInsert } from "@/integrations/supabase/types";
 import brandonPhoto from "@/assets/testimonials/brandon-cover.jpg";
 import alexandraPhoto from "@/assets/testimonials/alexandra-feldman-founder-of-the-islands.png";
 import biancaPhoto from "@/assets/testimonials/bianca-polizzi-founder-polizzi-media.png";
-import jessicaPhoto from "@/assets/testimonials/jessica-rainey-founder-wildflower-woman.png";
+import jessicaPhoto from "@/assets/testimonials/jessica-cover.jpg";
 import antonPhoto from "@/assets/testimonials/anton-rytter-founder.png";
 import AnimatedFounderCount from "@/components/AnimatedFounderCount";
 import MonadMark from "@/components/MonadMark";

@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import biancaCover from "@/assets/testimonials/bianca-polizzi-founder-polizzi-media.png";
 import brandonCover from "@/assets/testimonials/brandon-cover.jpg";
-import jessicaCover from "@/assets/testimonials/jessica-rainey-founder-wildflower-woman.png";
+import jessicaCover from "@/assets/testimonials/jessica-cover.jpg";
 import sarahPhoto from "@/assets/testimonials/sarah-montgomery-founder-infyos.png";
 import rudiPhoto from "@/assets/testimonials/rudi-avatar.jpg";
 import alexandraCover from "@/assets/testimonials/alexandra-feldman-founder-of-the-islands.png";

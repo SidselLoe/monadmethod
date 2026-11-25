@@ -1,5 +1,5 @@
 import rudiAvatar from "@/assets/testimonials/rudi-avatar.jpg";
-import jessicaAvatar from "@/assets/testimonials/jessica-rainey-founder-wildflower-woman.png";
+import jessicaAvatar from "@/assets/testimonials/jessica-cover.jpg";
 import brandonAvatar from "@/assets/testimonials/brandon-cover.jpg";
 import ellaAvatar from "@/assets/testimonials/ella-cane-founder.png";
 import alexandraAvatar from "@/assets/testimonials/alexandra-feldman-founder-of-the-islands.png";
