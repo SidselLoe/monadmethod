@@ -10,7 +10,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import brandonCover from "@/assets/testimonials/brandon-hadwin-founder-healingwithbrandon.png";
+import brandonCover from "@/assets/testimonials/brandon-cover.jpg";
 import jessicaCover from "@/assets/testimonials/jessica-rainey-founder-wildflower-woman.png";
 import backstoryPhoto from "@/assets/backstory-sidsel.jpg";
 import LineageSection from "@/components/sections/about/LineageSection";

@@ -23,7 +23,7 @@ const OnTheFence = () => (
       </p>
       <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[18px]">
         {fenceCards.map((c) => (
-          <VideoCard key={c.localVideo} {...c} />
+          <VideoCard key={c.localVideo} {...c} compact />
         ))}
       </div>
     </div>

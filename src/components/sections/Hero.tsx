@@ -1,6 +1,6 @@
 import rudiAvatar from "@/assets/testimonials/rudi-adigbli-founder-reethink.png";
 import jessicaAvatar from "@/assets/testimonials/jessica-rainey-founder-wildflower-woman.png";
-import brandonAvatar from "@/assets/testimonials/brandon-hadwin-founder-healingwithbrandon.png";
+import brandonAvatar from "@/assets/testimonials/brandon-cover.jpg";
 import ellaAvatar from "@/assets/testimonials/ella-cane-founder.png";
 import alexandraAvatar from "@/assets/testimonials/alexandra-feldman-founder-of-the-islands.png";
 import AnimatedFounderCount from "@/components/AnimatedFounderCount";

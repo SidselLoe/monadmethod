@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import biancaCover from "@/assets/testimonials/bianca-polizzi-founder-polizzi-media.png";
-import brandonCover from "@/assets/testimonials/brandon-hadwin-founder-healingwithbrandon.png";
+import brandonCover from "@/assets/testimonials/brandon-cover.jpg";
 import jessicaCover from "@/assets/testimonials/jessica-rainey-founder-wildflower-woman.png";
 import sarahPhoto from "@/assets/testimonials/sarah-montgomery-founder-infyos.png";
 import rudiPhoto from "@/assets/testimonials/rudi-adigbli-founder-reethink.png";
@@ -18,9 +18,9 @@ export const videoCards = [
   { name: "Sabrina\nKennedy", company: "Singer, songwriter and actress", localVideo: "/videos/sabrina-testimonial-v2.mp4", poster: "/videos/sabrina-testimonial-poster.jpg", cover: sabrinaCover },
   { name: "Giacomo\nGallazzi", company: "Education podcast host", localVideo: "/videos/giacomo-testimonial-v2.mp4", poster: "/videos/giacomo-testimonial-poster.jpg", cover: giacomoCover },
   { name: "Galeen\nMegerditchian", company: "Paid media and brand marketing manager, London", localVideo: "/videos/galeen-testimonial-v2.mp4", poster: "/videos/galeen-testimonial-v2-poster.jpg", cover: galeenCover },
-  { name: "Philip\nChristiansen", company: "Hypnotist, Copenhagen", localVideo: "/videos/philip-testimonial-v2.mp4", poster: "/videos/philip-testimonial-v2-poster.jpg", cover: philipCover },
+  { name: "Philip\nChristiansen", company: "Hypnotist, Copenhagen", localVideo: "/videos/philip-testimonial-v2.mp4", poster: "/videos/philip-testimonial-v3-poster.jpg", cover: philipCover },
   { name: "Bianca\nPolizzi", company: "Polizzi Media", localVideo: "/videos/bianca-testimonial.mp4", poster: "/videos/bianca-testimonial-poster.jpg", cover: biancaCover },
-  { name: "Brandon\nHadwin", company: "HealingwithBrandon", localVideo: "/videos/brandon-testimonial.mp4", poster: "/videos/brandon-testimonial-poster.jpg", cover: brandonCover },
+  { name: "Brandon\nHadwin", company: "HealingwithBrandon", localVideo: "/videos/brandon-testimonial.mp4", poster: "/videos/brandon-testimonial-v2-poster.jpg", cover: brandonCover },
   { name: "Jessica\nRainey", company: "Wildflower Woman", localVideo: "/videos/jessica-testimonial.mp4", poster: "/videos/jessica-testimonial-poster.jpg", cover: jessicaCover },
   { name: "Alexandra\nFeldman", company: "Of The Islands", localVideo: "/videos/alexandra-testimonial.mp4", poster: "/videos/alexandra-testimonial-poster.jpg", cover: alexandraCover },
 ];
@@ -76,7 +76,7 @@ const quoteCards = [
   },
 ];
 
-export const VideoCard = ({ name, company, vimeoId, localVideo, poster, cover }: { name: string; company: string; vimeoId?: string; localVideo?: string; poster?: string; cover: string }) => {
+export const VideoCard = ({ name, company, vimeoId, localVideo, poster, cover, compact = false }: { name: string; company: string; vimeoId?: string; localVideo?: string; poster?: string; cover: string; compact?: boolean }) => {
   const [playing, setPlaying] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
@@ -124,7 +124,7 @@ export const VideoCard = ({ name, company, vimeoId, localVideo, poster, cover }:
           </div>
           {/* Large centered Monad-style play button */}
           <div className="absolute inset-0 z-[3] flex items-center justify-center pointer-events-none">
-            <div className="relative w-20 h-20 md:w-24 md:h-24 transition-transform duration-300 group-hover:scale-110">
+            <div className={`relative ${compact ? "w-14 h-14 md:w-16 md:h-16" : "w-20 h-20 md:w-24 md:h-24"} transition-transform duration-300 group-hover:scale-110`}>
               <svg viewBox="0 0 120 120" className="w-full h-full" aria-hidden="true">
                 <circle cx="60" cy="60" r="50" fill="rgba(255,255,255,0.18)" stroke="white" strokeWidth="3.5" />
                 <polygon points="50,42 82,60 50,78" fill="white" />
