@@ -3,7 +3,7 @@ import biancaCover from "@/assets/testimonials/bianca-polizzi-founder-polizzi-me
 import brandonCover from "@/assets/testimonials/brandon-cover.jpg";
 import jessicaCover from "@/assets/testimonials/jessica-rainey-founder-wildflower-woman.png";
 import sarahPhoto from "@/assets/testimonials/sarah-montgomery-founder-infyos.png";
-import rudiPhoto from "@/assets/testimonials/rudi-adigbli-founder-reethink.png";
+import rudiPhoto from "@/assets/testimonials/rudi-avatar.jpg";
 import alexandraCover from "@/assets/testimonials/alexandra-feldman-founder-of-the-islands.png";
 import sabrinaCover from "@/assets/testimonials/sabrina-cover.jpg";
 import giacomoCover from "@/assets/testimonials/giacomo-cover.jpg";

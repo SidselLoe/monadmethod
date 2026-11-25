@@ -1,4 +1,4 @@
-import rudiAvatar from "@/assets/testimonials/rudi-adigbli-founder-reethink.png";
+import rudiAvatar from "@/assets/testimonials/rudi-avatar.jpg";
 import jessicaAvatar from "@/assets/testimonials/jessica-rainey-founder-wildflower-woman.png";
 import brandonAvatar from "@/assets/testimonials/brandon-cover.jpg";
 import ellaAvatar from "@/assets/testimonials/ella-cane-founder.png";
