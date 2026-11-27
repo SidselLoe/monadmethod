@@ -1,6 +1,7 @@
 import { Play } from "lucide-react";
 import jenilPhoto from "@/assets/testimonials/jenil-thakker-founder-coinvise-earnkit.png";
-import sarahPhoto from "@/assets/testimonials/sarah-montgomery-founder-infyos.png";
+import sarahPhotoAsset from "@/assets/testimonials/sarah-montgomery-founder-infyos.jpeg.asset.json";
+const sarahPhoto = sarahPhotoAsset.url;
 import anthonyPhoto from "@/assets/testimonials/anthony-mcguire-founder.png";
 
 const testimonials = [
